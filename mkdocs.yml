@@ -83,10 +83,10 @@ plugins:
             GeoNetwork: GeoNetwork
             Overview: Обзор
             Help: Помощь
-            User Guide: Для пользователей
-            Maintainer Guide: Для сопровождающих
+            User Guide: Пользователям
+            Maintainer Guide: Сопровождающим
             API: API
-            Development: Для разработчиков
+            Development: Разработчикам
             Tutorials: Обучение
             Annexes: Приложения
 
