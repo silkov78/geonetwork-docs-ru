@@ -17,11 +17,11 @@ hide:
 
 : Справка онлайн для посетителей каталога (вход не требуется).
 
-:fontawesome-solid-person-circle-question:   [Руководство пользователя](user-guide/index.md)
+:fontawesome-solid-person-circle-question:   [Пользователям](user-guide/index.md)
 
 : Оперативное руководство пользователя, описывающее редактирование, проверку и управление записями (требуется вход в систему).
 
-:fontawesome-solid-screwdriver-wrench:   [Руководство для сопровождающего](maintainer-guide/index.md)
+:fontawesome-solid-screwdriver-wrench:   [Администраторам](maintainer-guide/index.md)
 
 : Инструкции по установке, настройке и обновлению
 
@@ -33,7 +33,7 @@ hide:
 
 : Справочник API для разработчиков, обращающихся к службам каталога.
 
-:fontawesome-regular-file-code:   [Разработка](devel/index.md)
+:fontawesome-regular-file-code:   [Разработчикам](devel/index.md)
 
 : Информация о разработке по настройке GeoNetwork и участию в проекте GeoNetwork.
 

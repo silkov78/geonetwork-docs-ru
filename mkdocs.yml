@@ -84,11 +84,12 @@ plugins:
             Overview: Обзор
             Help: Помощь
             User Guide: Пользователям
-            Maintainer Guide: Сопровождающим
+            Maintainer Guide: Администраторам
             API: API
             Development: Разработчикам
             Tutorials: Обучение
             Annexes: Приложения
+
 
   - exclude:
       glob:
