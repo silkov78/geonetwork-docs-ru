@@ -80,10 +80,16 @@ plugins:
           site_name: 'GeoNetwork (RU)'
           site_description: Добро пожаловать на GeoNetwork. Данная документация разделена на отдельные гайды по различным темам.
           nav_translations:
-            Home: Главная
-            Search: Поиск
-            Record: Запись
-            Map: Карта
+            GeoNetwork: GeoNetwork
+            Overview: Обзор
+            Help: Помощь
+            User Guide: Для пользователей
+            Maintainer Guide: Для сопровождающих
+            API: API
+            Development: Для разработчиков
+            Tutorials: Обучение
+            Annexes: Приложения
+
   - exclude:
       glob:
         - annexes/gallery/bin/README.md
