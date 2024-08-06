@@ -378,7 +378,7 @@ plugins:
             Map: Map
         - locale: ru
           name: Русский
-          build: !ENV [ RUSSIAN,true ]
+          build: true
           site_name: 'GeoNetwork (RU)'
           site_description: Добро пожаловать на GeoNetwork. Данная документация разделена на отдельные гайды по различным темам.
 
