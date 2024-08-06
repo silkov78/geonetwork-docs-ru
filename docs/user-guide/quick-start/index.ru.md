@@ -56,114 +56,62 @@ b. Нажмите `Загрузить шаблоны`, чтобы загрузи
 
 ![](../../install-guide/img/once-samples-are-loaded.png)
 
-## Searching information
 
-You can use the Search form to search information using the GeoNetwork catalog. The Search form allows you to search using:
 
-- a full text search box providing suggestions
+## Поиск информации
 
-![](img/full-text.png)
+Вы можете использовать форму поиска для поиска информации в каталоге GeoNetwork. Форма поиска позволяет осуществлять поиск с помощью:
 
-- facets which defines groups that you can click to browse the content of the catalog
-
-![](img/facets.png)
-
-- spatial filtering to choose information in specific areas
-
-![](img/spatial-filter.png)
-
-- advanced search
-
-![](img/advanced.png)
-
-## Discovering information
-
-Search results display main information about each resources: title, abstract, categories, status, overview and links.
-
-![](img/a-result.png)
-
-To view detailed information about the resources, click the record. These details include:
-
-- Download and links
-
-- About the resource
-
-- Technical information
-
-- Metadata details
-
-![](img/a-record.png)
-
-- To get more information, switch the advanced view mode.
-
-- To update the record, click Edit.
-
-From the results or the record view, you can add WMS layers referenced in a metadata record on the map. Using the map, you can:
-
-- Visualize your data,
-
-- Choose your background maps,
-
-- Query objects,
-
-- Display on a 3D globe
-
-![](img/map-africa-basin.png)
-
-Read more about use of the [Maps and dataset visualisation](../map/index.md)
-
-## Searching information
-
-You can use the Search form to search information using the GeoNetwork catalog. The Search form allows you to search using:
-
-- a full text search box providing suggestions
+- окно полнотекстового поиска с предложениями
 
 ![](img/full-text.png)
 
-- facets which defines groups that you can click to browse the content of the catalog
+- фасеты, определяющие группы, которые можно щелкнуть, чтобы просмотреть содержимое каталога
 
 ![](img/facets.png)
 
-- spatial filtering to choose information in specific areas
+- пространственная фильтрация для выбора информации в определенных областях
 
 ![](img/spatial-filter.png)
 
-- advanced search
+- расширенный поиск
 
 ![](img/advanced.png)
 
-## Discovering information
+## Поиск информации
 
-Search results display main information about each resources: title, abstract, categories, status, overview and links.
+В результатах поиска отображается основная информация о каждом ресурсе: название, аннотация, категории, статус, обзор и ссылки.
 
 ![](img/a-result.png)
 
-To view detailed information about the resources, click the record. These details include:
+Чтобы просмотреть подробную информацию о ресурсах, щелкните запись. Эти сведения включают:
 
-- Download and links
+- Загрузка и ссылки
 
-- About the resource
+- О ресурсе
 
-- Technical information
+- Техническая информация
 
-- Metadata details
+- Сведения о метаданных
 
 ![](img/a-record.png)
 
-- To get more information, switch the advanced view mode.
+- Чтобы получить более подробную информацию, переключите режим расширенного просмотра.
 
-- To update the record, click Edit.
+- Чтобы обновить запись, нажмите кнопку Редактировать.
 
-From the results or the record view, you can add WMS layers referenced in a metadata record on the map. Using the map, you can:
+Из результатов или вида записи можно добавить на карту слои WMS, на которые ссылается запись метаданных. Используя карту, вы можете:
 
-- Visualize your data,
+- Визуализировать свои данные,
 
-- Choose your background maps,
+- выбирать фоновые карты,
 
-- Query objects,
+- запрашивать объекты,
 
-- Display on a 3D globe
+- отображать на 3D-глобусе
 
 ![](img/map-africa-basin.png)
 
-Read more about use of the [Maps and dataset visualisation](../map/index.md)
+Подробнее об использовании [Карты и визуализация наборов данных](../map/index.md)
+
+Переведено с помощью DeepL.com (бесплатная версия)
