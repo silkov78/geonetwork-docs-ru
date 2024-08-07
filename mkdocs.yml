@@ -476,7 +476,7 @@ plugins:
               - user-guide/index.md
               - user-guide/quick-start/index.md
               - user-guide/map/index.md
-              - 'Описание Информации':
+              - 'Создание каталогов':
                 - user-guide/describing-information/index.md
                 - user-guide/describing-information/creating-metadata.md
                 - user-guide/describing-information/deleting-metadata.md
