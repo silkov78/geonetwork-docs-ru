@@ -485,7 +485,7 @@ plugins:
                 - user-guide/describing-information/inspire-editing.md
                 - user-guide/describing-information/managing-templates.md
                 - user-guide/describing-information/multilingual-editing.md
-              - 'Associating Resources':
+              - 'Связывание записей':
                 - user-guide/associating-resources/index.md
                 - user-guide/associating-resources/cite.md
                 - user-guide/associating-resources/doi.md
