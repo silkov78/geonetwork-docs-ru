@@ -486,21 +486,25 @@ plugins:
                 - user-guide/describing-information/inspire-editing.md
                 - user-guide/describing-information/managing-templates.md
                 - user-guide/describing-information/multilingual-editing.md
-              - 'Связывание записей':
+
+              - 'Связывание ресурсов':
+                - 'Связывание файлов':
+                    - user-guide/associating-resources/linking-documents.md
+                    - user-guide/associating-resources/using-filestore.md
+                    - user-guide/associating-resources/linking-thumbnail.md
+                    - user-guide/associating-resources/linking-online-resources.md
+
                 - user-guide/associating-resources/index.md
                 - user-guide/associating-resources/cite.md
                 - user-guide/associating-resources/doi.md
                 - user-guide/associating-resources/linking-dataset-or-service.md
-                - user-guide/associating-resources/linking-documents.md
                 - user-guide/associating-resources/linking-feature-catalog.md
-                - user-guide/associating-resources/linking-online-resources.md
                 - user-guide/associating-resources/linking-others.md
                 - user-guide/associating-resources/linking-parent.md
                 - user-guide/associating-resources/linking-records.md
                 - user-guide/associating-resources/linking-remote-records.md
                 - user-guide/associating-resources/linking-source.md
-                - user-guide/associating-resources/linking-thumbnail.md
-                - user-guide/associating-resources/using-filestore.md
+
               - 'Tag information':
                 - user-guide/tag-information/index.md
                 - user-guide/tag-information/tagging-with-categories.md
