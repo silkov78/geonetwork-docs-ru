@@ -1,4 +1,4 @@
-# Использование тегов {#tag-information}
+# Классифицирование информации {#tag-information}
 
--   [Теги по категориям](tagging-with-categories.md)
--   [Теги по ключевым словам](tagging-with-keywords.md)
+-   [Классифицирование по категориям](tagging-with-categories.md)
+-   [Классифицирование по ключевым словам](tagging-with-keywords.md)
