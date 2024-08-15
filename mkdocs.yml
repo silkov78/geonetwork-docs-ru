@@ -505,7 +505,7 @@ plugins:
                 - user-guide/associating-resources/doi.md
                 - user-guide/associating-resources/cite.md
 
-              - 'Tag information':
+              - 'Использование тегов':
                 - user-guide/tag-information/index.md
                 - user-guide/tag-information/tagging-with-categories.md
                 - user-guide/tag-information/tagging-with-keywords.md
