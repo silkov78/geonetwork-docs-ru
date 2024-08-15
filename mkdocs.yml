@@ -514,7 +514,7 @@ plugins:
                 - user-guide/publishing/managing-privileges.md
                 - user-guide/publishing/restricting-information-to-metadata-sections.md
                 - user-guide/publishing/transferring-privileges.md
-              - 'Analyzing':
+              - 'Анализ':
                 - user-guide/analyzing/index.md
                 - user-guide/analyzing/data.md
                 - user-guide/analyzing/metadata.md
