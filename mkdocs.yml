@@ -509,7 +509,7 @@ plugins:
                 - user-guide/tag-information/index.md
                 - user-guide/tag-information/tagging-with-categories.md
                 - user-guide/tag-information/tagging-with-keywords.md
-              - 'Publishing':
+              - 'Публикация':
                 - user-guide/publishing/index.md
                 - user-guide/publishing/managing-privileges.md
                 - user-guide/publishing/restricting-information-to-metadata-sections.md
