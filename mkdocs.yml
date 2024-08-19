@@ -532,7 +532,7 @@ plugins:
                 - user-guide/workflow/validation.md
                 - user-guide/workflow/versioning.md
 
-              - 'Harvesting':
+              - 'Сборщики данных':
                 - user-guide/harvesting/index.md
                 - user-guide/harvesting/harvesting-csw.md
                 - user-guide/harvesting/harvesting-filesystem.md
