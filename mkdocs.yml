@@ -545,9 +545,9 @@ plugins:
                 - user-guide/harvesting/harvesting-webdav.md
                 - user-guide/harvesting/harvesting-wfs-features.md
               - user-guide/export/index.md
-              - 'Administration':
+              - 'Администрирование':
                 - administrator-guide/index.md
-                - 'Catalog':
+                - 'Каталог':
                   - administrator-guide/configuring-the-catalog/index.md
                   - administrator-guide/configuring-the-catalog/system-configuration.md
                   - administrator-guide/configuring-the-catalog/user-interface-configuration.md
@@ -556,18 +556,18 @@ plugins:
                   - administrator-guide/configuring-the-catalog/portal-configuration.md
                   - administrator-guide/configuring-the-catalog/inspire-configuration.md
                   - administrator-guide/configuring-the-catalog/map-server-configuration.md
-                - 'Users and Groups':
+                - 'Типы пользователей и Группы':
                   - administrator-guide/managing-users-and-groups/index.md
                   - administrator-guide/managing-users-and-groups/authentication-mode.md
                   - administrator-guide/managing-users-and-groups/creating-group.md
                   - administrator-guide/managing-users-and-groups/creating-user.md
                   - administrator-guide/managing-users-and-groups/user-self-registration.md
-                - 'Classification Systems':
+                - 'Системы классификации метаданных':
                   - administrator-guide/managing-classification-systems/index.md
                   - administrator-guide/managing-classification-systems/managing-categories.md
                   - administrator-guide/managing-classification-systems/managing-directories.md
                   - administrator-guide/managing-classification-systems/managing-thesaurus.md
-                - 'Metadata Standards':
+                - 'Стандарты метаданных':
                   - administrator-guide/managing-metadata-standards/index.md
                   - administrator-guide/managing-metadata-standards/configure-validation.md
                   - administrator-guide/managing-metadata-standards/metadata-identifier.md
