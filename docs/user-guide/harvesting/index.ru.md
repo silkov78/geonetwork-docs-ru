@@ -20,7 +20,6 @@ Cбор данных возможен со следующих источнико
 - [Сбор данных по GeoPortal REST](harvesting-geoportal.md)
 - [Сбор данных с THREDDS](harvesting-thredds.md)
 - [Сбор данных по WFS GetFeature](harvesting-wfs-features.md)
-- [Сбор данных по Z3950](harvesting-z3950.md)
 
 ## Обзор механизма сбора данных
 
