@@ -44,8 +44,8 @@ OGC-сервисы реализует операцию [GetCapabilities](https:/
 -   **Доступность для собранных записей** - Назначение привилегий определённым группам по собранным метаданным.
     -    *Если запись существует* - Применяется только при обновлении, и если при конфликте UUID предписано задано перезаписывать записи. Если включено, привилегии не удаляются при обновлении.
 
-!!! Notes
+!!! Примечание
 
-    -   every time the harvester runs, it will remove previously harvested records and create new records. GeoNetwork will generate the uuid for all metadata (both service and datasets). The exception to this rule is dataset metadata created using the MetadataUrl tag is in the GetCapabilities document, in that case, the uuid of the remote XML document is used instead
-    -   thumbnails can only be generated when harvesting an OGC Web Map Service (WMS). The WMS should support the WGS84 projection
-    -   the chosen *Target schema* must have the support XSLTs which are used by the harvester to convert the GetCapabilities statement to metadata records from that schema. If in doubt, use iso19139.
+    -   При каждом запуске сборщик будет удалять ранее собранные записи и создавать новые. GeoNetwork будет генерировать uuid для всех метаданных (как служебных, так и наборов данных). Исключением из этого правила являются метаданные наборов данных, созданные с помощью тега MetadataUrl в документе GetCapabilities, в этом случае вместо uuid используется uuid удаленного XML-документа.
+    -   логотипы могут быть сгенерированы только при сборе веб-картографического сервиса OGC (WMS). WMS должна поддерживать проекцию WGS84
+    -   выбранная *Целевая схема* должна иметь поддержку XSLT, которые используются сборщиком для преобразования запроса GetCapabilities в записи метаданных из этой схемы. Обычно используется iso19139.
