@@ -16,12 +16,12 @@
 
 !!! info "Структура раздела"
 
+    - [Управление шаблонами](managing-templates.ru.md)
     - [Создание новой записи](creating-metadata.ru.md)
-    - [Удаление записи](deleting-metadata.ru.md)
     - [Редактирование метаданных](editing-metadata.md)
     - [Импорт новой записи](importing-metadata.ru.md)
-    - [Описание ресурсов для директивы INSPIRE](inspire-editing.ru.md)
-    - [Управление шаблонами](managing-templates.ru.md)
+    - [Удаление записи](deleting-metadata.ru.md)
     - [Многоязычное редактирование](multilingual-editing.ru.md)
+    - [Описание ресурсов для директивы INSPIRE](inspire-editing.ru.md)
 
 На основе профилей (типов) пользователей (см. [Создание пользователя](../../administrator-guide/managing-users-and-groups/creating-user.md)), панель инструментов обеспечивает легкий доступ к их информации и задачам.
