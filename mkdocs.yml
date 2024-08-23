@@ -478,13 +478,13 @@ plugins:
               - user-guide/map/index.md
               - 'Работа с записями метаданных':
                 - user-guide/describing-information/index.md
-                - user-guide/describing-information/creating-metadata.md
-                - user-guide/describing-information/deleting-metadata.md
-                - user-guide/describing-information/editing-metadata.md
-                - user-guide/describing-information/importing-metadata.md
-                - user-guide/describing-information/inspire-editing.md
                 - user-guide/describing-information/managing-templates.md
+                - user-guide/describing-information/creating-metadata.md
+                - user-guide/describing-information/importing-metadata.md
+                - user-guide/describing-information/editing-metadata.md
+                - user-guide/describing-information/deleting-metadata.md
                 - user-guide/describing-information/multilingual-editing.md
+                - user-guide/describing-information/inspire-editing.md
 
               - 'Связывание со сторонними ресурсами':
                 - user-guide/associating-resources/index.md
