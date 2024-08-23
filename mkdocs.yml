@@ -476,7 +476,7 @@ plugins:
               - user-guide/index.md
               - user-guide/quick-start/index.md
               - user-guide/map/index.md
-              - 'Работа с записями метаданных':
+              - 'Описание информации':
                 - user-guide/describing-information/index.md
                 - user-guide/describing-information/managing-templates.md
                 - user-guide/describing-information/creating-metadata.md
