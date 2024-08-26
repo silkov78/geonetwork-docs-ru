@@ -363,19 +363,9 @@ plugins:
       languages:
         - locale: en
           name: English
-          build: true
           default: true
+          build: true
           site_name: 'GeoNetwork opensource (EN)'
-        - locale: fr
-          name: Français
-          build: !ENV [FRENCH,true]
-          site_name: 'GeoNetwork opensource (FR)'
-          site_description: Catalogue GeoNetwork pour répertorier, rechercher et examiner les enregistrements.
-          nav_translations:
-            Home: Home
-            Search: Search
-            Record: Record
-            Map: Map
         - locale: ru
           name: Русский
           build: true
