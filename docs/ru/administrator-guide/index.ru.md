@@ -1,9 +1,9 @@
 # Руководство для администраторов
 
--   [Конфигурация католога](configuring-the-catalog/index.ru.md)
--   [Управление типами пользователей и группами](managing-users-and-groups/index.ru.md)
--   [Управление системами классификаций](managing-classification-systems/index.ru.md)
--   [Управление метаданными и шаблонами](managing-metadata-standards/index.ru.md)
+-   [Конфигурация католога](configuring-the-catalog/index.md)
+-   [Управление типами пользователей и группами](managing-users-and-groups/index.md)
+-   [Управление системами классификаций](managing-classification-systems/index.md)
+-   [Управление метаданными и шаблонами](managing-metadata-standards/index.md)
 
 ![](img/admin.png)
 
