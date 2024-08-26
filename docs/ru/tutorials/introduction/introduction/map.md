@@ -51,7 +51,7 @@ The map viewer supports Featureinfo, to retrieve information by clicking on a lo
 
 It is possible to add directly WMS, WFS or WMTS layers by entering the endpoint and selecting the layer from the capabilities response.
 
-![](img/addLayers.png){width="300px"}
+![](img/addLayers.ru.png){width="300px"}
 
 The default projection of maps in GeoNetwork is EPSG:3857 pseudo mercator. However the administrator can add a projection switcher that allows alternative projections.
 
@@ -67,4 +67,4 @@ GeoNetwork uses OWSContext to store, share and load maps:
 -   Register a context as asset in the catalogue, the context itself will be added as attachement.
 -   Records that have an OWS context file attached will display a button to open the context file.
 
-![](img/OWSContext.png){width="400px"}
+![](img/OWSContext.ru.png){width="400px"}
