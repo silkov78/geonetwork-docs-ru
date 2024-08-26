@@ -6,7 +6,7 @@ The process of discovery includes searching by keyword, location, organisation o
 
 -   A full text search box provides suggestions as you type. This options queries all elements of the metadata, so you can use keywords, organisations names, filenames, etc. Use * to match partial search terms. If you want to search only on a specific field, such as title, use the advanced search.
 
-![](img/full-text.png){width="600px"}
+![](img/full-text.ru.png){width="600px"}
 
 -   To use a spatial filter, draw a polygon in the map-filter widget. You can switch the mode of the widget from "intersect" to "within" so you only receive records that are within the bounding box you defined.
 
@@ -22,7 +22,7 @@ You can use the facets in the left sidebar to further filter the search result. 
 
 To get more information, click the title of the record, this will bring you to the index-view, a view of the metadata that displays a subset of the metadata, directly from the search index.
 
-![](img/a-record.png){width="600px"}
+![](img/a-record.ru.png){width="600px"}
 
 The view menu displays the available view modes. In a default configuration are available "Default" and "Full". The "Full" view displays all metadata elements by applying an XML to HTML transformation.
 
