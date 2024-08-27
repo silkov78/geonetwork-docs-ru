@@ -478,12 +478,12 @@ plugins:
 
               - 'Связывание со сторонними ресурсами':
                 - user-guide/associating-resources/index.md
-                - 'Связывание с файлами':
+                - 'Связывание с документами':
                     - user-guide/associating-resources/linking-documents.md
                     - user-guide/associating-resources/using-filestore.md
                     - user-guide/associating-resources/linking-thumbnail.md
                     - user-guide/associating-resources/linking-online-resources.md
-                - 'Связывание с другой записью':
+                - 'Связывание с другими записями':
                     - user-guide/associating-resources/linking-records.md
                     - user-guide/associating-resources/linking-parent.md
                     - user-guide/associating-resources/linking-source.md
