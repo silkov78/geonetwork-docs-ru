@@ -77,7 +77,7 @@ By default, if the standard has multilingual support like ISO19139, all fields w
 
 Then this section also allows to define how multilingual fields are displayed using the expanded elements. If expanded, then one field per language is displayed with no need to click on the language switcher.
 
-![](../../user-guide/describing-information/img/multilingual-editing.png)
+![](../../user-guide/describing-information/img/multilingual-editing.ru.png)
 
 ``` xml
 <editor>
@@ -99,7 +99,7 @@ At least one view MUST be defined, but more view modes can be defined depending 
 
 By default ISO19139 defines 3 views (i.e. default, advanced, xml) and has one disabled view (i.e. INSPIRE). See `schemas/iso19139/src/main/plugin/iso19139/layout/config-editor.xml` for the configuration.
 
-![](../../user-guide/describing-information/img/view-mode.png)
+![](../../user-guide/describing-information/img/import-form.ru.png)
 
 Another basic example is the Dublin Core view (see `schemas/dublin-core/src/main/plugin/dublin-core/layout/config-editor.xml`).
 
@@ -160,7 +160,7 @@ See ``catalog/views/default/less/gn_editor_default.less`` to add your custom edi
 
 Define if up and down control should be displayed in that view. If not defined, controls are displayed. Hide those controls in a view to make it easier with less controls for the end-user.
 
-![](../../user-guide/describing-information/img/editor-control-updown.png)
+![](../../user-guide/describing-information/img/import-form.ru.png)
 
 -   **displayAttributes** (Optional) Fixed value: **true**
 
