@@ -1,4 +1,4 @@
-# Обновление набора записей с помощью XSLT {#batchupdate_xsl}
+# Пакетное редактирование с помощью XSLT {#batchupdate_xsl}
 
 ## Применение изменений {#batch-process-apply}
 

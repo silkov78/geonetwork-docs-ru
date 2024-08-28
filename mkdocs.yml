@@ -510,7 +510,7 @@ plugins:
 
               - 'Рабочий процесс':
                 - user-guide/workflow/index.md
-                - 'Обновление набора записей':
+                - 'Пакетное редактирование':
                   - user-guide/workflow/batchupdate.md
                   - user-guide/workflow/batchediting.md
                   - user-guide/workflow/batchupdate-from-admin.md
