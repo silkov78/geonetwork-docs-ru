@@ -1,9 +1,9 @@
-# Configuring the catalog
+# Настройка каталога 
 
--   [System configuration](system-configuration.md)
--   [User Interface Configuration](user-interface-configuration.md)
--   [Configuring CSS & Style](css-configuration.md)
--   [Configuring CSW](csw-configuration.md)
--   [Portal configuration](portal-configuration.md)
--   [Configuring for the INSPIRE Directive](inspire-configuration.md)
--   [Map servers configuration for geopublication](map-server-configuration.md)
+-   [Системные настройки](system-configuration.md)
+-   [Настройка пользовательского интерфейса](user-interface-configuration.md)
+-   [Настройка CSS & Стилей](css-configuration.md)
+-   [Настройка CSW](csw-configuration.md)
+-   [Настройка портала](portal-configuration.md)
+-   [Настройка для директивы INSPIRE](inspire-configuration.md)
+-   [Настройка публикации на картографических серверах](map-server-configuration.md)
