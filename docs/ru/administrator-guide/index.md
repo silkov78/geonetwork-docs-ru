@@ -1,10 +1,10 @@
-# Administrator guide
+# Руководство для администраторов
 
--   [Configuring the catalog](configuring-the-catalog/index.md)
--   [Managing users and groups](managing-users-and-groups/index.md)
--   [Managing classification system](managing-classification-systems/index.md)
--   [Managing metadata & template](managing-metadata-standards/index.md)
+-   [Конфигурация католога](configuring-the-catalog/index.md)
+-   [Управление типами пользователей и группами](managing-users-and-groups/index.md)
+-   [Управление системами классификаций](managing-classification-systems/index.md)
+-   [Управление метаданными и шаблонами](managing-metadata-standards/index.md)
 
 ![](img/admin.png)
 
-All Admin functions are available from the Admin Dashboard from the main menu. On the Admin Dashboard you will find shortcuts to any administration option your role can access.
+Все функции администратора доступны в `Панели админа` в главном меню. В `Панели админа` находятся все параметры администрирования, доступные для роли пользователя.
