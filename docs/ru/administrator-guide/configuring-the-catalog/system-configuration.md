@@ -159,7 +159,7 @@
 ## Статистика поиска {#search_stats_config}
 
 Если включено, поисковая статистика будет собираться и храниться в базе данных. 
-Статистика поиска хранится в базе данных и может быть запрошена с помощью страницы `Search Statistics`.
+Статистика поиска хранится в базе данных и может быть запрошена с помощью страницы `Статистика поиска`.
 
 ## Открыть провайдер Archive Initiative (OAI-PMH)
 
@@ -185,42 +185,50 @@
 
 Смотреть [Настройка директивы INSPIRE](inspire-configuration.md).
 
-## Multi-Threaded Indexing
+## Индексация
 
-Configuration settings in this group determine how many processor threads are allocated to indexing tasks in GeoNetwork. If your machine has many processor cores, you can now determine how many to allocate to GeoNetwork indexing tasks. This can bring dramatic speed improvements on large indexing tasks (eg. changing the privileges on 20,000 records) because GeoNetwork can split the indexing task into a number of pieces and assign them to different processor cores.
+Данный параметр определяет, сколько процессорных потоков выделено для задач индексирования в GeoNetwork. 
+Если на компьютере, на котором запущен GeoNetwork, много процессорных ядер, то возможно определить, 
+сколько из них будет участвовать в индексации. Это может значительно ускорить выполнение крупных задач индексации 
+(например, изменение привилегий для 20 000 записей), поскольку GeoNetwork может разделить задачу индексации на несколько частей 
+и назначить их разным процессорным ядрам.
 
-*Number of processing threads* The maximum number of processing threads that can be allocated to an indexing task.
+**Количество потоков обработки** - Максимальное количество потоков обработки, которое может быть выделено для задачи индексирования.
 
-Note: this option is only available for databases that have been tested. Those databases are PostGIS and Oracle. You should also carefully consider how many connections to the database you allocate in the database configuration as each thread could tie up one database connection for the duration of a long indexing session (for example). See the advanced configuration for more details of how to configure the number of connections in the database connection pool.
+Примечание: этот параметр доступен только для проверенных баз данных. 
+Это базы данных PostGIS и Oracle. Также следует тщательно продумать, сколько подключений к базе данных будет выделено в конфигурации, 
+поскольку каждый поток может установить одно подключение к базе данных на время длительного сеанса индексации. 
+Более подробную информацию о том, как настроить количество подключений в пуле подключений к базе данных, смотрите в разделе **Расширенная конфигурация**.
 
-## Metadata Privileges
+## Страница прав на метаданные
 
-*Only set privileges to user's groups*: If enabled then only the groups that the user belongs to will be displayed in the metadata privileges page (unless the user is an Administrator). At the moment this option cannot be disabled and is likely to be deprecated in the next version of GeoNetwork.
+**Отображать только группы, к которым принадлежит пользователь**: если включено, то на странице прав доступа метаданных будут отображаться только те группы, 
+к которым принадлежит пользователь (если пользователь не является администратором). На данный момент эта опция не может быть отключена и, вероятно, 
+будет признана устаревшей в следующей версии GeoNetwork.
 
-## Metadata import {#editing_harvested_records}
+## Импорт метаданных {#editing_harvested_records}
 
--   **Restrict import to schemas** List of all allowed schemas for metadata to be imported. If the metadata schema is not allowed, then the import is not done. Use an empty value to allow all schemas.
--   **Minimum user profile allowed to import metadata** Minimum user profile allowed to import metadata (`Editor`, `Reviewer` or `Administrator`). The default value is `Editor`.
+- **Ограничить импорт схемами**: Список всех разрешенных схем для импорта метаданных. Если схема метаданных не разрешена, импорт не выполняется. Используйте пустое значение, чтобы разрешить все схемы.
+- **Выберите минимальный профиль пользователя, которому разрешено импортировать метаданные**: Минимальный профиль пользователя, разрешенный для импорта метаданных ("Редактор", `Рецензент` или `Администратор`). Значение по умолчанию - `Редактор`.
 
-![](img/metadata-import.png)
+![](img/metadata-import.ru.png)
 
-## Metadata delete
+## Удаление метаданных
 
-Allows to configure the user profile allowed to delete published metadata.
+Позволяет выбрать тип пользователя, которому разрешено удалять опубликованные метаданные.
 
--   **Minimum user profile allowed to delete published metadata** Minimum user profile allowed to delete metadata (`Editor`, `Reviewer` or `Administrator`). The default value is `Editor`.
+![](img/metadata-delete.ru.png)
 
-![](img/metadata-delete.png)
+## Публикация метаданных
 
-## Metadata publication
+Позволяет выбрать пользователя, которому разрешено публиковать и отменять публикацию метаданных.
 
-Allows to configure the user profile allowed to publish and un-publish metadata.
+![](img/metadata-publication.ru.png)
 
--   **Minimum user profile allowed to publish metadata** Minimum user profile allowed to publish metadata (`Reviewer` or `Administrator`). The default value is `Reviewer`.
--   **Minimum user profile allowed to un-publish metadata** Minimum user profile allowed to un-publish metadata (`Reviewer` or `Administrator`). The default value is `Reviewer`.
+## Сборщики
 
-![](img/metadata-publication.png)
+- **Разрешить редактирование записей сбора**: Включает/отключает редактирование собранных записей в каталоге. По умолчанию собранные записи не могут быть отредактированы.
+- **Разрешить изменение привилегий только для собранных записей**: Не включайте редактирование для изменения привилегий. Настройте сборщик данных на добавление новых привелегий к существующим
+- **Отключить протоколирование**: Разделенный запятыми или пробелами список отключенных протоколов сбора. Например: arcsde, csw, filesystem, geonetwork, geonetwork20, geoPREST, oaipmh, ogcwxs, thredds, wfsfeatures
 
-## Harvesting
-
-*Allow editing on harvested records*: Enables/Disables editing of harvested records in the catalogue. By default, harvested records cannot be edited.
+![](img/harvesting.ru.png)
