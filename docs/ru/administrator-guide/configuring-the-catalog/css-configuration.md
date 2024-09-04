@@ -1,13 +1,23 @@
-# Configuring CSS & Style {#css-configuration}
+# Настройка CSS и стилей {#css-configuration}
 
-To get to the CSS & Style configuration, you must be logged on as administrator. Open 'Settings' from the Administration page and select ``CCS & Style`` configuration.
+Чтобы перейти к настройке CSS и стилей, нужно войти в систему как администратор и 
+открыть `Панель админа` --> `Настройки` --> `CSS и стили`.
 
 ![](img/css-screen.png)
 
-This page allows you to change various colors of page elements. Note that 'background' refers to the background color of elements, and 'color' to the font color used in the element. The above configuration will result in the visualization below:
+На этой странице вы можете изменять различные цвета элементов страницы (по умолчанию, большинство из них белые). 
+Обратите внимание, что "фон" относится к цвету фона элементов, а "цвет" - к цвету шрифта, используемого в элементе. 
+Приведенная выше настройка приведет к визуализации, представленной ниже:
 
-![](img/css-result.png)
+![](img/css-результат.png)
 
-There is also an option to link to a background image. When linking to an image, make sure to use (the full web address to) an image from a https source if you're running GeoNetwork in https. Placing the image (upload as logo) on the same server is the best option to prevent potential browser blocks.
+Также есть возможность создать ссылку на фоновое изображение. 
+При создании ссылки на изображение стоит использовать веб-адрес изображения из источника https, 
+если GeoNetwork используется по протоколу https. Размещение изображения (загружаемого в виде логотипа) на том же сервере - 
+лучший способ предотвратить возможные блокировки браузера.
 
-Note that you can save a configuration locally for reuse later or on alternative servers. Saving a configuration will take a long time, because all scripts and styles will be rebuilt from sources. Temporary files are stored on the server in an application folder, you may need to revisit this page after an upgrade the system (or redeploy of a docker container).
+!!! note "Примечание"
+    Можно сохранить конфигурацию локально для последующего использования или на альтернативных серверах. 
+    Сохранение конфигурации займет много времени, поскольку все скрипты и стили будут восстановлены из исходных текстов. 
+    Временные файлы хранятся на сервере в папке приложения и возможно возникнет необходимость вернуться 
+    на эту страницу после обновления системы (или повторного развертывания контейнера docker).
