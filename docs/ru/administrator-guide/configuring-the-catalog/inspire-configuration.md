@@ -1,84 +1,106 @@
-# Configuring for the INSPIRE Directive {#inspire-configuration}
+# Настройка для директивы INSPIRE {#inspire-configuration}
 
-## Enabling INSPIRE
+## Включение INSPIRE
 
-From the **Admin console --> Settings** user can configure INSPIRE directive support.
+В **Панели админа --> Настройки** пользователь может настроить поддержку директивы INSPIRE.
 
-When enabled, the INSPIRE support activate the following:
+При включении поддержка INSPIRE активирует следующее:
 
--   Enable indexing of INSPIRE themes and annexes (INSPIRE themes thesaurus MUST be added to the list of thesaurus from the INSPIRE Registry - see [Managing thesaurus](../managing-classification-systems/managing-thesaurus.md)).
+- Включить индексацию тем и приложений INSPIRE 
+  (тезаурус тем INSPIRE ДОЛЖЕН быть добавлен в список тезаурусов из реестра INSPIRE - 
+  см. [Управление тезаурусом](../managing-classification-systems/managing-thesaurus.md)).
 
-    ![image](img/inspire-configuration.png)
+  ![](img/inspire-configuration.png)
 
-To configure the discovery service, a dedicated service metadata record MUST be created in order to provide a complete GetCapabilities document ([CSW Configuration for INSPIRE](csw-configuration.md#csw-configuration_inspire)).
+Для настройки службы обнаружения НЕОБХОДИМО создать специальную запись метаданных службы, 
+чтобы предоставить полный документ GetCapabilities ([Конфигурация CSW для INSPIRE](csw-configuration.md)).
 
-## Loading INSPIRE codelists
+## Загрузка списков кодов INSPIRE
 
-To describe INSPIRE datasets and series, it is recommended to load relevant codelists from the [INSPIRE Registry](https://inspire.ec.europa.eu/registry/), the following codelists are relevant in the scope of metadata guidelines v2.0:
+Для описания наборов данных и серий INSPIRE рекомендуется загружать соответствующие списки кодов 
+из [Реестра INSPIRE](https://inspire.ec.europa.eu/registry/), следующие списки кодов соответствуют требованиям руководства по метаданным версии 2.0:
 
--   [INSPIRE Theme](https://inspire.ec.europa.eu/theme)
--   [Application schema](https://inspire.ec.europa.eu/applicationschema)
--   [Media types](https://inspire.ec.europa.eu/media-types)
--   Metadata codelist register --> [Protocols](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue)
--   Metadata codelist register --> [Spatial scope](https://inspire.ec.europa.eu/metadata-codelist/SpatialScope)
--   Metadata codelist register --> [INSPIRE priority data set](https://inspire.ec.europa.eu/metadata-codelist/PriorityDataset)
--   Metadata codelist register --> [Spatial Data Service Category](https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory)
--   Metadata codelist register --> [Conditions applying to Access and Use](https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse)
--   Metadata codelist register --> [Limitations on Public Access](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess)
--   Metadata codelist register --> [OnLine Description Code](https://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode)
--   Metadata codelist register --> [Quality of Service Criteria](https://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria)
+- [Тема INSPIRE](https://inspire.ec.europa.eu/theme)
+- [Схема приложения](https://inspire.ec.europa.eu/applicationschema)
+- [Типы носителей](https://inspire.ec.europa.eu/media-types)
+- Реестр кодовых данных -> [Протоколы](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue)
+- Реестр кодовых данных -> [Пространственный охват](https://inspire.ec.europa.eu/metadata-codelist/SpatialScope)
+- Реестр кодовых списков метаданных --> [Набор приоритетных данных INSPIRE](https://inspire.ec.europa.eu/metadata-codelist/PriorityDataset)
+- Реестр кодовых данных метаданных -> [Категория службы пространственных данных](https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory)
+- Реестр кодовых данных метаданных -> [Условия доступа и использования](https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse)
+- Реестр кодовых данных метаданных -> [Ограничения на публичный доступ](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess)
+- Зарегистрировать список кодов метаданных --> [Онлайн-код описания](https://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode)
+- Реестр кодовых списков метаданных -> [Критерии качества обслуживания](https://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria)
 
-From `Admin console` --> `Classification systems` --> `Thesaurus`, administrators can manage thesauri. One of the options is to load a thesaurus straight from the registry.
+Администраторы могут управлять тезаурусами из "Панели админа" -> "Системы классификации" -> "Тезаурус". 
+Одним из вариантов является загрузка тезауруса непосредственно из реестра.
 
-![image](img/inspire-from-registry.png)
+![](img/inspire-from-registry.png)
 
-Click `Use INSPIRE registry` to use the default INSPIRE registry but any instance of the [Registry software](https://joinup.ec.europa.eu/solution/re3gistry) can be used.
+Нажмите "Использовать реестр INSPIRE", чтобы использовать реестр INSPIRE по умолчанию, 
+но можно использовать любой экземпляр [программного обеспечения для ведения реестра](https://joinup.ec.europa.eu/solution/re3gistry).
 
-![image](img/inspire-from-registry-config.png)
+![](img/inspire-from-registry-config.png)
 
-Select one or more languages depending on your needs. Choose a category or directly a thesaurus, depending on the thesaurus. By default the type of thesaurus will be `Theme` but you can adapt it if needed.
+Выберите один или несколько языков в зависимости от потребностей. 
+Выберите категорию или непосредственно тезаурус, в зависимости от тематики тезауруса. 
+По умолчанию тип тезауруса - "Тема", но при необходимости вы можете адаптировать его.
 
-By clicking the `Upload` button the catalogue will contact the registry, download the files for each languages and combined them in a thesaurus in SKOS format supported by the catalogue.
+Нажав на кнопку "Загрузить", каталог свяжется с реестром, загрузит файлы для каждого языка и 
+объединит их в тезаурус в формате SKOS, поддерживаемом каталогом.
 
-User can also use the well known [GEMET thesaurus](https://www.eionet.europa.eu/gemet/en/themes/). Some SKOS format version of the thesaurus are available [here](https://github.com/geonetwork/util-gemet/tree/master/thesauri).
+Пользователь также может использовать хорошо известный [тезаурус GEMET](https://www.eionet.europa.eu/gemet/en/themes/). 
+Некоторые версии тезауруса в формате SKOS доступны [здесь](https://github.com/geonetwork/util-gemet/tree/master/thesauri).
 
-Once loaded, a thesaurus can be used in metadata records to select keywords from:
+После загрузки тезаурус можно использовать в записях метаданных для выбора ключевых слов из:
 
-![image](img/inspire-keyword-editing.png)
+![](img/inspire-keyword-editing.png)
 
-The type of encoding of keywords can be defined using the gear icon (See validation section for more information):
+Тип кодировки ключевых слов можно определить с помощью значка шестеренки (дополнительную информацию смотрите в разделе проверка):
 
-![image](img/inspire-keyword-encoding-type.png)
+![](img/inspire-keyword-encoding-type.png)
 
-Via the schema plugin form configuration it is an option to configure a thesaurus to be used for a specific `or` element. The thesaures concepts are used to populate an auto complete text field for that element.
+С помощью формы настройки плагина schema можно настроить тезаурус, который будет использоваться для определенного элемента "или". 
+Понятия тезауруса используются для заполнения текстового поля автоматического заполнения для этого элемента.
 
-## INSPIRE validation
 
-INSPIRE validation of metadata records is available at [the INSPIRE Validator](https://inspire.ec.europa.eu/validator/about/). It is using [ETF which is an open source testing framework for spatial data and services](https://github.com/etf-validator/etf-webapp). GeoNetwork is able to `te` any record using a service provided by an instance of ETF. To configure remote validation, go to `Admin console` --> `Settings` and set the URL of the validator. The url of the main INSPIRE validator is `https://inspire.ec.europa.eu/validator/`.
+## Проверка INSPIRE
 
-![image](img/inspire-configuration.png)
+Проверка записей метаданных INSPIRE доступна по адресу [the INSPIRE Validator](https://inspire.ec.europa.eu/validator/about/). 
+В нем используется [ETF, который является платформой тестирования пространственных данных и сервисов с открытым исходным кодом](https://github.com/etf-validator/etf-webapp). GeoNetwork может "обработать" любую запись, используя сервис, предоставляемый экземпляром ETF. Чтобы настроить удаленную проверку, перейдите в "Консоль администратора" -> "Настройки" и укажите URL-адрес средства проверки. URL-адрес основного средства проверки INSPIRE - это `https://inspire.ec.europa.eu/validator/`.
 
-Once enabled, the editor will show the remote validation option in the menu:
+![](img/inspire-configuration.png)
 
-![image](img/inspire-validation-menu.png)
+После включения редактор отобразит опцию удаленной проверки в меню:
 
-The standard validate option will use the internal validation system (ie. XSD, Schematron rules for ISO, INSPIRE, \... depending on the configuration). In the internal system the INSPIRE validation is based on INSPIRE Technical guidance version 1.3 and results will be different from ETF reports.
+![](img/inspire-validation-menu.png)
 
-The remote INSPIRE validation will open the validator in a popup. Choose one of the options depending on the level of validation and type of resource to validate. The list of options can be customized in [this configuration file](https://github.com/geonetwork/core-geonetwork/blob/master/services/src/main/resources/config-spring-geonetwork.xml#L61-L94). The configuration is made by selecting one or more test suite from the ETF options:
+Стандартная опция проверки будет использовать внутреннюю систему проверки 
+(т.е. XSD, правила Schematron для ISO, INSPIRE, \... в зависимости от конфигурации). 
+Во внутренней системе проверка INSPIRE основана на техническом руководстве INSPIRE версии 1.3, и результаты будут отличаться от отчетов ETF.
 
-![image](img/inspire-etf-test-configuration.png)
+При удаленной проверке INSPIRE во всплывающем окне откроется средство проверки. 
+Выберите один из вариантов в зависимости от уровня проверки и типа ресурса для проверки. 
+Список параметров можно настроить в [эта конфигурация file](https://github.com/geonetwork/core-geonetwork/blob/master/services/src/main/resources/config-spring-geonetwork.xml#L61-L94). Настройка производится путем выбора одного или нескольких наборов тестов из параметров ETF:
 
-During the validation, the record is sent to the ETF service and processed. Once ETF completes the validation, the catalogue will display a link to the validation report.
+![](img/inspire-etf-test-configuration.png)
 
-![image](img/inspire-validation-report.png)
+Во время проверки запись отправляется в службу ETF и обрабатывается. Как только ETF завершит проверку, в каталоге появится ссылка на отчет о проверке.
 
-Note, that if you are validating a private record, that record will be pushed to the validator. To secure this process we recommend to set up a local (private) installation of the validator.
+![](img/inspire-validation-report.png)
 
-### Configure validation test suites
+Обратите внимание, что если вы проверяете личную запись, эта запись будет передана в средство проверки. 
+Для обеспечения безопасности этого процесса мы рекомендуем настроить локальную (частную) установку средства проверки.
 
-The set of test that runs for each schema can be configured using the file [WEB-INF/config-etf-validator.xml](https://github.com/geonetwork/core-geonetwork/blob/5156bae32d549e6d09cd6a86065791265eb09027/web/src/main/webapp/WEB-INF/config-etf-validator.xml).
+### Настройка наборов тестов для проверки
 
-The list of available test suites are defined in the `inspireEtfValidatorTestsuites` bean. It is a map with an entry for each test suite. The `key` attribute is the name of the test suite. Each map entry is an `array` with the tests to execute in the test suite. The value of each array item (`<value>`)is the test's title written exactly as defined in the remote INSPIRE validator service. For example:
+Набор тестов, выполняемых для каждой схемы, 
+можно настроить с помощью файла [WEB-INF/config-etf-validator.xml](https://github.com/geonetwork/core-geonetwork/blob/5156bae32d549e6d09cd6a86065791265eb09027/web/src/main/webapp/WEB-INF/config-etf-validator.xml).
+
+Список доступных наборов тестов определен в компоненте inspireEtfValidatorTestsuites. 
+Это карта с записью для каждого набора тестов. Атрибут `key` - это название набора тестов. 
+Каждая запись карты представляет собой "массив" с тестами, которые необходимо выполнить в наборе тестов. 
+Значение каждого элемента массива ("<значение>") - это название теста, записанное в точности так, как определено в сервисе удаленной проверки INSPIRE. Например:
 
 ``` xml
 <util:map id="inspireEtfValidatorTestsuites" key-type="java.lang.String" value-type="java.lang.String[]">
@@ -111,19 +133,24 @@ The list of available test suites are defined in the `inspireEtfValidatorTestsui
 </util:map>
 ```
 
-Array's `value-type` attribute must be defined as Java strings: `<array value-type="java.lang.String">`.
+Атрибут `value-type` массива должен быть определен как Java strings: `<тип значения массива="java.lang.Строка">`.
 
-To define which test suites will be executed when using the editor dashboard's INSPIRE validation option you can modify the `inspireEtfValidatorTestsuitesConditions` bean. It's a map with an entry for each schema and test suite to execute. The map entry key attribute must be in the format `SCHEMA_ID::TEST_SUITE_NAME`, where `TEST_SUITE_NAME` is one of the `inspireEtfValidatorTestsuites` map entry key. For each entry you can define a XPath condition that the metadata must pass to be sent to the validator.
+Чтобы определить, какие наборы тестов будут выполняться при использовании опции проверки INSPIRE на панели инструментов редактора, 
+вы можете изменить компонент inspireEtfValidatorTestsuitesConditions. Это карта с записью для каждой схемы и набора тестов, которые необходимо выполнить. 
+Атрибут ключа ввода карты должен быть в формате `SCHEMA_ID::TEST_SUITE_NAME`, 
+где `TEST_SUITE_NAME` является одним из ключей ввода карты `inspireEtfValidatorTestsuites`. 
+Для каждой записи вы можете определить условие XPath, которое должны выполнять метаданные для отправки валидатору.
 
 !!! note
 
-    If a metadata schema doesn't match, the schema dependency hierarchy is checked to verify if any parent schema matches any rules.
+    Если схема метаданных не соответствует, проверяется иерархия зависимостей схемы, 
+    чтобы проверить, соответствует ли какая-либо родительская схема каким-либо правилам.
 
 
 !!! warning
 
-    The Xpath must return a node-set or a node to work. XPaths returning a boolean `true` or `false` value will be interpreted as always matching by GeoNetwork.
-
+    Xpath должен возвращать набор узлов или node для работы. XPaths, возвращающий логическое значение `true` или `false`, 
+    будет интерпретироваться GeoNetwork как всегда совпадающий.
 
 ``` xml
 <util:map id="inspireEtfValidatorTestsuitesConditions">
@@ -142,23 +169,28 @@ To define which test suites will be executed when using the editor dashboard's I
 </util:map>
 ```
 
-## INSPIRE access point
+## Точка доступа INSPIRE
 
-In many cases only a part of the metadata records in a catalog are related to the INSPIRE Directive. In that case, it may be relevant to filter the set of records falling in the scope of the Directive and promote them through a sub portal. In this way a European portal can easily harvest the records related to INSPIRE.
+Во многих случаях только часть записей метаданных в каталоге связана с директивой INSPIRE. 
+В этом случае может оказаться целесообразным отфильтровать набор записей, подпадающих под действие Директивы, и продвигать их через вспомогательный портал. 
+Таким образом, европейский портал может легко собирать записи, относящиеся к INSPIRE.
 
-First define a filtering mechanism to identify the records in the scope of the directive. Frequently used method are:
+Сначала определите механизм фильтрации, чтобы идентифицировать записи, подпадающие под действие директивы. Часто используемый метод:
 
--   Create a group `INSPIRE` and publish those record in that group (or a category).
--   Add a specific keyword in the metadata record.
--   Filter based on the conformance quality report having a reference to the EU directive.
+- Создайте группу "INSPIRE" и опубликуйте эти записи в этой группе (или категории).
+- Добавьте конкретное ключевое слово в запись метаданных.
+- Выполните фильтрацию на основе отчета о качестве соответствия, содержащего ссылку на директиву ЕС.
 
-From the `Admin console` --> `Settings` --> `Sources`, an administrator can create a sub portal. Create a portal `inspire` and set the filter to select only records related to INSPIRE (eg. `+_groupPublished:INSPIRE` to select all records published in group INSPIRE).
+В "Консоли администратора" -> "Настройки" -> "Источники" администратор может создать дополнительный портал. 
+Создайте субпортал `inspire` и установите фильтр для выбора только записей, связанных с INSPIRE (например, "+_group Published:INSPIRE", 
+чтобы выбрать все записи, опубликованные в группе "INSPIRE").
 
-![image](img/inspire-portal.png)
+![](img/inspire-portal.png)
 
-Once saved, the portal is accessible at <http://localhost:8080/geonetwork/inspire> and the CSW service at <http://localhost:8080/geonetwork/inspire/eng/csw>.
+После сохранения портал будет доступен по адресу <http://localhost:8080/geonetwork/inspire>, 
+а служба CSW - по адресу <http://localhost:8080/geonetwork/inspire/eng/csw>.
 
-## INSPIRE reference documents
+## INSPIRE ссылки
 
 -   [INSPIRE IR](https://inspire.ec.europa.eu/)
 -   [INSPIRE Technical Guidelines Metadata v2.0.1](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf)
