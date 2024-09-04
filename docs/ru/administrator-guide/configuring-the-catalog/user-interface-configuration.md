@@ -187,76 +187,83 @@
 
 ![](img/ui-settings-mappage2.ru.png)
 
+### Список предпочитаемых служб OGC
 
-### List of preferred OGC services
+Здесь можно определить службы по умолчанию **wms** и **wmts**, которые будут доступны конечному пользователю по умолчанию. 
+Новые службы можно добавить, нажав синюю кнопку `+` под списком протоколов.
 
-Default **wms** and **wmts** services can be defined here that will be available by default to the end user. New services can be added using the blue `+` button below the protocol lists.
+Вы можете настроить для каждой карты разные слои и проекции.
 
-You can configure each map with different layers and projections.
+- **Проекция карты** Это проекция карты по умолчанию. Убедитесь, что проекция определена в **Проекции для отображения карт**, приведенном ниже.
 
--   **Map Projection** This is the default projection of the map. Make sure the projection is defined in **Projections to display maps into** below.
+- **Список проекций карты для отображения ограничивающих рамок**: Используется на карте при редактировании записи 
+  и определении экстента ограничивающего прямоугольника. Обратите внимание, что координаты будут сохранены в WGS84 независимо от того, 
+  какая проекция использовалась для их отображения.
 
-![](img/ui-settings-mapprojection.png)
+![](img/ui-settings-mapprojection.ru.png)
 
--   **List of map projections to display bounding box coordinates in** This is used in the map when editing a record and defining the bounding box extent. Note that the coordinates will be stored in WGS84 regardless of the projection used to draw them.
+- **Проекции для отображения карт**: Здесь определяются различные проекции, доступные для карты. 
+  Все проекции будут отображаться в инструменте `Переключатель проекций` карты.
 
-![](img/ui-settings-mapprojectionslist.png)
+![](img/ui-settings-mapprojection2.ru.png)
 
--   **Projections to display maps into** This is where the different projections available to the map are defined. All projections will be shown in the `Projection Switcher` tool of the map.
+Чтобы включить новую проекцию, ее необходимо определить здесь, используя синтаксис **proj4js**, 
+который можно найти по адресу <https://proj4js.io>. Дополнительно можно определить размер ограничивающего прямоугольника по умолчанию, 
+максимальный размер ограничивающего прямоугольника и допустимые разрешения (если требуется).
 
-![](img/ui-settings-mapprojection2.png)
+Убедитесь, что введенные координаты указаны в правильных единицах измерения и являются локальными для проекции. 
+Список разрешений актуален только в том случае, если основной слой карты имеет источник XYZ, который не соответствует общепринятому шаблону листов.
 
-In order to enable a new projection it must be defined here using the **proj4js** syntax, which can be found at <https://proj4js.io>. Additionally the default bounding box extent, maximum bounding box extent, and allowed resolutions (if required) can be defined.
+Проверьте правильность этой конфигурации, открыв карту.
 
-Ensure that the coordinates inserted are in the correct units for and are local to the projection. A list of resolutions is only relevant if the main map layer has a XYZ source, which does not follow the common tiling pattern.
+!!! info "Примечание"
 
-Check that this configuration is valid by opening the map.
+    Если конфигурация проекции является неполной или неверной, карта может не загрузиться.
 
-![](img/ui-settings-mapprojection3.png)
+Если определена проекция, которая не поддерживается источником картографического слоя, 
+картографическое приложение перепроектирует изображения карты на стороне клиента. 
+Это может привести к неожиданному поведению, например, к повороту или искажению надписей.
 
-!!! info "Important"
+- **Дополнительные инструменты вьювера карт**: Флажки в этом разделе определяют инструменты, доступные пользователю на правой панели инструментов главной карты. 
+  Элементы, которые не отмечены, не отображаются.
 
-    If the configuration of a projection is incomplete or invalid, the map may fail to load.
+- **Сервис OGC для использования в качестве сетки**: Это необязательно и позволяет использовать внешнюю службу для отображения сетки на карте.
 
+### Параметры вьювера карт
 
-If a projection is defined which is not supported by the source of the map layer, the map application will reproject map images at the client side. This may cause unexpected behaviour, such as rotated or distorted labels.
+Этот раздел предназначен для настройки карты, отображаемой при просмотре записи.
 
--   **Optional Map Viewer Tools** The checkboxes in this section define the tools available to the user in the right toolbar of the main map. Elements that are not checked are not visible.
--   **OGC Service to use as a graticule**: This is optional and allows the use of an external service to display the graticule on the map.
+- **Путь к XML-файлу контекста**: Необязательный путь к XML-файлу, определяющему базовые слои и другие параметры конфигурации. 
+  Пример смотрите в разделе `web/src/main/webapp/WEB-INF/data/data/resources/map/config-viewer.xml`.
 
-### Viewer Map Configuration {#user-interface-config-viewermap}
+- **Экстент в текущей проекции**: Используйте эту опцию, чтобы переопределить экстент, определенный в контекстном файле.
 
-This section is for configuring the map shown when viewing a record.
+![](img/ui-settings-mapviewer.ru.png)
 
--   **Path to the context file (XML)**: An optional path to an XML file defining base layers and other configuration options. See `web/src/main/webapp/WEB-INF/data/data/resources/map/config-viewer.xml` for an example.
--   **Extent, expressed in current projection**: Use this option to override the extent defined in the context file.
-
-![](img/ui-settings-mapviewer.png)
-
--   **Layer objects in JSON**: Define additional layers to be shown on the map using JSON syntax. The supported types are:
-    -   **wms**: generic WMS layer, required properties: `name, url`.
-    -   **wmts**: generic WMTS layer, required properties: `name, url`.
-    -   **tms**: generic TMS layer, required property: `url`.
-    -   **osm**: OpenStreetMap default layer, no other property required.
-    -   **stamen**: Stamen layers, required property: `name`.
-    -   **bing_aerial**: Bing Aerial background, required property: `key` containing the license key.
+- **Объекты слоев в JSON**: Определяют дополнительные слои, которые будут отображаться на карте, используя синтаксис JSON. Поддерживаемые типы:
+    - **wms**: общий слой WMS, обязательные свойства: `имя, URL`.
+    - **wmts**: общий слой WMTS, обязательные свойства: "имя, url".
+    - **tms**: общий слой TMS, обязательное свойство: `url`.
+    - **osm**: слой OpenStreetMap по умолчанию, никаких других свойств не требуется.
+    - **stamen**: Слои с тычинками, обязательное свойство: "название".
+    - **bing_aerial**: фон с воздушными изображениями Bing, обязательное свойство: "ключ", содержащий лицензионный ключ.
 
 ![](img/ui-settings-mapviewerlayers.png)
 
-All layers can also have some optional extra properties:
+Все слои также могут иметь некоторые необязательные дополнительные свойства:
 
--   **title** The title/label of the layer.
--   **projectionList** Projection array to restrict this layer to certain projections on the map.
+- **заголовок** Заголовок/метка слоя.
+- **ProjectionList** Массив проекций, позволяющий ограничить этот слой определенными проекциями на карте.
 
-Examples of layers:
+Примеры слоев:
 
-This layer will use OpenStreetMap Stamen style, but only when the map is in `EPSG:3857`:
+В этом слое будет использоваться стиль OpenStreetMap Stamen, но только если карта находится в формате `EPSG:3857`:
 
 ``` json
 {"type":"stamen","projectionList":["EPSG:3857"]}
 ```
 
-This WMS layer will be shown but only when the map is on `EPSG:4326`:
+Этот WMS-слой будет показан, но только если на карте указан `EPSG:4326`:
 
 ``` json
 {"type":"wms","title":"OI.OrthoimageCoverage","name":"OI.OrthoimageCoverage",
@@ -264,62 +271,64 @@ This WMS layer will be shown but only when the map is on `EPSG:4326`:
 "projectionList":["EPSG:4326"]}
 ```
 
-### Search Map Configuration
+### Параметры карты поиска
 
-This section defines the configuration for the mini map shown on the search page. It uses the same options as in [Viewer Map Configuration](user-interface-configuration.md#user-interface-config-viewermap).
+В этом разделе определяется конфигурация мини-карты, отображаемой на странице поиска. 
+В ней используются те же параметры, что и в [Настройка карты просмотра](user-interface-configuration.md).
 
-### Editor Map Configuration
+### Настройка карты редактора
 
-This section defines the configuration for the map shown when editing a record. It uses the same options as in [Viewer Map Configuration](user-interface-configuration.md#user-interface-config-viewermap).
+В этом разделе определяется конфигурация карты, отображаемой при редактировании записи. 
+В нем используются те же параметры, что и в [Настройка карты для просмотра](user-interface-configuration.md).
 
-## Gazetteer
+## Газеттер (географический справочник)
 
--   **Gazetteer**: If enabled a gazetteer will be shown in the top left of the main map.
--   **Application URL**: Set the application URL used for the gazetteer. In general this should be left as the default, but additional filtering can be applied using the syntax described at <https://www.geonames.org/export/geonames-search.html>, for example to restrict results to a particular country (`country=FR`).
+- **Газеттер**: Если он включен, географический справочник будет отображаться в левом верхнем углу главной карты.
+- **URL приложения**: Укажите URL приложения, используемый для справочника. 
+  В общем случае, это следует оставить по умолчанию, но можно применить дополнительную фильтрацию, 
+  используя синтаксис, описанный в <https://www.geonames.org/export/geonames-search.html>, 
+  например, для ограничения результатов по конкретной стране (`country=FR`).
 
-![](img/ui-settings-gazzetteer.png)
+![](img/ui-settings-gazzetteer.ru.png)
 
-## Record View
+## Просмотр записей
 
--   **Record view**:
--   **Show Social bar**: If enabled the social bar (links to facebook, twitter etc) are enabled in record view.
+- **Показывать панель социальных сетей**: Если включена функция, 
+  в режиме просмотра записей отображается панель социальных сетей (ссылки на facebook, Twitter и т.д.).
 
-## Editor Application
+## Приложение-редактор
 
--   **Editor application**: If enabled the editor page, or contribute tab is available to users with the appropriate privileges. If not enabled the contribute tab is not shown in the top toolbar.
--   **Application URL**: This is the URL to the editor application and can generally be left as the default.
--   **Only my records**: If this checkbox is enabled then the "Only my records" checkbox in the editor dashboard will be checked by default.
--   **Display filters in dashboard**: If enabled, the currently selected facets will be shown above the search results in both the editor dashboard the batch editor page.
--   **Fluid container for the Editor**: If enabled, the editor application will have a full width container. If disabled it will have a fixed width and centered container.
--   **New metadata page layout**: Choose from the options for the layout of the `add new metadata` page. The default is `Horizontal` but a vertical layout can be chosen, or a custom layout based on a supplied template.
--   **Editor page indent type**: Choose from the options for the indent style when editing a record. The default is for minimal indents, select `Colored indents` to use the style shown below:
+- **Приложение редактора**: Если оно включено, страница "Редактор" или вкладка "Участие" доступны пользователям с соответствующими привилегиями. 
+  Если не включено, вкладка "Участие" не отображается на верхней панели инструментов.
 
-![](img/ui-settings-indent.png)
+- **URL приложения**: Это URL-адрес приложения editor, который обычно можно оставить по умолчанию.
 
-## Admin console
+- **Только мои записи**: Если этот флажок установлен, то флажок "Только мои записи" на панели инструментов редактора будет установлен по умолчанию.
 
--   **Admin console**:
--   **Application URL**: Set the application URL for the admin console. In general this should be left as the default.
+- **Отображать теги фильтров в панели**: Если включено, выбранные в данный момент фасеты будут отображаться над результатами поиска 
+  как на панели инструментов редактора, так и на странице пакетного редактора.
 
-## Sign in application
+- **Контейнер страницы Редактор**: Если включено, приложение editor будет иметь полноразмерный контейнер. 
+  Если этот параметр отключен, он будет иметь фиксированную ширину и центрированный контейнер.
 
--   **Sign in application**:
--   **Application URL**: Set the application URL for the sign in page. In general this should be left as the default.
+- **Ориентация страницы**: Выберите один из вариантов макета страницы `добавить новые метаданные`. 
+  По умолчанию используется "Горизонтальный", но можно выбрать вертикальный макет или пользовательский макет на основе предоставленного шаблона.
 
-## Sign out application
+- **Абзац страницы редактора**: Выберите один из вариантов стиля отступа при редактировании записи. 
+  По умолчанию используются минимальные отступы.
 
--   **Application URL**: Set the application URL for the sign out. In general this should be left as the default.
+![](img/ui-settings-indent.ru.png)
 
-## Search application
+## Консоль администратора
 
--   **Search application**:
--   **Application URL**: Set the application URL for the search page. In general this should be left as the default.
+- **Консоль администратора**:
+- **URL приложения**: Задайте URL приложения для консоли администратора. В общем, это следует оставить по умолчанию.
+- **Конфигурация фасетов**: Эта конфигурация используется для отображения сгруппированных фасетов метаданных. 
 
-## JSON Configuration
+## Аутентификация
 
-This section shows the JSON configuration for the currently applied User Interface settings. From here, the json can be saved to a file (by copying and pasting).
+- **Аутентификация**:
+- **URL-адрес приложения для входа в каталог**: Укажите URL приложения для страницы входа. В целом, это значение следует оставить по умолчанию.
+- **URL-адрес приложения для выхода из каталога**: Укажите URL приложения для выхода из системы. Как правило, это значение следует оставить по умолчанию.
 
--   **Test client configuration**: Click this button to test the configuration in a new browser tab.
--   **Reset configuration**: Click this button to reset the configuration back to the default. Note that this will revert any changes you have made in the above page.
-
-![](img/ui-settings-json.png)
+![](img/ui-settings-auth.ru.png)
