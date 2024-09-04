@@ -1,21 +1,23 @@
-# Map servers configuration for geopublication {#map-server-configuration}
+# Настройка картографических серверов для публикации 
 
-To publish information from the catalog as OGC services (WMS, WFS, WCS), catalog administrator need to register one or more map servers to publish on. Map servers MUST support the GeoServer REST API in order to work with the catalog. The 2 following implementations have been tested:
+Чтобы опубликовать информацию из каталога в виде сервисов OGC (WMS, WFS, WCS), 
+администратору каталога необходимо зарегистрировать один или несколько картографических серверов для публикации. 
+Картографические серверы ДОЛЖНЫ поддерживать GeoServer REST API для работы с каталогом. Были протестированы 2 следующие реализации:
 
--   [GeoServer](https://geoserver.org)
--   [Mapserver](https://mapserver.org) and [Mapserver REST API](https://github.com/neogeo-technologies/mra)
+- [GeoServer](https://geoserver.org)
+- [Mapserver](https://mapserver.org) и [Mapserver REST API](https://github.com/neogeo-technologies/mra).
 
-Setup you map server and then register it from the administration interface:
+Настройте свой картографический сервер, а затем зарегистрируйте его в административном интерфейсе:
 
 ![](img/geopublication-add-mapserver.png)
 
-The following parameters are required:
+Необходимы следующие параметры:
 
--   Name: The map server label which will be displayed when geopublishing information.
--   Description: The map server description.
--   REST API configuration: The URL of the service providing access to the remote configuration using the REST API.
--   Username and password to be used to connect to the REST API.
--   Workspace prefix and URL: The workspace information in which data will be pushed into.
--   WMS/WFS/WCS service URL: URLs of services which will be used when adding references to the services in the metadata record after publication.
+- Название: Метка картографического сервера, которая будет отображаться при публикации информации о геопубликациях.
+- Описание: Описание картографического сервера.
+- Конфигурация REST API: URL-адрес службы, предоставляющей доступ к удаленной конфигурации с использованием REST API.
+- Имя пользователя и пароль, которые будут использоваться для подключения к REST API.
+- Префикс рабочей области и URL-адрес: информация о рабочей области, в которую будут помещаться данные.
+- URL сервиса WMS/WFS/WCS: URL-адреса сервисов, которые будут использоваться при добавлении ссылок на сервисы в запись метаданных после публикации.
 
-See [Publishing GIS data in a map server](../../user-guide/workflow/geopublication.md).
+Смотрите [Публикация ГИС-данных на картографическом сервере] (../../руководство пользователя/рабочий процесс/geopublication.md).
