@@ -1,87 +1,106 @@
-# Portal configuration
+# Настройка порталов
 
-Portals can be configured under the `sources` section in `admin console` --> `settings`.
+Порталы можно настроить в `Панель админа` --> `Настройки` --> `Источники`.
 
-![](img/portal-access.png)
+![](img/portal-access.ru.png)
 
-There are 3 types of sources:
+Существует 3 типа источников:
 
--   the main catalogue,
--   sub-portal, which can be a subset of the main catalogue
--   harvesters.
+- Основной каталог (соответствует текущей установке). 
+
+- Сборщики данных (харвестеры). При сборе данных с другого узла GeoNetwork также собираются данные из целевого каталога, 
+  чтобы отслеживать истинное происхождение записей. Это относится только к протоколам GeoNetwork, 
+  использующим MEF ([Формат обмена метаданными (MEF)](../../annexes/mef-format.md)), которые содержат информацию исходного каталога.
+
+- Субпортал, который может быть частью основного каталога. Его настройка описана ниже.
 
 ![](img/portal-types.png)
 
-The main catalogue corresponds to the current installation.
+## Создание субпортала
 
-When harvesting, at least one source is created to represent the harvester. When harvesting from another GeoNetwork node, sources from the target catalogue are also harvested to keep track of the true origin of records. This only applies to the GeoNetwork protocols which use MEF ([Metadata Exchange Format (MEF)](../../annexes/mef-format.md)) which contain the source catalogue information.
+Субпорталы можно использовать ориентируясь только на подмножество определённых записей.
 
-The last type is sub-portal, which is described in details below.
-
-## Configuring a sub-portal
-
-Sub-portals can be used to create a space in the main catalogue only focusing on a subset of records.
-
-A sub-portal is defined by:
+Выберите `+ Добавить портал `, чтобы создать новый субпортал. Откроется окно:
 
 ![](img/portal-subportal.png)
 
-When creating a sub-portal with an identifier `ìnspire` for example, a new entry point on your catalogue will be available: <http://localhost:8080/geonetwork/inspire/>. Accessing the catalogue through it will only provide access to records matching the filter defined for this sub-portal. The `search filter` parameter value uses the Lucene query parser syntax (see <http://lucene.apache.org/java/2_9_1/queryparsersyntax.html>) and is applied to all searches.
+Например, при создании субпортала с идентификатором "inspire" будет доступна новая точка входа в каталог: <http://localhost:8080/geonetwork/inspire/>. 
+Доступ к каталогу через него обеспечит доступ только к записям, соответствующим фильтру, определенному для этого подпортала. 
+Значение параметра "фильтр поиска" использует синтаксис анализатора запросов Lucene (см. <http://lucene.apache.org/java/2_9_1/queryparsersyntax.html>) 
+и применяется ко всем поисковым запросам.
 
-User privileges apply as in the main instance.
+Права пользователя применяются так же, как и в основном экземпляре.
 
-The logo and name of the sub-portal will be displayed instead of the main instance information in case the option `Display in the portal switcher` is selected:
+Логотип и название субпортала будут отображаться вместо основной информации об экземпляре, если выбрана опция "Отображать в переключателе портала":
 
 ![](img/portal-header.png)
 
-A CSW service is also available for this sub-portal <http://localhost:8080/geonetwork/inspire/eng/csw> (and replacing the virtual CSW feature).
+Для этого субпортала также доступна служба CSW <http://localhost:8080/geonetwork/inspire/eng/csw> (которая заменяет функцию виртуальной CSW).
 
-A sub-portal can also use a specific user interface configuration.
+Субпортал также может использовать определенную конфигурацию пользовательского интерфейса.
 
-The list of sub-portal available is at <http://localhost:8080/geonetwork/srv/api/sources>
+Список доступных субпорталов приведен по адресу <http://localhost:8080/geonetwork/srv/api/sources>
 
 ![](img/portal-list.png)
 
-## Example of usage
 
-### Creating an INSPIRE directive sub-portal
+## Пример использования
 
-For the INSPIRE directive, a catalogue administrator needs to publish an entry point providing access only to INSPIRE related records. An INSPIRE sub-portal can be created with a filter on keywords `+thesaurusName:"GEMET - INSPIRE themes, version 1.0"`.
+### Создание субпортала директивы INSPIRE
 
-### Creating a sub-portal for partners
+Для директивы INSPIRE администратору каталога необходимо опубликовать точку входа, предоставляющую доступ только к связанным с INSPIRE записям. 
+Субпортал INSPIRE можно создать с помощью фильтра по ключевым словам "+название тезауруса: "Темы GEMET - INSPIRE, версия 1.0"".
 
-Some organizations need to open the catalogue to a set of partners. In such cases, each partner generally accesses the catalogue and creates their records in dedicated groups. A good example is <https://www.geocat.ch/> providing a main search filter `catalogue`.
+### Создание подпортала для партнеров
+
+Некоторым организациям необходимо открыть каталог для нескольких партнеров. 
+В таких случаях каждый партнер, как правило, получает доступ к каталогу и создает свои записи в специальных группах. 
+Хорошим примером является <https://www.geocat.ch/> предоставление основного поискового фильтра `каталог`.
 
 ![](img/portal-geocatch.png)
 
-The concept of a sub-portal allows the possibility of creating a dedicated URL for each partner. The header can contain the partner identification with name and logo. Optionally the user interface can also be customized (see [User Interface Configuration](user-interface-configuration.md)).
+Концепция субпортала предусматривает возможность создания специального URL-адреса для каждого партнера. 
+Заголовок может содержать идентификацию партнера с указанием имени и логотипа. 
+При желании пользовательский интерфейс также может быть настроен (см. [Настройка пользовательского интерфейса](user-interface-configuration.md)).
 
-To setup this kind of configuration, the basic principle is to have:
+Чтобы настроить такую конфигурацию, основным принципом является наличие:
 
--   One group for each partner with one or more users
--   One sub-portal for each partner with a filter matching records in that group
+- Одной группы для каждого партнера с одним или несколькими пользователями
+- Одного субпортала для каждого партнера с фильтром, соответствующим записям в этой группе
 
-To configure this, apply the following steps:
+Чтобы настроить это, выполните следующие действия:
 
--   Create a group for the partner eg. `oca` (see [Creating group](../managing-users-and-groups/creating-group.md)).
--   Create at least one user for the partner (see [Creating user](../managing-users-and-groups/creating-user.md)). The user must be member of the group `oca`. If you want the user to be able to configure the sub-portal (eg. change the name, choose a logo), the user must have at least the `UserAdmin` profile for the group `oca`.
--   Create a sub-portal. This can have the same name as the group, eg. `oca` but this is not essential. The filter can be created using the fact that a record published in the group `oca` should be in this sub-portal, using the syntax `+_groupPublished:oca`. Once created the sub-portal is accessible at <http://localhost:8080/geonetwork/oca>.
--   (Optional) Link the sub-portal to a user admin group to allow `UserAdmin` to configure their sub-portal.
+- Создайте группу для партнера, например группа `A` (см. [Создание группы](../managing-users-and-groups/creating-group.md)).
 
-With this type configuration, ie. one partner = one group = one sub-portal and users are only member of one group, then when connecting to a partner sub-portal:
+- Создайте хотя бы одного пользователя для партнера (см. [Создание пользователя](Creating user](../managing-users-and-groups/creating-user.md)). 
+  Пользователь должен быть членом группы `A`. Если нужно, чтобы пользователь мог настраивать подпортал (например, изменять название, выбирать логотип), 
+  у пользователя должен быть как минимум профиль "UserAdmin" для группы `A`.
+ 
+- Создайте cубпортал. Он может иметь то же название, что и группа, например, "A", но это не обязательно. 
+  Фильтр можно создать, используя тот факт, что запись, опубликованная в группе "A", должна быть на этом подпортале, 
+  используя синтаксис "+_groupPublished:A". После создания подпортал доступен по адресу <http://localhost:8080/geonetwork/oca>.
 
--   user will only see records published in that group in the entire application
--   when creating new records, no group selection is provided because user is member of one group only
+- (Необязательно) Свяжите подпортал с группой администраторов пользователей, чтобы разрешить "UserAdmin" настраивать свой cубпортал.
+
+При такой конфигурации, т.е. один партнер = одна группа = один cубпортал, и
+пользователи являются членами только одной группы, тогда при подключении к cубпорталу партнера:
+
+- пользователь будет видеть только записи, опубликованные в этой группе, во всем приложении
+- при создании новых записей выбор группы не предусмотрен, поскольку пользователь является членом только одной группы
 
 ![](img/portal-oca-newrecord.png)
 
-Remember that a record is visible in the `oca` sub-portal because it is published in the group `oca`:
+Помните, что запись видна на cубпортале "A", потому что она опубликована в группе "A":
 
 ![](img/portal-oca-privileges.png)
 
-If the `publish` operation is removed from `oca` group, then records will not longer be visible in that sub-portal.
+Если операция "публикация" будет удалена из группы "A", то записи больше не будут отображаться на этом cубпортале.
 
-In some situations, you also want to share templates among partners. There are 2 options for this:
+В некоторых ситуациях есть необходимость поделиться шаблонами между партнерами. Для этого есть 2 варианта:
 
--   Publish the template in all partner's groups. The main drawback in this case is that if a new group is added, the templates need to be published to that new group.
--   Create a dedicated group for shared records eg. `sharedGroup`. Publish templates in that shared space. Alter the sub-portal filter to match either the partner group or the shared one. `+_groupPublished:(oca OR sharedGroup)`.
+- Опубликовать шаблон во всех группах партнеров. 
+  Основным недостатком в этом случае является то, что при добавлении новой группы шаблоны должны быть опубликованы в этой новой группе.
+
+- Создайте специальную группу для общих записей, например. `sharedGroup`. 
+  Опубликуйте шаблоны в этом общем пространтве. Измените фильтр субпортала, чтобы он соответствовал либо партнерской группе,
+  либо общей группе. `+_groupPublished:(A ИЛИ sharedGroup)`.
