@@ -1,69 +1,82 @@
-# Configuring CSW {#csw-configuration}
+# Настройка CSW
 
-To get to the CSW server configuration, you must be logged on as administrator first. Open 'Settings' from the Administration page and select CSW Server configuration.
+Чтобы перейти к настройке сервера CSW, нужно войти в систему как администратор и 
+открыть `Панель админа` --> `Настройки` --> `CSW`.
 
-![](img/csw.png)
+![](img/csw.ru.png)
 
-The CSW service provides a description of itself, the human who administers it, and other information through a `es` request (eg. <http://localhost:8080/geonetwork/srv/en/csw?request=GetCapabilities&service=CSW&version=2.0.2>). This form allows you to configure the CSW server and fill out some of the properties returned in response to a GetCapabilities request.
+Служба CSW предоставляет описание информацию о своих настройках посредством запроса `es` 
+(например, <http://localhost:8080/geonetwork/srv/en/csw?request=GetCapabilities&service=CSW&version=2.0.2>). 
+Такой способ позволяет настроить сервер CSW и заполнить некоторые свойства, возвращаемые в ответ на запрос GetCapabilities.
 
-Configuration options:
+## Параметры конфигурации
 
--   *CSW Enabled*: By default CSW endpoint is enabled, but it can be disabled.
+- **CSW включен**: По умолчанию конечная точка CSW включена, но ее можно отключить.
 
-    ![](img/csw-off.png)
+- **Запись для настройки ответа GetCapabilities**: Выберите запись, которая будет использоваться для настройки ответа GetCapabilities. 
+  Если таковой нет, создайте запись метаданных сервиса (используя стандарты ISO19139 или 19115-3). 
+  Чтобы иметь ответ на запрос об основных параметрах запрашиваемого сервиса, обеспечте заголовок, аннотацию, контакт, ключевые слова, ограничения. 
+  Если нужно соответствие требованиям INSPIRE, также правильно укажите основной и дополнительные языки записи, темы и соответствие INSPIRE
 
-    The Open Geospatial Catalogue Service for the Web (OGC-CSW) service, is a self-describing service that allows query, update and insertion of metadata records.
+- **Вставленные метаданные являются общедоступными**: По умолчанию метаданные, вставленные с помощью операций сбора данных CSW и транзакций CSW, 
+  недоступны для публичного просмотра. Пользователь с соответствующими правами доступа может сделать это после операций сбора данных CSW и транзакций CSW, 
+  но это не всегда удобно. Если этот параметр установлен, все метаданные, вставленные с помощью операций сбора данных CSW и транзакции CSW, 
+  будут доступны для общего просмотра.
 
--   *Record to use for GetCapabilities*: The capabilities document is created using the record selected here.
+- **Создать элемент, если он не существует при использовании XPath в транзакции CSW**: Если флажок не установлен, можно обновлять только существующие элементы.
 
--   *Inserted metadata is public*: By default, metadata inserted with the CSW Harvest and CSW Transaction operations is not publicly viewable. A user with the appropriate access rights could do this after the CSW Harvest and CSW Transaction operations, but this is not always convenient. If this option is checked all metadata inserted using the CSW Harvest and CSW Transaction operations will be publicly viewable.
+## Запись сервисных метаданных 
 
--   *Create element if it does not exist when using XPath in CSW transaction.*: If not checked, only existing elements can be updated.
+Для создания пользовательских возможностей рекомендуется создать специальную запись служебных метаданных (используя стандарты ISO19115-3 или ISO19139). 
+Эта запись используется для создания документа о возможностях с использованием шаблона `web/src/main/webapp/xml/csw/capabilities.xml`.
 
-## Service Metadata Record {#csw-configuration_service_record}
+При создании такой записи для создания возможностей будет использоваться следующая информация:
 
-In order to create a custom capabilities, it is recommended to create a dedicated service metadata record (using ISO19115-3 or ISO19139 standards). This record is used to build the capabilities document using the template `web/src/main/webapp/xml/csw/capabilities.xml`.
+- название
+- аннотация
+- ключевые слова
+- сборы (из поля "Распределение" -> "Инструкции по заказу")
+- Ограничения доступа (из поля Ограничения доступа -> Другие ограничения)
+- Контакт (из поля Идентификация -> Первый контакт)
 
-When creating such record, the following information will be used to create the capabilities:
+Служебная запись ДОЛЖНА быть общедоступной.
 
--   title
--   abstract
--   keywords
--   fees (from Distribution --> ordering instructions field)
--   Access constraints (from Access constraints --> Other constraints field)
--   Contact (from Identification --> First point of contact)
-
-The service record MUST be public.
-
-If an error occurred while building the capabilities document from the service record, a WARNING is reported using a comment and the default capabilities is used:
+Если при создании документа о возможностях из служебной записи произошла ошибка, выдается предупреждение с комментарием и используются возможности по умолчанию.:
 
 ![](img/csw-error.png)
 
-## CSW Configuration for INSPIRE {#csw-configuration_inspire}
+## Настройка CSW для INSPIRE {#csw-конфигурация_inspire}
 
-If your catalogue also focus on INSPIRE (see [Configuring for the INSPIRE Directive](inspire-configuration.md)), it may be relevant to also populate the following to properly configure your discovery service:
+Если каталог также ориентирован на INSPIRE (см. [Настройка для директивы INSPIRE](inspire-configuration.md)), 
+может быть целесообразным также заполнить следующие поля, чтобы правильно настроить службу обнаружения:
 
--   metadata language (+ additional languages if any) (use for SupportedLanguages, DefaultLanguage)
--   INSPIRE themes
--   temporal coverage
--   metadata contact
--   metadata conformity regarding Commission regulation 1089/2010
+- язык метаданных (+ дополнительные языки, если таковые имеются) (используется для поддерживаемых языков, язык по умолчанию)
+- Темы для вдохновения
+- временной охват
+- контакты по метаданным
+- соответствие метаданных регламенту Комиссии 1089/2010
 
-With this information the CSW can be validated using the INSPIRE validator.
+С помощью этой информации CSW может быть проверен с помощью средства проверки INSPIRE.
 
-## CSW post processing
+## Последующая обработка CSW
 
-In some situation, user may want to modify XML encoding of records when retrieved using CSW. For example:
+В какой-то ситуации пользователь может захотеть изменить XML-кодировку записей при извлечении с помощью CSW. Например:
 
--   to make record more consistent
--   to adapt encoding in order to validate records with INSPIRE rules (eg. as a workaround for workaround for <https://github.com/inspire-eu-validation/community/issues/95>)
+- чтобы сделать запись более согласованной
+- адаптировать кодировку для проверки записей с помощью правил INSPIRE 
+  (например, в качестве обходного пути для <https://github.com/inspire-eu-validation/community/issues/95>)
 
-For this, user can add extra conversion step during output of GetRecords and GetRecordById operation:
+Для этого пользователь может добавить дополнительный шаг преобразования во время вывода операций GetRecords и GetRecordById:
 
--   Adding post process to srv/eng/csw by creating for each output schema a file eg. for gmd, present/csw/gmd-csw-postprocessing.xsl
--   Adding post process to a portal inspire/eng/csw by creating for each output schema a file eg. for gmd, present/csw/gmd-inspire-postprocessing.xsl
+- Добавление процесса post в srv/eng/csw путем создания для каждой выходной схемы файла. 
+  Например для gmd укажите/csw/gmd-csw-postprocessing.xsl
+- Добавление постобработки на портал inspire/eng/csw путем создания файла для каждой выходной схемы. 
+  Например, для gmd /csw/gmd-inspire-postprocessing.xsl
 
-For a portal INSPIRE, create an "inspire" portal in the admin --> settings --> sources. User can then setup a post processing phase for the INSPIRE CSW of the portal. Create a post processing file gmd-inspire-postprocessing.xsl in yourschema/present/csw folder. The following example, remove contact with no email and link not starting with HTTP to conform to INSPIRE validator rules.
+Для создания портала INSPIRE создайте портал "inspire" в разделе `Панель админа` --> `Настройки` --> `Источники`. 
+Затем пользователь может настроить этап последующей обработки для CSW портала INSPIRE. 
+Создайте файл постобработки gmd-inspire-postprocessing.xsl в вашей папке schema/present/csw. 
+В следующем примере удалите контакт без электронной почты и ссылку, начинающуюся не с HTTP, чтобы соответствовать правилам проверки INSPIRE.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -99,7 +112,7 @@ For a portal INSPIRE, create an "inspire" portal in the admin --> settings --> s
 </xsl:stylesheet>
 ```
 
-The service can be tested with:
+Сервис может быть протестирован с помощью bash-скрипта:
 
 ``` shell
 curl 'http://localhost:8080/geonetwork/inspire/eng/csw' \
