@@ -1,9 +1,15 @@
-# Managing categories
+# Управление категориями
 
-GeoNetwork has a concept of categories that can be assigned to metadata documents, but these are not represented in the metadata. So when the metadata is exported, the category will be lost. You can use these categories to separate documents into groups, without changing the actual content of the metadata. Categories can be used to filter a search result, or limit the output of a custom csw endpoint.
+В GeoNetwork есть концепция категорий, которые могут быть назначены документам с метаданными, но они не представлены в метаданных. 
+Таким образом, при экспорте метаданных категория будет потеряна. 
+Пользователь может использовать эти категории для разделения документов на группы без изменения фактического содержимого метаданных. 
+Категории можно использовать для фильтрации результатов поиска или ограничения вывода пользовательской конечной точки csw.
 
-To assign a category to a metadata document. Go to the metadata modification form and select the requested category from the pull down in the menu. Then save your metadata.
+Чтобы присвоить категорию документу с метаданными. Перейдите в форму изменения метаданных и выберите требуемую категорию из выпадающего меню. 
+Затем сохраните свои метаданные.
 
-To modify the available categories in the catalog, from the admin page, open the "classification systems" and then the "category" tab.
+Чтобы изменить доступные категории в каталоге, на странице администратора откройте "системы классификации", а затем вкладку "категория".
 
-Note: If you add or modify categories, they may not obtain an appropriate icon. These icon are managed in `/catalog/style/gn_icons.less`. In this file category-classes are mapped to font-awesome variables that map to a certain [font-awesome icon](https://fontawesome.io).
+Примечание: Если будут добавлены или изменены категории, они могут не иметь соответствующего значка. 
+Эти значки управляются в "/catalog/style/gn_icons.less". В этом файле классы категорий сопоставляются с переменными font-awesome, 
+которые сопоставляются с определенным [значком font-awesome](https://fontawesome.io).
