@@ -1,32 +1,36 @@
-# Управление стандартами метаданных
+# Managing metadata standards
 
-Записи метаданных в GeoNetwork описываются схемой. 
-Схема определяет структуру записи метаданных и предоставляет все вспомогательные данные и функции для использования схемы в GeoNetwork.
+Metadata records in GeoNetwork are described by a schema. The schema sets out the structuring of the metadata record and provides all the ancillary data and functions to use the schema in GeoNetwork.
 
-Возможность подключения схемы метаданных была введена в GeoNetwork 2.8.0. В версии 3.0.0 возможности плагинов были расширены, 
-чтобы облегчить тот факт, что плагины могут содержать java-код.
+A metadata schema plugin capability was introduced in GeoNetwork 2.8.0. In 3.0.0 the plugin capability was expanded to facilitate the fact that plugins can contain java-code.
 
-!!! warning
+!!! note
 
-    Добавление в GeoNetwork неправильной или недействительной схемы метаданных может привести к серьезной поломке вашего экземпляра GeoNetwork. 
-    Этот раздел предназначен для администраторов каталога, которые хорошо разбираются в схемах метаданных и понимают различные технологии, связанные со схемой метаданных GeoNetwork.
+    Adding a metadata schema to GeoNetwork that is incorrect or invalid can thoroughly break your GeoNetwork instance. This section is for catalogue administrators who are confident about metadata schemas and understand the different technologies involved with a GeoNetwork metadata schema.
 
 
-Подробное описание того, что представляет собой схема метаданных для GeoNetwork, можно найти в Руководстве для разработчиков GeoNetwork. 
-В этом разделе описывается, как получить доступ к функциям добавления, обновления и удаления схемы и как эти функции следует использовать.
+A detailed description of what constitutes a metadata schema for GeoNetwork can be found in the GeoNetwork Developers Manual. This section will describe how to access the schema add, update and delete functions and how those functions should be used.
 
-!!! warning
+!!! note
 
-    Схемы метаданных должны быть тщательно протестированы в экземпляре разработки GeoNetwork **до** того, 
-    как они будут развернуты в производственном экземпляре. Ошибки в плагине схемы (особенно в XSLT представления) 
-    могут сделать ваш экземпляр GeoNetwork непригодным для использования.
+    Metadata schemas should be thoroughly tested in a development instance of GeoNetwork **before** they are deployed in a production instance. Errors in a schema plugin (particularly in the presentation XSLTs) may make your GeoNetwork instance unusable.
 
+
+## Adding a schema
+
+To add a metadata schema to the catalog, a rebuild of the sources is required. In a source-code tree there are 4 actions to be done in the settings (database).
+
+-   Place the schema-folder in /schemas
+
+-   Verify and if compatible update the version of GeoNetwork (parent) referenced from the pom.xml file in the schema plugin.
+
+-   Add a reference in /schemas/pom.xml to the newly added schema
 
     ``` xml
     <module>{myschema}</module>
     ```
 
-- Добавьте ссылки на только что добавленную схему в /web/pom.xml
+-   Add references to the newly added schema in /web/pom.xml
 
     ``` xml
     <dependency>
@@ -36,7 +40,7 @@
     </dependency>
     ```
 
--   и
+-   and
 
     ``` xml
     <resource>
@@ -45,4 +49,4 @@
     </resource>
     ```
 
-Затем постройте и разверните свой экземпляр GeoNetwork.
+Then Build and deploy your instance of GeoNetwork.

@@ -1,30 +1,27 @@
-# Настройка уровней проверки {#configure-validation}
+# Configuring validation levels {#configure-validation}
 
-Каждый стандарт определяет уровни проверки. Перейдите в `Администрирование` --> `Стандарты и шаблоны` --> `Проверки`. 
-(с помощью schematron - см. раздел [Использование плагинов схемы](../../customizing-application/implementing-a-schema-plugin.md)). 
-По умолчанию ISO19139 предлагает проверку с использованием:
+Each standard defines validation levels (using schematron - see [Implementing schema plugins](../../../customizing-application/implementing-a-schema-plugin.md)). By default, ISO19139 proposes validation using:
 
-- правила ISO
-- правила INSPIRE (TG v1.3)
-- Правила GeoNetwork (только для многоязычных записей)
-- Проверка URL
+-   ISO rules
+-   INSPIRE rules (TG v1.3)
+-   GeoNetwork rules (only related to multilingual records)
+-   URL checker
 
-Все уровни будут применяться по умолчанию при проверке, а интерфейс администратора позволяет настраивать правила:
+All levels will be applied by default during validation and the admin interface allows customization if a rule:
 
-- является обязательным для проверки (будет отображаться зеленым/красным цветом в зависимости от статуса)
-- только для информации (будет отображаться синим цветом)
-- игнорируется.
+-   is required to be valid (will be reported in green/red depending on the status)
+-   is for information only (will be reported in blue)
+-   is ignored.
 
-![](img/validation-level.ru.png)
+![](img/validation-level.png)
 
-Также можно задать условия, чтобы применять правила только к определенным записям. Условие может быть определено на:
+Also conditions can be set to only apply rules to specific records. The condition can be defined on:
 
-- XPath
-- группа
-- Профиль пользователя
-- Ключевое слово
+-   XPath
+-   Group
+-   User profile
+-   Keyword
 
-Например, [geocat.ch](https://www.geocat.ch/) определяет для профиля GM03 ISO19139 правила в зависимости от групп (т. е. партнеров) 
-и типа набора данных, например, базовых геоданных.
+For example, [geocat.ch](https://www.geocat.ch/) defines for the GM03 ISO19139 profile rules depending on groups (ie. partners) and the type of dataset eg. a basic geodata.
 
 ![](img/validation-level-example.png)

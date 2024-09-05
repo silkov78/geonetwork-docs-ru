@@ -22,4 +22,4 @@
 
 Администраторы каталога могут настроить процесс проверки записи метаданных, чтобы она автоматически проводилась каждый раз, 
 когда пользователь-редактор выходит или закрывает интерфейс редактирования метаданных (см. раздел [Конфигурация системы](../../administrator-guide/configuring-the-catalog/system-configuration.md)), 
-а также настроить уровни проверки (см. [Настройка уровней проверки](../../administrator-guide/managing-metadata-standards/configure-validation.md)). В случае записей INSPIRE можно использовать удаленный валидатор (инструмент проверки) (см. [Валидация INSPIRE](../../administrator-guide/configuring-the-catalog/inspire-configuration.md#inspire-validation)).
+а также настроить уровни проверки (см. [Настройка уровней проверки](../../../en/administrator-guide/managing-metadata-standards/configure-validation.md)). В случае записей INSPIRE можно использовать удаленный валидатор (инструмент проверки) (см. [Валидация INSPIRE](../../administrator-guide/configuring-the-catalog/inspire-configuration.md#inspire-validation)).

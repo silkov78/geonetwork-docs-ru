@@ -3,7 +3,7 @@
 -   [Конфигурация католога](configuring-the-catalog/index.md)
 -   [Управление типами пользователей и группами](managing-users-and-groups/index.md)
 -   [Управление системами классификаций](managing-classification-systems/index.md)
--   [Управление метаданными и шаблонами](managing-metadata-standards/index.md)
+-   [Управление метаданными и шаблонами](../../en/administrator-guide/managing-metadata-standards/index.md)
 
 ![](img/admin.png)
 

@@ -3,7 +3,7 @@
 -   [Configuring the catalog](configuring-the-catalog/index.md)
 -   [Managing users and groups](managing-users-and-groups/index.md)
 -   [Managing classification system](managing-classification-systems/index.md)
--   [Managing metadata & template](managing-metadata-standards/index.md)
+-   [Managing metadata & template](../../administrator-guide/managing-metadata-standards/index.md)
 
 ![](img/admin.png)
 

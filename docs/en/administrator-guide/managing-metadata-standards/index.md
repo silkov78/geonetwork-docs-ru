@@ -1,5 +1,5 @@
-# Управление метаданными и шаблонами {#metadata-and-template}
+# Managing metadata & template {#metadata-and-template}
 
-- [Управление стандартами метаданных](standards.md)
-- [Настройка уровней проверки](configure-validation.md)
-- [Настройка идентификатора метаданных](metadata-identifier.md)
+-   [Managing metadata standards](standards.md)
+-   [Configuring validation levels](configure-validation.md)
+-   [Configuring metadata identifier](metadata-identifier.md)
