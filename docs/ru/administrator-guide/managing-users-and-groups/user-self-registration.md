@@ -1,107 +1,119 @@
-# User Self-Registration {#user_self_registration}
+# Самостоятельная регистрация пользователя {#user_self_registration}
 
-To enable the self-registration functions, see [System configuration](../configuring-the-catalog/system-configuration.md). When self-registration is enabled, for users that are not logged in, an additional link is shown on the login page:
+Чтобы включить функции саморегистрации, см. раздел [Настройки системы](../configuring-the-catalog/system-configuration.md). 
+Если саморегистрация включена, для пользователей, не вошедших в систему, на странице входа в систему отображается дополнительная ссылка:
 
 ![](img/selfregistration-start.png)
 
-Click the `Create an account` button and fill out the registration form:
+Нажмите кнопку `Создать учетную запись` и заполните регистрационную форму:
 
 ![](img/selfregistration-form.png)
 
-The fields in this form are self-explanatory except for the following:
 
--   **Email**: The user's email address. This is mandatory and will be used as the username.
--   **Profile**: By default, self-registered users are given the `Registered User` profile (see previous section). If any other profile is selected:
-    -   the user will still be given the `Registered User` profile
-    -   an email will be sent to the Email address nominated in the Feedback section of the 'System Administration' menu, informing them of the request for a more privileged profile
+Поля в этой форме не требуют пояснений, за исключением следующих:
 
-## What happens when a user self-registers?
+- **Email**: Адрес электронной почты пользователя. Он является обязательным и будет использоваться в качестве имени пользователя.
+- **Профиль**: По умолчанию самостоятельно зарегистрированным пользователям присваивается профиль `Зарегистрированный пользователь` (см. предыдущий раздел). 
+  Если выбран любой другой профиль:
+    - пользователю все равно будет присвоен профиль `Зарегистрированный пользователь
+    - на адрес электронной почты, указанный в разделе «Обратная связь» меню «Администрирование системы», 
+      будет отправлено письмо с уведомлением о запросе на более привилегированный профиль
+  
+## Что происходит, когда пользователь самостоятельно регистрируется?
 
-When a user self-registration occurs, the user receives an email with the new account details that looks something like the following:
+Когда происходит саморегистрация пользователя, он получает письмо с данными новой учетной записи, которое выглядит примерно следующим образом:
 
-    Dear User,
+    Уважаемый пользователь,
 
-    Your registration at The Greenhouse GeoNetwork Site was successful.
+    Ваша регистрация на сайте The Greenhouse GeoNetwork прошла успешно.
 
-    Your account is:
-    username :    dubya.shrub@greenhouse.gov
-    password :    0110O3
-    usergroup:    GUEST
-    usertype :    REGISTEREDUSER
+    Ваша учетная запись:
+    имя пользователя : dubya.shrub@greenhouse.gov
+    пароль : 0110O3
+    группа пользователей:    GUEST
+    тип пользователя :    ЗАРЕГИСТРИРОВАННЫЙ ПОЛЬЗОВАТЕЛЬ
 
-    You've told us that you want to be "Editor", you will be contacted by our office soon.
+    Вы сообщили нам, что хотите стать «Редактором», и в ближайшее время с вами свяжется наш офис.
 
-    To log in and access your account, please click on the link below.
+    Чтобы войти в систему и получить доступ к своему аккаунту, пожалуйста, нажмите на ссылку ниже.
     http://greenhouse.gov/geonetwork
 
-    Thanks for your registration.
+    Спасибо за регистрацию.
 
-    Yours sincerely,
-    The team at The Greenhouse GeoNetwork Site
+    Искренне ваш,
+    Команда сайта The Greenhouse GeoNetwork
 
-Notice that the user has requested an 'Editor' profile. As a result an email will be sent to the Email address nominated in the Feedback (see [Feedback](../configuring-the-catalog/system-configuration.md#system-config-feedback)) section of the `System Administration` menu which looks something like the following:
+Обратите внимание, что пользователь запросил профиль «Редактор». В результате на адрес электронной почты, 
+указанный в разделе Обратная связь (см. [Обратная связь](../configuring-the-catalog/system-configuration.md#system-config-feedback)) 
+меню `Администрирование системы`, будет отправлено письмо, которое выглядит следующим образом:
 
-Notice also that the user has been added to the built-in user group 'GUEST'. This is a security restriction. An administrator/user-administrator can add the user to other groups if that is required later.
+Обратите внимание, что пользователь был добавлен во встроенную группу пользователей 'GUEST'. 
+Это ограничение безопасности. Администратор/пользователь-администратор может добавить пользователя в другие группы, если это потребуется позже.
 
-If you want to change the content of this email, you should modify `xslt/service/account/registration-pwd-email.xsl`.
+Если нужно изменить содержимое этого письма, вам следует модифицировать `xslt/service/account/registration-pwd-email.xsl`.
 
-    Dear Admin,
+    Уважаемый администратор,
 
-        Newly registered user dubya.shrub@greenhouse.gov has requested "Editor" access for:
+        Недавно зарегистрированный пользователь dubya.shrub@greenhouse.gov запросил доступ «Редактор» для:
 
         Instance:     The Greenhouse GeoNetwork Site
-        Url:          http://greenhouse.gov/geonetwork
+        Url: http://greenhouse.gov/geonetwork
 
-        User registration details:
+        Регистрационные данные пользователя:
 
-        Name:         Dubya
-        Surname:      Shrub
-        Email:        dubya.shrub@greenhouse.gov
-        Organisation: The Greenhouse
-        Type:         gov
-        Address:      146 Main Avenue, Creationville
-        State:        Clerical
-        Post Code:    92373
-        Country:      Mythical
+        Имя:         Дубья
+        Фамилия: Кустарник
+        Email: dubya.shrub@greenhouse.gov
+        Организация: Теплица
+        Тип: государственная организация
+        Адрес:      146 Мэйн Авеню, Креавилль
+        Штат:        Канцелярский
+        Почтовый индекс:    92373
+        Страна:      Мифическая
 
-    Please action.
+    Пожалуйста, действуйте.
 
-    The Greenhouse GeoNetwork Site
+    Сайт геосети «Теплица
 
-If you want to change the content of this email, you should modify `xslt/service/account/registration-prof-email.xsl`.
+Если нужно изменить содержимое этого письма, вам следует модифицировать `xslt/service/account/registration-prof-email.xsl`.
 
-## The 'Forgot your password?' function
 
-This function allows users who have forgotten their password to request a new one. Go to the sign in page to access the form:
+## Функция «Забыли пароль?
+
+Эта функция позволяет пользователям, забывшим свой пароль, запросить новый. Перейдите на страницу входа в систему, чтобы получить доступ к форме:
 
 ![](img/password-forgot.png)
 
-For security reasons, only users that have the `Registered User` profile can request a new password.
+В целях безопасности только пользователи, имеющие профиль `Зарегистрированный пользователь`, могут запросить новый пароль.
 
-If a user takes this option they will receive an email inviting them to change their password as follows:
+Если пользователь воспользуется этой возможностью, он получит письмо с предложением сменить пароль следующего содержания:
 
-    You have requested to change your Greenhouse GeoNetwork Site password.
+    Вы запросили изменение пароля к сайту Greenhouse GeoNetwork.
 
-    You can change your password using the following link:
+    Вы можете изменить свой пароль, перейдя по следующей ссылке:
 
     http://localhost:8080/geonetwork/srv/en/password.change.form?username=dubya.shrub@greenhouse.gov&changeKey=635d6c84ddda782a9b6ca9dda0f568b011bb7733
 
-    This link is valid for today only.
+    Эта ссылка действительна только сегодня.
 
-    Greenhouse GeoNetwork Site
+    Сайт GeoNetwork Greenhouse
 
-The catalog has generated a changeKey from the forgotten password and the current date and emailed that to the user as part of a link to a change password form.
 
-If you want to change the content of this email, you should modify `xslt/service/account/password-forgotten-email.xsl`.
 
-When the user clicks on the link, a change password form is displayed in their browser and a new password can be entered. When that form is submitted, the changeKey is regenerated and checked with the changeKey supplied in the link, if they match then the password is changed to the new password supplied by the user.
+Каталог сгенерировал changeKey из забытого пароля и текущей даты и отправил его пользователю в виде ссылки на форму изменения пароля.
 
-The final step in this process is a verification email sent to the email address of the user confirming that a change of password has taken place:
+Если нужно изменить содержимое этого письма, вам следует модифицировать `xslt/service/account/password-forgotten-email.xsl`.
 
-    Your Greenhouse GeoNetwork Site password has been changed.
+Когда пользователь нажимает на ссылку, в его браузере отображается форма смены пароля, в которую можно ввести новый пароль. 
+Когда форма отправлена, changeKey регенерируется и сверяется с changeKey, указанным в ссылке, и если они совпадают, 
+то пароль меняется на новый, указанный пользователем.
 
-    If you did not change this password contact the Greenhouse GeoNetwork Site helpdesk
+Последним шагом в этом процессе является отправка проверочного письма на адрес электронной почты пользователя, подтверждающего, что смена пароля произошла:
 
-    The Greenhouse GeoNetwork Site team
+    Ваш пароль к сайту Greenhouse GeoNetwork был изменен.
 
-If you want to change the content of this email, you should modify `xslt/service/account/password-changed-email.xsl`.
+    Если вы не изменили этот пароль, обратитесь в службу поддержки сайта Greenhouse GeoNetwork.
+
+    Команда сайта Greenhouse GeoNetwork
+
+Если вы хотите изменить содержимое этого письма, следует модифицировать `xslt/service/account/password-changed-email.xsl`.
