@@ -1,5 +1,5 @@
-# Managing classification system
+# Управление системой классификации
 
--   [Managing categories](managing-categories.md)
--   [Managing directories](managing-directories.md)
--   [Managing thesaurus](managing-thesaurus.md)
+- [Управление категориями](managing-categories.md)
+- [Управление каталогами](managing-directories.md)
+- [Управление тезаурусом](managing-thesaurus.md)
