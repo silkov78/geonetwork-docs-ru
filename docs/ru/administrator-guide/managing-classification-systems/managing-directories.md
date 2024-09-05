@@ -1,8 +1,10 @@
-# Managing directories
+# Управление подшаблонами
 
-The catalog supports metadata records that are composed from fragments of metadata. The idea is that the fragments of metadata can be used in more than one metadata record.
+Каталог поддерживает записи метаданных, которые состоят из фрагментов метаданных. 
+Идея заключается в том, что фрагменты метаданных могут использоваться более чем в одной записи метаданных.
 
-Here is a typical example of a fragment. This is a responsible party and it could be used in the same metadata record more than once or in more than one metadata record if applicable.
+Вот типичный пример фрагмента. Это ответственная сторона, и она может использоваться в одной и 
+той же записи метаданных более одного раза или в нескольких записях метаданных, если это применимо.
 
 ``` xml
 <gmd:CI_ResponsibleParty xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
@@ -21,61 +23,71 @@ Here is a typical example of a fragment. This is a responsible party and it coul
 </gmd:CI_ResponsibleParty>
 ```
 
-Metadata fragments that are saved in the catalogue database are called subtemplates. This is mainly for historical reasons as a subtemplate is like a template metadata record in that it can be used as a 'template' for constructing a new metadata record.
+Фрагменты метаданных, которые сохраняются в базе данных каталога, называются **подшаблонами**. 
+В основном это делается по историческим причинам, так как подшаблон подобен шаблонной записи метаданных, 
+поскольку он может быть использован в качестве «шаблона» для создания новой записи метаданных.
 
-Fragments can be inserted in metadata record in 2 modes:
+Фрагменты могут быть вставлены в запись метаданных двумя способами:
 
--   by copy/paste
--   by link (if xlink support is enabled. See [Metadata XLink](../configuring-the-catalog/system-configuration.md#xlink_config))
+- копированием/вставкой
+- по ссылке (если включена поддержка xlink. См. [Metadata XLink](../configuring-the-catalog/system-configuration.md#xlink_config)).
 
-When using XLinks, if the fragment is updated, then the related fragment in all metadata records will also be updated (check the XLink cache).
+При использовании XLinks, если фрагмент обновляется, то связанный с ним фрагмент во всех записях метаданных также будет обновлен (проверьте кэш XLink).
 
-Fragments may be created by harvesting (see [Harvesting Fragments of Metadata to support re-use](../../user-guide/harvesting/index.md#harvesting_fragments)) or imported using the metadata import page.
+Фрагменты могут быть созданы путем сбора 
+(см. [Сбор фрагментов метаданных для поддержки повторного использования](../../user-guide/harvesting/index.md#harvesting_fragments)) 
+или импортированы с помощью страницы импорта метаданных.
 
-This section of the manual describes:
+В этом разделе руководства описано:
 
--   how to manage directories of subtemplates
--   how to extract fragments from an existing set of metadata records and store them as subtemplates
--   how to manage the fragment cache used to speed up access to fragments that are not in the local catalogue
+- как управлять каталогами подшаблонов
+- как извлекать фрагменты из существующего набора записей метаданных и сохранять их в виде подшаблонов
+- как управлять кэшем фрагментов, используемым для ускорения доступа к фрагментам, которых нет в локальном каталоге
 
-## Managing Directories of subtemplates
+## Управление каталогами подшаблонов
 
-There are some differences between the handling of subtemplates and metadata records. Unlike metadata records, subtemplates do not have a consistent root element, the metadata schema they use may not be recognizable, they do not appear in the main search results (unless they are part of a metadata record). Therefore, the editor board allows you to search and manage privileges for directory entries.
+Существуют некоторые различия между работой с подшаблонами и записями метаданных. 
+В отличие от записей метаданных, подшаблоны не имеют согласованного корневого элемента, 
+используемая ими схема метаданных может быть нераспознаваема, они не появляются в основных результатах поиска 
+(если только не являются частью записи метаданных). Поэтому панель редактора позволяет искать и управлять привилегиями для записей каталогов.
 
 ![](img/directories-search.png)
 
-From the editor board, choose `Manage directory` to access the editor for directory entries:
+На панели редактора выберите `Управление каталогом`, чтобы получить доступ к редактору записей каталога:
 
 ![](img/directories-manager.png)
 
-If you do not see the `Organizations and Contacts` tab then ensure that you have created subtemplates for contacts for your metadata profile, and that you have loaded them using the `Metadata and Templates` section.
+Если вкладку `Организации и контакты` не видно, убедитесь, что были созданы подшаблоны для контактов для своего профиля метаданных 
+и были загружены их с помощью раздела `Метаданные и шаблоны`.
 
-From this page, editors can choose a type of directory using the top tabs, edit/remove/import new subtemplates.
+На этой странице редакторы могут выбрать тип каталога с помощью верхних вкладок, редактировать/удалять/импортировать новые подшаблоны.
 
-To import new entries, use the metadata import page and choose the appropriate type of record:
+Для импорта новых записей используйте страницу импорта метаданных и выберите соответствующий тип записи:
 
 ![](img/directories-import.png)
 
-Like metadata records, they are allocated an integer id and are stored in the catalog metadata table (with template field set to "y").
+Как и записям метаданных, им присваивается целочисленный идентификатор, и они хранятся в таблице метаданных каталога (с полем шаблона, установленным на «y»).
+## Вставьте запись каталога в запись метаданных
 
-## Insert a directory entry in a metadata record
-
-From the metadata editor, the directory can be used to populate contacts for example.
+В редакторе метаданных каталог можно использовать, например, для заполнения контактов.
 
 ![](img/directories-editor-popup.png)
 
-Open the directory selector, choose a contact and then choose the contact role.
+Откройте селектор каталогов, выберите контакт, а затем выберите роль контакта.
 
 ![](img/directories-editor-popupopen.png)
 
-## Extracting subtemplates from metadata records
+## Извлечение вложенных шаблонов из записей метаданных
 
-Many sites have existing metadata records with common information eg. contact information in an ISO CI_Contact element. Directory entries such as these can be extracted from a selected set of metadata records using the "Extract subtemplates" API.
+На многих сайтах уже существуют записи метаданных с общей информацией, например. контактная информация в элементе ISO CI_Contact. 
+Записи каталога, подобные этим, могут быть извлечены из выбранного набора записей метаданных с помощью API "Extract subtemplates".
 
-To use this function the following set of steps should be followed:
+Чтобы использовать эту функцию, необходимо выполнить следующий набор действий:
 
--   Make sure you understand what an XPath is - see <http://www.w3schools.com/xpath/default.asp> for example.
--   Identify fragments of metadata that they would like to manage as reusable subtemplates in the metadata record. This can be done using an XPath. eg. the XPath `.//gmd:CI_ResponsibleParty` identifies all responsible party in a records. An example of such a fragment (taken from one of the sample records) is shown in the following example:
+- Убедитесь, что вы понимаете, что такое XPath - смотрите, например, <http://www.w3schools.com/xpath/default.asp>.
+- Определить фрагменты метаданных, которыми они хотели бы управлять как подтемплатами повторного использования в записи метаданных. 
+  Это можно сделать с помощью XPath. например, XPath `.//gmd:CI_ResponsibleParty` определяет всю ответственную сторону в записи. 
+  Пример такого фрагмента (взятого из одной из выборочных записей) показан в следующем примере:
 
 ``` xml
 <gmd:CI_ResponsibleParty xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco">
@@ -131,66 +143,80 @@ To use this function the following set of steps should be followed:
 </gmd:CI_ResponsibleParty>
 ```
 
--   Identify and record the XPath of a field or fields within the fragment which text content will be used as the id of the subtemplate. This XPath should be relative to the root element of the fragment identified in the previous step. So for example, in the fragment above we could choose `.//gmd:electronicMailAddress/gco:CharacterString/text()` as the id for the fragments to be created.
--   On the API page, choose the registries / collect operation:
+
+- Определите и запишите XPath к полю или полям фрагмента, текстовое содержимое которых будет использоваться в качестве идентификатора подшаблона. 
+  Этот XPath должен быть относительным к корневому элементу фрагмента, определенному на предыдущем шаге. 
+  Например, в приведенном выше фрагменте мы можем выбрать `.//gmd:electronicMailAddress/gco:CharacterString/text()` 
+  в качестве идентификатора для создаваемых фрагментов.
+
+- На странице API выберите операцию registries / collect:
 
 ![](img/directories-api-collect.png)
 
--   Fill in the form with the information collected in the previous steps.
--   Extracted subtemplates can be previewed using the GET mode and once validated, use the PUT method to save results in the catalog.
+- Заполните форму информацией, собранной на предыдущих шагах.
+- Извлеченные подшаблоны можно предварительно просмотреть с помощью режима GET, а после проверки использовать метод PUT для сохранения результатов в каталоге.
 
-Finally, go to the subtemplate directory management interface and you should be able to select the root element of your subtemplates to examine the extracted subtemplates.
+Наконец, перейдите в интерфейс управления каталогом подшаблонов, 
+и вы сможете выбрать корневой элемент ваших подшаблонов, чтобы просмотреть извлеченные подшаблоны.
 
-Subtemplate indexing is based on the schema (see index-fields folder for details). Currently ISO19139 index subtemplates using as root element:
+Индексирование подшаблонов основано на схеме (подробности см. в папке index-fields). 
+В настоящее время ISO19139 индексирует подшаблоны, используя в качестве корневого элемента:
 
--   gmd:CI_ResponsibleParty
--   gmd:MD_Distribution
--   gmd:CI_OnlineResource
--   gmd:EX_Extent
+- gmd:CI_ResponsibleParty
+- gmd:MD_Distribution
+- gmd:CI_OnlineResource
+- gmd:EX_Extent
 
-In ISO19115-3
+В стандарте ISO19115-3
 
--   cit:CI_Responsibility
--   *[mdq:result]
--   gex:EX_Extent
+- cit:CI_Responsibility
+- *[mdq:result]
+- gex:EX_Extent
 
-Other configuration examples to collect:
+Другие примеры конфигурации для сбора:
 
--   Parties in ISO19115-3
-    -   `xpath`: `.//cit:CI_Responsibility`
-    -   `identifierXpath`: `.//cit:electronicMailAddress/*/text()`
--   Quality specifications in ISO19115-3
-    -   `xpath`: `.//*[mdq:result]`
-    -   `identifierXpath`: `.//cit:title/*/text()`
--   Extent in ISO19115-3
-    -   `xpath`: `.//gex:EX_Extent`
-    -   `identifierXpath`: `concat(.//gex:westBoundLongitude/*/text(), ', ', .//gex:eastBoundLongitude/*/text(), ', ', .//gex:southBoundLatitude/*/text(), ', ',.//gex:northBoundLatitude/*/text())` or `gex:description/*/text()`
--   Constraints in ISO19115-3
-    -   `xpath`: `.//mri:resourceConstraints/*`
+- Стороны в ISO19115-3
+    - `xpath`: `.//cit:CI_Responsibility`
+    - `identifierXpath`: `.//cit:electronicMailAddress/*/text()`.
+- Спецификации качества в стандарте ISO19115-3
+    - `xpath`: `.//*[mdq:result]`
+    - `identifierXpath`: `.//cit:title/*/text()`
+- Экстент в ISO19115-3
+    - `xpath`: `.//gex:EX_Extent`
+    - `identifierXpath`: `concat(.//gex:westBoundLongitude/*/text(), ', ', .//gex:eastBoundLongitude/*/text(), ', ', .//gex:southBoundLatitude/*/text(), ', ', .//gex:northBoundLatitude/*/text())` или `gex:description/*/text()`.
+- Ограничения в ISO19115-3
+    - `xpath`: `.//mri:resourceConstraints/*`
 
-## Synchronizing subtemplates with metadata records
 
-Once created, the catalog provides the capability to synchronize metadata records with directory entries. For this, use the API testing page.
+## Синхронизация подшаблонов с записями метаданных
 
-The synchronize process use the same parameters as the collecting process with 2 optionals arguments:
+После создания каталог предоставляет возможность синхронизировать записи метаданных с записями каталога. Для этого используйте страницу тестирования API.
 
--   `propertiesToCopy` to preserve some element which may be defined in the fragment in the metadata (eg. contact role)
--   `substituteAsXLink` to indicate if copy/paste mode or XLink mode should be used.
+Процесс синхронизации использует те же параметры, что и процесс сбора, с двумя дополнительными аргументами:
+
+- `propertiesToCopy` для сохранения некоторого элемента, который может быть определен во фрагменте в метаданных (например, роль контакта)
+- `substituteAsXLink`, чтобы указать, следует ли использовать режим копирования/вставки или режим XLink.
 
 ![](img/directories-api-synch.png)
 
-## Managing the fragment cache
+## Управление кэшем фрагментов
 
-If metadata records in your catalog link in fragments from external sites, the catalog caches these fragments after the first look up so as to reduce the amount of network traffic and speed up the display of metadata records in search results.
+Если записи метаданных в вашем каталоге содержат фрагменты ссылок с внешних сайтов, 
+каталог кэширует эти фрагменты после первого поиска, чтобы уменьшить объем сетевого трафика 
+и ускорить отображение записей метаданных в результатах поиска.
 
-The cache is handled automatically using the Java Cache System (JCS). JCS handles large caches intelligently by:
+Кэш обрабатывается автоматически с помощью системы кэширования Java (JCS). JCS интеллектуально обрабатывает большие кэши, определяя:
 
--   defining a maximum number of cached objects
--   using as much main memory as possible before moving to secondary storage (disk)
--   providing cache persistence: the cache is saved to disk when the web application is shutdown and restores the cache from disk when restarting
+- определения максимального количества кэшируемых объектов
+- использования максимально возможного объема оперативной памяти перед переходом на вторичное хранилище (диск)
+- обеспечения постоянства кэша: кэш сохраняется на диск при завершении работы веб-приложения и восстанавливается с диска при перезапуске.
 
-You can configure JCS parameters in GeoNetwork using the JCS configuration file in **INSTALL_DIR/web/geonetwork/WEB-INF/classes/cache.ccf**.
+Настроить параметры JCS в GeoNetwork можно с помощью файла конфигурации JCS в **INSTALL_DIR/web/geonetwork/WEB-INF/classes/cache.ccf**.
 
-Some operations in the catalog (such as harvesting) that generate metadata fragments, will automatically refresh the XLink cache when a new fragment is generated. However, if you are linking fragments from an external site, then depending on how often the change, you will need to manually refresh the XLink cache. To do this you should navigate to the Administration page and select the "Clear XLink Cache and Rebuild Index of Records with XLinks" function as highlighted in the following screenshot of the "Administration" page.
+Некоторые операции в каталоге (например, сбор урожая), генерирующие фрагменты метаданных, 
+будут автоматически обновлять кэш XLink при генерации нового фрагмента. Однако если фрагменты будут связаны с внешнего сайта, 
+то, в зависимости от частоты изменений, придется вручную обновлять кэш XLink. 
+Для этого необходимо перейти на страницу администрирования и выбрать функцию «Очистить кэш XLink и перестроить индекс записей с XLinks»,
+как показано на следующем скриншоте страницы «Администрирование».
 
 ![](img/directories-cache.png)
