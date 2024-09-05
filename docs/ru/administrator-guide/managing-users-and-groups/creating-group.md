@@ -1,28 +1,27 @@
-# Creating group
+# Создание группы
 
-The administrator can create new groups of users. User groups could correspond to logical units within an organisation, for example `es`, `re`, `nd`, `er`, `th` and so on.
+Администратор может создавать новые группы пользователей.
 
-To create new groups you should be logged on with an account that has administrative privileges.
+Для создания новых групп нужно войти в систему как администратора.
 
-1.  Select the *Administration* button in the menu. On the Administration page, select *Group management*.
+1. Перейдите по `Администрирование` --> `Группы пользователя` --> `Управлять группами`.
 
-2.  Select *Add a new group*. You may want to remove the *Sample* group;
+2. Нажмите на кнопку `Новая группа`.
 
-3.  Fill out the details. The email address will be used to send feedback on data downloads when they occur for resources that are part of the Group.
+3. Заполните данные. Адрес электронной почты будет использоваться для отправки отзывов о загрузках данных,
+    когда они будут происходить для ресурсов, входящих в группу.
 
-    !!! warning
+    !!! warning 
 
-        The Name should *NOT* contain spaces! You can use the Localization panel to provide localized names for groups.
+        В названии не должно быть пробелов! Можно использовать панель локализации, чтобы указать локализованные названия для групп.
 
+4. Нажмите *Сохранить*
 
-4.  Click *Save*
+Права доступа могут быть установлены для каждой записи метаданных. Можно определить права доступа для каждой группы.
 
-Access privileges can be set per metadata record. You can define privileges on a per Group basis.
+Права доступа, которые можно установить, касаются видимости метаданных (*Публикация*), загрузки данных, 
+доступа к интерактивной карте и отображения записи в разделе "Избранное" на домашней странице.
 
-Privileges that can be set relate to visibility of the Metadata (*Publish*), data *Download*, *Interactive Map* access and display of the record in the *Featured* section of the home page.
+*Редактирование* определяет группы, для которых редакторы могут редактировать запись метаданных.
 
-*Editing* defines the groups for which editors can edit the metadata record.
-
-*Notify* defines what Groups are notified when a file managed by GeoNetwork is downloaded.
-
-Below is an example of the privileges management table related to a dataset.
+*Уведомлять* определяет, какие группы будут уведомлены при загрузке файла, управляемого GeoNetwork.
