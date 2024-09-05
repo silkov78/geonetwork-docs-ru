@@ -1,46 +1,72 @@
-# Managing thesaurus
+# Управление тезаурусом
 
-## Introduction
+## Введение
 
-A thesaurus is a list of concepts from a specialized field of knowledge. In a metadata catalog, concepts from a thesaurus can be assigned to a metadata record (as keywords) as a way of associating it with one or more concepts from a field of knowledge. For example, a record may be assigned a keyword 'AGRICULTURE - Crops' meaning that the record describes a resource or activity relating to crops in the field of Agriculture. It's a good practice to look for existing thesauri before creating your own thesaurus.
+Тезаурус - это список понятий из специализированной области знаний. 
+В каталоге метаданных понятиям из тезауруса может быть присвоена запись метаданных (в виде ключевых слов), 
+чтобы связать их с одним или несколькими понятиями из области знаний. 
+Например, записи может быть присвоено ключевое слово "СЕЛЬСКОЕ ХОЗЯЙСТВО - сельскохозяйственные культуры", 
+что означает, что запись описывает ресурс или деятельность, связанные с сельскохозяйственными культурами. 
+Рекомендуется ознакомиться с существующими тезаурусами, прежде чем создавать свой собственный тезаурус.
 
-In GeoNetwork, the process of assigning keywords to a metadata record takes place in the metadata editor. The user can choose concepts from one or more thesauri to associate the record with the concepts described by those concepts. This process is supported for both ISO19115/19139 and dublin core metadata records using an thesaurus picker.
+В GeoNetwork процесс присвоения ключевых слов записи метаданных выполняется в редакторе метаданных. 
+Пользователь может выбрать понятия из одного или нескольких тезаурусов, чтобы связать запись с понятиями, описываемыми этими понятиями. 
+Этот процесс поддерживается как для записей метаданных ISO19115/19139, 
+так и для записей метаданных dublin core с использованием средства выбора тезауруса.
 
-Concepts within a field of knowledge or in different fields of knowledge may be related or even be equivalent. For example, in a thesaurus describing geographic regions, the Australian state of 'Tasmania' is a specialization of the country of Australia. As an example of overlapping concepts in different fields, a thesaurus describing science activities in the field of global change may have concepts relating to agricultural activities that will be equivalent to terms from a thesaurus that describes the themes used in a map series.
+Понятия в рамках одной области знаний или в разных областях знаний могут быть связаны или даже эквивалентны. 
+Например, в тезаурусе, описывающем географические регионы, австралийский штат "Тасмания" является специализацией страны Австралия. 
+В качестве примера совпадающих концепций в разных областях, тезаурус, описывающий научную деятельность в области глобальных изменений, 
+может содержать концепции, относящиеся к сельскохозяйственной деятельности, которые будут эквивалентны терминам из тезауруса, 
+описывающего темы, используемые в серии карт.
 
-In GeoNetwork, thesauri are represented as SKOS (<http://www.w3.org/TR/skos-reference>) and stored in an application/xml+rdf encoding. SKOS captures concepts and relationships between concepts. SKOS thesauri can be imported from standalone files or they can be generated from ISO19135 register records in a GeoNetwork catalog. ISO19135 (more on this below) not only captures the concepts and relationships between the concepts, but (amongst other things) how the concepts have evolved and most importantly, who has contributed to and managed the evolution of the concepts and the thesauri itself.
+В GeoNetwork тезаурусы представлены в виде SKOS (<http://www.w3.org/TR/skos-reference>) 
+и хранятся в кодировке application/xml+rdf. SKOS отображает понятия и взаимосвязи между понятиями. 
+Тезаурусы SKOS могут быть импортированы из отдельных файлов или сгенерированы из записей реестра ISO19135 в каталоге GeoNetwork. 
+Стандарт ISO19135 (подробнее об этом ниже) описывает не только концепции и взаимосвязи между концепциями, 
+но и (среди прочего) то, как развивались концепции и, что наиболее важно, кто вносил свой вклад в эволюцию концепций и самого тезауруса и руководил ею.
 
-## External, Local and Register Thesauri
+## Внешние, локальные и регистровые тезаурусы
 
-There are three types of thesaurus in GeoNetwork. The different types are based on where the thesaurus comes from:
+В GeoNetwork существует три типа тезаурусов. Различные типы зависят от источника тезауруса:
 
--   *External*: A thesaurus managed by an external organisation and imported as a SKOS file. It is flagged to `external` which means that users are not allowed to edit the thesaurus.
--   *Local*: A thesaurus built in the GeoNetwork thesaurus editor and stored as a SKOS file. It is flagged as `local` which means that users are allowed to edit the thesaurus.
--   *Register*: A SKOS thesaurus created from an ISO19135 register record. Users can edit the thesaurus by changing the content of the ISO19135 register record in the GeoNetwork metadata editor and then regenerating the thesaurus. Users cannot edit the thesaurus in thesaurus manager.
+- *Внешний*: тезаурус, управляемый внешней организацией и импортированный в виде файла SKOS. 
+  Он помечен как "внешний", что означает, что пользователям запрещено редактировать тезаурус.
 
-## ISO19115/19139 Thesaurus Categories
+- *Локальный*: Тезаурус, созданный в редакторе тезаурусов GeoNetwork и сохраненный в виде файла SKOS. 
+  Он помечен как "локальный", что означает, что пользователям разрешено редактировать тезаурус.
 
-All thesauri in GeoNetwork are categorized using the code list values for the gmd:MD_KeywordTypeCode element from ISO19115/19139. The categories and their meanings are given below but can also be found in <http://www.isotc211.org/2005/resources/gmxCodelist.xml>:
+- *Регистрация*: Тезаурус SKOS, созданный на основе записи реестра ISO19135. 
+  Пользователи могут редактировать тезаурус, изменив содержимое записи реестра ISO19135 в редакторе метаданных GeoNetwork, 
+  а затем повторно создав тезаурус. Пользователи не могут редактировать тезаурус в диспетчере тезаурусов.
 
-| ISO Thesaurus Category | Description                                                                        |
-|------------------------|------------------------------------------------------------------------------------|
-| place                  | Thesaurus has concepts identifying a location                                      |
-| stratum                | Thesaurus has concepts identifying layers of any deposited substance               |
-| temporal               | Thesaurus has concepts identifying a time period                                   |
-| theme                  | Thesaurus has concepts identifying a particular subject or topic                   |
-| discipline             | Thesaurus has concepts identifying a branch of instruction or specialized learning |
+## ISO19115/19139 Категории тезауруса
 
-## SKOS format
+Все тезаурусы в GeoNetwork классифицируются с использованием значений списка кодов для элемента gmd:MD_KeywordTypeCode из ISO19115/19139. Категории и их значения приведены ниже, но также могут быть найдены в <http://www.isotc211.org/2005/resources/gmxCodelist.xml>:
 
-The Simple Knowledge Organisation Systems (SKOS) <http://www.w3.org/2004/02/skos/> is an area of work developing specifications and standards to support the use of knowledge organisation systems (KOS) such as thesauri, classification schemes. This format is used by GeoNetwork to store thesaurus information.
+| Категория тезауруса ISO | Описание                                                                      |
+|-------------------------|-------------------------------------------------------------------------------|
+| место                   | В тезаурусе есть понятия, идентифицирующие местоположение                     |
+| слой                    | в тезаурусе есть понятия, идентифицирующие слои любого отложившегося вещества |
+| временной               | В тезаурусе есть понятия, идентифицирующие период времени                     |
+| предмет                 | Тезаурус содержит понятия, определяющие конкретный предмет или тему           |
+| область знаний          | Тезаурус содержит понятия, определяющие раздел обучения или специализацию     |
 
-A concept is defined by an identifier, a preferred label, a definition and links with other concepts. Labels and definitions could be stored in multiple languages (using the xml:lang attributes). Three type of links between concepts have been defined in the SKOS format:
 
--   related terms
--   broader terms
--   narrower terms
+## Формат SKOS
 
-For example, a concept `ABLETTE` could be defined as follow with a label in French and English, linked to broader concept:
+Простые системы организации знаний (SKOS) <http://www.w3.org/2004/02/skos/> - это область работы, 
+разрабатывающая спецификации и стандарты для поддержки использования систем организации знаний (KOS), 
+таких как тезаурусы, схемы классификации. Этот формат используется в GeoNetwork для хранения тезаурусной информации.
+
+Концепция определяется идентификатором, предпочтительной меткой, определением и связями с другими концепциями. 
+Метки и определения могут храниться на нескольких языках (с помощью атрибутов xml:lang). В формате SKOS определены три типа связей между понятиями:
+
+- связанные термины
+- более широкие термины
+- более узкие термины
+
+Например, понятие `ABLETTE` может быть определено как follow с меткой на французском и английском языках, связанной с более широким понятием:
 
     <skos:Concept rdf:about="http://www.oieau.org/concept#c4fc54576dc00227b82a709287ac3681">
         <skos:prefLabel xml:lang="fr">ABLETTE</skos:prefLabel>
@@ -48,33 +74,39 @@ For example, a concept `ABLETTE` could be defined as follow with a label in Fren
         <skos:broader rdf:resource="http://www.oieau.org/concept#9f25ece36d04776e09492c66627cccb9"/>
     </skos:Concept>
 
-GeoNetwork supports multilingual thesauri (e.g. Agrovoc). Search and editing takes place in the current user interface language (i.e. if the interface is in English, when editing metadata, GeoNetwork will only search for concept in English).
+GeoNetwork поддерживает многоязычные тезаурусы (например, Agrovoc). 
+Поиск и редактирование происходит на текущем языке пользовательского интерфейса 
+(т.е. если интерфейс на английском, то при редактировании метаданных GeoNetwork будет искать понятия только на английском).
 
-We use SKOS to represent thesauri in GeoNetwork because:
+Мы используем SKOS для представления тезаурусов в GeoNetwork, потому что:
 
--   it provides a simple and compact method of describing concepts and relationships between concepts from a field of knowledge
--   SKOS concepts can be queried and managed by the sesame/openRDF software used by GeoNetwork
+- он обеспечивает простой и компактный метод описания концепций и отношений между концепциями из какой-либо области знаний
+- Концепции SKOS можно запрашивать и управлять ими с помощью программного обеспечения sesame/openRDF, используемого в GeoNetwork
 
-## ISO19135 register format
+## Формат регистра ISO19135
 
-ISO19135 is an ISO standard that describes procedures for registering an item and the schema for describing a list (or register) of items and the processes by which the items can be created and evolve. This schema is available as a plugin for use in GeoNetwork. To use it, you must download and load the iso19135 plugin schema into GeoNetwork. FIXME: We need a standard way of referring to plugin schemas and a standard place from which they can be downloaded.
+ISO19135 - это стандарт ISO, который описывает процедуры регистрации элементов и схему описания списка 
+(или реестра) элементов и процессов, с помощью которых эти элементы могут создаваться и изменяться. 
+Эта схема доступна в виде плагина для использования в GeoNetwork. Чтобы использовать ее, 
+нужно загрузить и загрузить схему плагина iso19135 в GeoNetwork. 
+FIXME: Нам нужен стандартный способ ссылки на подключаемые схемы и стандартное место, откуда их можно загрузить.
 
-A typical ISO19135 register record describes:
+Типичная запись регистра ISO19135 описывает:
 
--   the name and a description of the register
--   version and language information
--   contact information of those that have a role in the register (eg. manager, contributor, custodian, publisher etc)
--   the elements used to describe an item in the register
--   the items
+- название и описание регистра
+- информация о версии и языке
+- контактную информацию тех, кто играет определенную роль в реестре (например, менеджер, вкладчик, хранитель, издатель и т.д.)
+- элементы, используемые для описания элемента в регистре
+- элементы
 
-The standard information used to describe a register item includes:
+Стандартная информация, используемая для описания элемента регистра, включает:
 
--   identifier
--   name and description of item
--   field of application
--   lineage and references to related register items
+- идентификатор
+- название и описание элемента
+- область применения
+- происхождение и ссылки на связанные элементы регистра.
 
-An example of a register item from register of the NASA GCMD (Global Change Master Directory) science keywords is shown below.
+Ниже приведен пример элемента регистра из регистра научных ключевых слов NASA GCMD (Global Change Master Directory).
 
     <grg:RE_RegisterItem uuid="d1e7">
        <grg:itemIdentifier>
@@ -104,104 +136,143 @@ An example of a register item from register of the NASA GCMD (Global Change Mast
        </grg:specificationLineage>
     </grg:RE_RegisterItem>
 
-As mentioned earlier, to use a thesaurus described by an ISO19135 register record, GeoNetwork uses an XSLT called xml_iso19135ToSKOS.xsl (from the convert subdirectory in the iso19135 plugin schema) to extract the following from the ISO19135 register record:
 
--   valid concepts (grg:itemIdentifier, grg:name, grg:status)
--   relationships to other concepts (grg:specificationLineage)
--   title, version and other management info
+Как упоминалось ранее, чтобы использовать тезаурус, описанный записью регистра ISO19135, GeoNetwork использует XSLT под названием xml_iso19135ToSKOS.xsl 
+(из субкаталога convert в схеме плагина iso19135), чтобы извлечь из записи регистра ISO19135 следующее:
 
-This information is used build a SKOS file. The SKOS file is then available for query and management by the sesame/openRDF software used in GeoNetwork.
+- действительные понятия (grg:itemIdentifier, grg:name, grg:status)
+- связи с другими концепциями (grg:specificationLineage)
+- название, версия и другая управляющая информация.
 
-## Creating or Importing a Thesaurus
+Эта информация используется для создания файла SKOS. 
+Файл SKOS затем доступен для запросов и управления с помощью программного обеспечения sesame/openRDF, используемого в GeoNetwork.
 
-External and local thesauri are created or imported using the thesaurus manager. You can use the thesaurus manager by:
+## Создание или импорт тезауруса
 
--   logging in as an administrator
--   navigating to the 'Administration' page and clicking on the link `Manage thesauri`
+Внешние и локальные тезаурусы создаются или импортируются с помощью менеджера тезаурусов. Вы можете использовать менеджер тезаурусов, если:
 
-The thesaurus manager page will show a list of thesauri that have been created or imported. The upper part of the page provides the user with functions to edit, add, modify or search a thesaurus. The lower part provides a function to upload an external thesaurus in SKOS format.
+- войти в систему как администратор
+- перейдите на страницу «Администрирование» и нажмите на ссылку `Управление тезаурусами`.
 
-### Creating a local thesaurus
+На странице менеджера тезаурусов будет показан список тезаурусов, которые были созданы или импортированы. 
+Верхняя часть страницы предоставляет пользователю функции для редактирования, добавления, изменения или поиска тезауруса. 
+В нижней части находится функция загрузки внешнего тезауруса в формате SKOS.
 
-To create a local thesaurus, click the `+` sign on the category you want your thesaurus to be in. Once created, the thesaurus can be updated through the edit interface. The meaning of each column is as follows:
+### Создание локального тезауруса
 
--   **Type** - This is an identifier assigned to the thesaurus in GeoNetwork. It is composed of the ISO category to which the thesaurus has been assigned (see the codelist for the gmd:MD_KeywordTypeCode element in <http://www.isotc211.org/2005/resources/gmxCodelist.xml>), whether the thesaurus is a local, external or register thesaurus and the filename of the SKOS file that holds the thesaurus. (Note: the name of the file used to hold a register thesaurus is the uuid of the ISO19135 register record that describes the thesaurus).
--   **Name** - This is the name of the thesaurus which is the administrator on creation or the filename if the thesaurus is ting a thesaurus, the name of the thesaurus will be the filename of the thesaurus.
+Чтобы создать локальный тезаурус, нажмите знак `+` на категории, в которой планируется разместить свой тезаурус. 
+После создания тезаурус можно обновлять через интерфейс редактирования. Значение каждого столбца следующее:
 
-For each thesaurus the following buttons are available:
+- **Тип** - это идентификатор, присвоенный тезаурусу в GeoNetwork. Он состоит из категории ISO, к которой был отнесен тезаурус 
+ (см. список кодов для элемента gmd:MD_KeywordTypeCode в <http://www.isotc211.org/2005/resources/gmxCodelist.xml>), 
+- является ли тезаурус локальным, внешним или регистровым, а также имени файла SKOS, в котором содержится тезаурус. 
+- (Примечание: имя файла, используемого для хранения тезауруса регистра, является uuid записи регистра ISO19135, которая описывает тезаурус).
 
--   **Download** - Link to the SKOS RDF file.
--   **Delete** - Remove thesaurus from the current node.
--   **View** - If type is external, the view button allows to search and view concepts.
--   **Edit** - If type is local, the edit button allows to search, add, remove and view concepts.
+- **Имя** - это имя тезауруса, которое задается администратором при создании, или имя файла, 
+  если тезаурус используется для создания тезауруса, то именем тезауруса будет имя файла, в котором хранится тезаурус.
 
-### Import an external thesaurus
+Для каждого тезауруса доступны следующие кнопки:
 
-GeoNetwork allows thesaurus import in SKOS format. Once uploaded, an external thesaurus cannot be updated. Select the category, browse for the thesaurus file and click upload. The SKOS file will be in `GEONETWORK_DATA_DIR/config/codelist/external/thesauri/<category>`.
+- **Скачать** - ссылка на файл SKOS RDF.
+- **Удалить** - Удалить тезаурус из текущего узла.
+- **Просмотр** - Если тип внешний, кнопка просмотра позволяет искать и просматривать понятия.
+- **Редактировать** - Если тип локальный, кнопка редактирования позволяет искать, добавлять, удалять и просматривать концепции.
 
-At the bottom of the page there are the following buttons:
 
-1.  *Back*: Go back to the main administration page.
-2.  *Upload*: Upload the selected RDF file to the node. Then it will list all thesaurus available on the node.
+### Импорт внешнего тезауруса
 
-### Creating a register thesaurus
+GeoNetwork позволяет импортировать тезаурус в формате SKOS. После загрузки внешний тезаурус не может быть обновлен. 
+Выберите категорию, найдите файл тезауруса и нажмите кнопку загрузить. SKOS-файл будет находиться в папке 
+`GEONETWORK_DATA_DIR/config/codelist/external/thesauri/<category>`.
 
-An ISO19135 record in the local GeoNetwork catalog can be turned into a SKOS file and used as a thesaurus in GeoNetwork. ISO19135 records not in the local catalog can be harvested from other catalogs (eg. the catalog of the organisation that manages the register). Once the ISO19135 register record is in the local catalog, the process of turning it into a thesaurus for use in the keywords selector begins a search for the record. Having located the record in the search results, one of the actions on the record is to 'Create/Update Thesaurus'.
+В нижней части страницы находятся следующие кнопки:
 
-> *Search results showing ISO19135 record with thesaurus creation action*
+1.  *Назад*: Возврат на главную страницу администрирования.
+2.  *Загрузить*: Загрузите выбранный RDF-файл на узел. После этого появится список всех тезаурусов, доступных на узле.
 
-After selecting this action, you can choose the ISO thesaurus category appropriate for this thesaurus:
+### Создание тезауруса регистра
 
-> *Selecting the ISO thesaurus category when creating a thesaurus*
+Запись ISO19135 в локальном каталоге GeoNetwork может быть преобразована в SKOS-файл и использована в качестве тезауруса в GeoNetwork. 
+Записи ISO19135, отсутствующие в локальном каталоге, могут быть получены из других каталогов (например, из каталога организации, управляющей регистром).
+Как только запись регистра ISO19135 попадает в локальный каталог, начинается процесс ее превращения в тезаурус для использования в селекторе ключевых слов. 
+Найдя запись в результатах поиска, одним из действий над ней является «Создать/обновить тезаурус».
 
-After selecting the ISO thesaurus category, the ISO19135 register record is converted to a SKOS file and installed as a thesaurus ready for use in the metadata editor. As described above in the section on ISO19135, only the valid register items are included in the thesaurus. This behaviour and any of the mappings between ISO19135 register items and the SKOS thesaurus file can be changed or inspected by looking at the XSLT xml_iso19135TOSKOS.xsl in the convert subdirectory of the iso19135 schema plugin.
+> *Результаты поиска показывают запись ISO19135 с действием по созданию тезауруса*.
 
-## Editing/browsing a local or external thesaurus: add/remove/browse keywords
+Выбрав это действие, можно выбрать категорию тезауруса ISO, подходящую для этого тезауруса:
 
-From the thesaurus administration interface, click on the edit button for a local thesaurus or the view button for an external thesaurus. This interface allows:
+> *Выбор категории тезауруса ISO при создании тезауруса*
 
--   keywords search
--   add/remove keywords for local thesaurus.
+После выбора категории тезауруса ISO запись регистра ISO19135 преобразуется в файл SKOS и устанавливается как тезаурус, 
+готовый к использованию в редакторе метаданных. Как описано выше в разделе об ISO19135, 
+в тезаурус включаются только действительные элементы регистра. Это поведение и любые сопоставления между элементами регистра ISO19135 
+и файлом тезауруса SKOS можно изменить или проверить, просмотрев XSLT xml_iso19135TOSKOS.xsl в подкаталоге convert плагина схемы iso19135.
 
-Use the textbox and the type of search in order to search for keywords.
+## Редактирование/просмотр локального или внешнего тезауруса: добавление/удаление/просмотр ключевых слов
 
-## Editing a register thesaurus
+В интерфейсе администрирования тезауруса нажмите на кнопку редактирования для локального тезауруса или кнопку просмотра для внешнего тезауруса. 
+Этот интерфейс позволяет:
 
-A register thesaurus is created from an ISO19135 metadata record as described above, so a register thesaurus is updated by editing the ISO19135 metadata record and then regenerating the register thesaurus. The ISO19135 metadata record can be created and edited in the GeoNetwork editor.
+- поиск ключевых слов
+- добавлять/удалять ключевые слова для локального тезауруса.
 
-### Preparing to edit an ISO19135 register record {#xlinks_thesaurus}
+Для поиска ключевых слов используйте текстовое поле и тип поиска.
 
-Register records can be very large. For example, a register record describing the ANZLIC Geographic Extent Names register has approx 1800 register items. Each register item holds not only the name of the geographic extent, but also its geographic extent and details of the lineage, relationships to other terms and potentially, the evolution of the extent (changes to name, geographic extent) including the details of changes and why those changes occurred. Editing such a large record in the GeoNetwork editor can cause performance problems for both the browser and the server because the editor constructs an HTML form describing the entire record. Fortunately, a much more scalable approach exists which is based on extracting the register items from the ISO19135 register record, storing them as subtemplates (essentially small metadata records with just the content of the register item). The process for extracting register items from an ISO19135 register record is as follows:
+## Редактирование тезауруса регистра
 
--   search for and select the register record
--   choose 'Extract register items' from the 'Actions on selected set' menu
--   After the register items have been extracted, you should see a results summary like the following.
--   The figure for 'Subtemplates extracted' is the number of register items extracted from the ISO19135 register record.
+Тезаурус регистра создается на основе записи метаданных ISO19135, как описано выше, 
+поэтому тезаурус регистра обновляется путем редактирования записи метаданных ISO19135 и последующей регенерации тезауруса регистра. 
+Запись метаданных ISO19135 можно создать и отредактировать в редакторе GeoNetwork.
 
-### Editing a register item
+### Подготовка к редактированию записи по реестру ISO19135 {#xlinks_thesaurus}
 
-To edit/change any of the register items that have been extracted as subtemplates, you can use the Directory management interface. This interface is accessed from the 'Administration' menu, under 'Manage Directories'. In this interface:
+Записи в реестре могут быть очень большими. Например, запись в реестре, описывающая реестр названий географических экстентов ANZLIC, 
+содержит около 1800 элементов реестра. Каждый элемент реестра содержит не только название географического экстента, 
+но также его географический экстент и сведения о происхождении, взаимосвязи с другими терминами и, возможно, 
+эволюцию экстента (изменения названия, географического экстента), включая подробную информацию об изменениях и причинах их возникновения. 
+Редактирование такой большой записи в редакторе GeoNetwork может вызвать проблемы с производительностью как для браузера, так и для сервера, 
+поскольку редактор создает HTML-форму, описывающую всю запись целиком. К счастью, существует гораздо более масштабируемый подход, 
+основанный на извлечении элементов регистра из записи регистра ISO19135 и сохранении их в виде подтемплат 
+(по сути, небольших записей метаданных, содержащих только содержимое элемента регистра). 
+Процесс извлечения элементов реестра из записи реестра ISO19135 выглядит следующим образом:
 
--   select 'Register Item (GeoNetwork)' as the type of subtemplate to edit as follows.
--   enter a search term or just select the search option to return the first 50 register items.
--   register items will appear in the left hand side bar, selecting on one will open an editing interface in the right hand panel.
+- найдите и выберите запись реестра
+- выберите "Извлечь элементы реестра" в меню "Действия с выбранным набором"
+- После извлечения элементов реестра вы должны увидеть сводку результатов, подобную приведенной ниже.
+- Цифра "Извлеченные подшаблоны" - это количество элементов регистра, извлеченных из записи регистра ISO19135.
 
-### Editing global register information
+### Редактирование элемента регистра
 
-To edit/change any of the global register information (eg. register owner, manager, version, languages), edit the register record in the normal GeoNetwork metadata editing interface.
+Чтобы отредактировать/изменить любой из элементов регистра, которые были извлечены в качестве подшаблонов, 
+можно использовать интерфейс управления каталогами. Доступ к этому интерфейсу осуществляется из меню "Администрирование" 
+в разделе "Управление каталогами". В этом интерфейсе:
 
-## Metadata editing: adding keywords
+- выберите "Зарегистрированный элемент (Геосеть)" в качестве типа подшаблона для редактирования следующим образом.
+- введите поисковый запрос или просто выберите опцию поиска, чтобы получить первые 50 зарегистрированных элементов.
+- элементы регистрации появятся на панели слева, при выборе одного из них откроется интерфейс редактирования на панели справа.
 
-When editing an ISO metadata record, a keyword (or concept) picker can be used which allows the editor to:
+### Редактирование информации глобального реестра
 
--   do searches for keywords in one or more thesauri in the catalog (search results are displayed on the left).
--   select one or more keywords and add them to the selected items list (using arrows or drag & drop) on the right.
--   add the selected keywords directly into metadata, grouping keywords by thesaurus.
+Чтобы отредактировать/изменить любую информацию глобального реестра (например, владельца реестра, менеджера, версию, языки),
+отредактируйте запись реестра в обычном интерфейсе редактирования метаданных GeoNetwork.
 
-The editor can also control how many keywords from searches are displayed in the keyword picker (default is 50).
+## Редактирование метаданных: добавление ключевых слов
 
-Notice that a URL pointing to the source thesaurus is included in the Thesaurus Name citation (the actual element used for this is gmd:otherCitationDetails/gmx:FileName). The thesaurus can be downloaded as a SKOS file if it is a local or external thesaurus. For register thesauri the URL refers to the ISO19135 register record from which the thesaurus was created.
+При редактировании записи метаданных ISO можно использовать средство выбора ключевых слов (или концепций), которое позволяет редактору:
 
-## Search criteria: keywords
+- выполнять поиск ключевых слов в одном или нескольких тезаурусах каталога (результаты поиска отображаются слева).
+- выберите одно или несколько ключевых слов и добавьте их в список выбранных элементов (с помощью стрелок или перетаскивания) справа.
+- добавьте выбранные ключевые слова непосредственно в метаданные, сгруппировав ключевые слова по тезаурусу.
 
-You can search on keywords using the facet panel. All keywords are stored in the index field `tag` and are also available in field depending on thesaurus name eg. `th_theme` for INSPIRE themes. The field name is based on the thesaurus type and filename.
+Редактор также может управлять количеством ключевых слов из поисковых запросов, отображаемых в окне выбора ключевых слов (по умолчанию - 50).
+
+Обратите внимание, что URL-адрес, указывающий на исходный тезаурус, включен в название тезауруса citation 
+(фактический элемент, используемый для этого, - gmd:otherCitationDetails/gmx:FileName). 
+Тезаурус можно загрузить в виде файла SKOS, если это локальный или внешний тезаурус. 
+Для тезауруса register URL ссылается на запись реестра ISO19135, на основе которой был создан тезаурус.
+
+## Критерии поиска: ключевые слова
+
+Можно выполнять поиск по ключевым словам с помощью панели facet. 
+Все ключевые слова хранятся в индексном поле "tag" и также доступны в поле, зависящем от названия тезауруса, 
+например. `th_theme` для тем INSPIRE. Название поля зависит от типа тезауруса и имени файла.
