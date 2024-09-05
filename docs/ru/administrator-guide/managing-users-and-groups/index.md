@@ -1,78 +1,84 @@
-# Managing users and groups
+# Управление пользователями и группами
 
--   [Creating group](creating-group.md)
--   [Creating user](creating-user.md)
--   [User Self-Registration](user-self-registration.md)
--   [Authentication mode](authentication-mode.md)
+- [Создание группы](creating-group.md )
+- [Создание пользователя](creating-user.md )
+- [Самостоятельная регистрация пользователя](user-self-registration.md )
+- [Режим аутентификации](authentication-mode.md )
 
-## Default user {#user-defaults}
+## Пользователь по умолчанию 
 
-Upon installation a default user with name `admin` and password `admin` is created. It is recommended to log in with these credentials directly after the installation has completed and to change the default password.
+После установки будет создан пользователь по умолчанию с именем "admin" и паролем "admin". 
+Рекомендуется войти в систему с этими учетными данными непосредственно после завершения установки и изменить пароль по умолчанию.
 
-## User session
+## Пользовательская сессия
 
-After the authentication process, a user session is created. This session will be closed automatically at some point by the server for security reasons. The default session timeout is set to 35 min (see [User session timeout configuration](../../customizing-application/advanced-configuration.md#session-timeout-configuration) for details).
+После процесса аутентификации создается пользовательский сеанс. 
+В какой-то момент сервер автоматически закроет этот сеанс по соображениям безопасности. 
+Время ожидания сеанса по умолчанию установлено равным 35 минутам 
+(подробнее см. [Настройка времени ожидания сеанса пользователя](../../customizing-application/advanced-configuration.md)).
 
-When there is no activity in the browser and the session is about to expire, a warning is displayed next to the user details 3 minutes before the timeout takes place:
+Если в браузере нет активности и сеанс подходит к концу, за 3 минуты до истечения времени ожидания рядом с данными пользователя отображается предупреждение:
 
 ![](img/session-will-expire-soon.png)
 
-One (1) minute before the timeout, another message is displayed:
+За 1 (одну) минуту до истечения времени ожидания отображается другое сообщение:
 
 ![](img/session-about-to-be-cancelled.png)
 
-When the session seems to have been destroyed by the catalog, a message recommends to refresh the page and sign in again if needed:
+Если сеанс закончился, в сообщении рекомендуется обновить страницу и при необходимости снова войти в систему:
 
 ![](img/session-has-expired.png)
 
-## Users, Groups and Roles {#user_profiles}
+## Пользователи, группы и роли 
 
-The catalog uses the concept of Users, Groups and User Profiles.
+В каталоге используется концепция пользователей, групп и профилей пользователей.
 
--   A User can be part of one or more Groups.
--   A User has a Role in a Group.
--   The Administrator Role is not related to a Group.
+- Пользователь может быть членом одной или нескольких **групп**.
+- У пользователя есть **роль** в Группе.
+- Роль администратора не связана с Группой.
 
-The combination of Role and Group defines what tasks the User can perform on the system or on specific metadata records.
+Сочетание **роли** и **группы** определяет, какие задачи Пользователь может выполнять в системе или с конкретными записями метаданных.
 
-Users can have different roles in different groups. A role defines what tasks the user can perform.
+У пользователей могут быть разные роли в разных группах. Роль определяет, какие задачи может выполнять пользователь.
 
-Roles are hierarchical and based on inheritance. This means that a user with an Editor profile can create and modify new metadata records, but can also use all functions a Registered user can use.
+Роли иерархичны и основаны на наследовании. Это означает, что пользователь с профилем редактора может создавать 
+и изменять новые записи метаданных, а также использовать все функции, доступные зарегистрированному пользователю.
 
-Rights associated with the roles are illustrated in detail in the list below:
+Права, связанные с ролями, подробно описаны в списке ниже:
 
-1.  **Administrator Profile**
+1. **Администратор (каталога)**
 
-    The Administrator has special privileges that give access to all available functions.
+    Администратор каталога обладает особыми привилегиями, которые дают право доступа ко всем доступным функциям.
 
-    These include:
+    К ним относятся:
 
-    -   Full rights for creating new groups and new users.
-    -   Rights to change users/groups profiles.
-    -   Full rights for creating/editing/deleting new/old metadata.
-    -   Perform system administration and configuration tasks.
+    - Полные права на создание новых групп и новых пользователей.
+    - Права на изменение профилей пользователей/групп.
+    - Полные права на создание/редактирование/удаление новых/старых метаданных.
+    - Выполнение задач системного администрирования и настройки.
 
-2.  **User Administrator Profile**
+2. **Пользователь-администратор (группы)**
 
-    The user administrator is the administrator of his/her own group(s) with the following privileges:
+    Пользователь-администратор является администратором своей собственной группы (групп) со следующими привилегиями:
 
-    -   Full rights on creating new users within their own groups.
-    -   Rights to change users profiles within their own groups.
+    - Полные права на создание новых пользователей в своих собственных группах.
+    - Права изменять роли пользователей в рамках их собственных групп.
 
-3.  **Content Reviewer Profile**
+3. **Рецензент**
 
-    The content reviewer is the only person allowed to give final clearance on the metadata publication on the Intranet and/or on the Internet:
+    Рецензент контента является единственным лицом, которому разрешено давать окончательное разрешение 
+    на публикацию метаданных во внутренней сети и/или в Интернете:
 
-    -   Rights on reviewing metadata content within their own groups and authorising its approval and publication.
+    - Права на просмотр содержимого метаданных в своих группах и разрешение на их утверждение и публикацию.
 
-4.  **Editor Profile**
+4. **Редактор**
 
-    The editor works on metadata with following privileges:
+    Редактор работает с метаданными со следующими привилегиями:
 
-    -   Full rights on creating/editing/ deleting new/old data within their own groups.
+    - Полные права на создание/редактирование/ удаление новых/старых данных в своих группах.
 
-5.  **Registered User Profile**
+5. **Профиль зарегистрированного пользователя**
 
-    The Registered User has more access privileges than non-authenticated Guest users:
+    Зарегистрированный пользователь имеет больше прав доступа, чем гость, не прошедший проверку подлинности:
 
-    -   Right to download protected data.
+    - Право на загрузку защищенных данных.
