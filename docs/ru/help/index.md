@@ -1,14 +1,14 @@
-# Help
-
-This catalogue lists records of available datasets.
+# Помощь
 
 ## GeoNetwork opensource
 
-The catalogue uses ***GeoNetwork*** technology for listing, searching and reviewing records. 
+Каталог использует технологию ***GeoNetwork*** для поиска и просмотра записей. 
 
-GeoNetwork is a catalog application to manage spatially referenced resources. It provides powerful metadata editing and search functions as well as an interactive web map viewer. GeoNetwork is widely used as the foundation of Spatial Data Infrastructures worldwide.
+GeoNetwork - это приложение-каталог для управления пространственно-справочными ресурсами. 
+Оно предоставляет мощные функции редактирования метаданных и поиска, 
+а также интерактивный вьюер веб-карт. GeoNetwork широко используется как основы инфраструктуры пространственных данных по всему миру.
 
-!!! info "Reference"
+!!! info «Полезные ссылки»
 
     [GeoNetwork Manual](https://docs.geonetwork-opensource.org/4.4)
 
