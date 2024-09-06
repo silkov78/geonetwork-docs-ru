@@ -10,96 +10,91 @@ hide:
   - tags
 ---
 
-# Home
 
-The Catalogue page is used to browse records, and has provides a quick search field.
+# Главная страница
 
-## Search Catalogue
+Страница каталога используется для просмотра записей и содержит поле быстрого поиска.
 
-1.  Enter the desired keywords and search terms into the **Search** field
-    at the top of the page and press the **:fontawesome-solid-magnifying-glass: Search** button
-    (or use the ++enter++ key), to list search results.
+## Страница "Поиск"
 
-    <div class="browser-border">
-    ![Search field](img/search.png)
-    </div>
-    *Search field*
-
-2.  Search for complete words.
-
-    Use **Search** field to enter: `Ocean`
-    
-    Results are shown on the **Search** tab.
-
-    <div class="browser-mockup">
-    ![](img/search_results.png)
-    </div>
-    *Search results for Ocean*
-
-3.  Search using the wildcard `*` to match the start or end of word. 
-    Keep in mind the entire record contents is searched, not only the
-    titles and description.
-    
-    Use **Search** field to enter: `Area*`
-
-    <div class="browser-mockup">
-    ![](img/search_wildcard.png)
-    </div>
-    *Search for start of a word*
-
-4.  The wildcard `*` can also be used multiple times to match part of a word.
-
-    Use **Search** field to enter: `*brass*`
-
-    <div class="browser-mockup">
-    ![](img/search_partial.png)
-    </div>
-    *Search for part of a word*
-
-5. Search results are shown on the **Seach** tab, which allows filtering and exploring of records.
-
-## Browse Catalogue
-
-1.  Navigate to **My GeoNetwork catalogue** to browse records.
-    In a production system the catalogue name and logo will
-    match your organisation or project team.
-
-2.  The catalog page can be explored using the quick lists of:
-
-    -   **Latest news**: recently updated records
-    -   **Most popular**: frequently used records
-    -   **Comments**: records with new comments and discussion
+1.  Введите нужные ключевые слова и условия поиска в поле **Поиск**
+    в верхней части страницы и нажмите **:fontawesome-solid-magnifying-glass: Поиск**.
+    (или воспользуйтесь клавишей ++enter++), чтобы вывести список результатов поиска.
 
     <div class="browser-border">
-    ![](img/browse_latest.png)
+    ![Search field](img/search.ru.png)
     </div>
-    *Latest news*
+    *Форма поиска*
 
-3.  Records are displayed as 
-    -    :fontawesome-solid-table-cells-large: block list
-    -    :fontawesome-solid-bars: large list
-    -    :fontawesome-solid-align-justify: small list
+2.  Поиск по полным словам.
+
+    В поле **Поиск** введите на английском `Africa`.
     
-    using the toggle on the right.
+    Результаты отображаются на вкладке **Поиск**.
 
-    Click on any of the listed records to view.
+    <div class="browser-mockup">
+    ![](img/search_results.ru.png)
+    </div>
+    *Результаты поиска для слова "Africa"*
+
+3.  Поиск с использованием символ `*` для поиска начала или конца слова. 
+    Следует помнить, что поиск ведется по всему содержимому в записи, а не только по
+    названию и описанию.
+    
+    Используйте поле **Поиск** для ввода: `Area*`.
+
+    <div class="browser-mockup">
+    ![](img/search_wildcard.ru.png)
+    </div>
+    *Поиск по началу слова*
+
+4.  Символ `*` также можно использовать несколько раз для определения соответствия части слова.
+
+    Используйте поле "Поиск", чтобы ввести: "*frica*"
+
+    <div class=«browser-mockup»>
+    ![](изображение/search_partial.ru.png)
+    * Поиск по части слова*
+
+5. Результаты поиска отображаются на вкладке "Поиск", которая позволяет фильтровать и просматривать записи.
+
+## Просмотр каталога
+
+1.  Перейдите в **My GeoNetwork catalogue**, чтобы просмотреть записи.
+    Ваша организация, возможно, изменила логотип и название каталога на свои.
+
+2.  Страницу каталога можно изучить с помощью быстрых списков:
+
+    - **Последние записи**: недавно обновленные записи
+    - **Популярные записи**: часто используемые записи
+    - **Избранные запросы**: добавленные пользователем избранные запрос
+    - **Комментарии**: записи с новыми комментариями и обсуждениями
+    
+    <div class="browser-border">
+    ![](img/browse_latest.ru.png)
+    </div>
+    *Последние новости*
+
+3.  Записи могут отображаться как:
+    -    :fontawesome-solid-table-cells-large: в виде блока
+    -    :fontawesome-solid-bars: подробного списка
+    -    :fontawesome-solid-align-justify: сокращённого списка
+    
+    с помощью переключателя справа.
+
+    Нажмите на любую из перечисленных записей, чтобы просмотреть ее.
 
     <div class="browser-border">
-    ![](img/browse_large_list.png)
+    ![](img/browse_large_list.ru.png)
     </div>
-    *Large list display of records*
+    *Отображение в виде сокращённого списка*
 
-4.  The catalog page provides a number of quick searches to browse
-    catalog contents:
+4.  Главная страница предоставляет ряд быстрых поисков для просмотра содержимое каталога:
 
-    -   Use **Browse by Topics** to
-        explore records based on subject matter.
-    -   Use **Browse by Resources** to
-        explore different kinds of content.
+    - Используйте **Поиск по темам**, чтобы для поиска записей по тематике.
+      ![](img/browse-themes.ru.png)
+    
+    - Используйте **Поиск видам ресурсов**, чтобы для поиска различных видов содержимого.
 
-    Each option lists "search facets" (shown as small bubbles), click
-    on a "search facet" such as `Dataset` to explore.
-
-    ![](img/browse.png)
-    *Browse metadata catalogue*
-
+      ![](img/browse.ru.png)
+      
