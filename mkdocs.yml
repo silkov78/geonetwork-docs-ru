@@ -453,9 +453,9 @@ plugins:
                   - overview/change-log/version-3.0.0.md
             - 'Помощь':
               - help/index.md
-              - 'Home page':
+              - 'Главная страница':
                 - help/home/index.md
-              - 'Search page':
+              - 'Страница поиска':
                 - help/search/index.md
               - 'Detail page':
                 - help/record/index.md
