@@ -9,225 +9,164 @@ hide:
   - tags
 ---
 
-# Search
+# Поиск
 
-The **Search** tab lists search results for filtering and sorting.
+На странице **Поиск** перечислены результаты поиска, которые можно фильтровать и сортировать.
 
-## Search Catalogue
+## Поиск по каталогу
 
-1.  Enter the desired keywords and search terms into the **Search** field
-    at the top of the page and press the **:fontawesome-solid-magnifying-glass: Search** button
-    (or use the ++enter++ key), to list search results.
+1.  Введите нужные ключевые слова и условия поиска в поле **Поиск**
+    в верхней части страницы и нажмите **:fontawesome-solid-magnifying-glass: Поиск**.
+    (или воспользуйтесь клавишей ++enter++), чтобы вывести список результатов поиска.
 
     <div class="browser-border">
-    ![Search field](../home/img/search.png)
+    ![Search field](../home/img/search.ru.png)
     </div>
-    *Search field*
+    *Форма поиска*
     
 
-2.  Search for complete words.
+2.  Поиск по полным словам.
 
-    Use **Search** field to enter: `Ocean`
+    В поле **Поиск** введите на английском `Africa`.
 
     <div class="browser-mockup">
-    ![](../home/img/search_results.png)
+    ![](../home/img/search_results.ru.png)
     </div>
-    *Search results for Ocean*
+    *Результаты поиска по "Africa"*
 
-3.  Search using the wildcard `*` to match the start or end of word. 
-    Keep in mind the entire record contents is searched, not only the
-    titles and description.
+3.  Поиск с использованием символ `*` для поиска начала или конца слова. 
+    Следует помнить, что поиск ведется по всему содержимому в записи, а не только по
+    названию и описанию.
     
     Use **Search** field to enter: `Area*`
 
     <div class="browser-mockup">
-    ![](../home/img/search_wildcard.png)
+    ![](../home/img/search_wildcard.ru.png)
     </div>
-    *Search for start of a word*
+    *Поиск по началу слова*
 
-4.  The wildcard `*` can also be used multiple times to match part of a word.
+4.  Символ `*` также можно использовать несколько раз для определения соответствия части слова.
 
-    Use **Search** field to enter: `*brass*`
+    Используйте поле "Поиск", чтобы ввести: "\*frica\*"
 
     <div class="browser-mockup">
-    ![](../home/img/search_partial.png)
+    ![](../home/img/search_partial.ru.png)
     </div>
-    *Search for part of a word*
+    * Поиск по части слова*
+    
+5. Результаты поиска отображаются в [результатах поиска](#search-results), описанных ниже.
 
-5. Filtering and exploring [search results](#search-results) is described below.
 
+## Результаты поиска
 
-## Search Results
+Для дальнейшего изучения представленных в списке записей:
 
-To further explore listed records:
-
-1.  Navigate to the **:fontawesome-solid-magnifying-glass: Search** page (or browse or search the catalogue to
-    list search results).
+1. Перейдите на страницу **:fontawesome-solid-magnifying-glass: Поиск** (или просмотрите каталог, чтобы
+просмотреть результаты поиска).
 
     <div class="browser-mockup">
-    ![](img/search_page.png)
+    ![](img/search_page.ru.png)
     </div>
-    *Search page*
+    *Страница поиска*
     
-2.  Use the **:fontawesome-solid-magnifying-glass: Filter** section on the right hand side to refine search results
-    using additional search facets, keywords, and details such as download format.
+2.  Используйте **:fontawesome-solid-magnifying-glass: Фильтр** с правой стороны, чтобы уточнить результаты поиска
+    используя дополнительные параметры поиска, ключевые слова и такие детали, как формат загрузки.
     
-    Click on the "search facet" `Oceans` to filter the search results to
-    matching records.
+    Введите **Africa** в поле `Фильтр` --> `Ключевые слова`, чтобы отфильтровать результаты поиск по ключевому слову.
 
     <div class="browser-border">
-    ![](img/results_filter.png)
+    ![](img/results_filter.ru.png)
     </div>
-    *Filter results*
+    *Фильтр по ключевым словам*
 
-3.  Options are provided at the top of the search results to:
+3.  В верхней части результатов поиска предусмотрены опции для:
     
-    * Presentation of matching records (as a **:fontawesome-solid-table-cells-large: Grid**
-    or **:fontawesome-solid-bars: List**)
-    * Sort the results
-    * Manage how many results are shown per page
-    * Advance to additional pages of results
-    * Quickly select records
+    * Представление совпадающих записей (в виде **:fontawesome-solid-table-cells-large: Таблица**
+    или **:fontawesome-solid-bars: Список**)
+    * Сортировка результатов
+    * Управление количеством результатов на странице
+    * Переход к дополнительным страницам результатов
+    * Быстрый выбор записей
 
     <div class="browser-border">
-    ![](img/browse_results.png)
+    ![](img/browse_results.ru.png)
     </div>
-    *Browse results*
+    *Просмотр результатов*
 
-4.  To clear the search results use **:fontawesome-solid-xmark: Clear current search query, filters, and sorts** 
-    at any time. This button is located in the **Search** field at the top of the page.
+4.  Чтобы очистить результаты поиска, используйте **:fontawesome-solid-xmark: Очистить текущий поисковый запрос, фильтры и сортировку** 
+    в любое время. Эта кнопка находится в поле **Поиск** в верхней части страницы.
 
-5.  The **:fontawesome-solid-ellipsis-vertical: Advanced** search options are located in the 
-    **Search** field at the top of the page.
+5.  Откройте панель параметров **:fontawesome-solid-ellipsis-vertical: Расширенный поиск** 
+
+    Заполните поля **От** и **По**, чтобы выбрать записи в нужном диапазоне дат.
     
-    These options can be used to further refine search results by category, keywords, contact
-    or date range.
-
-    <div class="browser-mockup">
-    ![](img/search_advanced.png)
-    </div>
-    *Advanced search options*
-
-6.  Open the **:fontawesome-solid-ellipsis-vertical: Advanced** search options panel.
-    
-    Use the drop down menu for **Records created in the last** to select `this week`.
-    This acts as a short cut to fill in the **From** and **To** calendar fields.
-    
-    Press the **:fontawesome-solid-magnifying-glass:  Search** button to filter using this date range.
+    Нажмите **:font awesome-solid-magnifying-glass:  Поиск**, чтобы выполнить фильтрацию по этому диапазону дат.
 
     <div class="browser-border">
-    ![](img/search_record_creation.png)
-    </div>
-    *Record updated in the last week*
+    ![](img/search_record_creation.ru.png)
+    <div/>
 
-7.  To search for data in the year `2016` use the advanced search
-    options to fill **Resources created in the last** in:
-    
-    **From**
-    :   `2016-01-01`
-    
-    **To**
-    :   `2016-12-31`
-    
-    Press **Search** button to show data from `2016`.
-
-    ![](img/search_resource_2016.png)
-    *Resource updated in 2016*
-    
-    !!! note
-
-        The **Resource** date filter shows records with data identification
-        (creation, publication, revision) dates included within the
-        calendar date range.
-
-8.  A slide out map is provided at the bottom of the page, providing
-    visual feedback on the extent of each record.
+6.  Миникарта представлена в нижней части страницы, предоставляя визуальную информацию о записях.
 
     <div class="browser-mockup">
     ![](img/search_map.png)
     </div>
-    *Search map*
+    *Миникарта*
 
-    The map can be controlled by by toggling beween two modes:
+    Картой можно управлять, переключаясь между двумя режимами:
 
-    -   Pan: Click and drag the map location, using the mouse wheel to
-        adjust zoom level.
+    - Щелкните и перетащите местоположение на карте, используя колесико мыши для регулировки масштаба.
 
-    -   Bounding Box: Hold ++shift++ and click and drag to define an extent used to filter
-        records.
+    - Ограничивающая рамка: удерживайте ++shift++ и нажмите и перетащите, чтобы определить экстент, используемый для фильтрации.
+        записи.
         
-        The drop down controls if the extent is used to list
-        only records that are withing, or all records that intersect.
+      Раскрывающийся список определяет, используется ли экстент для отображения списка
+      только те записи, которые находятся внутри, или все записи, которые пересекаются.
         
-        ![](img/search_map_bbox.png)
-        *Search bounding box intersects*
-
-9.  Records are selected (using the checkbox located next to each one)
-    to quickly download or generate a PDF of one or more records.
+      ![](img/search_map_bbox.png)
+      
+7.  Можно выбирать записи (с помощью флажка, расположенного рядом с каждой из них)
+    для быстрой загрузки или создания PDF-файла с одной или несколькими записями.
 
     <div class="browser-mockup">
-    ![](img/browse_selection.png)
+    ![](img/browse_selection.ru.png)
     </div>
-    *Selected Records*
 
-10.  Additional tips and tricks with search results:
+## Загрузка записей из результатов поиска
 
-    -   Details on
-        [selecting multiple records and exporting](#download-from-search-results)
-        as a `ZIP` or `PDF`.
+Для загрузки можно экспортировать несколько записей метаданных.
 
-## Download from search results
+Для выбора записей из нескольких результатов поиска:
 
-Multiple metadata records can be exported for download.
+1.  Введите `Africa` в форму поиска
 
+    ![](../home/img/search_results.ru.png)
 
-To select records from multiple search results:
+2.  Установите флажки рядом с каждой записью, чтобы выбрать содержимое для загрузки.
 
-1.  Use the **Search** field to enter: `Ocean`
+    ![](img/download_select_records.ru.png)
 
-    ![](../home/img/search_results.png)
-    *Search results for Ocean*
+3.  В верхней части страницы отображается количество выбранных записей.
 
-2.  Use the checkboxes next to each record to select the contents for
-    download.
+    Рядом с количеством выбранных записей находится раскрывающийся список `выбрано`,
+    в котором предлагается несколько вариантов экспорта для загрузки.
 
-    ![](img/download_select_records.png)
-    **Select records for download**
+4.  **Экспорт (ZIP)**: zip-файл, включая записи в формате xml вместе с любыми вложениями и изображениями.
 
-3.  At the top of the page the number of selected records is shown.
+    Результирующий файл содержит:
 
-    Next to the number of selected records is a **selected** drop-down,
-    offering a number of export options for download.
-    
-    ![](img/selected-actions.png)
-    *Export options for download*
+    -   Папку для каждой экспортированной записи метаданных
 
-4.  **Export (ZIP)** archive including `xml` records along with any
-    attachments and thumbnails.
-
-    The resulting file includes:
-
-    -   A folder for each metadata record exported
-
-    -   ***`index.html`*** summary of contents
-
+    -   ***`index.html`*** Краткое содержание
         ![](img/export_index_summary.png)
-        *Export ZIP index summary*
 
-    -   ***`index.csv`*** summary of contents
-
+    - ***`index.csv`*** краткое содержание
         ![](img/export_index_csv.png)
-        *Export ZIP csv summary*
 
-5.  **Export (PDF)** document of
-    exported records.
+5.  **Экспорт (PDF)**: PDF-документ с экспортированными записями.
 
     ![](img/export_pdf.png)
-    *Export PDF in Firefox*
 
-6.  **Export (CSV)** download providing
-    a tabular summary of exported records.
+6.  **Экспорт (CSV)**: загрузка, содержащая сводную информацию об экспортированных записях в виде csv-таблицы.
 
-    
     ![](img/export_index_csv.png)
-    *Export CSV*
