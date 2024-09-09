@@ -8,182 +8,173 @@ hide:
   - tags
 ---
 
-# Map
+# Карта
 
-The Catalogue includes an interactive map that is used to preview datasets.
+Каталог содержит интерактивную карту, которая используется для предварительного просмотра наборов данных
+(смотреть [Визуализация данных](visualize/index.md)).
 
-!!! info "How do I?"
+## Область карты
 
-    [Visualizing Data](visualize/index.md)
+Страница `Карта` имеет ряд функций для изучения данных:
 
-## Map area
-
-The map viewer has a number of features to explore the data:
-
-* Interactive map used to preview content.
+* Интерактивная карта, используемая для предварительного просмотра содержимого.
   
-  Use the mouse to pan and zoom the map.
+  Используйте мышь масштабирования карты.
 
-* Controls used to add and manage map contents.
+* Элементы управления, используемые для добавления и управления содержимым карты.
 
-* Navigation including **Zoom in**, **Zoom out**, **Zoom to extent**.
+* Навигация, включая **Увеличение зума**, **Уменьшение зума** и **Зум в выбранную область**.
 
-* Location search including searching for your current position.
+* Поиск местоположения, включая поиск текущего местоположения.
 
-  ![Map viewer](img/map.png)
-  *Map viewer*
+  ![](img/map.png)
 
-## Add layers
+## Добавление слоёв
 
-The interactive map views datasets as distinct layers. Layers can be drawn from a wide range of data sources.
+На интерактивной карте наборы данных представлены в виде отдельных слоев. Слои могут быть взяты из широкого спектра источников данных.
 
-### Map
+### Карта
 
-Use records in the catalogue that include a saved map:
+Используйте записи в каталоге, содержащие сохраненную карту:
 
-1. From the **Map** viewer, press **Add layer** control, and change to **Map** tab.
+1. В окне просмотра **Карта** нажмите кнопку **Добавить слои** и перейдите на вкладку **Карта**.
 
-   This tab lists records that include saved Map.
+   На этой вкладке перечислены записи, включающие сохраненную карту.
 
-2. Use the **Search** field to locate the record to display.
+2. С помощью поля **Поиск** найдите запись, которую нужно отобразить.
 
-3. Use **Add to map** to include map contents.
+3. Используйте команду **Добавить на карту**, чтобы включить содержимое карты.
 
-### Search
+### Поиск
 
-Make use of records in the catalogue with web mapping services:
+Используйте записи в каталоге с помощью картографических веб-сервисов:
 
-1.  From the **Map** viewer, press **Add layer** control, and change to **Search** tab.
+1.  В окне просмотра **Карты** нажмите кнопку **Добавить слои** и перейдите на вкладку **Поиск**.
  
-    ![Add layer from Search](img/add_search.png)
-    *Add layer from search*
+    ![](img/add_search.png)
    
-2.  Use the **Search** field to locate the record to display.
+2.  С помощью поля **Поиск** найдите запись для отображения.
    
-    Only records with **Add to map** are listed.
+    В списке отображаются только записи с командой **Добавить на карту**.
 
-    ![Search for Africa](img/add_search_field.png)
-    *Search* 
+    ![](img/add_search_field.png)
 
-3.  Press **Add to map** to visualize the dataset.
+3.  Нажмите **Добавить на карту**, чтобы визуализировать набор данных.
 
-### Add layers services
+### Добавьте сервисы
 
-Use web mapping service:
+Используйте картографический веб-сервис:
 
-1. From the **Map** viewer, press **Add layer** control, and change to **Search** tab.
+1. В окне просмотра **Карты** нажмите кнопку **Добавить слои** и перейдите на вкладку **Сервисы**.
 
-   ![Add layers services](img/add_services.png)
+   ![](img/add_services.png)
 
-2. To browse contents of a Web Map Service, supply a the service description URL
-   (known as ``GetCapabilities`` document).
+2. Чтобы просмотреть содержимое сервиса веб-карты, укажите URL-адрес описания сервиса
+   (известный как документ ``GetCapabilities``).
    
-   **type a WMS service URL:**
-   :   ``https://maps.geocat.net/geoserver/geocat/ows?service=wms&version=1.3.0&request=GetCapabilities``
+   **Введите URL-адрес сервиса WMS:**.
+   : ``https://maps.geocat.net/geoserver/geocat/ows?service=wms&version=1.3.0&request=GetCapabilities``.
    
-   The Web Map Service contents are immediately listed.
+   Содержимое службы веб-карты будет немедленно перечислено.
 
-3. Use WMS layers **Search** field to locate ``Coastline`` layer.
+3. Используйте поле **Поиск** слоев WMS, чтобы найти слой ``Коастлайн``.
    
-   **Search**
-   :   ``Coastline``
+   **Поиск**
+   : ``Coastline``
    
-   ![WMS Layers](img/add_wms.png)
-   *Add WMS Layer*
+   ![Слои WMS](img/add_wms.png)
 
-4. Press **:fontawesome-solid-plus: Add to map**.
+4. Нажмите **:fontawesome-solid-plus: Добавить на карту**.
 
-5. Use the WMS layers **Search** field to locate the ``Countries`` layer.
+5. С помощью поля **Поиск** слоев WMS найдите слой ``Страны``.
 
-   **Search**
-   :   ``Countries``
+   **Поиск**
+   : ``Страны``.
    
-   Press the **:fontawesome-solid-paintbrush: Layer styles** to list styles available
-   for the ``Countries`` layer.
+   Нажмите кнопку **:fontawesome-solid-paintbrush: Стили слоя**, чтобы получить список стилей, доступных
+   для слоя ``Страны``.
 
-   ![WMS Layers Style](img/add_wms_style.png)
-   *Add WMS Layer style*
+   ![](img/add_wms_style.png)
    
-6. Locate the ``mapcolor9` layer style, and press **Add to map**.
+6. Найдите стиль слоя ``mapcolor9`` и нажмите **Добавить на карту**.
 
-### Add files
 
-Use **`KML`** files on the map.
+### Добавление файлов
 
-## Manage layers
+Использование файлов **`KML`** на карте.
 
-### Layer order
+## Управление слоями
 
-1.  From the **Map** viewer, press **Manage layers** control
+### Порядок слоев
 
-    ![Manage layers](img/manage_layers.png)
-    *Manager layers*
+1.  В окне просмотра **Карты** нажмите кнопку **Управление слоями**.
+
+    ![](img/manage_layers.png)
     
-2. Placing the cursor over a layer shows **Move layer up**, **Move layer down**, and **Remove layer** button.
+2. При наведении курсора на слой отображаются кнопки **Переместить слой вверх**, **Переместить слой вниз** и **Удалить слой**.
     
-    ![Move layers up](img/manage_order.png)
-    *Move layer up*
+    ![](img/manage_order.png)
     
-3. Use these buttons to mange the layer order, and remove layers.
+3. Используйте эти кнопки для управления порядком слоев и их удаления.
 
-### Background map
+### Добавление файлов
 
-1.  From the **Map** viewer, press **Manage layers** control
+Использование файлов **`KML`** на карте.
 
-2.  Change the **Background map** from `OpenStreetMap` to `Stamen Watercolor`.
+## Управление слоями
+
+### Порядок слоев
+
+1.  В окне просмотра **Карты** нажмите кнопку **Управление слоями**.
+
+    ![](img/manage_layers.png)
     
-    ![Basemap](img/manage_basemap.png)
-    *Manage basemap*
-
-## Legend
-
-1.  From the **Map** viewer, press **Legend** control
-
-    ![Legend](img/legend.png)
-    *Legend*
-
-## Filter data
-
-Select a `WFS` layer to filter content, using a CQL query.
-
-## Use a WPS process
-
-Use a Web Processing Service to perform analysis and display the result.
-
-## Maps
-
-### Download map
-
-1.  From the **Map** viewer, press **Maps** control
-
-2.  Press ***Download --> OGC context (XML)** button
-
-### Load map
-
-1.  From the **Map** viewer, press **Maps** control
-
-2.  Press ***Load --> From file** button.
+2. При наведении курсора на слой отображаются кнопки **Переместить слой вверх**, **Переместить слой вниз** и **Удалить слой**.
     
-    Select a previously downloaded OGC context file.
+    ![](img/manage_order.png)
+    
+3. Используйте эти кнопки для управления порядком слоев и их удаления.
 
-### Load map reset to default
+### Фоновая карта
 
-1.  From the **Map** viewer, press **Maps** control
+1.  В окне просмотра **Карта** нажмите **Управление слоями**.
 
-2.  Press ***Load --> Default map** button.
+2.  Измените **Фоновую карту** с `OpenStreetMap` на `Stamen Watercolor`.
+    
+    ![](img/manage_basemap.png)
 
+## Легенда
 
-## Print
+1.  В окне просмотра **Карты** нажмите кнопку **Легенда**.
 
-## Measure
+    ![](img/legend.png)
 
-## Annotation
-   
-## Synchronize all layers
+## Фильтрация данных
 
-## Zoom in/out, zoom to extent
+Выберите слой `WFS` для фильтрации содержимого, используя CQL-запрос.
 
-## Switch 2D to 3D
+## Использование процесса WPS
 
-## Graticule
+Используйте службу веб-обработки для выполнения анализа и отображения результатов.
 
+## Карты
+
+### Скачивание карты
+
+1.  В окне просмотра **Карты** нажмите кнопку управления **Карты**.
+
+2.  Нажмите кнопку ***Загрузить --> контекст OGC (XML)**.
+
+### Загрузка карты
+
+1.  В окне просмотра **Map** нажмите кнопку **Maps**.
+
+2.  Нажмите кнопку ***Загрузить --> Из файла**.
+    
+    Выберите ранее загруженный контекстный файл OGC.
+
+### Загрузка карты со сбросом настроек по умолчанию
+
+1.  В окне просмотра **Карты** нажмите кнопку **Карты**.
+
+2.  Нажмите кнопку ***Загрузить --> Карта по умолчанию**.
