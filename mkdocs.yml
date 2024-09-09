@@ -459,9 +459,8 @@ plugins:
                 - help/search/index.md
               - 'Просмотр записи':
                 - help/record/index.md
-              - 'Map page':
+              - 'Страница карты':
                 - help/map/index.md
-                - help/map/visualize/index.md
             - 'Пользователям':
               - user-guide/index.md
               - user-guide/quick-start/index.md
