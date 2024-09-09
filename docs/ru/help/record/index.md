@@ -1,225 +1,137 @@
-# View Record
+# Просмотр записи
 
-View record contents to discovering more in depth details about record and the dataset described.
+Просмотр содержимого записи позволяет получить подробную информацию о записи и описываемом наборе данных.
 
-Locate record to view:
+Найдите запись для просмотра:
 
-1.  Use **Search** field: `Ocean`
+1.  В поиск введите `Africa` и откройте любую запись.
 
-2.  Locate the record with title `Ocean`.
+2.  Содержимое записи отображается в режиме **По умолчанию**.
 
-    The background of the record will change to gray when your mouse is
-    over the `Harbour Porpoise Presence, Maritimes Region` record.
+    <div class="browser-mockup">
+    ![](img/record_default_view.ru.png)
+    </div>
+
+3.  Просматривая запись можно:
     
-    Click on the record to view.
-
-    <div class="browser-mockup">
-    ![](../search/img/search_ocean.png)
-    </div>
-    *Search Ocean*
-
-3.  The record contents are displayed, using the initial
-    **Default View** display mode.
-
-    <div class="browser-mockup">
-    ![](img/record_default_view.png)
-    </div>
-    *Default view*
-
-4.  Record actions for viewing and download:
-
-    -   **Next** and **Previous** buttons used to review search results.
-    -   **Download** used to [export record](#download-from-record-view)
-        as `ZIP`, `XML` or `PDF`.
-    -   The **Display mode** drop-down to change between **Default View**
-        and **Full View** covered in the next section.
+    - Если есть необходимые права доступа, то пользователь может `Редактировать`, `Удалить` и `Управлять записью`
+    - `Экспортиоровать` запись метаданных в формате `ZIP`, `XML` или `PDF`.
+    - Изменить режим отображения из `По умолчанию` на `Детальный вид`, чтобы просмотреть более подробную информацию.
 
     <div class="browser-border">
-    ![](img/record_navigation.png)
+    ![](img/record_navigation.ru.png)
     </div>
-    *Record actions*
 
-## Default View
+## Вид по умолчанию
 
-The **Default view**, provides a quick summary of record contents:
+Режим просмотра записи **По умолчанию** обеспечивает сводку самой важной информации:
 
-1.  Use **Display mode** drop-down menu to select **Default view**.
+1.  Используйте раскрывающиеся меню **Режим просмотра**, чтобы выбрать режим **По умолчанию**.
 
     <div class="browser-border">
-    ![](img/default_view.png)
+    ![](img/default_view.ru.png)
     </div>
-    *Change display mode to default view*
+    *Режим просмотра по умолчанию*
 
-2.  Record title and description are shown at the top of the page.
+2.  Заголовок и описание записи отображаются вверху страницы.
 
-    ![](img/description.png)
-    *Record description*
+    ![](img/description.ru.png)
+    *Описание страницы*
 
-3.  **About this resource** provides information on the contents, such as topic category.
+3.  **Обзор данных** предоставляет пространственную визуализацию описываемого ресурса.
 
-    ![](img/about.png)
-    *About this resource*
+4.  **Техническая информация** предоставляет информацию такую как *Дата создания*, *Язык*, *Масштаб*, *Тематика* и др.
 
-4.  **Technical information** provides details such data format.
+    ![](img/technical.ru.png)
+    *Техническая информация*
 
-    ![](img/technical.png)
-    *Technical information*
+5.  **Информация о метаданных** предоставляет информацию о создании самой записи метаданных.
 
-5.  **Metadata information** provides a button to download the XML record, contact information, and the
-    unique identifier.
+    ![](img/default_metadata.ru.png)
+    *Информация о метаданных*
 
-    ![](img/default_metadata.png)
-    *Metadata information*
+## Детальный вид
 
-6.  On the right hand side:
+Режим просмотра **Детальный вид** используется, чтобы ознакомиться со всей информацией о метаданных.
 
-    -   **Spatial extent** is shown visually on a map
-    -   Information on updates and feedback.
+1.  Используйте раскрывающиеся меню **Режим просмотра**, чтобы выбрать режим **Детальный вид**. 
 
-    <div class="browser-mockup">
-    ![](img/record_default_view.png)
-    </div>
-    *Default view*
+2.  **Детальный вид** разделён на 6 вкладок:
 
-## Full View
+    -   Идентификация (Identification)
+    -   Распространение (Distribution)
+    -   Качество (Quality)
+    -   Пространственное представление (Spatial rep.)
+    -   Система координат (Reference Systems)
+    -   Метаданные (Metadata)
 
-The **Full view** is used to show complete record contents.
-
-1.  Use **Display mode** drop-down menu to select **Full view**.
-
-2.  The advanced view divides the record up into a number of tabs:
-
-    -   Identification
-    -   Distribution
-    -   Quality
-    -   Spatial Representation
-    -   Reference Systems
-    -   Metadata
-
-3.  The **Identification** tab provides:
-
-    -   Citation information:
+3.  На вкладке **Идентификация** представлена основная информация о записи:
         
-        ![](img/citation.png)
-        *Citation details*
-        
-    -   Status and legal constraints (such as the Data Dissemination
-        Policy).
-        
-        ![](img/abstract.png)
-        *Abstract and keywords*
-        
-    -   Additional information including temporal and spatial extent
-        
-        ![](img/additional.png)
-        *Additional identification information*
-    
-4.  The **Distribution** tab has details on how the content can be accessed.
+    ![](img/identification.ru.png)
 
-    ![](img/data_distribution.png)
-    *Data distribution details*
+4.  На вкладке **Распространение** содержатся сведения о том, как можно получить доступ к содержимому.
 
-5.  The **Quality** tab lists data quality information.
+    ![](img/data_distribution.ru.png)
 
-    ![](img/quality.png)
-    *Data quality details*
+5.  На вкладке **Качество** перечислены сведения о качестве данных.
 
-6.  The **Spatial rep.** tab provides a summary of the spatial representation.
+    ![](img/quality.ru.png)
+
+6.  На вкладке **Пространственное представление** можно просмотреть краткое описание пространственного представления.
 
     ![](img/spatial_representation.png)
-    *Spatial representation details*
 
-7.  The **Reference System** tab covers information on the spatial reference system used.
+7.  На вкладке **Система координат** содержится информация об используемой пространственной системе координат.
 
-    This is provided as a machine readable code to the reference system.
+    Она предоставляется в виде машиночитаемого кода системы отсчета.
     
-    The example uses the code  `http://www.opengis.net/def/crs/EPSG/0/26917` for the 
-    `NAD83 / UTM zone 17N]` reference system.
+    ![](img/ref_system.ru.png)
 
-8.  The **Metadata** tab covers the unique File Identifier, providing a link to view the XML document,
-    along with point of contact information for the record.
+8.  На вкладке **Метаданные** указывается уникальный идентификатор файла, а также ссылка для просмотра XML-документа 
+    и контактную информацию о записи.
 
-    ![](img/metadata.png)
-    *Record metadata details*
+    ![](img/metadata.ru.png)
 
-## XML Record
+## Запись в формате XML
 
-1.  The XML record can be shown from either:
+1.  Запись в формате XML может быть показана из любого режима просмотра:
 
-    -   **Default View** metadata heading provides a **Download metadata** button.
+    - **Вид по умолчанию**: в меню выбрать `Скачать` --> `Экспорт (XML)`
+    
+    - **Детальный вид**: открыть вкладку `Метаданные` и выбрать `XML`.
+    
+2.  Запись метаданных в виде XML откроется прямо в браузере:
+
+    <div class="browser-mockup">
+    ![](img/record-xml.png)
+    </div>
+
+3.  Помните, что запись в формате XML не содержит прикрепленных документов или изображений.
+
+    Чтобы загрузить полную информацию о записи, обратитесь к разделу загрузки.
+    
+## Загрузка из представления записи
+
+Из меню просмотра запись можно экспортировать, нажав `Скачать`:
+
+![](img/record-download.ru.png)
+
+1. **Постоянная ссылка** предоставляет URL-путь к записи в каталоге, которым можно поделиться по электронной почте или в сообщении.
+
+    ![](img/permalink.ru.png)
+
+2.  **Экспорт (ZIP)**: zip-файл, включая записи в формате xml вместе с любыми вложениями и изображениями.
+
+    Результирующий файл содержит:
+
+    -   Папка, содержащая полную запись metadata.xml и упрощенную запись metadata-iso19139.xml
+
+    -   Краткие описания *index.html* и index.csv*, описанные в [предыдущем разделе](#download-from-search-results).
         
-        ![](img/default_download_metadata.png)
-        *Default view download metadata*
-    
-    - **Full View** metadata tab provides a link to **XML**.
+3.  **Экспорт (PDF)**: PDF-документ с экспортированными записями.
 
-       ![](img/full_download_metadata.png)
-       *Full view download metadata*
-    
-2.  The XML file is downloaded, or shown directly in your browser.
+    ![](img/export_pdf.png)
 
-    <div class="browser-mockup">
+4.  **Экспорт (XML)**: загрузка записи в виде xml.
+
     ![](img/record-xml.png)
-    </div>
-    *XML download shown in FireFox*
-
-3.  Keep in mind XML record does not include any attached documents or thumbnails.
-
-    To download complete record information see the download section.
-    
-## Download from record view
-
-Download the contents of a single record.
-
-1.  View the `Harbour Porpoise Presence, Maritimes Region` record, showing a number of **:fontawesome-solid-download: Download** options:
-
-    <div class="browser-border">
-    ![](img/record_download.png)
-    </div>
-    *Record download options*
-
-2.  **Permalink** provides a URL that
-    can be shared via email or message.
-
-    ![](img/permalink.png)
-    *Permalink to GEODBA.ACCOMMODATIONS record*
-
-    Use ++control+c++ (or ++command+c++ on macOS) to copy text to clipboard:
-
-    ![](img/permalink_copied.png)
-    *Permalink copied*
-
-3.  **Export (ZIP)** archive including:
-
-    -   A folder containing complete **`metadata.xml`** record, and simplified
-        ***`metadata-iso19139.xml`*** record.
-    -   ***`index.html`** and **`index.csv`** summary described in
-        the [previous section](#download-from-search-results).
-
-    ![](img/export_record_zip.png)
-    *Export (ZIP) index.html summary*
-
-    This file is useful for exchanging information between systems. The
-    archive contents follows the "Metadata Exchange Format" convention
-    used to share records between catalogs.
-
-4.  **Export (PDF)** document.
-
-    <div class="browser-border">
-    ![](img/export_record_pdf.png)
-    </div>
-    *Export (PDF) document*
-
-5.  **Export (XML)** machine readable
-    document.
-
-    <div class="browser-mockup">
-    ![](img/record-xml.png)
-    </div>
-    *XML download shown in FireFox*
-
-6.  **Export (RDF)** machine readable
-    definition of vocabulary used.
-
-    This file is useful for exchanging information between systems.
-
