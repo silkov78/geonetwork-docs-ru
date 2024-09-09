@@ -457,7 +457,7 @@ plugins:
                 - help/home/index.md
               - 'Страница поиска':
                 - help/search/index.md
-              - 'Detail page':
+              - 'Просмотр записи':
                 - help/record/index.md
               - 'Map page':
                 - help/map/index.md
