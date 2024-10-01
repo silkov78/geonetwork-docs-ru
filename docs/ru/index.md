@@ -9,36 +9,17 @@ hide:
 
 <div class="grid cards" markdown>
 
-:fontawesome-solid-signs-post:   [Обзор](../overview/index.md)
 
-: История GeoNetwork, сообщество, сведения о лицензии и последние изменения.
+:fontawesome-solid-circle-info:   [Помощь](../help/index.md)
 
-:fontawesome-solid-circle-info:   [Справка онлайн](../help/index.md)
-
-: Справка онлайн для посетителей каталога (вход не требуется).
+: Краткий обзор интерфейса для новых пользователей.
 
 :fontawesome-solid-person-circle-question:   [Пользователям](../user-guide/index.md)
 
-: Оперативное руководство пользователя, описывающее редактирование, проверку и управление записями (требуется вход в систему).
+: Руководство пользователя, описывающее редактирование, проверку и управление записями (требуется вход в систему).
 
 :fontawesome-solid-screwdriver-wrench:   [Администраторам](../maintainer-guide/index.md)
 
-: Инструкции по установке, настройке и обновлению
-
-:fontawesome-solid-user-graduate:   [Пособия](../tutorials/index.md)
-
-: Изучите темы с помощью пошаговых руководств
-
-:fontawesome-solid-plug:   [Справочник API](../api/index.md)
-
-: Справочник API для разработчиков, обращающихся к службам каталога.
-
-:fontawesome-regular-file-code:   [Разработчикам](../devel/index.md)
-
-: Информация о разработке по настройке GeoNetwork и участию в проекте GeoNetwork.
-
-:fontawesome-regular-bookmark:   [Приложения](../annexes/index.md)
-
-: Справочная информация
+: Инструкции по установке, настройке и другим деталям администрирования GeoNetwork.
 
 </div>
