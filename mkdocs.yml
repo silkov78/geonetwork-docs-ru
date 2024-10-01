@@ -67,6 +67,7 @@ nav:
     - 'Map page':
       - help/map/index.md
       - help/map/visualize/index.md
+
   - 'User Guide':
     - user-guide/index.md
     - user-guide/quick-start/index.md
@@ -133,7 +134,8 @@ nav:
       - user-guide/harvesting/harvesting-webdav.md
       - user-guide/harvesting/harvesting-wfs-features.md
     - user-guide/export/index.md
-    - 'Administration':
+
+  - 'Administration':
       - administrator-guide/index.md
       - 'Catalog':
         - administrator-guide/configuring-the-catalog/index.md
@@ -161,122 +163,6 @@ nav:
         - administrator-guide/managing-metadata-standards/metadata-identifier.md
         - administrator-guide/managing-metadata-standards/standards.md
 
-  - 'Maintainer Guide':
-      - maintainer-guide/index.md
-      - 'Installation':
-          - 'Installing':
-            - install-guide/index.md
-            - install-guide/installing-from-zip.md
-            - install-guide/installing-from-war-file.md
-            - install-guide/installing-with-docker.md
-            - install-guide/installing-from-source-code.md
-            - install-guide/installing-index.md
-          - 'Configuration':
-            - install-guide/configuring-database.md
-            - install-guide/customizing-data-directory.md
-            - install-guide/logging.md
-            - install-guide/map-print-setup.md
-            - install-guide/loading-samples.md
-      - maintainer-guide/production-use/index.md
-      - 'Updating the application': maintainer-guide/updating/index.md
-  - 'API':
-    - api/index.md
-    - api/the-geonetwork-api.md
-    - api/search.md
-    - api/csw.md
-    - api/opensearch.md
-    - api/rdf-dcat.md
-    - api/oai-pmh.md
-    - api/z39-50.md
-  - 'Development':
-    - devel/index.md
-    - 'Documentation':
-      - devel/docs/index.md
-      - devel/docs/style/index.md
-      - devel/docs/markdown/index.md
-      - devel/docs/translation/index.md
-    - 'Customization':
-      - customizing-application/index.md
-      - 'Search':
-        - customizing-application/search-ui/index.md
-        - customizing-application/search-ui/configdefault.md
-        - customizing-application/search-ui/customview.md
-        - customizing-application/search-ui/enrichview.md
-        - customizing-application/search-ui/loadview.md
-        - customizing-application/search-ui/wro4jdependencies.md
-      - customizing-application/creating-custom-view.md
-      - customizing-application/editor-ui/creating-custom-editor.md
-      - customizing-application/editor-ui/custom-editor-examples.md
-      - customizing-application/editor-ui/tutorial.md
-      - customizing-application/changing-layout.md
-      - customizing-application/configuring-search-fields.md
-      - customizing-application/configuring-faceted-search.md
-      - customizing-application/advanced-configuration.md
-      - customizing-application/adding-static-pages.md
-      - customizing-application/characterset.md
-      - customizing-application/implementing-a-schema-plugin.md
-      - customizing-application/misc.md
-    - 'Contributing':
-      - contributing/index.md
-      - contributing/translating.md
-      - contributing/making-a-pull-request.md
-      - contributing/doing-a-release.md
-  - 'Tutorials':
-    - tutorials/index.md
-    - 'Introduction':
-       - tutorials/introduction/index.md
-       - 'Overview':
-         - tutorials/introduction/introduction/index.md
-         - tutorials/introduction/introduction/discover.md
-         - tutorials/introduction/introduction/map.md
-         - tutorials/introduction/introduction/schema.md
-         - 'Deployment':
-           - tutorials/introduction/deployment/index.md
-           - tutorials/introduction/deployment/build.md
-           - tutorials/introduction/deployment/deploy.md
-           - tutorials/introduction/deployment/docker.md
-         - tutorials/introduction/setup/index.md
-         - 'Edit':
-           - tutorials/introduction/edit/index.md
-           - tutorials/introduction/edit/edit.md
-           - tutorials/introduction/edit/editor.md
-         - tutorials/introduction/harvesting/index.md
-         - tutorials/introduction/extra/index.md
-    - 'Customize':
-      - tutorials/customui/index.md
-      - 'Search':
-        - tutorials/customui/search/index.md
-        - tutorials/customui/search/customview.md
-        - tutorials/customui/search/defaultview.md
-        - tutorials/customui/search/loadpage.md
-      - 'View':
-        - tutorials/customui/view/index.md
-        - tutorials/customui/view/formatter.md
-    - 'Hook':
-      - tutorials/hookcustomizations/index.md
-      - tutorials/hookcustomizations/events/index.md
-      - tutorials/hookcustomizations/newproject/index.md
-      - tutorials/hookcustomizations/schemaplugins/index.md
-      - tutorials/hookcustomizations/searchfields/index.md
-      - tutorials/hookcustomizations/ui/index.md
-    - 'Inspire':
-      - tutorials/inspire/index.md
-      - tutorials/inspire/download-atom.md
-      - tutorials/inspire/download-geoserver.md
-      - tutorials/inspire/view-geoserver.md
-      - tutorials/inspire/view-mapserver.md
-  - 'Annexes':
-    - annexes/index.md
-    - annexes/gallery/index.md
-    - annexes/mef-format.md
-    - 'Standards':
-      - annexes/standards/index.md
-      - annexes/standards/iso19115-3.2018.md
-      - annexes/standards/iso19139.md
-      - annexes/standards/iso19110.md
-      - annexes/standards/dublin-core.md
-
-
 # Plugins - install using: pip3 install -r requirements.txt
 plugins:
   - search
@@ -297,83 +183,7 @@ plugins:
 
           nav:
             - 'GeoNetwork': index.md
-            - 'Обзор':
-              - overview/index.md
-              - overview/about.md
-              - 'License':
-                - overview/license/index.md
-                - overview/license/GPL.md
-              - overview/authors.md
-              - 'Changelog':
-                - overview/change-log/index.md
-                - 'Latest':
-                  - overview/change-log/latest/index.md
-                  - overview/change-log/version-4.4.1.md
-                  - overview/change-log/version-4.4.0.md
-                - 'Stable':
-                  - overview/change-log/stable/index.md
-                  - overview/change-log/version-4.2.7.md
-                  - overview/change-log/version-4.2.6.md
-                  - overview/change-log/version-4.2.5.md
-                  - overview/change-log/version-4.2.4.md
-                  - overview/change-log/version-4.2.3.md
-                  - overview/change-log/version-4.2.2.md
-                  - overview/change-log/version-4.2.1.md
-                  - overview/change-log/version-4.2.0.md
-                - 'Maintenance':
-                  - overview/change-log/maintenance/index.md
-                  - overview/change-log/version-3.12.11.md
-                  - overview/change-log/version-3.12.10.md
-                  - overview/change-log/version-3.12.9.md
-                  - overview/change-log/version-3.12.8.md
-                  - overview/change-log/version-3.12.7.md
-                  - overview/change-log/version-3.12.6.md
-                  - overview/change-log/version-3.12.5.md
-                  - overview/change-log/version-3.12.4.md
-                  - overview/change-log/version-3.12.3.md
-                  - overview/change-log/version-3.12.2.md
-                  - overview/change-log/version-3.12.1.md
-                  - overview/change-log/version-3.12.0.md
-                - 'Archive':
-                  - overview/change-log/archive/index.md
-                  - overview/change-log/version-4.0.6.md
-                  - overview/change-log/version-4.0.5.md
-                  - overview/change-log/version-4.0.4.md
-                  - overview/change-log/version-4.0.3.md
-                  - overview/change-log/version-4.0.2.md
-                  - overview/change-log/version-4.0.1.md
-                  - overview/change-log/version-4.0.0.md
-                  - overview/change-log/version-4.0.0-alpha.2.md
-                  - overview/change-log/version-4.0.0-alpha.1.md
-                  - overview/change-log/version-3.10.10.md
-                  - overview/change-log/version-3.10.9.md
-                  - overview/change-log/version-3.10.8.md
-                  - overview/change-log/version-3.10.7.md
-                  - overview/change-log/version-3.10.6.md
-                  - overview/change-log/version-3.10.5.md
-                  - overview/change-log/version-3.10.4.md
-                  - overview/change-log/version-3.10.3.md
-                  - overview/change-log/version-3.10.2.md
-                  - overview/change-log/version-3.10.1.md
-                  - overview/change-log/version-3.10.0.md
-                  - overview/change-log/version-3.8.3.md
-                  - overview/change-log/version-3.8.2.md
-                  - overview/change-log/version-3.8.1.md
-                  - overview/change-log/version-3.8.0.md
-                  - overview/change-log/version-3.6.0.md
-                  - overview/change-log/version-3.4.4.md
-                  - overview/change-log/version-3.4.3.md
-                  - overview/change-log/version-3.4.2.md
-                  - overview/change-log/version-3.4.1.md
-                  - overview/change-log/version-3.4.0.md
-                  - overview/change-log/version-3.2.2.md
-                  - overview/change-log/version-3.2.1.md
-                  - overview/change-log/version-3.2.0.md
-                  - overview/change-log/version-3.0.4.md
-                  - overview/change-log/version-3.0.3.md
-                  - overview/change-log/version-3.0.2.md
-                  - overview/change-log/version-3.0.1.md
-                  - overview/change-log/version-3.0.0.md
+
             - 'Помощь':
               - help/index.md
               - 'Главная страница':
@@ -384,6 +194,7 @@ plugins:
                 - help/record/index.md
               - 'Страница карты':
                 - help/map/index.md
+
             - 'Пользователям':
               - user-guide/index.md
               - user-guide/quick-start/index.md
@@ -397,7 +208,6 @@ plugins:
                 - user-guide/describing-information/deleting-metadata.md
                 - user-guide/describing-information/multilingual-editing.md
                 - user-guide/describing-information/inspire-editing.md
-
               - 'Связывание со сторонними ресурсами':
                 - user-guide/associating-resources/index.md
                 - 'Связывание с документами':
@@ -415,7 +225,6 @@ plugins:
                     - user-guide/associating-resources/linking-remote-records.md
                 - user-guide/associating-resources/doi.md
                 - user-guide/associating-resources/cite.md
-
               - 'Использование тегов':
                 - user-guide/tag-information/index.md
                 - user-guide/tag-information/tagging-with-categories.md
@@ -429,7 +238,6 @@ plugins:
                 - user-guide/analyzing/index.md
                 - user-guide/analyzing/data.md
                 - user-guide/analyzing/metadata.md
-
               - 'Рабочий процесс':
                 - user-guide/workflow/index.md
                 - 'Пакетное редактирование':
@@ -442,7 +250,6 @@ plugins:
                 - user-guide/workflow/suggestion.md
                 - user-guide/workflow/validation.md
                 - user-guide/workflow/versioning.md
-
               - 'Сборщики данных':
                 - user-guide/harvesting/index.md
                 - user-guide/harvesting/harvesting-geonetwork.md
@@ -458,153 +265,34 @@ plugins:
                 - user-guide/harvesting/harvesting-webdav.md
                 - user-guide/harvesting/harvesting-wfs-features.md
               - user-guide/export/index.md
-              - 'Администрирование':
-                - administrator-guide/index.md
-                - 'Каталог':
-                  - administrator-guide/configuring-the-catalog/index.md
-                  - administrator-guide/configuring-the-catalog/system-configuration.md
-                  - administrator-guide/configuring-the-catalog/user-interface-configuration.md
-                  - administrator-guide/configuring-the-catalog/css-configuration.md
-                  - administrator-guide/configuring-the-catalog/csw-configuration.md
-                  - administrator-guide/configuring-the-catalog/portal-configuration.md
-                  - administrator-guide/configuring-the-catalog/inspire-configuration.md
-                  - administrator-guide/configuring-the-catalog/map-server-configuration.md
-                - 'Типы пользователей и Группы':
-                  - administrator-guide/managing-users-and-groups/index.md
-                  - administrator-guide/managing-users-and-groups/authentication-mode.md
-                  - administrator-guide/managing-users-and-groups/creating-group.md
-                  - administrator-guide/managing-users-and-groups/creating-user.md
-                  - administrator-guide/managing-users-and-groups/user-self-registration.md
-                - 'Системы классификации метаданных':
-                  - administrator-guide/managing-classification-systems/index.md
-                  - administrator-guide/managing-classification-systems/managing-categories.md
-                  - administrator-guide/managing-classification-systems/managing-directories.md
-                  - administrator-guide/managing-classification-systems/managing-thesaurus.md
-                - 'Стандарты метаданных':
-                  - administrator-guide/managing-metadata-standards/index.md
-                  - administrator-guide/managing-metadata-standards/configure-validation.md
-                  - administrator-guide/managing-metadata-standards/metadata-identifier.md
-                  - administrator-guide/managing-metadata-standards/standards.md
 
-            - 'Администраторам':
-                - maintainer-guide/index.md
-                - 'Installation':
-                    - 'Installing':
-                      - install-guide/index.md
-                      - install-guide/installing-from-zip.md
-                      - install-guide/installing-from-war-file.md
-                      - install-guide/installing-with-docker.md
-                      - install-guide/installing-from-source-code.md
-                      - install-guide/installing-index.md
-                    - 'Configuration':
-                      - install-guide/configuring-database.md
-                      - install-guide/customizing-data-directory.md
-                      - install-guide/logging.md
-                      - install-guide/map-print-setup.md
-                      - install-guide/loading-samples.md
-                - maintainer-guide/production-use/index.md
-                - 'Updating the application': maintainer-guide/updating/index.md
-            - 'API':
-              - api/index.md
-              - api/the-geonetwork-api.md
-              - api/search.md
-              - api/csw.md
-              - api/opensearch.md
-              - api/rdf-dcat.md
-              - api/oai-pmh.md
-              - api/z39-50.md
-            - 'Разработчикам':
-              - devel/index.md
-              - 'Documentation':
-                - devel/docs/index.md
-                - devel/docs/style/index.md
-                - devel/docs/markdown/index.md
-                - devel/docs/translation/index.md
-              - 'Customization':
-                - customizing-application/index.md
-                - 'Search':
-                  - customizing-application/search-ui/index.md
-                  - customizing-application/search-ui/configdefault.md
-                  - customizing-application/search-ui/customview.md
-                  - customizing-application/search-ui/enrichview.md
-                  - customizing-application/search-ui/loadview.md
-                  - customizing-application/search-ui/wro4jdependencies.md
-                - customizing-application/creating-custom-view.md
-                - customizing-application/editor-ui/creating-custom-editor.md
-                - customizing-application/editor-ui/custom-editor-examples.md
-                - customizing-application/editor-ui/tutorial.md
-                - customizing-application/changing-layout.md
-                - customizing-application/configuring-search-fields.md
-                - customizing-application/configuring-faceted-search.md
-                - customizing-application/advanced-configuration.md
-                - customizing-application/adding-static-pages.md
-                - customizing-application/characterset.md
-                - customizing-application/implementing-a-schema-plugin.md
-                - customizing-application/misc.md
-              - 'Contributing':
-                - contributing/index.md
-                - contributing/translating.md
-                - contributing/making-a-pull-request.md
-                - contributing/doing-a-release.md
-            - 'Обучение':
-              - tutorials/index.md
-              - 'Introduction':
-                 - tutorials/introduction/index.md
-                 - 'Overview':
-                   - tutorials/introduction/introduction/index.md
-                   - tutorials/introduction/introduction/discover.md
-                   - tutorials/introduction/introduction/map.md
-                   - tutorials/introduction/introduction/schema.md
-                   - 'Deployment':
-                     - tutorials/introduction/deployment/index.md
-                     - tutorials/introduction/deployment/build.md
-                     - tutorials/introduction/deployment/deploy.md
-                     - tutorials/introduction/deployment/docker.md
-                   - tutorials/introduction/setup/index.md
-                   - 'Edit':
-                     - tutorials/introduction/edit/index.md
-                     - tutorials/introduction/edit/edit.md
-                     - tutorials/introduction/edit/editor.md
-                   - tutorials/introduction/harvesting/index.md
-                   - tutorials/introduction/extra/index.md
-              - 'Customize':
-                - tutorials/customui/index.md
-                - 'Search':
-                  - tutorials/customui/search/index.md
-                  - tutorials/customui/search/customview.md
-                  - tutorials/customui/search/defaultview.md
-                  - tutorials/customui/search/loadpage.md
-                - 'View':
-                  - tutorials/customui/view/index.md
-                  - tutorials/customui/view/formatter.md
-              - 'Hook':
-                - tutorials/hookcustomizations/index.md
-                - tutorials/hookcustomizations/events/index.md
-                - tutorials/hookcustomizations/newproject/index.md
-                - tutorials/hookcustomizations/schemaplugins/index.md
-                - tutorials/hookcustomizations/searchfields/index.md
-                - tutorials/hookcustomizations/ui/index.md
-              - 'Inspire':
-                - tutorials/inspire/index.md
-                - tutorials/inspire/download-atom.md
-                - tutorials/inspire/download-geoserver.md
-                - tutorials/inspire/view-geoserver.md
-                - tutorials/inspire/view-mapserver.md
-            - 'Приложения':
-              - annexes/index.md
-              - annexes/gallery/index.md
-              - annexes/mef-format.md
-              - 'Standards':
-                - annexes/standards/index.md
-                - annexes/standards/iso19115-3.2018.md
-                - annexes/standards/iso19139.md
-                - annexes/standards/iso19110.md
-                - annexes/standards/dublin-core.md
-
-
-            - exclude:
-                glob:
-                  - annexes/gallery/bin/README.md
+            - 'Администрирование':
+              - administrator-guide/index.md
+              - 'Каталог':
+                - administrator-guide/configuring-the-catalog/index.md
+                - administrator-guide/configuring-the-catalog/system-configuration.md
+                - administrator-guide/configuring-the-catalog/user-interface-configuration.md
+                - administrator-guide/configuring-the-catalog/css-configuration.md
+                - administrator-guide/configuring-the-catalog/csw-configuration.md
+                - administrator-guide/configuring-the-catalog/portal-configuration.md
+                - administrator-guide/configuring-the-catalog/inspire-configuration.md
+                - administrator-guide/configuring-the-catalog/map-server-configuration.md
+              - 'Типы пользователей и Группы':
+                - administrator-guide/managing-users-and-groups/index.md
+                - administrator-guide/managing-users-and-groups/authentication-mode.md
+                - administrator-guide/managing-users-and-groups/creating-group.md
+                - administrator-guide/managing-users-and-groups/creating-user.md
+                - administrator-guide/managing-users-and-groups/user-self-registration.md
+              - 'Системы классификации метаданных':
+                - administrator-guide/managing-classification-systems/index.md
+                - administrator-guide/managing-classification-systems/managing-categories.md
+                - administrator-guide/managing-classification-systems/managing-directories.md
+                - administrator-guide/managing-classification-systems/managing-thesaurus.md
+              - 'Стандарты метаданных':
+                - administrator-guide/managing-metadata-standards/index.md
+                - administrator-guide/managing-metadata-standards/configure-validation.md
+                - administrator-guide/managing-metadata-standards/metadata-identifier.md
+                - administrator-guide/managing-metadata-standards/standards.md
 
 # Customizations
 extra:
