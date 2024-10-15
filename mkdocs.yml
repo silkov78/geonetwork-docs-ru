@@ -173,10 +173,10 @@ plugins:
       languages:
         - locale: en
           name: English
+          default: true
           build: true
           site_name: 'GeoNetwork opensource (EN)'
         - locale: ru
-          default: true
           name: Русский
           build: true
           site_name: 'GeoNetwork (RU)'
