@@ -1,4 +1,4 @@
-.idea/
-venv/
-target/
-overrides/
+.idea
+.venv
+target
+overrides
