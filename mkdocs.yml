@@ -66,12 +66,53 @@ nav:
       - help/record/index.md
     - 'Map page':
       - help/map/index.md
-      - help/map/visualize/index.md
-
+      
   - 'User Guide':
     - user-guide/index.md
     - user-guide/quick-start/index.md
-    - user-guide/map/index.md
+    - 'Exploring Maps':   
+      - user-guide/map/exploring-maps.md
+      - user-guide/map/toc.md
+      - user-guide/map/layer-settings.md
+      - user-guide/map/filtering-layers.md
+      - user-guide/map/attributes-table.md
+      - user-guide/map/widgets.md
+      - user-guide/map/export-data.md
+      - user-guide/map/mapstore-toolbars.md
+      - user-guide/map/print.md
+      - user-guide/map/import.md
+      - user-guide/map/catalog.md
+      - user-guide/map/measure.md
+      - user-guide/map/annotations.md
+      - user-guide/map/map-views.md
+      - user-guide/map/street-view.md
+      - user-guide/map/longitudinal-profile.md
+      - user-guide/map/geoprocessing-tool.md
+      - user-guide/map/navigation-toolbar.md
+      - user-guide/map/background.md
+      - user-guide/map/timeline.md                
+      - user-guide/map/footer.md
+    - 'Exploring Dashboards':
+      - user-guide/map/exploring-dashboards.md
+      - user-guide/map/adding-widgets.md
+      - user-guide/map/connecting-widgets.md
+    - 'Exploring Stories':
+      - user-guide/map/exploring-stories.md
+      - user-guide/map/story-setting.md
+      - user-guide/map/title-section.md
+      - user-guide/map/banner-section.md
+      - user-guide/map/paragraph-section.md
+      - user-guide/map/immersive-section.md
+      - user-guide/map/geocarousel-section.md
+      - user-guide/map/media-section.md
+      - user-guide/map/web-section.md
+      - user-guide/map/text-editor-toolbar.md
+      - user-guide/map/content-image-toolbar.md
+      - user-guide/map/content-map-toolbar.md
+      - user-guide/map/content-video-toolbar.md
+      - user-guide/map/content-web-toolbar.md
+      - user-guide/map/media-editor-window.md
+      - user-guide/map/configure-map.md
     - 'Describing Information':
       - user-guide/describing-information/index.md
       - user-guide/describing-information/creating-metadata.md
@@ -198,7 +239,52 @@ plugins:
             - 'Пользователям':
               - user-guide/index.md
               - user-guide/quick-start/index.md
-              - user-guide/map/index.md
+              - 'Карты и визуализация данных':
+                - user-guide/map/home-page.md
+                - user-guide/map/filter-resources.md
+                - 'Средство просмотра карт и визуализации данных':   
+                    - user-guide/map/exploring-maps.md
+                    - user-guide/map/toc.md
+                    - user-guide/map/layer-settings.md
+                    - user-guide/map/filtering-layers.md
+                    - user-guide/map/attributes-table.md
+                    - user-guide/map/widgets.md
+                    - user-guide/map/export-data.md
+                    - user-guide/map/mapstore-toolbars.md
+                    - user-guide/map/print.md
+                    - user-guide/map/import.md
+                    - user-guide/map/catalog.md
+                    - user-guide/map/measure.md
+                    - user-guide/map/annotations.md
+                    - user-guide/map/map-views.md
+                    - user-guide/map/street-view.md
+                    - user-guide/map/longitudinal-profile.md
+                    - user-guide/map/geoprocessing-tool.md
+                    - user-guide/map/navigation-toolbar.md
+                    - user-guide/map/background.md
+                    - user-guide/map/timeline.md                
+                    - user-guide/map/footer.md
+                - 'Работа с информационными панелями (дэшбордами)':
+                    - user-guide/map/exploring-dashboards.md
+                    - user-guide/map/adding-widgets.md
+                    - user-guide/map/connecting-widgets.md
+                - 'Работа с геоисториями':
+                    - user-guide/map/exploring-stories.md
+                    - user-guide/map/story-setting.md
+                    - user-guide/map/title-section.md
+                    - user-guide/map/banner-section.md
+                    - user-guide/map/paragraph-section.md
+                    - user-guide/map/immersive-section.md
+                    - user-guide/map/geocarousel-section.md
+                    - user-guide/map/media-section.md
+                    - user-guide/map/web-section.md
+                    - user-guide/map/text-editor-toolbar.md
+                    - user-guide/map/content-image-toolbar.md
+                    - user-guide/map/content-map-toolbar.md
+                    - user-guide/map/content-video-toolbar.md
+                    - user-guide/map/content-web-toolbar.md
+                    - user-guide/map/media-editor-window.md
+                    - user-guide/map/configure-map.md
               - 'Описание информации':
                 - user-guide/describing-information/index.md
                 - user-guide/describing-information/managing-templates.md
@@ -258,7 +344,6 @@ plugins:
                 - user-guide/harvesting/harvesting-filesystem.md
                 - user-guide/harvesting/harvesting-geoportal.md
                 - user-guide/harvesting/harvesting-oaipmh.md
-
                 - user-guide/harvesting/harvesting-sde.md
                 - user-guide/harvesting/harvesting-simpleurl.md
                 - user-guide/harvesting/harvesting-thredds.md
