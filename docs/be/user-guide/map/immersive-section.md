@@ -4,51 +4,51 @@
 
 Імерсіўная секцыя складаецца з двух элементаў: фону і імерсіўнага зместу. Як толькі вы дадаяце імерсіўную секцыю ў сваю гісторыю, адлюстроўваецца пусты фон з пустым тэкставым зместам.
 
-<img src="../../../ru/user-guide/map/img/immersive-section/immersive-section-fd.jpg" class="ms-docimage"/>
+<img src="../img/immersive-section/immersive-section-fd.jpg" class="ms-docimage"/>
 
 ## Змест
 
 Унутры *імерсіўнай секцыі* рэдактар гісторыі можа наладжваць вобласць зместу з дапамогай **панэлі інструментаў імерсіўнага зместу**:
 
-<img src="../../../ru/user-guide/map/img/immersive-section/imm-content-toolbar.jpg" class="ms-docimage" style="width:400px"/>
+<img src="../img/immersive-section/imm-content-toolbar.jpg" class="ms-docimage" style="width:400px"/>
 
 У прыватнасці, можна:
 
-* Кнопка **Змяніць памер** <img src="../../../ru/user-guide/map/img/button/change-size.jpg" class="ms-docbutton"/> дазваляе змяніць памер тэкставага акна на *маленькі*, *сярэдні*, *вялікі* або *поўны*.
+* Кнопка **Змяніць памер** <img src="../img/button/change-size.jpg" class="ms-docbutton"/> дазваляе змяніць памер тэкставага акна на *маленькі*, *сярэдні*, *вялікі* або *поўны*.
 
-* Кнопка **Выраўнаваць змест** <img src="../../../ru/user-guide/map/img/button/align-content.jpg" class="ms-docbutton"/> дазваляе выраўнаваць тэкставае акно ўнутры кантэйнера па *левым краі*, *цэнтры* або *правым краі*.
+* Кнопка **Выраўнаваць змест** <img src="../img/button/align-content.jpg" class="ms-docbutton"/> дазваляе выраўнаваць тэкставае акно ўнутры кантэйнера па *левым краі*, *цэнтры* або *правым краі*.
 
-* Кнопка **Змяніць тэму поля** <img src="../../../ru/user-guide/map/img/button/change-theme.jpg" class="ms-docbutton"/> дазваляе змяніць тэму тэкставага акна на *па змаўчанні* (тыя ж наладкі тэмы па змаўчанні, што і ў гісторыі, гл. [Наладкі гісторыі](story-setting.md#story-settings)), *светлую*, *цёмную* або *карыстальніцкую* (дазваляе наладзіць колеры фону і тэксту і ўключыць або выключыць цень).
+* Кнопка **Змяніць тэму поля** <img src="../img/button/change-theme.jpg" class="ms-docbutton"/> дазваляе змяніць тэму тэкставага акна на *па змаўчанні* (тыя ж наладкі тэмы па змаўчанні, што і ў гісторыі, гл. [Наладкі гісторыі](story-setting.md#story-settings)), *светлую*, *цёмную* або *карыстальніцкую* (дазваляе наладзіць колеры фону і тэксту і ўключыць або выключыць цень).
 
 Ніжэй прыведзены прыклад невялікага імерсіўнага зместу, выраўнаванага па *правым краі* і з *цёмнай* тэмай поля:
 
-<img src="../../../ru/user-guide/map/img/immersive-section/imm-content-edit.jpg" class="ms-docimage"/>
+<img src="../img/immersive-section/imm-content-edit.jpg" class="ms-docimage"/>
 
 Як толькі вы дадаяце тэкставы змест, ён становіцца даступным адразу пад бягучым. Простым пстрычкай унутры яго карыстальнік можа напісаць тэкст і наладзіць фарматаванне тэксту з дапамогай [панэлі інструментаў тэкставага рэдактара](text-editor-toolbar.md#text-editor-toolbar). Прыкладам тэкставага зместу можа быць наступны:
 
-<img src="../../../ru/user-guide/map/img/immersive-section/is-text-content.jpg" class="ms-docimage" width="550px"/>
+<img src="../img/immersive-section/is-text-content.jpg" class="ms-docimage" width="550px"/>
 
-Імерсіўны змест можа ўключаць тэкст, медыя-змест або вэб-старонкі. Новы змест можна дадаць у слупок імерсіўнага зместу з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/++++.jpg" class="ms-docbutton"/> або выдаліць з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/remove2.jpg" class="ms-docbutton"/>.
+Імерсіўны змест можа ўключаць тэкст, медыя-змест або вэб-старонкі. Новы змест можна дадаць у слупок імерсіўнага зместу з дапамогай кнопкі <img src="../img/button/++++.jpg" class="ms-docbutton"/> або выдаліць з дапамогай кнопкі <img src="../img/button/remove2.jpg" class="ms-docbutton"/>.
 
-<img src="../../../ru/user-guide/map/img/immersive-section/add-remove.jpg" class="ms-docimage"/>
+<img src="../img/immersive-section/add-remove.jpg" class="ms-docimage"/>
 
 Пры даданні медыя-зместу з'яўляецца [рэдактар медыя](media-editor-window.md#media-editor-window), які дазваляе рэдактару гісторыі дадаць выяву, карту або відэа. Таксама можна дадаць змест вэб-старонкі, як тлумачыцца ў раздзеле [Секцыя "Вэб-старонка"](web-section.md#web-page-section). Прыкладам імерсіўнага зместу з тэкстам і выявай можа быць наступны:
 
-<img src="../../../ru/user-guide/map/img/immersive-section/test-image.jpg" class="ms-docimage" width="550px"/>
+<img src="../img/immersive-section/test-image.jpg" class="ms-docimage" width="550px"/>
 
 ## Фон
 
 Для імерсіўных секцый можна наладзіць фон з дапамогай панэлі рэдагавання фону:
 
-<img src="../../../ru/user-guide/map/img/immersive-section/bck-toolbar.jpg" class="ms-docimage" width="550px"/>
+<img src="../img/immersive-section/bck-toolbar.jpg" class="ms-docimage" width="550px"/>
 
 Панэль рэдагавання фону, калі медыяфайлы не прыменены, дазваляе:
 
-* Дадаць медыяфайл у якасці фону секцыі з дапамогай кнопкі **Змяніць крыніцу медыя** <img src="../../../ru/user-guide/map/img/button/change-media.jpg" class="ms-docbutton"/>, якая адкрывае [рэдактар медыя](media-editor-window.md#media-editor-window).
+* Дадаць медыяфайл у якасці фону секцыі з дапамогай кнопкі **Змяніць крыніцу медыя** <img src="../img/button/change-media.jpg" class="ms-docbutton"/>, якая адкрывае [рэдактар медыя](media-editor-window.md#media-editor-window).
 
 Пасля дадання медыяфайла (*выява*, *відэа* або *карта*) ў фон, у левым верхнім куце секцыі з'яўляецца панэль рэдагавання, якая дазваляе карыстальніку кіраваць фонавым зместам.
 
-<img src="../../../ru/user-guide/map/img/immersive-section/immesrive_background_toolbar.jpg" class="ms-docimage" width="550px"/>
+<img src="../img/immersive-section/immesrive_background_toolbar.jpg" class="ms-docimage" width="550px"/>
 
 **Панэль рэдагавання фону** змяняецца ў залежнасці ад тыпу медыя, дададзенага ў фон, як тлумачыцца ў раздзеле [Фон](title-section.md#images).
 

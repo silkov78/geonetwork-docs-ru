@@ -3,31 +3,31 @@
 *****************
 
 У ГІС Табліца атрыбутаў, звязаная з вектарным слоем, — гэта табліца, у якой захоўваецца таблічная інфармацыя, што адносіцца да гэтага слоя. Слупкі табліцы называюцца палямі, а радкі — запісамі. Кожны запіс у табліцы атрыбутаў адпавядае геаметрыі аднаго з аб'ектаў слоя. Гэтая сувязь дазваляе знаходзіць запісы ў табліцы (інфармацыю), выбіраючы аб'екты на карце, і наадварот.
-Карыстальнік з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слаёў](toc.md#toolbar-options) можа атрымаць доступ да Табліцы атрыбутаў:
+Карыстальнік з дапамогай кнопкі <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слаёў](toc.md#toolbar-options) можа атрымаць доступ да Табліцы атрыбутаў:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/attributes-table-1.jpg" class="ms-docimage"/>
+<img src="../img/attributes-table/attributes-table-1.jpg" class="ms-docimage"/>
 
 Атрымаўшы доступ да гэтай панэлі, карыстальнік можа выконваць наступныя асноўныя аперацыі:
 
-* [Рэдагаваць запісы](#рэдагаванне-і-выдаленне-існуючых-аб'ектаў) з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/edit_button.jpg" class="ms-docbutton"/>
+* [Рэдагаваць запісы](#рэдагаванне-і-выдаленне-існуючых-аб'ектаў) з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
 
 * Фільтраваць запісы ў Табліцы атрыбутаў рознымі спосабамі, як апісана ў раздзеле [Устаноўка фільтраў](#устаноўка-фільтраў) ніжэй
 
-* Адкрыць інструмент [Пашыраны пошук](filtering-layers.md#query-panel) з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/filter-icon.jpg" class="ms-docbutton"/>
+* Адкрыць інструмент [Пашыраны пошук](filtering-layers.md#query-panel) з дапамогай кнопкі <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
 
-* Актываваць [фільтрацыю па бягучым бачным экстэнце](filtering-layers.md#quick-filter-by-viewport) з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
+* Актываваць [фільтрацыю па бягучым бачным экстэнце](filtering-layers.md#quick-filter-by-viewport) з дапамогай кнопкі <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
 
-* Актываваць магчымасці фільтрацыі [пстрычкай па карце](filtering-layers.md#quick-filter-by-map-interaction) з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
+* Актываваць магчымасці фільтрацыі [пстрычкай па карце](filtering-layers.md#quick-filter-by-map-interaction) з дапамогай кнопкі <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
 
 * Выкарыстоўваць [хуткі фільтр па атрыбуце](filtering-layers.md#quick-filter-by-attributes)
 
-* Спампаваць даныя табліцы з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/export_data.jpg" class="ms-docbutton"/>
+* Спампаваць даныя табліцы з дапамогай кнопкі <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 
-* Стварыць [віджэты](widgets.md#widgets) з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/widgets.jpg" class="ms-docbutton"/>
+* Стварыць [віджэты](widgets.md#widgets) з дапамогай кнопкі <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
-* Наладзіць адлюстраванне табліцы атрыбутаў з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
+* Наладзіць адлюстраванне табліцы атрыбутаў з дапамогай кнопкі <img src="../img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
 
-* Наблізіць да аб'ектаў з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/zoom-feature.jpg" class="ms-docbutton"/>, даступнай у кожнага запісу, або наблізіць да максімальнага экстэнту старонкі з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/zoom_button.jpg" class="ms-docbutton"/> (даступна, толькі калі віртуальная пракрутка адключана; па змаўчанні яна ўключана).
+* Наблізіць да аб'ектаў з дапамогай кнопкі <img src="../img/button/zoom-feature.jpg" class="ms-docbutton"/>, даступнай у кожнага запісу, або наблізіць да максімальнага экстэнту старонкі з дапамогай кнопкі <img src="../img/button/zoom_button.jpg" class="ms-docbutton"/> (даступна, толькі калі віртуальная пракрутка адключана; па змаўчанні яна ўключана).
 
 !!!Папярэджанне
     Калі GeoServer наладжаны на строгую адпаведнасць CITE для WFS (па змаўчанні), табліца аб'ектаў працуе некарэктна.
@@ -40,62 +40,62 @@
 !!! Папярэджанне
     Па змаўчанні функцыі рэдагавання даступныя толькі для карыстальнікаў з правамі *адміністратара*. Іншыя карыстальнікі могуць выкарыстоўваць гэтыя інструменты, толькі калі гэта яўна пазначана ў канфігурацыі плагіна (падрабязней гл. у [дакументацыі API](https://dev-mapstore.geosolutionsgroup.com/mapstore/docs/api/plugins#plugins.FeatureEditor)). У любым выпадку, для рэдагавання слоя карыстальнік павінен мець на яго правы (гл., напрыклад, [Наладкі бяспекі GeoServer](https://docs.geoserver.org/stable/en/user/security/webadmin/data.html)).
 
-У *Рэжым рэдагавання* можна перайсці з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/editing-button.jpg" class="ms-docbutton"/> на панэлі *Табліца атрыбутаў*, што дазваляе кіраваць толькі тым слоем, да якога адносіцца табліца:
+У *Рэжым рэдагавання* можна перайсці з дапамогай кнопкі <img src="../img/button/editing-button.jpg" class="ms-docbutton"/> на панэлі *Табліца атрыбутаў*, што дазваляе кіраваць толькі тым слоем, да якога адносіцца табліца:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/attribute-table-editing-layer.jpg" class="ms-docimage"/>
+<img src="../img/attributes-table/attribute-table-editing-layer.jpg" class="ms-docimage"/>
 
 !!! Увага
     Калі *Рэжым рэдагавання* ўключаны, карыстальніку даступныя толькі функцыі рэдагавання, усе астатнія інструменты дэактываваны.
 
 Па змаўчанні ў *Рэжыме рэдагавання* вы ўбачыце панэль, падобную на наступную:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/edit-mode.jpg" class="ms-docimage"/>
+<img src="../img/attributes-table/edit-mode.jpg" class="ms-docimage"/>
 
-З дапамогай кнопкі **Выйсці з рэжыму рэдагавання** <img src="../../../ru/user-guide/map/img/button/quit-edit-mode-button.jpg" class="ms-docbutton"/> вы можаце завяршыць сеанс рэдагавання, каб зноў зрабіць даступнымі іншыя функцыі.
+З дапамогай кнопкі **Выйсці з рэжыму рэдагавання** <img src="../img/button/quit-edit-mode-button.jpg" class="ms-docbutton"/> вы можаце завяршыць сеанс рэдагавання, каб зноў зрабіць даступнымі іншыя функцыі.
 
 ### Стварэнне новых аб'ектаў
 
-Пасля ўключэння *Рэжыму рэдагавання* можна стварыць новы аб'ект, націснуўшы кнопку **Дадаць новы аб'ект** <img src="../../../ru/user-guide/map/img/button/add-new-feature-icon.jpg" class="ms-docbutton"/>. Пасля гэтага карыстальнік можа запоўніць палі і адрэдагаваць геаметрыю новага аб'екта:
+Пасля ўключэння *Рэжыму рэдагавання* можна стварыць новы аб'ект, націснуўшы кнопку **Дадаць новы аб'ект** <img src="../img/button/add-new-feature-icon.jpg" class="ms-docbutton"/>. Пасля гэтага карыстальнік можа запоўніць палі і адрэдагаваць геаметрыю новага аб'екта:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/add-new-feature-attributes.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/attributes-table/add-new-feature-attributes.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 Для рэдагавання атрыбутаў карты прадастаўляецца палі ўводу ў залежнасці ад тыпу атрыбута, што прымушае карыстальніка ўводзіць дапушчальнае значэнне. Калі атрыбут мае тып `text`, інтэрфейс таксама пакажа выпадальнае меню са спісам існуючых значэнняў для гэтага атрыбута, каб забяспечыць хуткі выбар.
 
 !!! Увага
     Выпадальнае меню даступна толькі ў тым выпадку, калі сервер прадастаўляе працэс WPS `gs:PagedUnique`.
 
-Клічнік *Адсутная геаметрыя* <img src="../../../ru/user-guide/map/img/button/missing-geometry-exclamation-point.jpg" class="ms-docbutton"/> у другім слупку *Табліцы атрыбутаў* азначае, што ў аб'екта яшчэ няма геаметрыі. Яе можна дадаць пазней або намаляваць на карце перад захаваннем:
+Клічнік *Адсутная геаметрыя* <img src="../img/button/missing-geometry-exclamation-point.jpg" class="ms-docbutton"/> у другім слупку *Табліцы атрыбутаў* азначае, што ў аб'екта яшчэ няма геаметрыі. Яе можна дадаць пазней або намаляваць на карце перад захаваннем:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/missing-geometry.jpg" class="ms-docimage" style="max-width:300px;"/>
+<img src="../img/attributes-table/missing-geometry.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-Для захавання ўнесеных змяненняў ёсць кнопка <img src="../../../ru/user-guide/map/img/button/save-changes.jpg" class="ms-docbutton"/>, а для іх адмены — кнопка <img src="../../../ru/user-guide/map/img/button/cancel-changes.jpg" class="ms-docbutton"/>.
-Пасля стварэння новага запісу для яго можна намаляваць геаметрыю, націснуўшы на кнопку <img src="../../../ru/user-guide/map/img/button/add-shape-icon.jpg" class="ms-docbutton"/>, якая з'яўляецца пры выбары гэтага аб'екта. Працэс малявання новай геаметрыі крыху адрозніваецца ў залежнасці ад тыпу слоя:
+Для захавання ўнесеных змяненняў ёсць кнопка <img src="../img/button/save-changes.jpg" class="ms-docbutton"/>, а для іх адмены — кнопка <img src="../img/button/cancel-changes.jpg" class="ms-docbutton"/>.
+Пасля стварэння новага запісу для яго можна намаляваць геаметрыю, націснуўшы на кнопку <img src="../img/button/add-shape-icon.jpg" class="ms-docbutton"/>, якая з'яўляецца пры выбары гэтага аб'екта. Працэс малявання новай геаметрыі крыху адрозніваецца ў залежнасці ад тыпу слоя:
 
 * Для слаёў *Палігонаў* і *Мультыпалігонаў* кожны пстрык на карце дадае новую вяршыню (мінімум 3). Пасля ўстаноўкі вяршынь можна змяняць форму, ствараючы новыя вяршыні або перацягваючы існуючыя:
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/drawing-polygon-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-polygon-shape.mp4"/></video>
 
 * Для слаёў *Ліній* і *Мультыліній* функцыя малявання формы працуе прыкладна гэтак жа. Адзінае адрозненне ў тым, што для малявання лініі патрабуецца як мінімум дзве вяршыні, а не тры, як для палігонаў:
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/drawing-line-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-line-shape.mp4"/></video>
 
 * Для слаёў *Кропак* кропка малюецца пры кожным пстрычцы на карце:
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/drawing-point-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-point-shape.mp4"/></video>
 
-Карыстальнік заўсёды можа выдаліць намаляваную форму з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/delete-geometry-button.jpg" class="ms-docbutton"/>.
+Карыстальнік заўсёды можа выдаліць намаляваную форму з дапамогай кнопкі <img src="../img/button/delete-geometry-button.jpg" class="ms-docbutton"/>.
 
 #### Стварэнне новай геаметрыі з прывязкай
 
-Для дакладнай наладкі становішча вяршынь пры рэдагаванні або стварэнні геаметрыі новага аб'екта можна скарыстацца функцыяй прывязкі. З дапамогай гэтай функцыі <img src="../../../ru/user-guide/map/img/button/snapping.jpg" class="ms-docbutton"/> можна прывязвацца да вяршынь аб'ектаў таго ж або іншых слаёў падчас рэдагавання.
+Для дакладнай наладкі становішча вяршынь пры рэдагаванні або стварэнні геаметрыі новага аб'екта можна скарыстацца функцыяй прывязкі. З дапамогай гэтай функцыі <img src="../img/button/snapping.jpg" class="ms-docbutton"/> можна прывязвацца да вяршынь аб'ектаў таго ж або іншых слаёў падчас рэдагавання.
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/add-new-snapping-geometry.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/add-new-snapping-geometry.mp4"/></video>
 
 Інструмент дазваляе наладзіць функцыю прывязкі, каб карыстальнік мог:
 
 * Выбраць адзін з бачных слаёў карты ў Панэлі зместу для выкарыстання прывязкі.
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/snap-new-layer.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/snap-new-layer.mp4"/></video>
 
 * Выбраць, да чаго прывязвацца на слоі, уключаючы/выключаючы **Рабро** і/або **Вяршыню**.
 
@@ -110,15 +110,15 @@
 
 ### Рэдагаванне і выдаленне існуючых аб'ектаў
 
-Каб адрэдагаваць існуючы аб'ект, неабходна пераключыць Табліцу атрыбутаў у рэжым рэдагавання, націснуўшы кнопку *Рэжым рэдагавання* <img src="../../../ru/user-guide/map/img/button/editing-button.jpg" class="ms-docbutton"/>. Калі мэта — адрэдагаваць запісы ў Табліцы атрыбутаў, карыстальнік можа проста выбраць іх і ўвесці патрэбнае значэнне ў поле ўводу. Аднак таксама можна змяніць геаметрыю, звязаную з запісам, адрэдагаваўшы яе на карце (дадаўшы або змяніўшы яе вяршыні).
+Каб адрэдагаваць існуючы аб'ект, неабходна пераключыць Табліцу атрыбутаў у рэжым рэдагавання, націснуўшы кнопку *Рэжым рэдагавання* <img src="../img/button/editing-button.jpg" class="ms-docbutton"/>. Калі мэта — адрэдагаваць запісы ў Табліцы атрыбутаў, карыстальнік можа проста выбраць іх і ўвесці патрэбнае значэнне ў поле ўводу. Аднак таксама можна змяніць геаметрыю, звязаную з запісам, адрэдагаваўшы яе на карце (дадаўшы або змяніўшы яе вяршыні).
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/update-polygon-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/update-polygon-shape.mp4"/></video>
 
 !!! Увага
     Можна рэдагаваць значэнне атрыбута для некалькіх запісаў адначасова, вылучыўшы адпаведную ячэйку ў табліцы і перацягнуўшы яе змесціва на некалькі ячэек, як паказана ніжэй:
-    <video  class="ms-docimage" style="max-width:300px;" controls><source src="../../../ru/user-guide/map/img/attributes-table/multiple_features.mp4"/></video>
+    <video  class="ms-docimage" style="max-width:300px;" controls><source src="../img/attributes-table/multiple_features.mp4"/></video>
 
-Пры націску на **Захаваць змены** <img src="../../../ru/user-guide/map/img/button/save-changes.jpg" class="ms-docbutton"/> гэтыя змены стануць пастаяннымі. У *Рэжыме рэдагавання* карыстальнік таксама можа выдаліць некаторыя аб'екты, вылучыўшы іх у табліцы і націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/delete-features-button.jpg" class="ms-docbutton" />.
+Пры націску на **Захаваць змены** <img src="../img/button/save-changes.jpg" class="ms-docbutton"/> гэтыя змены стануць пастаяннымі. У *Рэжыме рэдагавання* карыстальнік таксама можа выдаліць некаторыя аб'екты, вылучыўшы іх у табліцы і націснуўшы кнопку <img src="../img/button/delete-features-button.jpg" class="ms-docbutton" />.
 
 ## Устаноўка фільтраў
 
@@ -132,13 +132,13 @@
 
 * [Фільтр па бачным экстэнце](filtering-layers.md#quick-filter-by-viewport)
 
-Пасля прымянення гэтыя фільтры можна зрабіць бачнымі на карце, уключыўшы кнопку <img src="../../../ru/user-guide/map/img/button/sync.jpg" class="ms-docbutton"/>.
+Пасля прымянення гэтыя фільтры можна зрабіць бачнымі на карце, уключыўшы кнопку <img src="../img/button/sync.jpg" class="ms-docbutton"/>.
 
 ## Спампоўванне даных табліцы
 
-З Табліцы атрыбутаў таксама можна спампаваць даныя з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/export_data.jpg" class="ms-docbutton"/>. Адкрыецца наступнае акно:
+З Табліцы атрыбутаў таксама можна спампаваць даныя з дапамогай кнопкі <img src="../img/button/export_data.jpg" class="ms-docbutton"/>. Адкрыецца наступнае акно:
 
-<img src="../../../ru/user-guide/map/img/attributes-table/download_grid.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/attributes-table/download_grid.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 У гэтым акне можна ўсталяваць:
 
@@ -146,7 +146,7 @@
 
 * **Сістэму прасторавых каардынат** (па змаўчанні `Зыходная` або `WGS84`)
 
-Пры націску на кнопку <img src="../../../ru/user-guide/map/img/button/export_at.jpg" class="ms-docbutton"/> браўзер спампуе файл.
+Пры націску на кнопку <img src="../img/button/export_at.jpg" class="ms-docbutton"/> браўзер спампуе файл.
 
 ## Наладка адлюстравання табліцы атрыбутаў
 
@@ -154,8 +154,8 @@
 
 * Сартаванне запісаў у алфавітным парадку (калі гэта тэкставае поле) або ад мінімальнага да максімальнага значэння і наадварот (калі гэта лічбавае поле):
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/ordering_records.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/ordering_records.mp4"/></video>
 
-* Выбар, якія слупкі паказваць, а якія хаваць, з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/hide_show_col.jpg" class="ms-docbutton"/>:
+* Выбар, якія слупкі паказваць, а якія хаваць, з дапамогай кнопкі <img src="../img/button/hide_show_col.jpg" class="ms-docbutton"/>:
 
-<video  class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/attributes-table/show_hide_columns.mp4"/></video>
+<video  class="ms-docimage" controls><source src="../img/attributes-table/show_hide_columns.mp4"/></video>

@@ -4,18 +4,18 @@
 
 Секцыя "Банер" падобная на [секцыю "Загаловак"](title-section.md#title-section) і карысная для простага стварэння банера гісторыі без тэкставага загалоўка.
 
-<img src="../../../ru/user-guide/map/img/banner-section/banner-section.jpg" class="ms-docimage"/>
+<img src="../img/banner-section/banner-section.jpg" class="ms-docimage"/>
 
 З дапамогай панэлі рэдагавання фону карыстальнік можа выконваць наступныя дзеянні:
 
-* Дадаць медыя-змест у якасці фону, адкрыўшы [рэдактар медыя](media-editor-window.md#media-editor-window) з дапамогай кнопкі **Змяніць крыніцу медыя** <img src="../../../ru/user-guide/map/img/button/change-media.jpg" class="ms-docbutton"/>, і выбраць паміж выявамі, відэа або картамі.
+* Дадаць медыя-змест у якасці фону, адкрыўшы [рэдактар медыя](media-editor-window.md#media-editor-window) з дапамогай кнопкі **Змяніць крыніцу медыя** <img src="../img/button/change-media.jpg" class="ms-docbutton"/>, і выбраць паміж выявамі, відэа або картамі.
 
-* Змяніць вышыню секцыі з дапамогай кнопкі **Падагнаць/адаптаваць змест** <img src="../../../ru/user-guide/map/img/button/fit-adapt-content.jpg" class="ms-docbutton"/>
+* Змяніць вышыню секцыі з дапамогай кнопкі **Падагнаць/адаптаваць змест** <img src="../img/button/fit-adapt-content.jpg" class="ms-docbutton"/>
 
-* Выдаліць секцыю "Банер" з дапамогай кнопкі **Выдаліць** <img src="../../../ru/user-guide/map/img/button/remove-button-banner.jpg" class="ms-docbutton"/>
+* Выдаліць секцыю "Банер" з дапамогай кнопкі **Выдаліць** <img src="../img/button/remove-button-banner.jpg" class="ms-docbutton"/>
 
 Пасля дадання медыя-зместу ў якасці фону секцыі, панэль рэдагавання змяняецца, каб прадаставіць розныя функцыі ў залежнасці ад устаўленага зместу, як патлумачана [тут](title-section.md#images).
 
 Ніжэй прыведзены прыклад выявы, дададзенай у якасці фону ў секцыі "Банер":
 
-<img src="../../../ru/user-guide/map/img/banner-section/ex_banner.jpg" class="ms-docimage"/>
+<img src="../img/banner-section/ex_banner.jpg" class="ms-docimage"/>

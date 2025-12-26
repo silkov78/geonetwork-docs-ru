@@ -4,11 +4,11 @@
 
 Прыкладанне дазваляе дзяліцца *картамі* двума рознымі спосабамі:
 
-* Непасрэдна з хатняй старонкі, націснуўшы на кнопку "Падзяліцца" <img src="../../../ru/user-guide/map/img/button/share.jpg" class="ms-docbutton"/>, якая прысутнічае на панэлі інструментаў кожнай карткі рэсурсу.
+* Непасрэдна з хатняй старонкі, націснуўшы на кнопку "Падзяліцца" <img src="../img/button/share.jpg" class="ms-docbutton"/>, якая прысутнічае на панэлі інструментаў кожнай карткі рэсурсу.
 
-<img src="../../../ru/user-guide/map/img/share/share_cards.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_cards.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
-* Унутры рэсурсу, выбраўшы опцыю <img src="../../../ru/user-guide/map/img/button/share-button-bm.jpg" class="ms-docbutton" style="max-height:25px;"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar).
+* Унутры рэсурсу, выбраўшы опцыю <img src="../img/button/share-button-bm.jpg" class="ms-docbutton" style="max-height:25px;"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar).
 
 На *панэлі "Падзяліцца"* карыстальніку дазволена дзяліцца рэсурсам рознымі спосабамі:
 
@@ -24,7 +24,7 @@
 
 Як толькі адкрываецца *панэль "Падзяліцца"*, па змаўчанні бачны раздзел **Спасылка**:
 
-<img src="../../../ru/user-guide/map/img/share/share_window.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_window.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 Тут карыстальнік можа скапіяваць **URL-спасылку** на рэсурс або падзяліцца ёю з дапамогай **QR-кода**.
 
@@ -32,42 +32,42 @@
 
 Раздзел **Сацыяльныя сеткі** дазваляе карыстальніку падзяліцца рэсурсам у самых папулярных сацыяльных сетках, такіх як **Facebook**, **Twitter** і **LinkedIn**, проста націснуўшы на іконку сацыяльнай сеткі.
 
-<img src="../../../ru/user-guide/map/img/share/social.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/social.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 ## Пастаянная спасылка
 
 Раздзел **Пастаянная спасылка** дазваляе захаваць бягучы агульны стан праглядчыка рэсурсу і падзяліцца ім у выглядзе пастаяннай спасылкі.
 
-<img src="../../../ru/user-guide/map/img/share/permalink.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/permalink.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 Пастаянная спасылка — гэта новы рэсурс, які належыць да спецыяльнай катэгорыі, для якой карыстальнік павінен увесці **Загаловак** і **Апісанне** (апошняе не з'яўляецца абавязковым) і выбраць, ці будзе рэсурс агульнадаступным, усталяваўшы сцяжок **Публічны** (гэта створыць публічную пастаянную спасылку на карту, каб кожны мог атрымаць да яе доступ).
 
 !!! Увага
     Падрабязнасці карты, а таксама іншыя рэсурсы, звязаныя з картай або кантэкстам, калі яны прысутнічаюць, не будуць даступныя ў канчатковым рэсурсе пастаяннай спасылкі.
 
-Калі ўсе опцыі запоўненыя, карыстальнік можа **Згенераваць пастаянную спасылку** з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/generate_permalink.jpg" class="ms-docbutton"/>, каб атрымаць **URL пастаяннай спасылкі** або **QR-код** для абмену.
+Калі ўсе опцыі запоўненыя, карыстальнік можа **Згенераваць пастаянную спасылку** з дапамогай кнопкі <img src="../img/button/generate_permalink.jpg" class="ms-docbutton"/>, каб атрымаць **URL пастаяннай спасылкі** або **QR-код** для абмену.
 
-<img src="../../../ru/user-guide/map/img/share/permalink_generated.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/permalink_generated.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 ## Убудаванне
 
 Раздзел **Убудаванне** прадастаўляе карыстальніку неабходныя фрагменты кода, **убудаваны код** або **API** (даступна толькі для *карт*), каб убудаваць рэсурс на іншую вэб-старонку.
 
-<img src="../../../ru/user-guide/map/img/share/embed.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/embed.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 Акрамя таго, прадастаўляюцца опцыі для некаторай наладкі *ўбудаванага кода*:
 
 * Карыстальнік можа наладзіць **вышыню** і **шырыню** ўбудаванага рэсурсу, выбраўшы `Маленькі` (*600x500*), `Сярэдні` (*800x600*), `Вялікі` (*1000x800*) і `Карыстальніцкі` (можна выбраць жаданы памер).
 
-<img src="../../../ru/user-guide/map/img/share/embed_maps_size.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/embed_maps_size.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 * Для карт карыстальнік можа выбраць адлюстраванне [Панэлі зместу](toc.md#table-of-contents) на ўбудаванай карце, уключыўшы опцыю **Паказваць Змест**.
 
-<img src="../../../ru/user-guide/map/img/share/embed_maps_toc.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/embed_maps_toc.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 * Для інфармацыйных панэляў карыстальнік можа паказваць [сувязі](connecting-widgets.md#connecting-widgets) паміж віджэтамі на ўбудаванай інфармацыйнай панэлі, уключыўшы опцыю **Паказваць сувязі**.
 
-<img src="../../../ru/user-guide/map/img/share/embed-dash.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/embed-dash.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 ## Пашыраныя опцыі
 
@@ -80,17 +80,17 @@
 
 У выпадку карт, уключыўшы **Пашыраныя опцыі** ў *інструменце "Падзяліцца"*, карыстальнік можа дадаць у URL-адрас для абмену наступнае:
 
-<img src="../../../ru/user-guide/map/img/share/share_window_map_options.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_window_map_options.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 * Параметр **абмежавальнага прамавугольніка**, каб падзяліцца бягучым бачным экстэнтам карты, які адлюстроўваецца карыстальнікам.
 
 * Жаданы цэнтр і маштаб карты, уключыўшы опцыю **Дадаць цэнтр і маштаб**.
 
-<img src="../../../ru/user-guide/map/img/share/share_window_center_zoom.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_window_center_zoom.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 Звязаныя даступныя опцыі дазваляюць карыстальніку:
 
-* Цэнтраваць агульную карту па пэўных каардынатах, увёўшы іх у двух розных фарматах (*Дзесятковы* або *Аэранавігацыйны*, якія можна выбраць з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/change-search-tool.jpg" class="ms-docbutton"/>) або пстрыкнуўшы па карце для аўтаматычнай устаноўкі палёў каардынат.
+* Цэнтраваць агульную карту па пэўных каардынатах, увёўшы іх у двух розных фарматах (*Дзесятковы* або *Аэранавігацыйны*, якія можна выбраць з дапамогай кнопкі <img src="../img/button/change-search-tool.jpg" class="ms-docbutton"/>) або пстрыкнуўшы па карце для аўтаматычнай устаноўкі палёў каардынат.
 
 * Падзяліцца картай з пэўным **узроўнем маштабу** (`Мін:1` і `Макс:35`).
 
@@ -100,14 +100,14 @@
 
 Пасля актывацыі [3D-навігацыі](navigation-toolbar.md#3d-navigation) на карце, карыстальнік можа дадаць у URL-адрас для абмену наступнае, уключыўшы **Пашыраныя опцыі** ў *інструменце "Падзяліцца"*:
 
-<img src="../../../ru/user-guide/map/img/share/share_window_3d_map_options.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_window_3d_map_options.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 * Жаданы цэнтр і маштаб карты, уключыўшы опцыю **Дадаць цэнтр і маштаб у спасылку для абмену**.
 
-<img src="../../../ru/user-guide/map/img/share/share_3d_map.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="../img/share/share_3d_map.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
 Звязаныя даступныя опцыі дазваляюць карыстальніку:
 
-* Цэнтраваць агульную карту па пэўных каардынатах, увёўшы іх у двух розных фарматах (*Дзесятковы* або *Аэранавігацыйны*, якія можна выбраць з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/change-search-tool.jpg" class="ms-docbutton"/>) або пстрыкнуўшы па карце для аўтаматычнай устаноўкі палёў каардынат.
+* Цэнтраваць агульную карту па пэўных каардынатах, увёўшы іх у двух розных фарматах (*Дзесятковы* або *Аэранавігацыйны*, якія можна выбраць з дапамогай кнопкі <img src="../img/button/change-search-tool.jpg" class="ms-docbutton"/>) або пстрыкнуўшы па карце для аўтаматычнай устаноўкі палёў каардынат.
 
 * Падзяліцца картай з пэўным **узроўнем маштабу** (`Мін:1` і `Макс:35`), **Азімутам** (`Мін:0°` і `Макс:360°`), **Нахілам (крен)** (`Мін:-90°` і `Макс:90°`) і **Тангажом** (`Мін:-90°` і `Макс:90°`).

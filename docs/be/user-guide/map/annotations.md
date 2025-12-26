@@ -3,73 +3,73 @@
 У рэжыме картаграфічнага прагляду карыстальнік мае магчымасць дапаўняць карту спецыяльнымі аб'ектамі, якія адлюстроўваюць дадатковую інфармацыю, адзначаюць пэўныя месцы на карце і гэтак далей.
 Гэтыя аб'екты складаюць так званыя слаі **Анатацый**.
 
-У акне прагляду карты рэдактар можа атрымаць доступ да інструмента **Анатацыі** <img src="../../../ru/user-guide/map/img/button/annotations2.jpg" class="ms-docbutton" style="max-height:30px;"/> на [Панэлі зместу](toc.md) <img src="../../../ru/user-guide/map/img/button/show-layers.jpg" class="ms-docbutton" style="max-height:30px;"/> у левым верхнім куце акна прагляду карты.
+У акне прагляду карты рэдактар можа атрымаць доступ да інструмента **Анатацыі** <img src="../img/button/annotations2.jpg" class="ms-docbutton" style="max-height:30px;"/> на [Панэлі зместу](toc.md) <img src="../img/button/show-layers.jpg" class="ms-docbutton" style="max-height:30px;"/> у левым верхнім куце акна прагляду карты.
 
-<img src="../../../ru/user-guide/map/img/annotations/annotations_on_toc.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="../img/annotations/annotations_on_toc.jpg" class="ms-docimage" style="max-width:500px;" />
 
 Адкрыецца панэль анатацый, дзе рэдактар можа ўвесці **Загаловак** (абавязкова) і **Апісанне** (неабавязкова).
 
-<img src="../../../ru/user-guide/map/img/annotations/annotation_tool.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="../img/annotations/annotation_tool.jpg" class="ms-docimage" style="max-width:500px;" />
 
 На ўкладцы *Геаметрыя* рэдактар можа выбраць адзін з пяці розных тыпаў **геаметрыі**:
 
-* **Маркер** <img src="../../../ru/user-guide/map/img/button/marker2.jpg" class="ms-docbutton" />
-* **Лінія** <img src="../../../ru/user-guide/map/img/button/line2.jpg" class="ms-docbutton" />
-* **Палігон** <img src="../../../ru/user-guide/map/img/button/polygon2.jpg" class="ms-docbutton" />
-* **Тэкст** <img src="../../../ru/user-guide/map/img/button/text2.jpg" class="ms-docbutton" />
-* **Круг** <img src="../../../ru/user-guide/map/img/button/circle2.jpg" class="ms-docbutton" />
+* **Маркер** <img src="../img/button/marker2.jpg" class="ms-docbutton" />
+* **Лінія** <img src="../img/button/line2.jpg" class="ms-docbutton" />
+* **Палігон** <img src="../img/button/polygon2.jpg" class="ms-docbutton" />
+* **Тэкст** <img src="../img/button/text2.jpg" class="ms-docbutton" />
+* **Круг** <img src="../img/button/circle2.jpg" class="ms-docbutton" />
 
-<img src="../../../ru/user-guide/map/img/annotations/geometries-tab.jpg" class="ms-docimage"  style="max-width:500px;"/>
+<img src="../img/annotations/geometries-tab.jpg" class="ms-docimage"  style="max-width:500px;"/>
 
 Пасля выбару тыпу геаметрыі рэдактар можа:
 
 * Намаляваць *геаметрыю* на карце.
 
-<video class="ms-docimage" style="max-width:700px;"controls><source src="../../../ru/user-guide/map/img/annotations/line_annotation_drawing.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;"controls><source src="../img/annotations/line_annotation_drawing.mp4" ></video>
 
 * Увесці вяршыні геаметрыі або змяніць існуючыя праз **Рэдактар каардынат**, выкарыстоўваючы `Дзесятковы` або `Аэранавігацыйны` фарматы.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/annotations/coordinates_format_switcher.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/annotations/coordinates_format_switcher.mp4" ></video>
 
-* Для *Лініі* і *Палігона* дадаць новыя вяршыні, націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/++.jpg" class="ms-docbutton" /> і ўвёўшы значэнні `шыраты` і `даўгаты`.
+* Для *Лініі* і *Палігона* дадаць новыя вяршыні, націснуўшы кнопку <img src="../img/button/++.jpg" class="ms-docbutton" /> і ўвёўшы значэнні `шыраты` і `даўгаты`.
 
-<video class="ms-docimage" style="max-width:700px;"controls><source src="../../../ru/user-guide/map/img/annotations/add_vertex_button.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;"controls><source src="../img/annotations/add_vertex_button.mp4" ></video>
 
 !!! увага
     Калі каардынаты вяршынь няправільныя, яны пазначаюцца чырвоным клічнікам, а поле геаметрыі абводзіцца чырвонай рамкай.
-    <img src="../../../ru/user-guide/map/img/annotations/invalid_vertex.jpg" class="ms-docimage" style="max-width:500px;" />
+    <img src="../img/annotations/invalid_vertex.jpg" class="ms-docimage" style="max-width:500px;" />
     У гэтым выпадку захаваць анатацыю немагчыма, як паказана ніжэй:
-    <video class="ms-docimage" style="max-width:500px;" controls><source src="../../../ru/user-guide/map/img/annotations/invalid_vertex2.mp4" ></video>
+    <video class="ms-docimage" style="max-width:500px;" controls><source src="../img/annotations/invalid_vertex2.mp4" ></video>
 
 * Наладзіць **Стыль** анатацыі, як апісана ў наступным параграфе.
 
 Для кожнай створанай геаметрыі рэдактар можа выканаць наступныя аперацыі:
 
-* **Наблізіць** да геаметрыі анатацыі на карце з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/zoom_button.jpg" class="ms-docbutton" />
+* **Наблізіць** да геаметрыі анатацыі на карце з дапамогай кнопкі <img src="../img/button/zoom_button.jpg" class="ms-docbutton" />
 
-* **Выдаліць** геаметрыю анатацыі з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/delete_button.jpg" class="ms-docbutton" />
+* **Выдаліць** геаметрыю анатацыі з дапамогай кнопкі <img src="../img/button/delete_button.jpg" class="ms-docbutton" />
 
-Пасля стварэння ўсіх геаметрый карыстальнік можа вярнуцца ў [Панэль зместу](toc.md), націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/x2.jpg" class="ms-docbutton" />. Тут з'явіцца новы слой анатацый.
+Пасля стварэння ўсіх геаметрый карыстальнік можа вярнуцца ў [Панэль зместу](toc.md), націснуўшы кнопку <img src="../img/button/x2.jpg" class="ms-docbutton" />. Тут з'явіцца новы слой анатацый.
 
-<img src="../../../ru/user-guide/map/img/annotations/annotation2.jpg" class="ms-docimage" />
+<img src="../img/annotations/annotation2.jpg" class="ms-docimage" />
 
 У [Панэлі зместе](toc.md) *панэль інструментаў Анатацый* дазваляе карыстальніку:
 
-<img src="../../../ru/user-guide/map/img/annotations/annotation3.jpg" class="ms-docimage" />
+<img src="../img/annotations/annotation3.jpg" class="ms-docimage" />
 
-* **Наблізіць** да экстэнту анатацыі з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/zoom_button.jpg" class="ms-docbutton" />
+* **Наблізіць** да экстэнту анатацыі з дапамогай кнопкі <img src="../img/button/zoom_button.jpg" class="ms-docbutton" />
 
-* **Выдаліць** анатацыю з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/delete_button.jpg" class="ms-docbutton" />
+* **Выдаліць** анатацыю з дапамогай кнопкі <img src="../img/button/delete_button.jpg" class="ms-docbutton" />
 
-* **Рэдагаваць** анатацыю з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/edit_button.jpg" class="ms-docbutton" />
+* **Рэдагаваць** анатацыю з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton" />
 
-* **Спампаваць** анатацыю з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/download_annotation_button.jpg" class="ms-docbutton" />
+* **Спампаваць** анатацыю з дапамогай кнопкі <img src="../img/button/download_annotation_button.jpg" class="ms-docbutton" />
 
 ## Стылізацыя анатацый
 
 У залежнасці ад абранага тыпу анатацыі, карыстальнік можа наладжваць яе стыль з дапамогай магутнага рэдактара стыляў. Ён даступны на ўкладцы *Стыль* у акне прагляду анатацый.
 
-<img src="../../../ru/user-guide/map/img/annotations/annotations_toolbar.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/annotations_toolbar.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 !!! увага
     Для кожнага сімвала стылю даступна мноства опцый 3D-стылю, як паказана ў раздзеле [Стылізацыя ў 3D](annotations.md#styling-on-3d) ніжэй.
@@ -78,18 +78,18 @@
 
 Карыстальніку прадастаўляюцца розныя стылі анатацый тыпу *Маркер*:
 
-* Тып *Знак*: пры націску на кнопку <img src="../../../ru/user-guide/map/img/button/add_mark_button.jpg" class="ms-docbutton"/> адкрываецца панэль наладкі знака.
+* Тып *Знак*: пры націску на кнопку <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> адкрываецца панэль наладкі знака.
 
-<img src="../../../ru/user-guide/map/img/annotations/marker_type_selection.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/marker_type_selection.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 Знак можа мець розную `Форму`, `Колер заліўкі` і `Абводку` з рознымі `Колерам абводкі`, `Шырынёй`, `Стылем абводкі`, а таксама наладжвальныя `Радыус` і `Паварот`. Зірніце на наступны прыклад.
 
-<img src="../../../ru/user-guide/map/img/annotations/marker_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/marker_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-* Тып *Іконка*: пры націску на кнопку <img src="../../../ru/user-guide/map/img/button/add_icon_button.jpg" class="ms-docbutton"/> адкрываецца панэль наладкі іконкі.
+* Тып *Іконка*: пры націску на кнопку <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/> адкрываецца панэль наладкі іконкі.
 Іконка можа мець розную `Выяву`. Націснуўшы на яе, карыстальнік можа выбраць *Маркер* і *Гліф*, як паказана ніжэй:
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/annotations/icon_style_editor.mp4" ></video>
+<video class="ms-docimage" controls><source src="../img/annotations/icon_style_editor.mp4" ></video>
 
 Іконка таксама наладжваецца з дапамогай розных параметраў: `Празрыстасць`, `Памер`, `Паварот` і `Кропка прывязкі`.
 
@@ -100,39 +100,39 @@
 
 Анатацыя тыпу *Лінія* мае спецыяльную панэль стылізацыі з наладжвальнай `Абводкай` з рознымі `Колерам`, `Шырынёй` і `Стылем`, а таксама рознымі тыпамі `Заканчэння лініі` (*Прамое*, *Круглае*, *Квадратнае*) і `Злучэння ліній` (*Скошанае*, *Круглае*, *Вострае*). Зірніце на малюнак ніжэй.
 
-<img src="../../../ru/user-guide/map/img/annotations/polyline_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/polyline_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-Анатацыю тыпу Лінія таксама можна наладзіць, дадаўшы сімвал тыпу Знак, націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/add_mark_button.jpg" class="ms-docbutton"/>, або Іконку з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/add_icon_button.jpg" class="ms-docbutton"/>, і выбраўшы *Пачатковая кропка*, *Цэнтр* або *Канцавая кропка* ў опцыі `Пераўтварэнне геаметрыі`.
+Анатацыю тыпу Лінія таксама можна наладзіць, дадаўшы сімвал тыпу Знак, націснуўшы кнопку <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/>, або Іконку з дапамогай кнопкі <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/>, і выбраўшы *Пачатковая кропка*, *Цэнтр* або *Канцавая кропка* ў опцыі `Пераўтварэнне геаметрыі`.
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/annotations/start_point_option.mp4" ></video>
+<video class="ms-docimage" controls><source src="../img/annotations/start_point_option.mp4" ></video>
 
 ***Палігон***
 
 Анатацыя тыпу *Палігон* можа мець розны колер `Заліўкі` і `Контур` з рознымі `Колерам`, `Шырынёй` і `Стылем`. Зірніце на наступны прыклад.
 
-<img src="../../../ru/user-guide/map/img/annotations/polygon_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/polygon_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-Таксама для палігона можна дадаць сімвал *Знак* <img src="../../../ru/user-guide/map/img/button/add_mark_button.jpg" class="ms-docbutton"/> або *Іконку* <img src="../../../ru/user-guide/map/img/button/add_icon_button.jpg" class="ms-docbutton"/> такім жа чынам, як і для анатацый тыпу Лінія.
+Таксама для палігона можна дадаць сімвал *Знак* <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> або *Іконку* <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/> такім жа чынам, як і для анатацый тыпу Лінія.
 
 ***Тэкст***
 
 Вызначаючы кропкавую геаметрыю з прывязаным тэкстам, анатацыя тыпу *Тэкст* дазваляе наладжваць надпіс з дапамогай мноства опцый, такіх як: `Сямейства шрыфтоў` (*DejaVu Sans*, *Serif* і г.д.), `Колер` шрыфта, `Памер`, `Стыль` (*Звычайны* або *Курсіў*) і `Насычанасць шрыфта` (*Звычайны* або *Тлусты*), а таксама дазваляе выбраць жаданую `Кропку прывязкі` (*Цэнтр*, *Ніжні левы* і г.д.), `Колер арэолу` і `Таўшчыню арэолу`. Таксама можна выбраць `Паварот` і `Зрушэнне` тэксту (*x* і *y*). Ніжэй прыведзены прыклад.
 
-<img src="../../../ru/user-guide/map/img/annotations/text_annotation_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/text_annotation_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ***Круг***
 
 Анатацыя тыпу *Круг* мае ўласную панэль сімвалаў для наладкі `Колеру` і `Контуру` з рознымі `Колерам`, `Шырынёй` і `Стылем`. Зірніце на наступны прыклад.
 
-<img src="../../../ru/user-guide/map/img/annotations/circle_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="../img/annotations/circle_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-*Цэнтр* анатацыі тыпу *Круг* таксама можна наладзіць, дадаўшы сімвал *Знак* <img src="../../../ru/user-guide/map/img/button/add_mark_button.jpg" class="ms-docbutton"/> або *Іконку* <img src="../../../ru/user-guide/map/img/button/add_icon_button.jpg" class="ms-docbutton"/>, як і ў выпадку анатацый тыпу Лінія і Палігон.
+*Цэнтр* анатацыі тыпу *Круг* таксама можна наладзіць, дадаўшы сімвал *Знак* <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> або *Іконку* <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/>, як і ў выпадку анатацый тыпу Лінія і Палігон.
 
 ## Наладкі анатацый
 
 Пасля стварэння ўсіх *геаметрый* анатацыі карыстальнік можа наладзіць **Межы бачнасці**, перайшоўшы на ўкладку *Наладкі*.
 
-<img src="../../../ru/user-guide/map/img/annotations/settings_tab.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="../img/annotations/settings_tab.jpg" class="ms-docimage" style="max-width:500px;" />
 
 **Межы бачнасці** дазваляюць адлюстроўваць анатацыю толькі ў пэўных маштабах. Карыстальнік можа ўсталяваць *Максімальнае значэнне* і *Мінімальнае значэнне* і выбраць *Тып межаў* паміж `Маштабам` або `Раздзяляльнасцю`.
 
@@ -140,43 +140,43 @@
 
 Функцыянал рэжыму картаграфічнага прагляду дазваляе візуалізаваць *Анатацыі* таксама і ў рэжыме [3D-навігацыі](navigation-toolbar.md#3d-navigation).
 
-<img src="../../../ru/user-guide/map/img/annotations/3d_annotations.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="../img/annotations/3d_annotations.jpg" class="ms-docimage" style="max-width:500px;" />
 
 ### Геаметрыя ў 3D
 
 У рэжыме [3D-навігацыі](navigation-toolbar.md#3d-navigation), пасля выбару тыпу геаметрыі і яе адмалёўкі на карце, карыстальнік таксама можа змяняць **Вышыню** геаметрыі для кожнай каардынаты.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/annotations/height_switcher.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/annotations/height_switcher.mp4" ></video>
 
 ### Стылізацыя ў 3D
 
 Для анатацый тыпу *Маркер* у рэжыме [3D-навігацыі](navigation-toolbar.md#3d-navigation) таксама даступны тып сімвала **3D-мадэль**.
-На ўкладцы *Стыль*, пры націску на кнопку <img src="../../../ru/user-guide/map/img/button/3D-model-button.jpg" class="ms-docbutton"/>, адкрываецца опцыя 3D-мадэлі, якая дазваляе дадаць 3D-мадэль (на аснове [glTF](https://github.com/KhronosGroup/glTF), таксама падтрымліваецца GLB) у якасці знешняй графікі, указаўшы яе *URL* (гл. таксама [дакументацыю Cesium](https://cesium.com/learn/cesiumjs/ref-doc/ModelGraphics.html?classFilter=Model)). Акрамя таго, можна наладзіць `Маштаб`, `Паварот` і `Колер` 3D-мадэлі. Зірніце на наступны прыклад.
+На ўкладцы *Стыль*, пры націску на кнопку <img src="../img/button/3D-model-button.jpg" class="ms-docbutton"/>, адкрываецца опцыя 3D-мадэлі, якая дазваляе дадаць 3D-мадэль (на аснове [glTF](https://github.com/KhronosGroup/glTF), таксама падтрымліваецца GLB) у якасці знешняй графікі, указаўшы яе *URL* (гл. таксама [дакументацыю Cesium](https://cesium.com/learn/cesiumjs/ref-doc/ModelGraphics.html?classFilter=Model)). Акрамя таго, можна наладзіць `Маштаб`, `Паварот` і `Колер` 3D-мадэлі. Зірніце на наступны прыклад.
 
-<img src="../../../ru/user-guide/map/img/annotations/3d_model_type.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="../img/annotations/3d_model_type.jpg" class="ms-docimage" style="max-width:500px;" />
 
 Акрамя таго, для [3D-навігацыі](navigation-toolbar.md#3d-navigation) карыстальніку даступныя некаторыя дадатковыя опцыі стылізацыі, такія як:
 
 * **На пярэдні план** (даступна для кропкавых і тэкставых геаметрый), каб вынесці наперад і, такім чынам, зрабіць бачнай (калі ўсталявана значэнне *true*) анатацыю, перакрытую слаямі 3D-тайлаў і слоем рэльефу (у апошнім выпадку, калі опцыя *праверкі глыбіні адносна рэльефу* ўключана ў Глабальных наладах).
 
-<img src="../../../ru/user-guide/map/img/annotations/bring-to-front.jpg" class="ms-docimage">
+<img src="../img/annotations/bring-to-front.jpg" class="ms-docimage">
 
 * **Адлік вышыні ад зямлі** (даступна для кропкавых і тэкставых геаметрый) для ўказання кропкі адліку вышыні: `Няма` (ад абсалютнага нуля), `Адносна` (ад узроўню слоя рэльефу) або `Па паверхні` (анатацыя прывязваецца да рэльефу, калі ён ёсць, або да паверхні зямлі). Таксама можна дакладна наладзіць значэнне **Вышыні** кропкі.
 
-<img src="../../../ru/user-guide/map/img/annotations/height-reference.jpg" class="ms-docimage">
+<img src="../img/annotations/height-reference.jpg" class="ms-docimage">
 
 * **Лінія-вынаска** (даступна для кропкавых і тэкставых геаметрый) для дадання лініі, якая злучае сімвал кропкі з рэльефам/паверхняй зямлі, каб мець больш дакладнае ўяўленне пра фактычнае становішча кропкі пры змене арыентацыі камеры. Рэдактар можа выбраць **Шырыню** лініі і **Колер** з дапамогай звычайнага *інструмента выбару колеру*.
 
-<img src="../../../ru/user-guide/map/img/annotations/leader-line.jpg" class="ms-docimage">
+<img src="../img/annotations/leader-line.jpg" class="ms-docimage">
 
 * **Прывязаць да паверхні** для ўключэння/выключэння лагічнай ўласцівасці, якая ўказвае, ці павінна лінія або палігон прывязвацца да паверхні (гэта опцыя даступная для геаметрый тыпу Лінія і Палігон).
 
-<img src="../../../ru/user-guide/map/img/annotations/clamp-to-ground.jpg" class="ms-docimage">
+<img src="../img/annotations/clamp-to-ground.jpg" class="ms-docimage">
 
 * **Крыніца для прывязкі да паверхні** для выбару, на што павінен уплываць эфект драпіроўкі: `3D-тайлы`, `Рэльеф` або `Абодва`. Гэта опцыя даступная для геаметрый тыпу Лінія, Палігон і Круг і актыўная толькі тады, калі опцыя *Прывязаць да паверхні* ўсталявана ў `True`.
 
-<img src="../../../ru/user-guide/map/img/annotations/polygon-type.jpg" class="ms-docimage">
+<img src="../img/annotations/polygon-type.jpg" class="ms-docimage">
 
 * **Вышыня выціскання** (даступна для геаметрый тыпу Лінія і Заліўка) для наладкі значэння вышыні, на якую будзе выціснуты аб'ект. Таксама можна ўключыць/выключыць опцыю **Выцісканне адносна геаметрыі** (ад самай высокай кропкі геаметрыі аб'екта), і толькі для геаметрый тыпу *Лінія* карыстальнік можа наладзіць **Колер выціскання** і **Тып выціскання**, выбраўшы паміж опцыямі `Сцяна`, `Круг` і `Квадрат` для выціснутых аб'ектаў.
 
-<img src="../../../ru/user-guide/map/img/annotations/extrusion-geometry.jpg" class="ms-docimage">
+<img src="../img/annotations/extrusion-geometry.jpg" class="ms-docimage">

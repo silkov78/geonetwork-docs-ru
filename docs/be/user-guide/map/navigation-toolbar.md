@@ -3,15 +3,15 @@
 *********
 
 *Навігацыйная панэль* — гэта панэль навігацыі, якая змяшчае розныя элементы, што дапамагаюць карыстальніку даследаваць карту. У прыватнасці, можна змяняць маштаб, змяняць экстэнт, перамяшчацца ў 3D-рэжыме і запытваць аб'екты на карце.
-Акрамя таго, значок <img src="../../../ru/user-guide/map/img/button/collapse.jpg" class="ms-docbutton"/> выкарыстоўваецца для разгортвання/згортвання навігацыйнай панэлі.
+Акрамя таго, значок <img src="../img/button/collapse.jpg" class="ms-docbutton"/> выкарыстоўваецца для разгортвання/згортвання навігацыйнай панэлі.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/sidebar.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/sidebar.jpg" class="ms-docimage"/>
 
 ## Інструмент геалакацыі
 
-З дапамогай *Паказаць маё месцазнаходжанне* <img src="../../../ru/user-guide/map/img/button/geolocation.jpg" class="ms-docbutton"/> карыстальнік можа цэнтраваць карту на сваім месцазнаходжанні. Пры гэтым кнопка становіцца зялёнай.
+З дапамогай *Паказаць маё месцазнаходжанне* <img src="../img/button/geolocation.jpg" class="ms-docbutton"/> карыстальнік можа цэнтраваць карту на сваім месцазнаходжанні. Пры гэтым кнопка становіцца зялёнай.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/position.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/position.jpg" class="ms-docimage"/>
 
 Месцазнаходжанне застаецца актыўным нават пры ўзаемадзеянні карыстальніка з картай; адным пстрыком па кнопцы можна зноў цэнтраваць карту на сваім месцазнаходжанні.
 Каб адключыць месцазнаходжанне, трэба двойчы пстрыкнуць па кнопцы.
@@ -20,79 +20,79 @@
 
 Прыкладанне прадастаўляе некалькі інструментаў, якія дазваляюць карыстальніку:
 
-* **Павялічыць** маштаб карты з дапамогай значка павелічэння <img src="../../../ru/user-guide/map/img/button/zoom-in.jpg" class="ms-docbutton"/>
+* **Павялічыць** маштаб карты з дапамогай значка павелічэння <img src="../img/button/zoom-in.jpg" class="ms-docbutton"/>
 
-* **Паменшыць** маштаб карты з дапамогай значка памяншэння <img src="../../../ru/user-guide/map/img/button/zoom-out.jpg" class="ms-docbutton"/>
+* **Паменшыць** маштаб карты з дапамогай значка памяншэння <img src="../img/button/zoom-out.jpg" class="ms-docbutton"/>
 
-* **Пераключыцца ў поўнаэкранны** <img src="../../../ru/user-guide/map/img/button/full-screen.jpg" class="ms-docbutton"/> рэжым
+* **Пераключыцца ў поўнаэкранны** <img src="../img/button/full-screen.jpg" class="ms-docbutton"/> рэжым
 
-* **Вярнуцца** <img src="../../../ru/user-guide/map/img/button/back-extent.jpg" class="ms-docbutton"/> да папярэдняга экстэнту карты ў гісторыі навігацыі
+* **Вярнуцца** <img src="../img/button/back-extent.jpg" class="ms-docbutton"/> да папярэдняга экстэнту карты ў гісторыі навігацыі
 
-* **Перайсці наперад** <img src="../../../ru/user-guide/map/img/button/forward-extent.jpg" class="ms-docbutton"/> да наступнага экстэнту карты ў гісторыі навігацыі
+* **Перайсці наперад** <img src="../img/button/forward-extent.jpg" class="ms-docbutton"/> да наступнага экстэнту карты ў гісторыі навігацыі
 
-* **Наблізіць да максімальнага экстэнту** <img src="../../../ru/user-guide/map/img/button/max-extent.jpg" class="ms-docbutton"/> карты
+* **Наблізіць да максімальнага экстэнту** <img src="../img/button/max-extent.jpg" class="ms-docbutton"/> карты
 
 ## 3D-навігацыя
 
-*3D-навігацыя* заснавана на CesiumJS. Калі націснуць кнопку 3D <img src="../../../ru/user-guide/map/img/button/3D-icon.jpg" class="ms-docbutton"/> на *Навігацыйнай панэлі*, карта пераключыцца ў 3D-рэжым, і змесціва карты будзе адлюстроўвацца на 3D-глобусе, вакол якога можна круціцца з дапамогай компаса, размешчанага ў правым верхнім куце карты.
+*3D-навігацыя* заснавана на CesiumJS. Калі націснуць кнопку 3D <img src="../img/button/3D-icon.jpg" class="ms-docbutton"/> на *Навігацыйнай панэлі*, карта пераключыцца ў 3D-рэжым, і змесціва карты будзе адлюстроўвацца на 3D-глобусе, вакол якога можна круціцца з дапамогай компаса, размешчанага ў правым верхнім куце карты.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/3D-mode.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/3D-mode.jpg" class="ms-docimage"/>
 
 !!! заўвага
     *3D-рэжым* таксама падтрымлівае рэндэрынг слаёў **3D Tiles** пасля іх дадання праз *інструмент "Каталог"*, як апісана [тут](catalog.md#3d-tiles-catalog).
 
 ## Інструмент "Ідэнтыфікацыя"
 
-Інструмент *Ідэнтыфікацыя* <img src="../../../ru/user-guide/map/img/button/identify.jpg" class="ms-docbutton"/> дазваляе атрымліваць інфармацыю пра слаі на карце.
+Інструмент *Ідэнтыфікацыя* <img src="../img/button/identify.jpg" class="ms-docbutton"/> дазваляе атрымліваць інфармацыю пра слаі на карце.
 Інструмент актыўны па змаўчанні (кнопка зялёная). Таму, калі карыстальнік пстрыкне па слоі на карце, адкрыецца панэль ідэнтыфікацыі, якая змяшчае інфармацыю пра слаі, што адпавядае кропцы пстрычкі на карце (каардынаты кропкі пстрычкі таксама адлюстроўваюцца на панэлі ідэнтыфікацыі).
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/identify-tool.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/identify-tool.jpg" class="ms-docimage"/>
 
-Інфармацыя пра слаі па змаўчанні адлюстроўваецца ў выглядзе простага тэксту. Фармат можна змяніць, выбраўшы кнопку <img src="../../../ru/user-guide/map/img/button/settings2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar), дзе карыстальнік можа выбраць адзін з трох розных фарматаў у меню *Фармат адказу ідэнтыфікацыі*: **TEXT**, **HTML** і **PROPERTIES**.
+Інфармацыя пра слаі па змаўчанні адлюстроўваецца ў выглядзе простага тэксту. Фармат можна змяніць, выбраўшы кнопку <img src="../img/button/settings2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar), дзе карыстальнік можа выбраць адзін з трох розных фарматаў у меню *Фармат адказу ідэнтыфікацыі*: **TEXT**, **HTML** і **PROPERTIES**.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/format-options.jpg" class="ms-docimage" style="max-width:400px;"/>
+<img src="../img/navigation-toolbar/format-options.jpg" class="ms-docimage" style="max-width:400px;"/>
 
 Інфармацыя будзе вернута ў фармаце, абраным карыстальнікам. Напрыклад, у фармаце *PROPERTIES* гэта будзе выглядаць так:
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/format_example.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/format_example.jpg" class="ms-docimage"/>
 
 !!! увага
     Гэтыя глабальныя наладкі могуць быць перавызначаны канфігурацыяй канкрэтнага слоя (гл. [Форма інфармацыі аб аб'екце](layer-settings.md#feature-info-form)).
 
 Акрамя інфармацыі пра слаі, *Інструмент "Ідэнтыфікацыя"* прадастаўляе наступнае:
 
-* **Адрас кропкі** праз кнопку *Больш інфармацыі* <img src="../../../ru/user-guide/map/img/button/more_info_icon.jpg" class="ms-docbutton"/>
+* **Адрас кропкі** праз кнопку *Больш інфармацыі* <img src="../img/button/more_info_icon.jpg" class="ms-docbutton"/>
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/more-info.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/more-info.jpg" class="ms-docimage"/>
 
-* **Каардынаты** <img src="../../../ru/user-guide/map/img/button/coordinates_editor_icon.jpg" class="ms-docbutton"/> кропкі
+* **Каардынаты** <img src="../img/button/coordinates_editor_icon.jpg" class="ms-docbutton"/> кропкі
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/coordinate.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/coordinate.jpg" class="ms-docimage"/>
 
 !!! заўвага
-    Каардынаты кропкі адлюстроўваюцца ў **дзесятковым** або **аэранавігацыйным** фармаце. Фармат можна змяніць з дапамогай кнопкі *наладак* <img src="../../../ru/user-guide/map/img/button/gear_icon.jpg" class="ms-docbutton" style="max-heigth:50px;"/>
+    Каардынаты кропкі адлюстроўваюцца ў **дзесятковым** або **аэранавігацыйным** фармаце. Фармат можна змяніць з дапамогай кнопкі *наладак* <img src="../img/button/gear_icon.jpg" class="ms-docbutton" style="max-heigth:50px;"/>
 
-* Кнопка **Падсвятліць аб'екты** <img src="../../../ru/user-guide/map/img/button/highlight_features_icon.jpg" class="ms-docbutton"/> дазваляе падсвятліць на карце аб'екты слаёў, якія адпавядаюць атрыманай інфармацыі ў кропцы пстрычкі.
+* Кнопка **Падсвятліць аб'екты** <img src="../img/button/highlight_features_icon.jpg" class="ms-docbutton"/> дазваляе падсвятліць на карце аб'екты слаёў, якія адпавядаюць атрыманай інфармацыі ў кропцы пстрычкі.
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/hightlight-point1.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/navigation-toolbar/hightlight-point1.mp4"/></video>
 
-* Кнопка **Рэдагаваць** <img src="../../../ru/user-guide/map/img/button/edit_button.jpg" class="ms-docbutton"/> дазваляе карыстальніку адкрыць [Табліцу атрыбутаў](attributes-table.md) у рэжыме рэдагавання, паказваючы толькі запісы слаёў, якія адпавядаюць кропцы пстрычкі на карце.
+* Кнопка **Рэдагаваць** <img src="../img/button/edit_button.jpg" class="ms-docbutton"/> дазваляе карыстальніку адкрыць [Табліцу атрыбутаў](attributes-table.md) у рэжыме рэдагавання, паказваючы толькі запісы слаёў, якія адпавядаюць кропцы пстрычкі на карце.
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/edit_identify.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/navigation-toolbar/edit_identify.mp4"/></video>
 
 ### Выкарыстанне рэдактара каардынат
 
 Каб ідэнтыфікаваць аб'екты слаёў шляхам уводу каардынат замест пстрычкі па карце, вы можаце выкарыстоўваць **Рэдактар каардынат**.
 
-Каардынаты могуць быць у **дзесятковым** або **аэранавігацыйным** фармаце ў залежнасці ад патрэб карыстальніка. Фармат можна змяніць з дапамогай кнопкі *наладак* <img src="../../../ru/user-guide/map/img/button/gear_icon.jpg" class="ms-docbutton" style="max-heigth:50px;"/>
+Каардынаты могуць быць у **дзесятковым** або **аэранавігацыйным** фармаце ў залежнасці ад патрэб карыстальніка. Фармат можна змяніць з дапамогай кнопкі *наладак* <img src="../img/button/gear_icon.jpg" class="ms-docbutton" style="max-heigth:50px;"/>
 
 Прыклад пошуку з `дзесятковымі` каардынатамі:
 
-<video class="ms-docimage"   controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/decimal-ex.mp4"/></video>
+<video class="ms-docimage"   controls><source src="../img/navigation-toolbar/decimal-ex.mp4"/></video>
 
 Прыклад пошуку з `аэранавігацыйнымі` каардынатамі:
 
-<video class="ms-docimage"  style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/areonautical-ex.mp4"/></video>
+<video class="ms-docimage"  style="max-width:700px;" controls><source src="../img/navigation-toolbar/areonautical-ex.mp4"/></video>
 
 ### Інструмент "Ідэнтыфікацыя" з больш чым адным слоем
 
@@ -100,20 +100,20 @@
 
 Калі карыстальнік пстрыкне па карце, дзе прысутнічае адзін або некалькі слаёў, якія перакрываюцца, адкрыецца панэль ідэнтыфікацыі. Панэль прадастаўляе інфармацыю пра слаі, і карыстальнік можа пераключацца паміж інфармацыяй пра розныя слаі з выпадальнага меню **выбару слоя**, дзе опцыі слаёў адсартаваны гэтак жа, як у *Панэлі зместу*.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/layers.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/layers.jpg" class="ms-docimage"/>
 
-Каб атрымаць інфармацыю толькі пра адзін слой, карыстальнік можа выбраць слой у [Панэлі зместу](toc.md#table-of-contents) з дапамогай кнопкі *Змест* <img src="../../../ru/user-guide/map/img/button/show-layers.jpg" class="ms-docbutton"/>, а затым пстрыкнуць па слоі на карце, каб выканаць аперацыю ідэнтыфікацыі толькі для гэтага абранага слоя. Адкрыецца панэль ідэнтыфікацыі, якая змяшчае інфармацыю пра слой, што адпавядае кропцы пстрычкі на карце:
+Каб атрымаць інфармацыю толькі пра адзін слой, карыстальнік можа выбраць слой у [Панэлі зместу](toc.md#table-of-contents) з дапамогай кнопкі *Змест* <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, а затым пстрыкнуць па слоі на карце, каб выканаць аперацыю ідэнтыфікацыі толькі для гэтага абранага слоя. Адкрыецца панэль ідэнтыфікацыі, якая змяшчае інфармацыю пра слой, што адпавядае кропцы пстрычкі на карце:
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/layer.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/navigation-toolbar/layer.mp4"/></video>
 
 ### Плаваючы інструмент "Ідэнтыфікацыя"
 
 Карыстальнік можа ўсталяваць інструмент "Ідэнтыфікацыя" ў плаваючы рэжым (**Плаваючы інструмент "Ідэнтыфікацыя"**) замест стандартнага, даступнага па пстрычцы на карце. У гэтым выпадку на карце з'явіцца ўсплывальнае акно ідэнтыфікацыі, як толькі карыстальнік навядзе курсор на слой на карце.
 
-Каб актываваць *Плаваючы інструмент "Ідэнтыфікацыя"*, карыстальнік можа выбраць кнопку <img src="../../../ru/user-guide/map/img/button/settings2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Тут ён можа выбраць опцыю **Навядзенне** ў выпадальным меню *Падзея для ідэнтыфікацыі*.
+Каб актываваць *Плаваючы інструмент "Ідэнтыфікацыя"*, карыстальнік можа выбраць кнопку <img src="../img/button/settings2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Тут ён можа выбраць опцыю **Навядзенне** ў выпадальным меню *Падзея для ідэнтыфікацыі*.
 
-<img src="../../../ru/user-guide/map/img/navigation-toolbar/setting-hover.jpg" class="ms-docimage"/>
+<img src="../img/navigation-toolbar/setting-hover.jpg" class="ms-docimage"/>
 
 Як толькі абрана опцыя *Навядзенне*, карыстальнік можа навесці мыш на слой на карце, каб паказаць усплывальнае акно з інфармацыяй ідэнтыфікацыі.
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/navigation-toolbar/hover-over-map.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/navigation-toolbar/hover-over-map.mp4"/></video>

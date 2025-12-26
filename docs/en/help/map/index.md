@@ -6,7 +6,7 @@ The catalog contains an interactive map that is used to preview datasets. To go 
 
 The `Map` page interface consists of the following main blocks:
 
-<img src="../../../../ru/help/map/img/exploring-maps/gui.jpg" class="ms-docimage"/>
+<img src="../img/gui.jpg" class="ms-docimage"/>
 
 * [Table of Contents](../../user-guide/map/toc.md#table-of-contents) - a list of layers and layer groups loaded onto the map. Its functionality allows you to delete or edit layers and layer groups, as well as add new ones to the map.
 

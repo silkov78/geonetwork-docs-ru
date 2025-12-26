@@ -2,11 +2,11 @@
 
 **************
 
-На карту можна дадаваць файлы кантэксту або вектарныя файлы. Гэтую аперацыю можна выканаць, націснуўшы <img src="../../../ru/user-guide/map/img/button/import2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Пасля гэтага з'явіцца экран імпарту:
+На карту можна дадаваць файлы кантэксту або вектарныя файлы. Гэтую аперацыю можна выканаць, націснуўшы <img src="../img/button/import2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Пасля гэтага з'явіцца экран імпарту:
 
-<img src="../../../ru/user-guide/map/img/import/import-screen.jpg" class="ms-docimage" style="max-width:700px;"/>
+<img src="../img/import/import-screen.jpg" class="ms-docimage" style="max-width:700px;"/>
 
-Тут карыстальнік, каб імпартаваць файл, можа перацягнуць яго на экран імпарту або выбраць з папак на лакальным камп'ютары з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/select-files.jpg" class="ms-docbutton"/>. У цяперашні час ёсць магчымасць імпартаваць два розныя тыпы файлаў:
+Тут карыстальнік, каб імпартаваць файл, можа перацягнуць яго на экран імпарту або выбраць з папак на лакальным камп'ютары з дапамогай кнопкі <img src="../img/button/select-files.jpg" class="ms-docbutton"/>. У цяперашні час ёсць магчымасць імпартаваць два розныя тыпы файлаў:
 
 * *Файлы кантэксту карты* (падтрымліваюцца фарматы: састарэлы фармат MapStore, WMC)
 
@@ -17,19 +17,19 @@
 
 ## Экспарт і імпарт файлаў кантэксту карты
 
-Кантэкст карты — гэта, напрыклад, файл, які карыстальнік спампоўвае, выбраўшы кнопку <img src="../../../ru/user-guide/map/img/button/export2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Кантэксты карты можна экспартаваць у двух розных фарматах:
+Кантэкст карты — гэта, напрыклад, файл, які карыстальнік спампоўвае, выбраўшы кнопку <img src="../img/button/export2.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Кантэксты карты можна экспартаваць у двух розных фарматах:
 
-* Файл <img src="../../../ru/user-guide/map/img/button/mapstore_format_button.jpg" class="ms-docbutton"/> — гэта экспарт у фармаце `json` бягучага стану кантэксту карты: бягучыя праекцыі, каардынаты, маштаб, экстэнт, слаі, якія прысутнічаюць на карце, віджэты і многае іншае.
+* Файл <img src="../img/button/mapstore_format_button.jpg" class="ms-docbutton"/> — гэта экспарт у фармаце `json` бягучага стану кантэксту карты: бягучыя праекцыі, каардынаты, маштаб, экстэнт, слаі, якія прысутнічаюць на карце, віджэты і многае іншае.
 
 Пры даданні канфігурацыйнага файла MapStore паводзіны будуць наступнымі:
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/import/export-import.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/import/export-import.mp4"/></video>
 
-* Файл <img src="../../../ru/user-guide/map/img/button/wmc_format_button.jpg" class="ms-docbutton"/> (Web Map Context) — гэта файл у фармаце `xml`, у які экспартуюцца толькі WMS-слаі, якія прысутнічаюць на карце, уключаючы іх наладкі, звязаныя з праекцыямі, каардынатамі, маштабам і экстэнтам.
+* Файл <img src="../img/button/wmc_format_button.jpg" class="ms-docbutton"/> (Web Map Context) — гэта файл у фармаце `xml`, у які экспартуюцца толькі WMS-слаі, якія прысутнічаюць на карце, уключаючы іх наладкі, звязаныя з праекцыямі, каардынатамі, маштабам і экстэнтам.
 
 Пры даданні канфігурацыйнага файла WMC паводзіны будуць наступнымі:
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/import/wmc_import.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/import/wmc_import.mp4"/></video>
 
 !!! Папярэджанне
     Пры даданні файла кантэксту карты бягучы кантэкст карты будзе перазапісаны.
@@ -38,7 +38,7 @@
 
 Пры імпарце вектарных файлаў адкрываецца акно **Дадаць лакальныя вектарныя файлы**:
 
-<img src="../../../ru/user-guide/map/img/import/add-vector.jpg" class="ms-docimage" style="max-width:600px;"/>
+<img src="../img/import/add-vector.jpg" class="ms-docimage" style="max-width:600px;"/>
 
 У гэтым акне, у прыватнасці, можна:
 
@@ -48,7 +48,7 @@
 
 * Уключыць/выключыць **Набліжэнне да вектарных файлаў**
 
-Пасля завяршэння наладак вектарныя файлы можна канчаткова дадаць на карту з дапамогай кнопкі <img src="../../../ru/user-guide/map/img/button/add_group_confirm_button.jpg" class="ms-docbutton"/>, якая робіць іх даступнымі ў выглядзе новых вектарных слаёў у [Панэлі зместу](toc.md#table-of-contents).
+Пасля завяршэння наладак вектарныя файлы можна канчаткова дадаць на карту з дапамогай кнопкі <img src="../img/button/add_group_confirm_button.jpg" class="ms-docbutton"/>, якая робіць іх даступнымі ў выглядзе новых вектарных слаёў у [Панэлі зместу](toc.md#table-of-contents).
 
 !!! Папярэджанне
     У цяперашні час немагчыма прачытаць [Табліцу атрыбутаў](attributes-table.md) імпартаваных вектарных файлаў, і па гэтай прычыне для гэтых слаёў таксама не дазволены [Фільтр слоя](filtering-layers.md) і стварэнне [Віджэтаў](widgets.md).

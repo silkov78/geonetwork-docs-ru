@@ -3,16 +3,16 @@
 **************************
 
 Прыкладанне дазваляе экспартаваць як вектарныя, так і растравыя слаі, прадстаўленыя ў [Панэлі зместу](toc.md#table-of-contents). Для прадастаўлення пашыраных магчымасцей экспарту ў GeoServer павінен быць усталяваны і даступны працэс [WPS Download](https://docs.geoserver.org/stable/en/user/community/wps-download/index.html). Прыкладанне выконвае прэвентыўную праверку, як толькі карыстальнік адкрывае інструмент: калі працэс WPS Download недаступны, у якасці запаснога варыянта выкарыстоўваецца служба WFS, і параметры экспарту будуць абмежаваныя (напрыклад, можна будзе экспартаваць толькі вектарныя даныя).
-Пасля выбару слоя ў [Панэлі зместу](toc.md#table-of-contents) карыстальнік можа адкрыць інструмент **Экспарт даных**, націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/export_data.jpg" class="ms-docbutton"/> на панэлі інструментаў слоя.
+Пасля выбару слоя ў [Панэлі зместу](toc.md#table-of-contents) карыстальнік можа адкрыць інструмент **Экспарт даных**, націснуўшы кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/> на панэлі інструментаў слоя.
 
-<img src="../../../ru/user-guide/map/img/export_data/export_data_ex.jpg" class="ms-docimage"/>
+<img src="../img/export_data/export_data_ex.jpg" class="ms-docimage"/>
 
 !!! Увага
     Калі служба `WFS` з'яўляецца адзінай даступнай, то пасля адкрыцця акна **Экспарт даных** карыстальнік зможа выбраць толькі *Фармат файла* і *Сістэму прасторавых каардынат* (як апісана ніжэй).
-    <img src="../../../ru/user-guide/map/img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
+    <img src="../img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
 
 !!! Увага
-    Толькі для **Вектарнага слоя** карыстальнік таксама можа спампаваць даныя, адкрыўшы Табліцу атрыбутаў <img src="../../../ru/user-guide/map/img/button/attributes-table.jpg" class="ms-docbutton"/> са [Панэлі зместу](toc.md#table-of-contents) і націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/export_data.jpg" class="ms-docbutton"/>.
+    Толькі для **Вектарнага слоя** карыстальнік таксама можа спампаваць даныя, адкрыўшы Табліцу атрыбутаў <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> са [Панэлі зместу](toc.md#table-of-contents) і націснуўшы кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/>.
 
 На панэлі **Экспарт даных** карыстальнік можа:
 
@@ -26,7 +26,7 @@
 
 * Толькі для *Вектарнага слоя*, дазваляе ўлічыць пры спампоўванні магчымы фільтр, прыменены да слоя з дапамогай інструмента [Фільтр слоя](filtering-layers.md#layer-filter) (гэта опцыя прысутнічае ў форме, толькі калі даступны працэс WPS Download)
 
-<img src="../../../ru/user-guide/map/img/export_data/export_data_vector.jpg" class="ms-docimage"/>
+<img src="../img/export_data/export_data_vector.jpg" class="ms-docimage"/>
 
 * Толькі для *Растравага слоя* (і калі даступны працэс WPS Download) карыстальнік можа адкрыць **Пашыраныя опцыі**, каб выбраць:
 
@@ -35,18 +35,18 @@
 * **Шырыня** ўнутраных тайлаў у пікселях
 * **Вышыня** ўнутраных тайлаў у пікселях
 
-<img src="../../../ru/user-guide/map/img/export_data/export_data_raster.jpg" class="ms-docimage"/>
+<img src="../img/export_data/export_data_raster.jpg" class="ms-docimage"/>
 
-Пры націску на кнопку <img src="../../../ru/user-guide/map/img/button/export_at.jpg" class="ms-docbutton"/> выконваецца запыт на экспарт. У выпадку даступнасці працэсу WPS Download можна асінхронна выконваць некалькі запытаў на экспарт. Інфармацыйнае ўсплывальнае акно паведамляе карыстальніку пра пачатак працэсу экспарту, і карыстальнік можа праверыць статус самога працэсу, адкрыўшы панэль **Вынікі экспарту даных**, націснуўшы на кнопку <img src="../../../ru/user-guide/map/img/button/export_data.jpg" class="ms-docbutton"/> у правай частцы ніжняга калантытула.
+Пры націску на кнопку <img src="../img/button/export_at.jpg" class="ms-docbutton"/> выконваецца запыт на экспарт. У выпадку даступнасці працэсу WPS Download можна асінхронна выконваць некалькі запытаў на экспарт. Інфармацыйнае ўсплывальнае акно паведамляе карыстальніку пра пачатак працэсу экспарту, і карыстальнік можа праверыць статус самога працэсу, адкрыўшы панэль **Вынікі экспарту даных**, націснуўшы на кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/> у правай частцы ніжняга калантытула.
 
-<img src="../../../ru/user-guide/map/img/export_data/export_data_download.jpg" class="ms-docimage"/>
+<img src="../img/export_data/export_data_download.jpg" class="ms-docimage"/>
 
 Панэль **Вынікі экспарту даных** прадастаўляе спіс запушчаных карыстальнікам працэсаў экспарту і іх статусы: як толькі WPS завяршае аперацыю экспарту, яе статус паведамляецца карыстальніку (у працэсе, завершана і гатова да спампоўвання, або памылка). Такім чынам, карыстальнік можа:
 
-<img src="../../../ru/user-guide/map/img/export_data/export_data_result.jpg" class="ms-docimage"/>
+<img src="../img/export_data/export_data_result.jpg" class="ms-docimage"/>
 
 * Праверыць наяўнасць паведамленняў пра памылкі: спецыяльны значок інфармуе карыстальніка пра збой працэсу з дапамогай усплывальнага паведамлення.
 
-* **Спампаваць** выніковы `zip`-файл: націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/save-changes.jpg" class="ms-docbutton"/>
+* **Спампаваць** выніковы `zip`-файл: націснуўшы кнопку <img src="../img/button/save-changes.jpg" class="ms-docbutton"/>
 
-* **Выдаліць** выніковы `zip`-файл: націснуўшы кнопку <img src="../../../ru/user-guide/map/img/button/delete_button.jpg" class="ms-docbutton"/>
+* **Выдаліць** выніковы `zip`-файл: націснуўшы кнопку <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>

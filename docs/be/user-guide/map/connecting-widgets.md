@@ -3,11 +3,11 @@
 ********************
 На інфармацыйных панэлях можна злучаць дададзеныя віджэты, што дазваляе карыстальніку праглядаць і ўзаемадзейнічаць з некалькімі з іх адначасова.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/widgets_interaction.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/widgets_interaction.mp4"/></video>
 
-Калі паміж віджэтамі ўстаноўлена хаця б адна сувязь, можна вызначыць злучаныя віджэты, уключыўшы кнопку злучэнняў на [бакавой панэлі інструментаў](exploring-dashboards.md#side-toolbar) інфармацыйнай панэлі, якая стане зялёнай <img src="../../../ru/user-guide/map/img/button/connections.jpg" class="ms-docbutton"/>. Гэта падсвеціць злучаныя элементы каляровай паласой у іх верхняй частцы.
+Калі паміж віджэтамі ўстаноўлена хаця б адна сувязь, можна вызначыць злучаныя віджэты, уключыўшы кнопку злучэнняў на [бакавой панэлі інструментаў](exploring-dashboards.md#side-toolbar) інфармацыйнай панэлі, якая стане зялёнай <img src="../img/button/connections.jpg" class="ms-docbutton"/>. Гэта падсвеціць злучаныя элементы каляровай паласой у іх верхняй частцы.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/connections_widgets.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/connections_widgets.mp4"/></video>
 
 Увогуле, вы можаце злучаць:
 
@@ -33,11 +33,11 @@
 
 Як толькі на інфармацыйную панэль дададзена больш за адзін віджэт "Карта", кнопка злучэння/раз'яднання з'яўляецца на панэлі *Наладзіць параметры карты* (даступная пры даданні новага або рэдагаванні існуючага віджэта "Карта").
 
-<img src="../../../ru/user-guide/map/img/connecting-widgets/connection-options.jpg" class="ms-docimage" style="max-width:400px;"/>
+<img src="../img/connecting-widgets/connection-options.jpg" class="ms-docimage" style="max-width:400px;"/>
 
 Пры націску на яе, калі прысутнічае толькі адзін іншы віджэт "Карта", па змаўчанні будзе ўстаноўлена злучэнне з гэтым віджэтам. Калі ж на інфармацыйнай панэлі прысутнічае больш за адзін віджэт "Карта", можна выбраць адзін з іх на старонцы, падобнай на наступную:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/map-to-connect.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/map-to-connect.mp4"/></video>
 
 ### Карты з дыяграмамі, табліцамі і лічыльнікамі
 
@@ -45,15 +45,15 @@
 
 * Злучэнне дыяграм з картамі:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/chart-map.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/chart-map.mp4"/></video>
 
 * Злучэнне табліц з картамі:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/table-map.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/table-map.mp4"/></video>
 
 * Злучэнне лічыльнікаў з картамі:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/counter-map.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/counter-map.mp4"/></video>
 
 Калі ў віджэце "Карта" выконваецца аперацыя панарамавання або маштабавання, іншыя падключаныя віджэты прасторава фільтруюцца ў адпаведнасці з бачным экстэнтам карты.
 
@@ -61,7 +61,7 @@
 
 У гэтым выпадку працэдура злучэння аналагічная разгледжаным раней, але цяпер інфармацыя, якая змяшчаецца ў віджэце "Легенда", не змяняецца ў залежнасці ад экстэнта карты. Прыкладам можа быць наступны:
 
-<img src="../../../ru/user-guide/map/img/connecting-widgets/legend-map.jpg" class="ms-docimage"/>
+<img src="../img/connecting-widgets/legend-map.jpg" class="ms-docimage"/>
 
 ## Злучэнне віджэтаў "Табліца" з іншымі віджэтамі
 
@@ -77,11 +77,11 @@
 
 Калі табліца злучана з іншымі віджэтамі, яна становіцца *бацькоўскай табліцай*, і ўверсе з'яўляецца фільтр.
 
-<img src="../../../ru/user-guide/map/img/connecting-widgets/table_filter.jpg" class="ms-docimage" style="max-width:700px;"/>
+<img src="../img/connecting-widgets/table_filter.jpg" class="ms-docimage" style="max-width:700px;"/>
 
 Прымяніць фільтр у *бацькоўскай табліцы* можна, проста ўвёўшы тэкст у поле ўводу, размешчанае ўверсе кожнага слупка:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/filter_on_table.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/filter_on_table.mp4"/></video>
 
 Віджэт "Карта", злучаны з бацькоўскай табліцай, атрымлівае атрыбутыўны фільтр з табліцы і:
 
@@ -93,12 +93,12 @@
 
 * Калі віджэт быў створаны на тым жа наборы даных (слоі), што і бацькоўская табліца, то да самога віджэта будуць прыменены два фільтры па ўмове "І": прасторавы фільтр ад віджэта "Карта" і атрыбутыўны фільтр, вызначаны ў бацькоўскай табліцы.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/interaction_a.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/interaction_a.mp4"/></video>
 
 * Калі набор даных не супадае, будзе прыменены толькі прасторавы фільтр ад віджэта "Карта", як звычайна: у наступным прыкладзе лічыльнік адносіцца да іншага слоя, адрознага ад таго, што наладжаны для бацькоўскай табліцы.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../../../ru/user-guide/map/img/connecting-widgets/interaction_ab.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/connecting-widgets/interaction_ab.mp4"/></video>
 
 Існуюць розныя камбінацыі злучэнняў; малюнак ніжэй ілюструе дапушчальныя з іх, а таксама паказвае тыпы фільтраў, якія прымяняюцца ў кожным выпадку.
 
-<img src="../../../ru/user-guide/map/img/connecting-widgets/available_connections.jpg" class="ms-docimage" style="max-width:700px;"/>
+<img src="../img/connecting-widgets/available_connections.jpg" class="ms-docimage" style="max-width:700px;"/>

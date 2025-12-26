@@ -4,8 +4,8 @@
 
 Медыя-секцыі падобныя на [секцыі "Параграф"](paragraph-section.md#paragraph-section), але асноўнае адрозненне заключаецца ў тым, што як толькі рэдактар гісторыі спрабуе дадаць новую медыя-секцыю, з'яўляецца [рэдактар медыя](media-editor-window.md#media-editor-window), прапаноўваючы вызначыць медыяфайл, які будзе дададзены. Прыкладам новай медыя-секцыі з дададзенай выявай можа быць наступны:
 
-<img src="../../../ru/user-guide/map/img/media-section/media-s.jpg" class="ms-docimage"/>
+<img src="../img/media-section/media-s.jpg" class="ms-docimage"/>
 
 Пасля дадання першага медыяфайла ў медыя-секцыю можна дадаваць новыя медыя, тэкставы змест або змест вэб-старонак, а таксама выдаляць існуючыя, як гэта апісана ў раздзеле [Секцыі "Параграф"](paragraph-section.md#paragraph-section).
 
-<img src="../../../ru/user-guide/map/img/media-section/add-content.jpg" class="ms-docimage" width="700px"/>
+<img src="../img/media-section/add-content.jpg" class="ms-docimage" width="700px"/>

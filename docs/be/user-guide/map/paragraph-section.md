@@ -2,31 +2,31 @@
 
 **********************
 
-Секцыя "Параграф" дазваляе ўстаўляць тэкставы змест у гісторыю. Рэдактар гісторыі таксама можа націснуць на кнопку <img src="../../../ru/user-guide/map/img/button/++++.jpg" class="ms-docbutton"/>, каб дадаць дадатковы змест у гэту секцыю (напрыклад, медыя, іншыя параграфы або ўбудаваны змест іншых сэрвісаў). Можна выбраць адзін з наступных варыянтаў:
+Секцыя "Параграф" дазваляе ўстаўляць тэкставы змест у гісторыю. Рэдактар гісторыі таксама можа націснуць на кнопку <img src="../img/button/++++.jpg" class="ms-docbutton"/>, каб дадаць дадатковы змест у гэту секцыю (напрыклад, медыя, іншыя параграфы або ўбудаваны змест іншых сэрвісаў). Можна выбраць адзін з наступных варыянтаў:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/add-paragraph.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/add-paragraph.jpg" class="ms-docimage"/>
 
-* **Тэкставы змест** <img src="../../../ru/user-guide/map/img/button/add-text-content.jpg" class="ms-docbutton"/>, каб дадаць яшчэ адзін тэкставы змест адразу пад бягучым
+* **Тэкставы змест** <img src="../img/button/add-text-content.jpg" class="ms-docbutton"/>, каб дадаць яшчэ адзін тэкставы змест адразу пад бягучым
 
-* **Медыя-змест** <img src="../../../ru/user-guide/map/img/button/add-media-content.jpg" class="ms-docbutton"/>, каб адкрыць рэдактар медыя для дадання выявы, карты або відэа.
+* **Медыя-змест** <img src="../img/button/add-media-content.jpg" class="ms-docbutton"/>, каб адкрыць рэдактар медыя для дадання выявы, карты або відэа.
 
-* **Змест вэб-старонкі** <img src="../../../ru/user-guide/map/img/button/web_page_button.jpg" class="ms-docbutton"/>, каб дадаць знешнюю вэб-старонку
+* **Змест вэб-старонкі** <img src="../img/button/web_page_button.jpg" class="ms-docbutton"/>, каб дадаць знешнюю вэб-старонку
 
 ## Тэкставы змест
 
 Па змаўчанні, як толькі дадаецца параграф, ужо прысутнічае пусты тэкставы змест у якасці запаўняльніка, а панэль інструментаў зместу дазваляе:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/paragraph-section.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/paragraph-section.jpg" class="ms-docimage"/>
 
-* Змяніць памер тэкставага зместу: пры націску на кнопку **Змяніць памер** <img src="../../../ru/user-guide/map/img/button/change_size2.jpg" class="ms-docbutton"/> з'яўляецца выпадальнае меню, якое дазваляе выбраць паміж *маленькім*, *сярэднім* або *поўным* памерам:
+* Змяніць памер тэкставага зместу: пры націску на кнопку **Змяніць памер** <img src="../img/button/change_size2.jpg" class="ms-docbutton"/> з'яўляецца выпадальнае меню, якое дазваляе выбраць паміж *маленькім*, *сярэднім* або *поўным* памерам:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/paragraphe-size.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/paragraphe-size.jpg" class="ms-docimage"/>
 
-* Выдаліць *секцыю "Параграф"* з дапамогай кнопкі **Выдаліць** <img src="../../../ru/user-guide/map/img/button/remove2.jpg" class="ms-docbutton"/>
+* Выдаліць *секцыю "Параграф"* з дапамогай кнопкі **Выдаліць** <img src="../img/button/remove2.jpg" class="ms-docbutton"/>
 
 Рэдактар можа напісаць тэкст, пстрыкнуўшы па тэкставым змесце, і наладзіць яго з дапамогай [панэлі інструментаў тэкставага рэдактара](text-editor-toolbar.md#text-editor-toolbar). Магчымы вынік дадання і фарматавання тэксту можа быць наступным:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/text_content.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/text_content.jpg" class="ms-docimage"/>
 
 ## Медыя-змест
 
@@ -36,22 +36,22 @@
 
 Выяву, дададзеную ў секцыю "Параграф", можна наладзіць з дапамогай [панэлі інструментаў зместу выявы](content-image-toolbar.md#image-content-toolbar). Ніжэй прыведзены прыклад невялікай, выраўнаванай па цэнтры выявы, размешчанай адразу пад тэкставым зместам:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/text-image.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/text-image.jpg" class="ms-docimage"/>
 
 ### Відэа
 
 Відэа, дададзенае ў секцыю "Параграф", можна наладзіць з дапамогай [панэлі інструментаў зместу відэа](content-video-toolbar.md#video-content-toolbar). Ніжэй прыведзены прыклад відэа, размешчанага адразу пад выявай:
 
-<video class="ms-docimage" controls><source src="../../../ru/user-guide/map/img/paragraph-section/image-video.mp4"/></video>
+<video class="ms-docimage" controls><source src="../img/paragraph-section/image-video.mp4"/></video>
 
 ### Карты
 
 Карту, дададзеную ў секцыю "Параграф", можна наладзіць з дапамогай [панэлі інструментаў зместу карты](content-map-toolbar.md#map-content-toolbar). Ніжэй прыведзены прыклад вялікай, выраўнаванай па цэнтры карты, размешчанай адразу пад выявай:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/image-map.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/image-map.jpg" class="ms-docimage"/>
 
 ## Змест вэб-старонкі
 
 Пры даданні зместу вэб-старонкі адкрываецца акно "Вэб-старонка", якое дазваляе карыстальніку дадаць URL-адрас знешняй вэб-старонкі. Вэб-старонку, дададзеную ў секцыю "Параграф", можна наладзіць з дапамогай [панэлі інструментаў зместу вэб-старонкі](content-web-toolbar.md#web-page-content-toolbar). Ніжэй прыведзены прыклад сярэдняга, выраўнаванага па цэнтры вэб-зместу, размешчанага адразу пад картай:
 
-<img src="../../../ru/user-guide/map/img/paragraph-section/map-web5.jpg" class="ms-docimage"/>
+<img src="../img/paragraph-section/map-web5.jpg" class="ms-docimage"/>

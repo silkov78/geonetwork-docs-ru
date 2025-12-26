@@ -1,6 +1,6 @@
 # Друк карты
 
-Карту можна надрукаваць, выбраўшы кнопку **Друк** <img src="../../../ru/user-guide/map/img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Працэс друку складаецца з двух асноўных этапаў:
+Карту можна надрукаваць, выбраўшы кнопку **Друк** <img src="../img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Працэс друку складаецца з двух асноўных этапаў:
 
 * Вызначэнне *наладак друку*
 
@@ -8,9 +8,9 @@
 
 ## Наладкі друку
 
-Як толькі выбрана кнопка *Друк* <img src="../../../ru/user-guide/map/img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/>, адкрываецца наступнае акно:
+Як толькі выбрана кнопка *Друк* <img src="../img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/>, адкрываецца наступнае акно:
 
-<img src="../../../ru/user-guide/map/img/print/print-page.jpg" class="ms-docimage"/>
+<img src="../img/print/print-page.jpg" class="ms-docimage"/>
 
 У гэтым акне можна:
 
@@ -31,13 +31,13 @@
 !!!заўвага
     У папярэднім праглядзе *наладак друку* адлюстроўваецца тая частка карты, якая будзе выведзена на друкаваны аркуш. Каб цэнтраваць карту, карыстальнік можа перамяшчаць яе да таго часу, пакуль у папярэднім праглядзе не адлюструецца жаданы экстэнт.
 
-    <video class="ms-docimage" style="max-width:500px;" controls><source src="../../../ru/user-guide/map/img/print/print.mp4" /></video>
+    <video class="ms-docimage" style="max-width:500px;" controls><source src="../img/print/print.mp4" /></video>
 
 ### Макет
 
 Пры адкрыцці меню наладак **Макета** з'яўляецца наступнае меню:
 
-<img src="../../../ru/user-guide/map/img/print/first-layout-print.jpg" class="ms-docimage"/>
+<img src="../img/print/first-layout-print.jpg" class="ms-docimage"/>
 
 Тут, у прыватнасці, можна:
 
@@ -53,7 +53,7 @@
 
 Легенду можна наладзіць праз меню **Опцыі легенды**:
 
-<img src="../../../ru/user-guide/map/img/print/first-legend-options.jpg" class="ms-docimage"/>
+<img src="../img/print/first-legend-options.jpg" class="ms-docimage"/>
 
 У гэтым меню карыстальніку дазволена:
 
@@ -69,18 +69,18 @@
 
 ## Папярэдні прагляд
 
-Калі наладкі друку выбраны, можна перайсці да папярэдняга прагляду, націснуўшы на кнопку <img src="../../../ru/user-guide/map/img/button/print_button.jpg" class="ms-docbutton"/>. З'явіцца акно, падобнае на наступнае:
+Калі наладкі друку выбраны, можна перайсці да папярэдняга прагляду, націснуўшы на кнопку <img src="../img/button/print_button.jpg" class="ms-docbutton"/>. З'явіцца акно, падобнае на наступнае:
 
-<img src="../../../ru/user-guide/map/img/print/preview.jpg" class="ms-docimage"/>
+<img src="../img/print/preview.jpg" class="ms-docimage"/>
 
 Тут можна:
 
-* Павялічваць/памяншаць маштаб у папярэднім праглядзе <img src="../../../ru/user-guide/map/img/button/zoom-in-out.jpg" class="ms-docbutton"/>
+* Павялічваць/памяншаць маштаб у папярэднім праглядзе <img src="../img/button/zoom-in-out.jpg" class="ms-docbutton"/>
 
-* Перамяшчацца паміж старонкамі (калі старонак больш за адну) <img src="../../../ru/user-guide/map/img/button/navigate-preview.jpg" class="ms-docbutton"/>
+* Перамяшчацца паміж старонкамі (калі старонак больш за адну) <img src="../img/button/navigate-preview.jpg" class="ms-docbutton"/>
 
-* Спампаваць файл у фармаце .pdf <img src="../../../ru/user-guide/map/img/button/download-layout.jpg" class="ms-docbutton"/>
+* Спампаваць файл у фармаце .pdf <img src="../img/button/download-layout.jpg" class="ms-docbutton"/>
 
 Простая надрукаваная карта можа, напрыклад, выглядаць наступным чынам:
 
-<img src="../../../ru/user-guide/map/img/print/print.jpg" class="ms-docimage"/>
+<img src="../img/print/print.jpg" class="ms-docimage"/>
