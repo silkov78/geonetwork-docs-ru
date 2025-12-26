@@ -119,3 +119,188 @@ img + em, .browser-border + em, .browser-mockup + em {
 .browser-mockup > * {
   display: block;
 }
+
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Panton-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Panton-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Panton-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Panton-Light.woff') format('woff');
+}
+
+:root {
+  --md-text-font: "Panton", sans-serif;
+  --md-code-font: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+/* ==========================================================================
+   ПОЛНАЯ НАСТРОЙКА ЦВЕТОВОЙ СХЕМЫ (HEADER + TABS + BODY + FOOTER)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ДНЕВНОЙ РЕЖИМ (DEFAULT)
+   Концепция: Светло-серая шапка и подвал, Белый контент, Черный текст
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="default"] {
+  /* --- Глобальные переменные --- */
+  --md-default-bg-color: #ffffff;      /* Фон контента (Белый) */
+  --md-text-color: #2e2e2e;            /* Цвет основного текста (Темно-серый) */
+  --md-primary-bg-color: #f0f0f0;      /* Фон основных элементов (Серый) */
+  --md-primary-fg-color: #000000;      /* Цвет текста на основных элементах (Черный) */
+  --md-footer-bg-color: #f0f0f0;       /* Фон подвала */
+  
+  /* Цвет акцентов (ссылки, кнопки) - берем из YAML (blue) или переопределяем тут */
+  /* --md-accent-fg-color: #0000ff; */ 
+}
+
+/* Принудительная покраска ВЕРХНЕЙ ШАПКИ (Лого, Поиск) */
+[data-md-color-scheme="default"] .md-header {
+  background-color: #f0f0f0 !important;
+  color: #000000 !important;
+}
+/* Красим заголовок сайта и иконки в черный */
+[data-md-color-scheme="default"] .md-header__title,
+[data-md-color-scheme="default"] .md-header__button {
+  color: #000000 !important;
+}
+
+/* Принудительная покраска ВКЛАДОК НАВИГАЦИИ (Второй этаж шапки) */
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: #f0f0f0 !important;
+  border-bottom: 1px solid #e0e0e0; /* Тонкая линия-разделитель */
+}
+/* Ссылки во вкладках */
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: #000000 !important;
+  opacity: 0.7;
+}
+/* Активная вкладка (жирная и черная) */
+[data-md-color-scheme="default"] .md-tabs__link--active,
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  color: #000000 !important;
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Принудительная покраска ПОДВАЛА */
+[data-md-color-scheme="default"] footer {
+  background-color: #f0f0f0 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. НОЧНОЙ РЕЖИМ (SLATE)
+   Концепция: Черная шапка (#040405), Темно-серый контент, Белый текст
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="slate"] {
+  /* --- Глобальные переменные --- */
+  --md-default-bg-color: #161618;      /* Фон контента (Чуть светлее шапки для контраста) */
+  --md-text-color: #e6e6e6;            /* Цвет основного текста (Почти белый) */
+  --md-primary-bg-color: #040405;      /* Фон шапки (Фирменный черный) */
+  --md-primary-fg-color: #ffffff;      /* Цвет текста шапки (Белый) */
+  --md-footer-bg-color: #040405;       /* Фон подвала */
+}
+
+/* Принудительная покраска ВЕРХНЕЙ ШАПКИ */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #040405 !important;
+  color: #ffffff !important;
+}
+/* Заголовок и иконки - белые */
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__button {
+  color: #ffffff !important;
+}
+
+/* Принудительная покраска ВКЛАДОК НАВИГАЦИИ */
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #040405 !important;
+  border-bottom: none; /* В темной теме разделитель обычно не нужен */
+}
+/* Ссылки во вкладках */
+[data-md-color-scheme="slate"] .md-tabs__link {
+  color: #ffffff !important;
+  opacity: 0.7;
+}
+/* Активная вкладка */
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #ffffff !important;
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* Принудительная покраска ПОДВАЛА */
+[data-md-color-scheme="slate"] footer {
+  background-color: #040405 !important;
+}
+
+/* ==========================================================================
+   ТОНКАЯ НАСТРОЙКА ВНУТРЕННЕГО БЛОКА ПОДВАЛА (md-footer__inner)
+   Это кнопки "Назад / Далее" и копирайт
+   ========================================================================== */
+
+/* --- ДНЕВНОЙ РЕЖИМ --- */
+[data-md-color-scheme="default"] .md-footer__inner {
+  /* Фон такой же, как у всего подвала */
+  background-color: #f0f0f0 !important; 
+  color: #000000 !important;
+}
+
+/* Красим сами ссылки "Назад/Далее" (стрелочки и текст заголовков) */
+[data-md-color-scheme="default"] .md-footer__link {
+  color: #000000 !important;
+}
+/* Цвет текста "Previous / Next" (мелкие надписи над заголовком статьи) */
+[data-md-color-scheme="default"] .md-footer__direction {
+  color: #444444 !important; /* Чуть светлее черного */
+}
+
+
+/* --- НОЧНОЙ РЕЖИМ --- */
+[data-md-color-scheme="slate"] .md-footer__inner {
+  /* Фирменный черный */
+  background-color: #040405 !important;
+  color: #ffffff !important;
+}
+
+/* Красим ссылки "Назад/Далее" в белый */
+[data-md-color-scheme="slate"] .md-footer__link {
+  color: #ffffff !important;
+}
+/* Мелкие надписи */
+[data-md-color-scheme="slate"] .md-footer__direction {
+  color: #cccccc !important; /* Светло-серый */
+}
+
+/* Убираем возможные стандартные фоны кнопок, если они есть */
+[data-md-color-scheme="slate"] .md-footer__link:hover,
+[data-md-color-scheme="default"] .md-footer__link:hover {
+  background-color: transparent !important;
+  opacity: 0.7; /* Легкая прозрачность при наведении */
+}
