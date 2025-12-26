@@ -1,48 +1,36 @@
-# Режим аутентификации
+# Authentication mode
 
-По умолчанию каталог использует внутреннюю базу данных для управления пользователями и аутентификации. 
-Однако доступны и другие механизмы аутентификации:
+By default the catalog uses the internal database for user management and authentication. However there are some other authentication mechanisms available:
 
-- [Настройка LDAP](authentication-mode.md#authenticatio-ldap)
-- [Настройка иерархии LDAP] (authentication-mode.md#authentication-ldap-hierarchy)
-- [Настройка CAS] (authentication-mode.md#authentication-cas)
-- [Настройка OpenID Connect в OAUTH2] (authentication-mode.md#authentication-openid)
-- [Настройка Keycloak] (authentication-mode.md#authentication-keycloak)
-- [Настройка Shibboleth](authentication-mode.md#authentication-shibboleth)
+-   [Configuring LDAP](authentication-mode.md#authentication-ldap)
+-   [Configuring LDAP - Hierarchy](authentication-mode.md#authentication-ldap-hierarchy)
+-   [Configuring CAS](authentication-mode.md#authentication-cas)
+-   [Configuring OAUTH2 OpenID Connect](authentication-mode.md#authentication-openid)
+-   [Configuring JWT/JSON Headers](authentication-mode.md#jwt-headers)
+-   [Configuring Keycloak](authentication-mode.md#authentication-keycloak)
+-   [Configuring Shibboleth](authentication-mode.md#authentication-shibboleth)
 
-Какой режим использовать, определяется в **`WEB-INF/config-security/config-security.xml`** или с помощью переменной среды `geonetwork.security.type`.
+Which mode to use is configured in **`WEB-INF/config-security/config-security.xml`** or via an environment variable `geonetwork.security.type`.
 
-Раскомментируйте соответствующую строку в **`WEB-INF/config-security/config-security.xml`**:
+Uncomment the relevant line in **`WEB-INF/config-security/config-security.xml`**:
 
 ``` xml
 <import resource="config-security-{mode}.xml"/>
 ```
 
-## Настройка LDAP {#authenticatio-ldap}
+## Configuring LDAP {#authentication-ldap}
 
-[Протокол упрощенного доступа к каталогам (LDAP)](https://en.wikipedia.org/wiki/Ldap) 
-позволяет GeoNetwork проверять имена пользователей и пароли к удаленному хранилищу идентификационных данных. 
-В реализации LDAP используются элементы пользовательского интерфейса для входа в GeoNetwork по умолчанию.
+[Lightweight Directory Access Protocol (LDAP)](https://en.wikipedia.org/wiki/Ldap) enables GeoNetwork to verify usernames and passwords to a remote identity store. LDAP implementation uses the default GeoNetwork Login User Interface elements.
 
-В настоящее время в GeoNetwork есть 2 подхода к настройке LDAP. 
-Проверьте также альтернативный подход в разделе [Настройка иерархии LDAP](authentication-mode.md#authentication-ldap-hierarchy).
+GeoNetwork currently has 2 approaches to configure LDAP. Verify also the alternative approach in [Configuring LDAP - Hierarchy](authentication-mode.md#authentication-ldap-hierarchy).
 
-Конфигурация LDAP определена в `WEB-INF/config-security/config-security.properties`.
-Администратор может настроить свою среду, обновив предыдущий файл или переопределив свойства в файле 
-`WEB-INF/config-security/config-security-overrides.properties`.
+The LDAP configuration is defined in `WEB-INF/config-security/config-security.properties`, you can then configure your environment updating the previous file or overriding the properties in the file `WEB-INF/config-security/config-security-overrides.properties`.
 
+1.  Define the LDAP connection:
 
-1.  Определите LDAP-соединение:
-
-    - `ldap.base.provider.url`: Указывает порталу, где находится сервер LDAP. 
-       Убедитесь, что компьютер с каталогом может подключиться к компьютеру с LDAP-сервером. 
-       Также убедитесь, что открыты соответствующие порты и т. д.
-    
-    - `ldap.base.dn`: обычно это выглядит примерно так: «dc=[organizationnamehere],dc=org».
-    
-    - `ldap.security.principal` / `ldap.security.credentials`: Определите пользователя администратора LDAP, 
-       который будет использоваться для привязки к LDAP. Если не определить, то будет произведена анонимная привязка. 
-       Principal - это имя пользователя, а credentials - пароль.
+    -   `ldap.base.provider.url`: This tells the portal where the LDAP server is located. Make sure that the computer with the catalog can hit the computer with the LDAP server. Check to make sure that the appropriate ports are opened, etc.
+    -   `ldap.base.dn`: this will usually look something like: "dc=[organizationnamehere],dc=org"
+    -   `ldap.security.principal` / `ldap.security.credentials`: Define LDAP administrator user to use to bind to LDAP. If not define, an anonymous bind is made. Principal is the username and credentials property the password.
 
     ``` text
     # LDAP security properties
@@ -52,31 +40,28 @@
     ldap.security.credentials=ldap
     ```
 
-    Чтобы убедиться в правильности настроек, попробуйте подключиться к LDAP-серверу с помощью приложения LDAP-браузера.
+    To verify that you have the correct settings, try to connect to the LDAP server using an LDAP browser application.
 
-2.  Определите, где искать пользователей в структуре LDAP для аутентификации:
+2.  Define where to find users in LDAP structure for authentication:
 
-    - `ldap.base.search.base`: это место, где каталог будет искать пользователей для аутентификации.
-    - `ldap.base.dn.pattern`: это отличительное имя пользователя для привязки. `{0}` заменяется именем пользователя, введенным на экране регистрации.
-    
+    -   `ldap.base.search.base`: this is where the catalog will look for users for authentication.
+    -   `ldap.base.dn.pattern`: this is the distinguished name for the user to bind with. `{0}` is replaced by the user name typed in the sign in screen.
+
     ``` text
     ldap.base.search.base=ou=people
     ldap.base.dn.pattern=uid={0},${ldap.base.search.base}
     #ldap.base.dn.pattern=mail={0},${ldap.base.search.base}
     ```
 
-### Настройки авторизации
+### Authorization Settings
 
-При использовании LDAP информация о пользователе и привилегии для GeoNetwork могут быть определены из атрибутов LDAP.
+When using LDAP, the user information and privileges for GeoNetwork could be defined from the LDAP attributes.
 
-#### Информация о пользователе
+#### User information
 
-Информация о пользователе может быть получена из настройки LDAP для каждого пользовательского атрибута в базе данных каталога, 
-которому соответствуют атрибуты LDAP. Если атрибут пуст или не определен, можно задать значение по умолчанию. 
-Значение свойства состоит из двух частей, разделенных символом `,`. Первая часть - это имя атрибута, 
-а вторая часть - значение по умолчанию на случай, если имя атрибута не определено или значение атрибута в LDAP пустое.
+The user information could be retrieved from the LDAP configuring for each user attribute in the catalog database which LDAP attributes match. If the attribute is empty or not defined, a default value could be defined. The property value is composed by two parts separated by `,` character. The first part is the attribute name and the second part is the default value in case the attribute name is not define or the attribute value in LDAP is empty.
 
-Конфигурация следующая:
+The configuration is the following:
 
 ``` text
 # Map user information to LDAP attributes and default values
@@ -93,25 +78,21 @@ ldapUserContextMapper.mapping[city]=,
 ldapUserContextMapper.mapping[country]=,
 ```
 
-#### Настройка прав доступа (привелегий)
+#### Privileges configuration
 
-Группы пользователей и роли пользователей могут быть установлены как на основе информации LDAP, так и без нее. 
-По умолчанию управление привилегиями пользователей осуществляется из локальной базы данных. 
-Если для определения привилегий пользователя необходимо использовать информацию LDAP, 
-установите для свойства `ldap.privilege.import` значение "true":
+User groups and user profiles could be set optionally from LDAP information or not. By default user privileges are managed from the local database. If LDAP information should be used to define user privileges, set the `ldap.privilege.import` property `true`:
 
 ``` text
 ldap.privilege.import=true
 ```
 
-При импорте привилегий из LDAP администратор каталога может принять решение о создании групп, 
-определенных в LDAP и не определенных в локальной базе данных. Для этого установите значение true для следующего свойства:
+When importing privileges from LDAP, the catalog administrator could decide to create groups defined in the LDAP and not defined in local database. For this set the following property to true:
 
 ``` text
 ldap.privilege.create.nonexisting.groups=false
 ```
 
-Чтобы определить, к каким группам принадлежит пользователь и какой профиль является его профилем:
+In order to define which groups the user is member of and which profile is the user:
 
 ``` text
 ldapUserContextMapper.mapping[privilege]=groups,sample
@@ -120,21 +101,21 @@ ldapUserContextMapper.mapping[privilege]=groups,sample
 ldapUserContextMapper.mapping[profile]=privileges,RegisteredUser
 ```
 
-Настройка атрибутов:
+Attributes configuration:
 
-- атрибут `privilege` содержит группу, членом которой является данный пользователь. Допускается использование более чем одной группы.
-- атрибут `profile` содержит профиль пользователя.
+-   privilege attribute contains the group this user is member of. More than one group is allowed.
+-   profile attribute contains the profile of the user.
 
-Допустимыми ролями пользователя являются:
+User valid profiles are:
 
-- Администратор
-- Пользователь-администратор (группы)
-- Рецензент
-- Редактор
-- Зарегистрированный пользователь
-- Гость
+-   Administrator
+-   UserAdmin
+-   Reviewer
+-   Editor
+-   RegisteredUser
+-   Guest
 
-Если атрибут LDAP, содержащий профили, не соответствует списку профилей в каталоге, может быть определено сопоставление:
+If LDAP attribute containing profiles does not match the catalog profile list, a mapping could be defined:
 
 ``` text
 # Map LDAP custom profiles to catalog profiles. Not used if ldap.privilege.pattern is defined.
@@ -143,20 +124,18 @@ ldapUserContextMapper.profileMapping[Editor]=Reviewer
 ldapUserContextMapper.profileMapping[Public]=RegisteredUser
 ```
 
+For example, in the previous configuration, the attribute value `Admin` will be mapped to `Administrator` (which is a valid profile for the catalog).
 
-Например, в предыдущей конфигурации значение атрибута `Admin` будет сопоставлено с `Administrator` (это действительный профиль для каталога).
+An attribute could define both the profile and the group for a user. To extract this information, a custom pattern could be defined to populate user privileges according to that attribute:
 
-Атрибут может определять как профиль, так и группу пользователя. Чтобы извлечь эту информацию, 
-можно определить пользовательский шаблон для заполнения привилегий пользователя в соответствии с этим атрибутом:
-
-1.  Определите один атрибут для профиля и один для групп в файле `WEB-INF/config-security/config-security-overrides.properties`.
+1.  Define one attribute for the profile and one for groups in `WEB-INF/config-security/config-security-overrides.properties`
 
     ``` text
     # In config-security-overrides.properties
     ldapUserContextMapper.mapping[privilege]=cat_privileges,sample
     ```
 
-2.  Определите один атрибут для привилегии и задайте пользовательский шаблон:
+2.  Define one attribute for the privilege and define a custom pattern:
 
     ``` text
     # In config-security.properties
@@ -165,7 +144,7 @@ ldapUserContextMapper.profileMapping[Public]=RegisteredUser
     ldap.privilege.pattern.idx.profil=2
     ```
 
-    Включите `er` для `LDAPUserDetailsContextMapperWithPattern` (в `WEB-INF/config-security/config-security-ldap.xml`).
+    Enable the bean `ldapUserContextMapper` for `LDAPUserDetailsContextMapperWithPattern` ( in `WEB-INF/config-security/config-security-ldap.xml`).
 
     ``` xml
     <!--<bean id="ldapUserContextMapper"
@@ -207,8 +186,7 @@ ldapUserContextMapper.profileMapping[Public]=RegisteredUser
     </bean>
     ```
 
-3.  Определите пользовательское место для извлечения группы и роли (нет поддержки комбинации группа/роль) 
-    (используйте LDAPUserDetailsContextMapperWithProfileSearch в **`config-security.xml`**).
+3.  Define custom location for extracting group and role (no support for group/role combination) (use LDAPUserDetailsContextMapperWithProfileSearch in **`config-security.xml`**).
 
     ``` text
     ldap.privilege.search.group.attribute=cn
@@ -223,7 +201,7 @@ ldapUserContextMapper.profileMapping[Public]=RegisteredUser
     ldap.privilege.search.privilege.pattern=SV_(.*)
     ```
 
-    Атрибут LDAP может содержать следующую конфигурацию для определения различных типов пользователей, например:
+    The LDAP attribute can contains the following configuration to define the different type of users, for example:
 
     ``` text
     cat_privileges=CAT_ALL_Administrator
@@ -244,25 +222,24 @@ ldapUserContextMapper.profileMapping[Public]=RegisteredUser
     cat_privileges=CAT_GRANULAT_RegisteredUser
     ```
 
-#### Синхронизация
+#### Synchronization
 
-Задача синхронизации заключается в удалении пользователей LDAP, которые могут быть удалены. Например:
+A synchronization task is taking care of removing LDAP users that may be deleted. For example:
 
-- T0: Пользователь A входит в каталог. В базе данных пользователей создается локальный пользователь A.
-- T1: Пользователь A удаляется из LDAP (пользователь A больше не может войти в каталог).
-- T2: Задача синхронизации проверит, все ли локальные пользователи LDAP существуют в LDAP:
-    - Если пользователь не владеет никакими записями, он будет удален.
-    - Если пользователь владеет записями метаданных, в систему регистрации каталога будет записано предупреждение. 
-      Владелец записи должен быть изменен на другого пользователя, прежде чем задача сможет удалить текущего владельца.
+-   T0: User A signs in to the catalog. A local user A is created in the user database.
+-   T1: User A is deleted from the LDAP (User A cannot sign in to the catalog anymore).
+-   T2: The synchronization task will check that all local LDAP users exist in LDAP:
+    -   If the user does not own any records, it will be deleted.
+    -   If the user owns metadata records, a warning message will be written to the catalog logging system. The owner of the record should be changed to another user before the task can remove the current owner.
 
-По умолчанию задача запускается один раз в день. Это можно изменить в следующем свойстве:
+By default the task runs once every day. This can be changed in the following property:
 
 ``` text
 # Run LDAP sync every day at 23:30
 ldap.sync.cron=0 30 23 * * ?
 ```
 
-Следующие свойства позволяют дополнительно настроить процесс синхронизации:
+The following properties allow advanced configuration of the synchronisation process:
 
 ``` text
 ldap.sync.user.search.base=${ldap.base.search.base}
@@ -274,9 +251,9 @@ ldap.sync.group.search.attribute=cn
 ldap.sync.group.search.pattern=EL_(.*)
 ```
 
-#### Отладка
+#### Debugging
 
-В случае сбоя подключения попробуйте увеличить уровень ведения журнала для LDAP в `WEB-INF/classes/log4j.xml`:
+If the connection fails, try to increase the logging level for LDAP in `WEB-INF/classes/log4j.xml`:
 
 ``` xml
 <logger name="geonetwork.ldap" additivity="false">
@@ -284,56 +261,49 @@ ldap.sync.group.search.pattern=EL_(.*)
 </logger>
 ```
 
-Или в настройках конфигурации временно установите `Уровень логирования` на `DEV`:
+Or from the Configuration Settings set the `Log level` to `DEV` temporarily:
 
 ![](img/setting-log-level.png)
 
-## Настройка LDAP - Иерархии {#authentication-ldap-hierarchy}
+## Configuring LDAP - Hierarchy {#authentication-ldap-hierarchy}
 
-В середине 2020 года был введен несколько иной метод настройки LDAP.
+A slightly different method for LDAP configuration was introduced in mid-2020.
 
-Это расширяет инфраструктуру исходной конфигурации (исходные конфигурации по-прежнему работают без каких-либо изменений).
+This extends the original configuration infrastructure (original configurations still work without any changes).
 
-Прежде чем приступить к настройке, вам необходимо знать;
+Before you start configuring, you will need to know;
 
-1. URL-адрес вашего сервера LDAP
-2. Имя пользователя/пароль для входа на сервер LDAP (для выполнения запросов)
-3. Запрос LDAP для поиска пользователя (с учетом того, что он вводит на экране входа в систему)
-4. Подробные сведения о том, как преобразовать атрибуты пользователя LDAP в атрибуты пользователя GeoNetwork
-5. Запрос LDAP для поиска групп, членом которых является пользователь
-6. Как преобразовать группу LDAP в группу/роль GeoNetwork 
-
-!!! note
-
-    Существует [видеочат разработчика] (https://www.youtube.com/watch?v=f8rvbEdnE-g), 
-    в котором подробно рассказывается о том, как настроить LDAP, включая настройку предварительно настроенного сервера LDAP 
-    (с использованием Apache Directory Studio) для тестирования/отладки/обучения.
+1.  URL to your LDAP Server
+2.  Username/password to login to the LDAP Server (to execute queries)
+3.  LDAP query to find a user (given what they type in on the login screen)
+4.  Details of how to convert the LDAP user's attributes to GeoNetwork user attributes
+5.  LDAP query to find groups a user is a member of
+6.  How to convert a LDAP group to a GeoNetwork Group/Profile
 
 !!! note
 
-    Следует ли мне использовать иерархию или исходную конфигурацию?
+    There is a [video developer chat](https://www.youtube.com/watch?v=f8rvbEdnE-g) that goes into details for how to configure LDAP including setting up a pre-configured LDAP server (using Apache Directory Studio) for testing/debugging/learning.
+
+
+!!! note
+
+    Should I use the Hierarchy or Original configuration?
     
-    Если уже есть существующая (исходная) конфигурация, нет необходимости переходить на новую. 
-    Большая часть кода в обоих вариантах одинакова.
+    If you already have an existing (Original) configuration, there's no need to move to the new one. Most of the code between the two is the same.
     
-    Если вы запускаете новую конфигурацию, я бы рекомендовал использовать иерархическую конфигурацию. 
-    Это немного проще и поддерживается тестовыми примерами и инфраструктурой тестирования. 
-    Также поддерживается протокол Ldap, в котором пользователи/ группы находятся в нескольких каталогах.
+    If you are starting a new configuration, I would recommend the Hierarchy configuration. It's a little simpler and supported by test cases and test infrastructure. It also supports LDAPs where users/groups are in multiple directories.
 
-### Настройка LDAP-бинов (Иерархия)
 
-GeoNetwork поставляется с образцом конфигурации LDAP, 
-который можно использовать в Apache Directory Studio для создания того же сервера LDAP, который использовался в тестовых примерах. 
-Существует также пример конфигурации GeoNetwork, которая подключается к этому серверу LDAP. 
-Пожалуйста, ознакомьтесь с инструкциями в разделе `core-geonetwork/blob/master/core/src/test/resources/org/fao/geonet/kernel/security/ldap/README.md`{.interpreted-text role="repo"} 
-или в [видео разработчика](https://www.youtube.com/watch?v=f8rvbEdnE-g).
+### Configuring LDAP Beans (Hierarchy)
+
+GeoNetwork comes with a sample LDAP configuration that you can use in Apache Directory Studio to create the same LDAP server used in the test cases. There is also a sample GeoNetwork configuration that connects to this LDAP server. Please see `core-geonetwork/blob/master/core/src/test/resources/org/fao/geonet/kernel/security/ldap/README.md`{.interpreted-text role="repo"} or the [video developer chat](https://www.youtube.com/watch?v=f8rvbEdnE-g) for instructions.
 
 !!! note
 
-    Чтобы использовать эту конфигурацию, откомментируйте строку «<import resource=»config-security-ldap-recursive.xml«/>» 
-    в файле ``web/src/main/webapp/WEB-INF/config-security/config-security.xml``.
+    To use this configuration, uncomment the "<import resource="config-security-ldap-recursive.xml"/>" line in ``web/src/main/webapp/WEB-INF/config-security/config-security.xml``
 
-1.  Сконфигурируйте `ce` бин со ссылкой на LDAP-сервер и пользователем, который может выполнять LDAP-запросы.
+
+1.  Configure the `contextSource` bean with a reference to your LDAP server and a user that can execute LDAP queries.
 
     ``` xml
     <bean id="contextSource"   class="org.springframework.security.ldap.DefaultSpringSecurityContextSource">
@@ -344,10 +314,9 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-2.  Сконфигурируйте `ce` бин со ссылкой на LDAP-сервер и пользователем, который может выполнять LDAP-запросы.
+2.  Configure the `ldapUserSearch` bean with the query used to find the user (given what was typed in the login page).
 
-    Примечание: Установите `ee` в `ue`, чтобы выполнить рекурсивный поиск в LDAP. 
-    Используйте `se`, чтобы контролировать, в какой директории начинается поиск («» означает начинать с корня).
+    NOTE: Set `searchSubtree` to `true` to do a recursive search of the LDAP. Use `searchBase` to control which directory the search starts in ("" means start from the root).
 
     ``` xml
     <bean id="ldapUserSearch" class="…">
@@ -359,10 +328,9 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-3.  Настройте `er` бин для преобразования атрибутов пользователя LDAP в атрибуты пользователя GeoNetwork (см. исходную документацию по настройке, выше).
+3.  Configure the `ldapUserContextMapper` bean with how to convert the LDAP user's attributes to GeoNetwork user attributes (see the original configuration documentation, above).
 
-    ПРИМЕЧАНИЕ: Часть `ue` состоит из двух частей. Первая часть - это имя атрибута LDAP (может быть пустым). 
-    Вторая часть - значение по умолчанию, если атрибут LDAP отсутствует или пуст (см. исходную документацию по конфигурации, выше).
+    NOTE: The `value` portion has two parts. The first part is the name of LDAP attribute (can be blank). The second part is the default value if the LDAP attribute is missing or empty (see the original configuration documentation, above).
 
     ``` xml
     <bean id="ldapUserContextMapper" class=“LDAPUserDetailsContextMapperWithProfileSearchEnhanced">
@@ -387,9 +355,9 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-4.  Продолжайте настройку `er` бина, чтобы LDAP мог также предоставлять групповые/профильные роли для пользователя.
+4.  Continue configuring the `ldapUserContextMapper` bean so the LDAP can also provide group/profile roles for the user.
 
-    ПРИМЕЧАНИЕ: `ry` - это каталог LDAP, с которого будет начинаться запрос членства («» означает начало с корня LDAP).
+    NOTE: The `ldapMembershipQuery` is the LDAP directory where the membership query will be start ("" means start at the root of the LDAP).
 
     ``` xml
     <bean id="ldapUserContextMapper" class="LDAPUserDetailsContextMapperWithProfileSearchEnhanced">
@@ -407,9 +375,9 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-5.  Продолжайте настройку `er` бина, чтобы роли LDAP можно было преобразовать в группы/профили GeoNetwork.
+5.  Continue configuring the `ldapUserContextMapper` bean so the LDAP roles can be converted to GeoNetwork Groups/Profiles.
 
-    ПРИМЕЧАНИЕ: Вы можете использовать несколько `rs`.
+    NOTE: You can use multiple `ldapRoleConverters`.
 
     ``` xml
     <bean id="ldapUserContextMapper" class="LDAPUserDetailsContextMapperWithProfileSearchEnhanced">
@@ -422,12 +390,10 @@ GeoNetwork поставляется с образцом конфигурации
 
     </bean>
     ```
-    
-В настоящее время существует два способа преобразования группы LDAP в группы/профайлы GeoNetwork.
 
-- Способ `er`, который работает так же, как и оригинальная конфигурация LDAP. 
-  Он использует регулярное выражение для разбора имени группы LDAP в группу/профиль GeoNetwork. 
-  Это преобразует роль LDAP `OR` в группу GeoNetwork `AL` с профилем `r`.
+There are currently two ways to convert an LDAP group to GeoNetwork Groups/Profiles.
+
+-   The `LDAPRoleConverterGroupNameParser`, which works the same as the original LDAP configuration. It uses a regular expression to parse the LDAP group name into a GeoNetwork Group/Profile. This will convert the LDAP role `GCAT_GENERAL_EDITOR` into the GeoNetwork group `GENERAL` with Profile `Editor`.
 
     ``` xml
     <bean id="ldapRoleConverterGroupNameParser"  class="LDAPRoleConverterGroupNameParser">
@@ -446,7 +412,7 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-- Существует также более прямой способ с использованием `er`. Это напрямую преобразует имя группы LDAP в список групп/профилей GeoNetwork.
+-   There is also a more direct way using `LDAPRoleConverterGroupNameConverter`. This directly converts the LDAP group name into a list of GeoNetwork Groups/Profiles.
 
     ``` xml
     <bean id=“ldapRoleConverterGroupNameParser" class="LDAPRoleConverterGroupNameConverter">
@@ -485,26 +451,23 @@ GeoNetwork поставляется с образцом конфигурации
     </bean>
     ```
 
-## Настройка CAS {#authentication-cas}
+## Configuring CAS {#authentication-cas}
 
-Чтобы включить CAS, настройте аутентификацию, включив `WEB-INF/config-security/config-security-cas.xml` в `WEB-INF/config-security/config-security.xml`, 
-откомментировав следующие строки:
+To enable CAS, set up authentication by including `WEB-INF/config-security/config-security-cas.xml` in `WEB-INF/config-security/config-security.xml`, uncommenting the following lines:
 
 ``` xml
 <import resource="config-security-cas.xml"/>
 <import resource="config-security-cas-ldap.xml"/>
 ```
 
-Для управления пользователями CAS может использовать либо LDAP, либо базу данных. 
-Чтобы использовать базу данных, откомментируйте следующие строки:
+CAS can use either LDAP or a database for user management. To use a database uncomment the following lines instead:
 
 ``` xml
 <import resource="config-security-cas.xml"/>
 <import resource="config-security-cas-database.xml"/>
 ```
 
-Конфигурация CAS определена в файле `WEB-INF/config-security/config-security.properties`. 
-Можно настроить свое окружение, обновив предыдущий файл или определив переопределения свойств в файле `WEB-INF/config-security/config-security-overrides.properties`:
+The CAS configuration is defined in `WEB-INF/config-security/config-security.properties`. You can configure your environment by updating the previous file or by defining property overrides in the file `WEB-INF/config-security/config-security-overrides.properties`:
 
 ``` text
 cas.baseURL=https://localhost:8443/cas
@@ -513,145 +476,153 @@ cas.login.url=${cas.baseURL}/login
 cas.logout.url=${cas.baseURL}/logout?url=${geonetwork.https.url}/
 ```
 
-## Настройка OAUTH2 OpenID Connect {#authentication-openid}
+## Configuring OAUTH2 OpenID Connect {#authentication-openid}
 
-[OAUTH2 OpenID_Connect](https://openid.net/connect/) - это система аутентификации и авторизации, основанная на OAUTH2. 
-Плагин OpenID Connect от Geonetwork был протестирован с [Keycloak](https://keycloak.org) 
-и [Azure AD](https://azure.microsoft.com/en-ca/services/active-directory/), но должен работать с любым провайдером.
+[OAUTH2 OpenID Connect](https://openid.net/connect/) is an authentication and authorization system based on OAUTH2. Geonetwork's OpenID Connect plugin has been tested with [Keycloak](https://keycloak.org) and [Azure AD](https://azure.microsoft.com/en-ca/services/active-directory/), but should work with any provider.
 
-Основные шаги по настройке:
+Basic Setup Steps:
 
-1.  Настройте IDP-сервер (например, Keycloak или Azure AD).
-    1.  Убедитесь, что ID-токен предоставляет информацию о роли/группе.
-    2.  Авторизуйте URL-адреса Geonetwork для перенаправления (например, `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oicd`).
-    3.  Запишите идентификатор клиента
-    4.  Запишите секрет клиента
-    5.  Получение документа метаданных JSON сервера
-2.  Настройка Geonetwork с помощью переменных окружения
-    1.  ``GEONETWORK_SECURITY_TYPE=openidconnect``.
-    2.  ``OPENIDCONNECT_CLIENTSECRET=\...`` (с вашего IDP сервера)
-    3.  ``OPENIDCONNECT_CLIENTID=\...`` (с вашего IDP-сервера)
-    4.  ``OPENIDCONNECT_SERVERMETADATA_JSON_TEXT='\...'`` (текст JSON-документа метаданных вашего сервера)
-    5.  ``OPENIDCONNECT_IDTOKENROLELOCATION=\...`` (расположение ролей пользователя в ID-токене)
+1.  Configure your IDP Server (i.e. Keycloak or Azure AD)
+    1.  Ensure that the ID Token provides role/group information
+    2.  Authorize your Geonetwork URLs for redirects (i.e. `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oidc`)
+    3.  Record the Client ID
+    4.  Record the Client Secret
+    5.  Get the Server's JSON metadata document
+2.  Configure Geonetwork via environment variables
+    1.  ``GEONETWORK_SECURITY_TYPE=openidconnect``
+    2.  ``OPENIDCONNECT_CLIENTSECRET=\...`` (from your IDP server)
+    3.  ``OPENIDCONNECT_CLIENTID=\...`` (from your IDP server)
+    4.  ``OPENIDCONNECT_SERVERMETADATA_JSON_TEXT='\...'`` (the text of your Server's JSON metadata document)
+    5.  ``OPENIDCONNECT_IDTOKENROLELOCATION=\...`` (location of the user's roles in the ID Token)
 
-Плагин Open ID Connect от Geonetwork имеет множество настроек - смотрите файлы `WEB-INF/config-security/config-security-openidconnect.xml` 
-и `WEB-INF/config-security/config-security-openidconnect-overrides.properties`.
+Geonetwork's Open ID Connect plugin has a lot of configuration options - please see the `WEB-INF/config-security/config-security-openidconnect.xml` and `WEB-INF/config-security/config-security-openidconnect-overrides.properties` files.
 
-### Переменная окружения и ее значение
+### Environment Variable and Meaning
 
-**GEONETWORK_SECURITY_TYPE**.
+**GEONETWORK_SECURITY_TYPE**
 
-Должно быть `ct`.
+Should be `openidconnect`.
 
 **OPENIDCONNECT_CLIENTID**
 
-Имя клиента/приложения, настроенного на сервере OpenID.
+The name of the client/application you configured on your OpenID server.
 
-**OPENIDCONNECT_CLIENTSECRET**.
+**OPENIDCONNECT_CLIENTSECRET**
 
-Секрет `et`, который вы настроили на сервере OpenID.
+The `client secret` you configured on your OpenID server.
 
-**OPENIDCONNECT_SERVERMETADATA_CONFIG_URL**.
+**OPENIDCONNECT_SERVERMETADATA_CONFIG_URL**
 
-URL-адрес JSON-документа метаданных внешнего сервера OIDC. Обычно он находится по адресу ``/.well-known/openid-configuration`` на сервере IDP.
+URL to the external OIDC server's JSON metadata document. This is typically at ``/.well-known/openid-configuration`` on the IDP server.
 
 !!! note
 
-    Это будет загружать конфигурацию сервера при каждом запуске GeoNetwork, 
-    что может быть связано с проблемой безопасности. Для безопасности используйте `ps` URL.
+    This will download the server's configuration everytime GeoNetwork starts up, which could be a security concern. For security, use a `https` URL.
 
 
-**OPENIDCONNECT_SERVERMETADATA_JSON_TEXT**.
+**OPENIDCONNECT_SERVERMETADATA_JSON_TEXT**
 
-Должен быть текстом конфигурации метаданных вашего сервера OpenID (JSON).
+Should be the text of your OpenID server's metadata configuration (JSON).
 
-**OPENIDCONNECT_SERVERMETADATA_FNAME**.
+**OPENIDCONNECT_SERVERMETADATA_FNAME**
 
-Вместо того чтобы помещать конфигурацию метаданных сервера OpenID в виде текста в переменную (``OPENIDCONNECT_SERVERMETADATA_JSON_TEXT``), 
-следует поместить содержимое JSON в файл и сослаться на него с помощью этой переменной (например, ``/WEB-INF/config-security/openid-configuration.json``)
+Instead of putting the OpenID server's metadata configuration as text in a variable (``OPENIDCONNECT_SERVERMETADATA_JSON_TEXT``), you can put the JSON contents in a file and reference it with this variable (ie. `/WEB-INF/config-security/openid-configuration.json`)
 
-**OPENIDCONNECT_IDTOKENROLELOCATION**.
+**OPENIDCONNECT_IDTOKENROLELOCATION**
 
-Где в ID-токене хранятся роли/группы пользователей (т.е. «groups», «roles» или «resource_access.gn-key.roles»)
+Where, in the ID Token, are the users roles/groups stored (i.e. "groups", "roles", or "resource_access.gn-key.roles")
 
 **OPENIDCONNECT_ROLECONVERTER**
 
-Обеспечивает простое преобразование ролей с сервера OpenID в роли Geonetwork.
+This provides simple role conversion from the OpenID server to Geonetwork roles.
 
-Т.е. ``GeonetworkAdmin=Administrator,GeonetworkEditor=Editor``.
+ie. ``"GeonetworkAdmin=Administrator,GeonetworkEditor=Editor"``
 
-Это преобразует «GeonetworkAdmin» (с сервера OpenID) в роль Geonetwork «Administrator».
+This will convert "GeonetworkAdmin" (from the OpenID Server) to the Geonetwork "Administrator" role.
 
-!!! обратите внимание
+!!! note
 
-    Как и в плагине keycloak, вы можете использовать имена ролей/групп вида «group:role» для назначения пользователя группе Geonetwork и уровню прав.
-
-
-**OPENIDCONNECT_MINIMUMPROFILE**.
-
-Каждому пользователю, который аутентифицируется на сервере OpenID, будет присвоена эта роль.
-
-По умолчанию это ``RegisteredUser``.
-
-**OPENIDCONNECT_USERPROFILEUPDATEENABLED**.
-
-Когда пользователь входит в систему, обновлять его профиль Geotwork на основе ID-токена сервера OpenID.
-
-По умолчанию ``«true»``.
-
-**OPENIDCONNECT_USERGROUPUPDATEENABLED**.
-
-При входе пользователя в систему обновлять его разрешения на группы/роли в Geotwork.
-
-По умолчанию ``«true»``.
+    Like the keycloak plugin, you can use role/group names of the form "group:role" to assign a user to Geonetwork group and permission level.
 
 
-**OPENIDCONNECT_SCOPES**.
+**OPENIDCONNECT_MINIMUMPROFILE**
 
-Ограничение запрашиваемого диапазона доступа к серверу OpenID.
+Every user who authenticates against the OpenID server will be given this role.
 
-По умолчанию «openid email profile» и «openid email profile offline_access» (для токенов на предъявителя).
+Default is ``"RegisteredUser"``.
 
-**OPENIDCONNECT_LOGINTYPE**.
+**OPENIDCONNECT_USERPROFILEUPDATEENABLED**
 
-Как Geonetwork будет работать с пользователями, которые не вошли в систему.
+When a user logs on, update their Geotwork profile from the OpenID server's ID Token.
 
-По умолчанию «LINK» - пользователи могут нажать на ссылку «login» на главной странице.
+Default is ``"true"``.
 
-«AUTOLOGIN» - не предусмотрена форма входа, которая будет автоматически вводить пользователя в систему, когда это возможно.
+**OPENIDCONNECT_USERGROUPUPDATEENABLED**
 
-**OPENIDCONNECT_LOGSENSITIVE_INFO**.
+When a user logs on, update their Geotwork group/role permissions.
 
-«true» или „false“ (по умолчанию)
+Default is ``"true"``.
 
-Журналы: CODE, ACCESS TOKEN, ID TOKEN, результат userinfo конечной точки и вычисленные полномочия GeoNetwork.
+**OPENIDCONNECT_SCOPES**
 
-ЗАПИСЬ ЭТОЙ ИНФОРМАЦИИ В ЖУРНАЛ, ВЕРОЯТНО, ПРЕДСТАВЛЯЕТ СОБОЙ РИСК ДЛЯ БЕЗОПАСНОСТИ И ЛИЧНОЙ ИНФОРМАЦИИ. 
-НЕ ВКЛЮЧАЙТЕ ЭТУ ФУНКЦИЮ В СИСТЕМЕ, КОТОРАЯ ДЕЙСТВИТЕЛЬНО ИСПОЛЬЗУЕТСЯ.
+Limit the requested scope access to the OpenID server.
 
-Следует избегать регистрировать очень чувствительную информацию, а также полный токен доступа или id (только часть требований). 
-Следует регистрировать одноразовый CODE, но он уже должен быть деактивирован сервером до того, как пользователь его зарегистрирует.
+Default "openid email profile", and "openid email profile offline_access" (for bearer tokens).
 
-Токен доступа, userinfo и id-токен содержат конфиденциальную информацию (например, реальные имена, адреса электронной почты, etc\...).
+**OPENIDCONNECT_LOGINTYPE**
 
-### Конфигурация сервера Keycloak
+How Geonetwork deals with users who are not logged on.
 
-Полное описание шагов по настройке keycloak выходит за рамки этого документа, но это должно послужить руководством.
+Default is "LINK" - users can click on the "login" link on the main page.
 
-Здесь описана настройка keycloak на основе **другого OpenID IDP** (например, Azure AD). В keycloak:
+"AUTOLOGIN" - No login form provided which will automatically login the user when possible.
 
-1.  Создайте царство (например, `lm`).
-2.  Создайте openid-клиента (например, `nt`). Это ваш ClientID.
-    1.  Корневой URL: ``http://localhost:7777/geonetwork`` (это корневой URL GN).
-    2.  Допустимые URI перенаправления: ``http://localhost:7777/geonetwork/*``.
-    3.  Тип доступа: Конфиденциальный .
-    4.  На вкладке `ls` получите секрет (это ваш клиентский секретный ключ)
-    5.  На вкладке `es` создайте несколько ролей: Администратор, Редактор, Рецензент, Зарегистрированный гость
+**OPENIDCONNECT_LOGSENSITIVE_INFO**
 
-Нужно иметь идентификатор клиента Keycloak («myclient») и секретный ключ клиента. 
-Конфигурационный JSON доступен по адресу `https://YOUR_KEYCLOAK_HOST/realms/{YOUR REALM NAME}/.well-known/openid-configuration`
+"true" or "false" (default)
 
-Переменные окружения будут выглядеть следующим образом:
+Logs: CODE, ACCESS TOKEN, ID TOKEN, userinfo endpoint result, and calculated GeoNetwork authorities.
+
+LOGGING THIS INFORMATION IS PROBABLY A SECURITY AND PERSONAL INFORMATION RISK. DO NOT TURN THIS ON IN A SYSTEM THAT IS ACTUALLY BEING USED.
+
+We try not to log very sensitive information - we don't log the full access or id token (just the claims part). We log the single-use CODE, but it should have already been deactivated by the server before we log it.
+
+The access token, userinfo, and id token contain sensitive information (i.e. real names, email address, etc\...)
+
+### Configuration for a Keycloak Server
+
+It's outside the scope of this document to fully describe the steps to configure keycloak, but this should serve as a guide.
+
+This will configure keycloak backed by **another OpenID IDP** (for example, by an Azure AD). In keycloak:
+
+1.  Create a realm (i.e. `myrealm`)
+2.  Create an openid client (i.e. `myclient`). This is your ClientID.
+    1.  Root URL: ``http://localhost:7777/geonetwork`` (this is the GN root URL)
+    2.  Valid Redirect URIs: ``http://localhost:7777/geonetwork/*``
+    3.  Access Type: Confidential
+    4.  On the `Credentials` tab, get the secret (this is your Client Secret)
+    5.  On the `Roles` tab, create some roles: Administrator, Editor, Reviewer, RegisteredGuest
+3.  Create your backing Identity Provider (i.e. to another OpenID server). Or you can configure users directly in keycloak.
+    1.  At the bottom of the page, choose "import from URL" and import the backing server's configuration location.
+    2.  Add the Client Secret (from the backing service)
+    3.  Add the Client ID (from the backing service)
+    4.  set "Client Authentication" to "Client secret sent as post"
+4.  Configure role translation
+    1.  Edit the "Identity Provider" you just created, and go to the "Mappers" tab.
+    2.  Press "Create" and and add a "Claim to Role".
+    3.  Set Sync Mode Override to "Force"
+    4.  Claim: `roles`
+    5.  Claim Value: `name of the administrator role in the backing IDP`
+    6.  Role: choose the "Administrator" role from the `myclient` client.
+    7.  Repeat the above for Administrator, Editor, Reviewer, and RegisteredGuest
+5.  Configure details for your backing IDP
+    1.  Edit the "Identity Provider" you just configured
+    2.  On the Mappers tab, "Add Builtin" and tick "client roles (User Client Role)" then "Add selected"
+    3.  Edit the "client roles" mapper and make sure "Add to ID token" and "Add to userinfo" are on
+
+You should have Keycloak's Client id ("myclient") and the client secret. The configuration JSON is available at `https://YOUR_KEYCLOAK_HOST/realms/{YOUR REALM NAME}/.well-known/openid-configuration`
+
+Your environment variables will looks like this:
 
 ``` properties
 GEONETWORK_SECURITY_TYPE=openidconnect
@@ -661,28 +632,28 @@ OPENIDCONNECT_SERVERMETADATA_JSON_TEXT='...big json text...'
 OPENIDCONNECT_IDTOKENROLELOCATION='resource_access.{your client id}.roles'
 ```
 
-### Конфигурация Azure AD
+### Azure AD Configuration
 
-Существует два способа настройки Azure AD. Первый - с помощью пользователей и групп (более традиционный метод LDAP) или с помощью ролей приложений.
+There are two ways to setup Azure AD. The first is with user and groups (a more traditional LDAP method) or with Application Roles.
 
-#### С помощью пользователей и групп
+#### With Users and Groups
 
-Настройте приложение Azure:
+Setup the Azure Application:
 
-1.  Создайте новое `on`.
-2.  Используйте `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oicd` в качестве URI перенаправления
-3.  В разделе «Сертификаты и секреты» добавьте новый секрет и запишите его (убедитесь, что вы получаете значение секрета, а не идентификатор объекта).
-4.  Убедитесь, что группы находятся в ID-токене - на вкладке «Manifest» отредактируйте JSON так, чтобы «groupMembershipClaims»: «SecurityGroup».
-5.  На странице сводки получите идентификатор приложения (клиента)
-6.  На странице сводки выберите «Конечные точки» (вверху) и получите текст JSON из документа «OpenID Connect metadata document» Endpoints.
+1.  Create a new `App Registration`
+2.  use `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oidc` as a redirect URIs
+3.  On the "Certificates & Secrets" add a new secret and record it (make sure you get the secret value and NOT the object id)
+4.  Make sure the groups are in the ID token - on the "Manifest" tab, edit the JSON so that "groupMembershipClaims": "SecurityGroup" is set
+5.  On the summary page, get the Application (client) ID
+6.  On the summary page, choose "Endpoints" (at the top) and get the JSON text from the "OpenID Connect metadata document" Endpoints
 
-Настройте пользователей и группы:
+Setup users and groups:
 
-1.  В Azure AD перейдите в раздел «Группы
-2.  Добавьте новые группы - «geonetworkAdmin», «geonetworkReviewer» и т. д.\... Запишите название и **Object ID** группы.
-3.  Отредактируйте пользователя, выберите «Группы» и добавьте его в соответствующую группу.
+1.  In Azure AD, go to groups
+2.  Add new Groups - "geonetworkAdmin", "geonetworkReviewer", etc\... Record the name and the group's **Object ID**
+3.  Edit a User, and choose Groups, and add them to appropriate group.
 
-Переменные окружения будут выглядеть следующим образом:
+Your environment variables will looks like this:
 
 ``` properties
 GEONETWORK_SECURITY_TYPE=openidconnect
@@ -695,40 +666,40 @@ OPENIDCONNECT_ROLECONVERTER='3a94275f-7d53-4205-8d78-11f39e9ffa5a=Administrator,
 
 !!! note
 
-        Роли находятся в части «roles» ID-токена.
+    The roles are in the "roles" part of the ID Token.
 
 
 !!! note
 
-    OPENIDCONNECT_ROLECONVERTER преобразует идентификатор объекта группы Azure AD в роль Geonetwork Role.
+    The OPENIDCONNECT_ROLECONVERTER converts the Azure AD Group's Object ID to a Geonetwork Role.
 
 
-#### Роли приложений
+#### With Application Roles
 
-Настройте приложение Azure:
+Setup the Azure Application:
 
-1.  Создайте новое приложение Enterprise
-2.  Используйте `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oicd` в качестве URI перенаправления
-3.  В разделе «Сертификаты и секреты» добавьте новый секрет и запишите его (убедитесь, что вы получаете значение секрета, а не идентификатор объекта).
-4.  Убедитесь, что группы находятся в ID-токене - на вкладке «Manifest» отредактируйте JSON так, чтобы «groupMembershipClaims»: «ApplicationGroup».
-5.  На странице сводки получите идентификатор приложения (клиента)
-6.  На странице сводки выберите «Конечные точки» (вверху) и получите текст JSON из документа «OpenID Connect metadata document» Endpoints
+1.  Create a new Enterprise application
+2.  use `http://localhost:8080/geonetwork/login/oauth2/code/geonetwork-oidc` as a redirect URIs
+3.  On the "Certificates & Secrets" add a new secret and record it (make sure you get the secret value and NOT the object id)
+4.  Make sure the groups are in the ID token - on the "Manifest" tab, edit the JSON so that "groupMembershipClaims": "ApplicationGroup" is set
+5.  On the summary page, get the Application (client) ID
+6.  On the summary page, choose "Endpoints" (at the top) and get the JSON text from the "OpenID Connect metadata document" Endpoints
 
-Настройте роли приложения:
+Setup Application Roles:
 
-1.  В созданном вами приложении перейдите в раздел «Роли приложения».
-2.  Добавьте новые группы - «Редактор», «Рецензент» и т.д.\...
+1.  In Application you created, go to "App Roles".
+2.  Add new Groups - "Editor", "Reviewer", etc\...
 
-Назначьте пользователей:
+Assign Users:
 
-1.  Перейдите в Azure AD, Enterprise Application, затем в созданное вами приложение.
-2.  Выберите «Назначить пользователей и группы».
-3.  Нажмите кнопку «Добавить пользователя/группу» (вверху).
-4.  Нажмите «Нет выбранных» (в разделе «Пользователи») и выберите несколько пользователей
-5.  Нажмите «Не выбрано» (в разделе «Выбрать роль») и выберите несколько ролей.
-6.  Настройте всех пользователей с ролями
+1.  Go to Azure AD, Enterprise Application, then the application you created
+2.  Choose "Assign users and groups"
+3.  Press the "Add user/group" (top)
+4.  Press "None Selected" (under Users) and choose some users
+5.  Press "None Selected" (Under Select a Role) and choose some roles
+6.  Configure all your users with roles
 
-Ваши переменные окружения будут выглядеть следующим образом:
+Your environment variables will looks like this:
 
 ``` properties
 GEONETWORK_SECURITY_TYPE=openidconnect
@@ -740,17 +711,17 @@ OPENIDCONNECT_IDTOKENROLELOCATION='roles'
 
 !!! note
 
-    Роли находятся в части «roles» ID-токена.
+    The roles are in the "roles" part of the ID Token.
+
 
 !!! note
 
-    Как правило, преобразование роли не требуется, поскольку имя роли будет использоваться в ID-токене.
+    You don't typically have to do any role conversion since the role name will be used in the ID Token.
 
 
+### OIDC Bearer Tokens {#oidc_bearer_tokens}
 
-### OIDC Bearer токены {#oidc_bearer_tokens}
-
-Токены носителя также поддерживаются - вы можете прикрепить токен носителя JWT к любому запросу, установив HTTP-заголовок следующим образом:
+Bearer Tokens are also supported - you can attach the JWT Bearer token to any request by setting the HTTP header like this:
 
 ``` properties
 Authorization: Bearer:  <JWT token>
@@ -758,65 +729,73 @@ Authorization: Bearer:  <JWT token>
 
 Bearer Tokens are mostly used for automated (desktop or application) API calls - real users should just login normally using OIDC.
 
+1.  Setup your OIDC configuration (see [Configuring OAUTH2 OpenID Connect](authentication-mode.md#authentication-openid))
+2.  Setup the OIDC Bearer token configuration (see [Configuration](authentication-mode.md#bearer_token_configuration))
+3.  Obtain a Bearer token from the OIDC server. This is the hard part and there are several ways to do this. One way that is used is via the OAuth 2.0 Device Authorization Grant ("Device Flow") workflow.
+4.  Attach it to your request headers (see [OIDC Bearer Tokens](authentication-mode.md#oidc_bearer_tokens))
+5.  Make protected requests to the Geonetwork API
 
-Токены носителя в основном используются для автоматизированных (настольных или прикладных) вызовов API - 
-реальные пользователи должны просто входить в систему обычным образом, используя OIDC.
+This has been tested with Keycloak and with Azure AD. It should work with other JWT-based OIDC services.
 
-1.  Настройте конфигурацию OIDC (см. [Настройка OAUTH2 OpenID Connect](authentication-mode.md#authentication-openid)).
-2.  Установите конфигурацию токена носителя OIDC (см. [Конфигурация](authentication-mode.md#bearer_token_configuration)).
-3.  Получите токен Bearer с сервера OIDC. Это самая сложная часть, и есть несколько способов сделать это. 
-    Один из способов, который используется - это рабочий процесс OAuth 2.0 Device Authorization Grant («Device Flow»).
+#### Validation
 
-4.  Прикрепите его к заголовкам запроса (см. [OIDC Bearer Tokens](authentication-mode.md#oidc_bearer_tokens)).
-5.  Выполните защищенные запросы к API Geonetwork.
+The token is validated in three major ways:
 
-Этот способ был протестирован с Keycloak и Azure AD. Он должен работать и с другими сервисами OIDC на основе JWT.
+1.  The bearer token will be used to access the `userinfo` ("token validation") endpoint specified in the OIDC configuration. This means the IDP validates the token (at the very least its signature and expiry).
+2.  The bearer token (JWT) will be checked that the audience for it is the same as our configurated OIDC configuration. This will ensure that someone isn't getting a token from a different service and attempting to use it here. See ``AudienceAccessTokenValidator.java``
+3.  The bearer token (JWT) will be checked that the subject of the JWT and the `userinfo` (returned from the IDP) are the same. This shouldnt be a problem in our use-case, but the OAUTH2 specification recommends this check. See ``SubjectAccessTokenValidator.java``
 
-#### Проверка
+#### Configuration {#bearer_token_configuration}
 
-Токен проверяется тремя основными способами:
+Configure OIDC as above - ensure this is working.
 
-1.  Токен носителя будет использоваться для доступа к конечной точке `fo` («проверка токена»), указанной в конфигурации OIDC. 
-    Это означает, что IDP проверяет токен (по крайней мере, его подпись и срок действия).
+Instead of using `GEONETWORK_SECURITY_TYPE=openidconnect`, use `GEONETWORK_SECURITY_TYPE=openidconnectbearer`.
 
-2.  Токен на предъявителя (JWT) будет проверен на то, что его аудитория совпадает с нашей конфигурацией OIDC. 
-    Это гарантирует, что кто-то не получит токен из другого сервиса и не попытается использовать его здесь. Смотрите ``AudienceAccessTokenValidator.java``.
+Inside `WEB-INF/config-security/config-security-openidconnectbearer.xml`:
 
-3.  Токен на предъявителя (JWT) будет проверен на то, что субъект JWT и `fo` (возвращаемый от IDP) совпадают. 
-    В нашем случае это не должно быть проблемой, но спецификация OAUTH2 рекомендует такую проверку. Смотрите ``SubjectAccessTokenValidator.java``.
+1.  If you are using keycloak (configured with Groups in the `userinfo` response), then uncomment the `UserInfoAccessTokenRolesResolver` bean and comment out the `MSGraphUserRolesResolver` bean.
+2.  If you are using Azure AD (MS Graph API for the user's groups), then then uncomment the `MSGraphUserRolesResolver` bean and comment out the `UserInfoAccessTokenRolesResolver` bean.
 
-#### Настройка {#bearer_token_configuration}
+The easiest way to test is to obtain a Bearer Token, and then use a browser plugin to add the ``Authorization: Bearer <token>`` header to all requests. When you visit the Geonetwork website, you should see yourself logged in with the appropriate permissions.
 
-Настройте OIDC, как указано выше - убедитесь, что все работает.
+#### Service account Configuration {#service_account_configuration}
 
-Вместо `GEONETWORK_SECURITY_TYPE=openidconnect`, используйте `GEONETWORK_SECURITY_TYPE=openidconnectbearer`.
+If using background jobs such as harvester and there is a requirement to connect to external services which are also authenticated by the same provider then service accounts may be required.
 
-Внутри `WEB-INF/config-security/config-security-openidconnectbearer.xml`:
+To enable service accounts use `OPENIDCONNECT_SERVICE_ACCOUNT_ENABLED=true`. 
 
-1.  Если вы используете keycloak (настроенный с помощью Groups в ответе `fo`), то откомментируйте боб `er` и закомментируйте боб `er`.
-2.  Если вы используете Azure AD (MS Graph API для групп пользователей), то откомментируйте боб `er` и закомментируйте боб `er`.
+!!! note
 
-Самый простой способ проверить - получить токен Bearer, а затем с помощью плагина для браузера добавить ``Авторизация: Bearer <token>`` ко всем запросам. 
-Когда пользователь зайдёт в Geonetwork, он должен увидеть себя вошедшим в систему с соответствующими правами.
+    This will currently only work with `GEONETWORK_SECURITY_TYPE=openidconnectbearer`
 
-#### Другие провайдеры
+!!! note
 
-Это было протестировано с Azure AD (группы в MS Graph API) и KeyCloak (группы в `fo`).
+    The service account client must be configured in the IDP to allow the `client_credentials` grant type.
 
-Для других IDP, возможно, придется внести некоторые изменения.
+By default the same client as used for user authentication will be used for service accounts. To configure a different client for service accounts then use the following environment variables:
 
-1.  Убедитесь, что `or` и `or` корректно работают для ваших JWT-токенов.
-2.  Убедитесь, что группы пользователей доступны - см. интерфейс `er` и две его реализации - `er` и `er`.
+``` properties
+OPENIDCONNECT_SERVICE_ACCOUNT_CLIENTSECRET='...'
+OPENIDCONNECT_SERVICE_ACCOUNT_CLIENTID='...'
+```
+If special scope is required for the service account then the following environment variable can be used `OPENIDCONNECT_SERVICE_ACCOUNT_SCOPES`
 
-## Настройка Keycloak {#authentication-keycloak}
+#### Other Providers
 
-[Keycloak](https://keycloak.org) - это программное решение для хранения данных аутентификации, 
-объединения пользователей, посредничества в идентификации и социального входа. 
-GeoNetwork может быть настроен на использование экземпляра keycloak для аутентификации.
+This has been tested with Azure AD (groups in the MS Graph API) and KeyCloak (groups in the `userinfo`).
 
-Установите keycloak из инструкции или воспользуйтесь этим примером установки в docker <https://www.keycloak.org/getting-started/getting-started-docker>.
+For other IDP, you might have to make some modifications.
 
-Детали Keycloak определяются через переменные окружения
+1.  Make sure the `AudienceAccessTokenValidator` and `SubjectAccessTokenValidator` work correctly for your JWT bearer tokens.
+2.  Make sure that the user's groups are available - see the `UserRolesResolver` interface and its two implementations - `UserInfoAccessTokenRolesResolver` and `MSGraphUserRolesResolver`.
+
+## Configuring Keycloak {#authentication-keycloak}
+
+[Keycloak](https://keycloak.org) is a software solution to facilitate storage of authentication details, user federation, identity brokering and social login. GeoNetwork can be set up to use a keycloak instance for authentication.
+
+Install keycloak from its instructions or use this example setup in docker <https://www.keycloak.org/getting-started/getting-started-docker>
+
+Keycloak details are defined via environment variables
 
 ``` text
 KEYCLOAK_AUTH_SERVER_URL={keycloak url}
@@ -826,21 +805,17 @@ KEYCLOAK_SECRET={client secret}
 KEYCLOAK_DISABLE_TRUST_MANAGER={true|false}
 ```
 
-Можно установить более подробные настройки keycloak, отредактировав файл **`WEB-INF/config-security/keycloak.json`**.
+You can setup more advance keycloak settings by editing the file **`WEB-INF/config-security/keycloak.json`**
 
-### Конфигурация URL-адреса клиента Geonetwork
+### Geonetwork client URL configuration
 
-Убедитесь, что при настройке клиента был установлен правильный URL 
-для перенаправления на установку geonetwork, т.е. `https://localhost:8443/geonetwork/*`. 
-При неправильной настройке вы можете получить ошибку, указывающую на то, что был задан неверный URL перенаправления. 
-Также если вы хотите протестировать выход из обратного канала клиента, убедитесь, 
-что URL-адрес администратора также установлен на установку geonetwork.
+Ensure that when you configure your client that you setup the valid redirect uris to your geonetwork installation. i.e. `https://localhost:8443/geonetwork/*`. If this is not setup correctly you may get and error indicating that a wrong redirect uri was supplied. Also if wanting to test the client backchannel logout then ensure that the admin URL is also set to the geonetwork installation.
 
-### Пример настройки пользователя/роли/группы
+### Sample user/role/group setup
 
-#### Пример настройки роли
+#### Sample Role setup
 
-В настройках роли клиента (клиенты -> мой_клиент -> роли). Добавьте следующие роли
+In your client role settings (clients -> myclient -> roles). Add the following roles
 
 ``` text
 Administrator
@@ -852,55 +827,289 @@ sample:Editor
 sample:RegisteredUser
 ```
 
-#### Образец конфигурации группы
+#### Sample Group configuration
 
-1.  Перейдите в раздел «Группы keycloak» (левое меню).
-2.  Создайте новую группу под названием «Администратор».
-3.  Отредактируйте группу. Перейдите в Role Mappings -> Client Roles (myclient) -> выберите роли администратора 
-    и нажмите кнопку «Add selected» Любой пользователь, присоединенный к группе Administrator, будет администратором сети geonetwork.
+1.  Go to keycloak groups (left menu).
+2.  Create a new group called "Administrator"
+3.  Edit the group. Go to Role Mappings -> Client Roles (myclient) -> select the administrator roles and click on "Add selected" Any user joined to the Administrator group will be a geonetwork administrator.
 
-#### Пример конфигурации пользователя
+#### Sample User configuration
 
-1.  Перейдите в раздел «Пользователи keycloak» (левое меню).
-2.  Добавьте или выберите существующего пользователя. Затем перейдите к этому пользователю.
-3.  Перейдите в раздел «Сопоставление ролей» -> «Роли клиента» (myclient) -> выберите доступные роли для применения 
-    и нажмите «Добавить выбранные» или перейдите в раздел «Группы» -> «Доступные группы» -> выберите группу «Администратор» и нажмите «Присоединиться».
+1.  Go to keycloak users (left menu)
+2.  Add or select existing user. Then go to that user.
+3.  Go to role Mappings -> Client Roles (myclient) -> select the available roles to be applied and click on "Add selected" or go to Groups -> Available Groups -> Click on the Administrator Group and then click on "Join"
 
-Аналогичная настройка описана для geoserver в [документации geoserver](https://docs.geoserver.org/latest/en/user/community/keycloak/index.html).
+A similar setup is described for geoserver in the [geoserver documentation](https://docs.geoserver.org/latest/en/user/community/keycloak/index.html).
 
-## Настройка EU Login {#authentication-ecas}
+## Configurating JWT/JSON Headers {#jwt-headers}
 
-EU Login - это центральный механизм входа в систему Европейской комиссии. 
-Можно включить вход в систему с помощью этого центрального сервиса в случае, если ваши предполагаемые пользователи имеют или могут получить EU Login.
+The JWT Headers module provides a security module for header based security. It is equivalent to GeoServer's JWT Headers Module (both GeoServer and GeoNetwork share a code library to make them equivalent). 
 
-Чтобы включить EU Login, настройте аутентификацию, включив `WEB-INF/config-security/config-security-ecas.xml` в `WEB-INF/config-security/config-security.xml`, откомментировав следующую строку:
+This module allows  [JSON-based](https://en.wikipedia.org/wiki/JSON) headers (for username and roles) as well as [JWT-based](https://en.wikipedia.org/wiki/JSON_Web_Token>) headers (for username and roles).  It also allows for validating JWT-Based AccessTokens (i.e. via [OAUTH2](https://en.wikipedia.org/wiki/OAuth>)/[OpenID Connect](ttps://en.wikipedia.org/wiki/OpenID#OpenID_Connect_(OIDC)).
+
+
+If you are using something like [Apache's mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc), then this module will allow you to;
+
+1. Get the username from an Apache-provided `OIDC_*` header (either as simple-strings or as a component of a JSON object).
+2. Get the user's roles from an Apache-provided `OIDC_*` header (as a component of a JSON object).
+3. The user's roles can also come from the GeoNetwork Database (managed by the administrator in the GeoNetwork GUI).
+
+If you are using [OAUTH2/OIDC Access Tokens](https://www.oauth.com/oauth2-servers/access-tokens/):
+
+1. Get the username from the attached JWT Access Token (via a path into the [Access Token's JSON Claims](https://auth0.com/docs/authenticate/login/oidc-conformant-authentication/oidc-adoption-access-tokens/)).
+2. Get the user's roles from the JWT Access Token (via a path into the Token's JSON Claims).
+3. Validate the Access Token
+
+   * Validate its Signature
+   * Validate that it hasn't expired
+   * Validate the token against a token verifier URL ("userinfo_endpoint") and check that subjects match
+   * Validate components of the Access Token (like [aud (audience)](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-token-claims>))
+   
+4. The user's roles can also come from the GeoNetwork Database (managed by the administrator in the GeoNetwork GUI).
+5. You can also extract roles from the JWT Access Token (via a JSON path).
+
+### JWT Headers configuration
+
+
+The JWT Headers module covers three main use cases:
+
+1. Simple Text, JSON, or JWT headers for the username
+2. Verification of JWT Access Tokens
+3. Getting roles from a JSON header or an attached JWT Access Token claim
+
+#### Configuration Options
+
+You must turn on JWT Header Support by setting the `GEONETWORK_SECURITY_TYPE` environment variable to `jwt-headers`.
+
+```
+GEONETWORK_SECURITY_TYPE=jwt-headers
+```
+
+Please see these files for more detailed configuration:
+* `config-security-jwt-header.xml`
+* `config-security-jwt-header-overrides.properties`
+
+##### User Name Options
+
+
+| Environment Variable | Meaning |
+| ------------- | ------- |
+|JWTHEADERS_UserNameHeaderFormat | The name of the HTTP header item that contains the user name. |
+|JWTHEADERS_UserNameFormat| Format that the user name is in: <br> `STRING` - user name is the header's value.<br>`JSON` - The header is a JSON string.  Use "JSON path" for where the user name is in the JSON. <br> `JWT` -  The header is a JWT (base64) string.  Use "JSON path" for where the user name is in the JWT claims. |
+|JWTHEADERS_UserNameJsonPath | JSON path for the User Name. If the user name is in JSON or JWT format, this is the JSON path to the user's name.|
+
+
+   
+If you are using [Apache's mod_auth_openidc](https://github.com/OpenIDC/mod_auth_openidc), then Apache will typically add:
+
+* an `OIDC_id_token_payload` header item (containing a JSON string of the ID token claims)
+* an `OIDC_access_token` header item (containing a base64 JWT Access Token)
+* optionally, a simple header item with individual claim values (i.e. `OIDC_access_token`)
+   
+Here are some example values;
+
+STRING
+```
+OIDC_preferred_username: david.blasby@geocat.net
+```
+
+JSON
+```
+OIDC_id_token_payload: {"exp":1708555947,"iat":1708555647,"auth_time":1708555288,"jti":"42ee833e-89d3-4779-bd9d-06b979329c9f","iss":"http://localhost:7777/realms/dave-test2","aud":"live-key2","sub":"98cfe060-f980-4a05-8612-6c609219ffe9","typ":"ID","azp":"live-key2","nonce":"4PhqmZSJ355KBtJPbAP_PdwqiLnc7B1lA2SGpB0zXr4","session_state":"7712b364-339a-4053-ae0c-7d3adfca9005","at_hash":"2Tyw8q4ZMewuYrD38alCug","acr":"0","sid":"7712b364-339a-4053-ae0c-7d3adfca9005","upn":"david.blasby@geocat.net","resource_access":{"live-key2":{"roles":["GeonetworkAdministrator","GeoserverAdministrator"]}},"email_verified":false,"address":{},"name":"david blasby","groups":["default-roles-dave-test2","offline_access","uma_authorization"],"preferred_username":"david.blasby@geocat.net","given_name":"david","family_name":"blasby","email":"david.blasby@geocat.net"}
+```
+
+JWT
+```
+OIDC_access_token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItb0QyZXphcjF3ZHBUUmZCS0NqMFY4cm5ZVkJGQmxJLW5ldzFEREJCNTJrIn0.eyJleHAiOjE3MDg1NTU5NDcsImlhdCI6MTcwODU1NTY0NywiYXV0aF90aW1lIjoxNzA4NTU1Mjg4LCJqdGkiOiI0M2UyYjUwZS1hYjJkLTQ2OWQtYWJjOC01Nzc1YTY0MTMwNTkiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojc3NzcvcmVhbG1zL2RhdmUtdGVzdDIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOThjZmUwNjAtZjk4MC00YTA1LTg2MTItNmM2MDkyMTlmZmU5IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibGl2ZS1rZXkyIiwibm9uY2UiOiI0UGhxbVpTSjM1NUtCdEpQYkFQX1Bkd3FpTG5jN0IxbEEyU0dwQjB6WHI0Iiwic2Vzc2lvbl9zdGF0ZSI6Ijc3MTJiMzY0LTMzOWEtNDA1My1hZTBjLTdkM2FkZmNhOTAwNSIsImFjciI6IjAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1kYXZlLXRlc3QyIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImxpdmUta2V5MiI6eyJyb2xlcyI6WyJHZW9uZXR3b3JrQWRtaW5pc3RyYXRvciIsIkdlb3NlcnZlckFkbWluaXN0cmF0b3IiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHBob25lIG9mZmxpbmVfYWNjZXNzIG1pY3JvcHJvZmlsZS1qd3QgcHJvZmlsZSBhZGRyZXNzIGVtYWlsIiwic2lkIjoiNzcxMmIzNjQtMzM5YS00MDUzLWFlMGMtN2QzYWRmY2E5MDA1IiwidXBuIjoiZGF2aWQuYmxhc2J5QGdlb2NhdC5uZXQiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImFkZHJlc3MiOnt9LCJuYW1lIjoiZGF2aWQgYmxhc2J5IiwiZ3JvdXBzIjpbImRlZmF1bHQtcm9sZXMtZGF2ZS10ZXN0MiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGF2aWQuYmxhc2J5QGdlb2NhdC5uZXQiLCJnaXZlbl9uYW1lIjoiZGF2aWQiLCJmYW1pbHlfbmFtZSI6ImJsYXNieSIsImVtYWlsIjoiZGF2aWQuYmxhc2J5QGdlb2NhdC5uZXQifQ.Iq8YJ99s_HBd-gU2zaDqGbJadCE--7PlS2kRHaegYTil7WoNKfjfcH-K-59mHGzJm-V_SefE-iWG63z2c6ChddzhvG8I_O5vDNFoGlGOQFunZC379SqhqhCEdwscEUDkNA3iTTXvK9vn0muStDiv9OzpJ1zcpqYqsgxGbolGgLJgeuK8yNDH7kzDtoRzHiHw2rx4seeVpxUYAjyg_cCkEjRt3wzud7H3xlfQWRx75YfpJ0pnVphuXYR7Z8x9p6hCPtrBfDeriudm-wkwXtcV2LNlXrZ2zpKS_6Zdxzza2lN30q_6DQXHGo8EAIr8SiiQrxPQulNiX9r8XmQ917Ep0g
+```
+
+
+
+It is recommended to either use the `OIDC_id_token_payload` (JSON) or `OIDC_access_token` (JWT) header.
+
+For `OIDC_id_token_payload`:
+
+* Request header attribute for User Name: `OIDC_id_token_payload`
+* Format the Header value is in: `JSON`
+* JSON path for the User Name: `preferred_username`
+
+For `OIDC_access_token`:
+
+* Request header attribute for User Name: `OIDC_access_token`
+* Format the Header value is in: `JWT`
+* JSON path for the User Name: `preferred_username`
+
+
+
+#### Role Source Options
+
+
+You can use the standard role source options in GeoNetwork (`Request Header`, `User Group Service`, or `Role Service`).  The JWT Headers module adds two more role sources - `Header Containing JSON String` and `Header containing JWT`.
+
+
+| Environment Variable | Meaning |
+| ------------- | ------- |
+|JWTHEADERS_RolesHeaderName| Name of the header item the JSON or JWT is contained in|
+| JWTHEADERS_JwtHeaderRoleSource |Which Role Source to use:<br> `JSON` - The header is a JSON string.  Use "JSON path" for where the roles are in the JSON. <br> `JWT` -  The header is a JWT (base64) string.  Use "JSON path" for where the roles are in the JWT claims. |
+| JWTHEADERS_RolesJsonPath| Path in the JSON object or JWT claims that contains the roles.  This should either be a simple string (single role) or a list of strings.|
+
+ 
+
+Using the example `OIDC_id_token_payload` (JSON) or `OIDC_access_token` (JWT) shown above, the claims are:
+
+
+```
+   {
+	   "exp": 1708555947,
+	   "iat": 1708555647,
+	   "auth_time": 1708555288,
+	   "jti": "42ee833e-89d3-4779-bd9d-06b979329c9f",
+	   "iss": "http://localhost:7777/realms/dave-test2",
+	   "aud": "live-key2",
+	   "sub": "98cfe060-f980-4a05-8612-6c609219ffe9",
+	   "typ": "ID",
+	   "azp": "live-key2",
+	   "nonce": "4PhqmZSJ355KBtJPbAP_PdwqiLnc7B1lA2SGpB0zXr4",
+	   "session_state": "7712b364-339a-4053-ae0c-7d3adfca9005",
+	   "at_hash": "2Tyw8q4ZMewuYrD38alCug",
+	   "acr": "0",
+	   "sid": "7712b364-339a-4053-ae0c-7d3adfca9005",
+	   "upn": "david.blasby@geocat.net",
+	   "resource_access":
+	   {
+		   "live-key2":
+		   {
+				"roles": 
+					[
+						"GeonetworkAdministrator", 
+						"GeoserverAdministrator"
+					]
+		   }
+	   },
+	   "email_verified": false,
+	   "address": { },
+	   "name": "david blasby",
+	   "groups": ["default-roles-dave-test2", "offline_access", "uma_authorization"],
+	   "preferred_username": "david.blasby@geocat.net",
+	   "given_name": "david",
+	   "family_name": "blasby",
+	   "email": "david.blasby@geocat.net"
+   }
+```
+
+In this JSON set of claims (mirrored in the JWT claims of the Access Token), and the two roles from the IDP are  "GeonetworkAdministrator", and "GeoserverAdministrator".  The JSON path to the roles is `resource_access.live-key2.roles`.
+
+#### Role Conversion
+
+
+The JWT Headers module also allows for converting roles (from the external IDP) to the GeoNetwork internal role names.
+
+
+| Environment Variable | Meaning                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|JWTHEADERS_RoleConverterString| Role Converter Map from External Roles to GeoNetwork Roles. <br> This is a ";" delimited map in the form of: <br> `ExternalRole1=GeoNetworkRole1;ExternalRole2=GeoNetworkRole2`                                                                                                                                                                                                  |
+|JWTHEADERS_OnlyExternalListedRoles | Only allow External Roles that are explicitly named above. <br>If true, external roles that are not mentioned in the conversion map will be ignored.  If false, those external roles will be turned into GeoNetwork roles of the same name. <br>These roles should either be a Profile ("Administrator", "Reviewer", etc..) or group-based permissions ("GroupName:ProfileName") |
+ 
+
+For example, a conversion map like `GeonetworkAdministrator=ADMINISTRATOR` will convert our IDP "GeonetworkAdministrator" to the "ADMINISTRATOR" Profile...
+
+In our example, the user has two roles "GeoserverAdministrator" and "GeonetworkAdministrator".  If the "Only allow External Roles that are explicitly named above" is true, then GeoNetwork will only see the "ADMINISTRATOR" role.  If true, it will see "ADMINISTRATOR" and "GeoserverAdministrator".  In neither case will it see the converted "GeonetworkAdministrator" roles.
+
+##### Groups
+
+As equivalent with the OIDC and Keycloak providers, specify group permissions in the `<groupName>:<Profile>` format.
+
+
+### JWT Validation
+
+
+If you are using Apache's `mod_auth_openidc` module, then you do *not* have to do JWT validation - Apache will ensure they are valid when it attaches the headers to the request.
+
+However, if you are using robot access to GeoNetwork, you can attach an Access Token to the request header for access.
+
+```    
+Authentication: Bearer `base64 JWT Access Token`
+``` 
+
+OR 
+
+```     
+Authentication: `base64 JWT Access Token`
+``` 
+
+You would then setup the user name to come from a JWT token in the `Authentication` header with a JSON path like `preferred_username`.
+
+
+
+
+You can also extract roles from the Access Token in a similar manner - make sure your IDP imbeds roles inside the Access Token.
+
+| Environment Variable | Meaning |
+| ------------- | ------- |
+|JWTHEADERS_ValidateToken |Validate JWT (Access Token). <Br>If false, do not do any validation. |
+| JWTHEADERS_ValidateTokenExpiry|Validate Token Expiry. <br>If true, validate the `exp` claim in the JWT and ensure it is in the future.  This should always be true so you do not allow expired tokens. |
+| JWTHEADERS_ValidateTokenSignature|  Validate JWT (Access Token) Signature.<br>If true, validate the Token's Signature|
+|JWTHEADERS_ValidateTokenSignatureURL | JSON Web Key Set URL (jwks_uri).<br>URL for a JWK Set.  This is typically called `jwks_uri` in the OIDC metadata configuration.  This will be downloaded and used to check the JWT's signature.  This should always be true to ensure that the JWT has not been modified.|
+|JWTHEADERS_ValidateTokenAgainstURL | Validate JWT (Access Token) Against Endpoint.<br>If true, validate the access token against an IDP's token verification URL.|
+| JWTHEADERS_ValidateTokenAgainstURLEndpoint| URL (userinfo_endpoint). <br>IDP's token validation URL.  This URL will be retrieved by adding the Access Token to the `Authentiation: Bearer <access token>` header.  It should return a HTTP 200 status code if the token is valid.  This is recommened by the OIDC specification.|
+| JWTHEADERS_ValidateSubjectWithEndpoint|Also validate Subject.<br>If true, the `sub` claim of the Access Token and the "userinfo_endpoint" `sub` claim will be checked to ensure they are equal.  This is recommened by the OIDC specification. |
+|JWTHEADERS_ValidateTokenAudience | Validate JWT (Access Token) Audience. <br> If true, the audience of the Access Token is checked. This is recommened by the OIDC specification since this verifies that the Access Token is meant for us.|
+|JWTHEADERS_ValidateTokenAudienceClaimName | Claim Name.<br>The name of the claim the audience is in (`aud`, `azp`, or `appid` claim) the Access Token.|
+|JWTHEADERS_ValidateTokenAudienceClaimValue|Required Claim Value. <br>The value this claim must be (if the claim is a list of string, then it must contain this value). |
+
+
+#### Using Headers or GeoNetwork Database for Profiles & Profile Groups
+
+Inside `JwtHeaderSecurityConfig`, use these values to determine where Profile and ProfileGroups come from.  
+
+| Property | Meaning |
+| ------------- | ------- |
+|updateProfile|  true -> update the DB with the information from OIDC (don't allow user to edit profile in the UI)<br>false -> don't update the DB (user must edit profile in UI). |
+|updateGroup| true -> update the DB (user's group) with the information from OIDC (don't allow admin to edit user's groups in the UI)<br>false -> don't update the DB (admin must edit groups in UI).|
+
+### Using JWT Headers for both OIDC and OAUTH2 (Simultaneously)
+
+Using the above configuration, you can configure JWT Headers for either OIDC-based browser access (i.e. with Apache `mod_auth_openidc`) ***or*** for OAUTH2 based Bearer Token access.  However, you cannot do both at the same time.
+
+To configure JWT Headers to simultaneously provide OIDC and OAUTH2 access, you can use the `jwt-headers-multi` configuration.
+
+To use this, set the `GEONETWORK_SECURITY_TYPE` to `jwt-headers-multi`
+
+```
+GEONETWORK_SECURITY_TYPE=jwt-headers-multi
+```
+
+Please see these files for more detailed configuration:
+* `config-security-jwt-header-multi.xml`
+* `config-security-jwt-header-multi-overrides.properties`
+
+This creates two JWT Header authentication filters for GeoNetwork - one for OIDC based Browser access, and one for OAUTH2 based Robot access.
+
+You configure each of these independently using the same environment variables described above. 
+For the first filter, use the environment variables defined above (ie. `JWTHEADERS_UserNameFormat`).  For the second filter, add a `2` at the end of the environment variable (i.e. `JWTHEADERS_UserNameFormat2`).
+
+## Configuring EU Login {#authentication-ecas}
+
+EU Login is the central login mechanism of the European Commission. You can enable login against that central service in case your intended users have ar can acquire a EU Login.
+
+To enable EU Login, set up authentication by including `WEB-INF/config-security/config-security-ecas.xml` in `WEB-INF/config-security/config-security.xml`, uncommenting the following line:
 
 ``` xml
 <import resource="config-security-ecas.xml"/>
 ```
 
-Для EU-login требуется плагин ecas-plugin, предоставленный Европейским Союзом. 
-Плагин ecas доступен через [CITnet](https://citnet.tech.ec.europa.eu/CITnet/nexus) для различных java-контейнеров, таких как Tomcat и JBoss.
+EU-login requires an ecas-plugin provided by the European Union. The ecas plugin is available via [CITnet](https://citnet.tech.ec.europa.eu/CITnet/nexus) for various java containers, such as Tomcat and JBoss.
 
-Для tomcat добавьте в папку tomcat lib два файла: ecas-tomcat-x.y.z.jar и log4j-x.y.z.jar. 
-В папку lib скопируйте две папки из **`eulogin-tomcat-x.y.z-config.zip`**: **`org/apache/catalina/authenticator`** и **`org/apache/catalina/startup`**. 
-Папка mbeans содержит файл **`mbeans-descriptors.xml`**. Папка startup содержит файл **`Authenticators.properties`**. 
-Убедитесь, что JDK доверяет [сертификатам ECAS](https://webgate.ec.europa.eu/CITnet/confluence/display/IAM/Downloads-Certificates), 
-иначе импортируйте их в хранилище ключей JVM.
+For tomcat, add two files to the tomcat lib folder: ecas-tomcat-x.y.z.jar and log4j-x.y.z.jar. Inside the lib folder copy two folders from **`eulogin-tomcat-x.y.z-config.zip`**: **`org/apache/catalina/authenticator`** and **`org/apache/catalina/startup`**. The mbeans folder contains a file **`mbeans-descriptors.xml`**. The startup folder contains a file **`Authenticators.properties`**. Verify that the JDK trusts the [ECAS certificates](https://webgate.ec.europa.eu/CITnet/confluence/display/IAM/Downloads-Certificates) else import them on the keystore of the JVM.
 
-Конфигурация EU Login определена в **`WEB-INF/config-security/config-security.properties`**. 
-Можно настроить свое окружение, обновив предыдущий файл или определив переопределения свойств 
-в файле **`WEB-INF/config-security/config-security-overrides.properties`**:
+The EU Login configuration is defined in **`WEB-INF/config-security/config-security.properties`**. You can configure your environment by updating the previous file or by defining property overrides in the file **`WEB-INF/config-security/config-security-overrides.properties`**:
 
 ``` text
 cas.baseURL=https://webgate.ec.europa.eu/cas
 ```
 
-Перезапустите службу и проверьте механизм аутентификации.
+Restart the service and check the authentication menchanism.
 
-## Настройка Shibboleth {#authentication-shibboleth}
+## Configuring Shibboleth {#authentication-shibboleth}
 
-Каталог может работать в федерации, защищенной SAML. Shibboleth должен быть установлен в Apache, 
-как описано [здесь](https://wiki.shibboleth.net/confluence/display/SHIB2/Installation). 
-Доступ к каталогу осуществляется через Apache. Настройте аутентификацию Shibboleth, включив `WEB-INF/config-security/config-security-shibboleth.xml` 
-в `WEB-INF/config-security/config-security.xml`. Затем вы можете настроить свое окружение в файле `config-security-shibboleth-overrides.properties`.
+The catalog can operate in a SAML secured federation. Shibboleth should be installed in Apache as described [here](https://wiki.shibboleth.net/confluence/display/SHIB2/Installation). The catalog is accessed via Apache. Setup Shibboleth authentication by including `WEB-INF/config-security/config-security-shibboleth.xml` in `WEB-INF/config-security/config-security.xml`. You can then configure your environment in `config-security-shibboleth-overrides.properties`.
