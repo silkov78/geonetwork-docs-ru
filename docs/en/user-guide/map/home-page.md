@@ -26,7 +26,7 @@ The anonymous user is allowed to:
 
 <img src="../img/home-page/language-switcher.jpg" class="ms-docimage"  style="max-width:150px;"/>
 
-* Login <img src="../img/button/login-b.jpg" class="ms-docbutton"/> (more information about Login can be found in [Managing Users and Groups](managing-users-and-groups.md#managing-users-and-groups) section)
+* Login <img src="../img/button/login-b.jpg" class="ms-docbutton"/>
 
 * Navigate through the **Featured** and **Contents** sections
 
@@ -38,11 +38,11 @@ The anonymous user is allowed to:
 
 * Filter resources through the [Filter panel](filter-resouces.md)
 
-* [Share](share.md#sharing-resources) a resource by selecting the <img src="../img/button/share2.jpg" class="ms-docbutton"/> option from the <img src="../img/button/three-dots-button.jpg" class="ms-docbutton"/> button in the upper right corner of each resource.
+* [Share](share.md) a resource by selecting the <img src="../img/button/share2.jpg" class="ms-docbutton"/> option from the <img src="../img/button/three-dots-button.jpg" class="ms-docbutton"/> button in the upper right corner of each resource.
 
 <img src="../img/home-page/resources-share-option.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-* Take a look at resources [Properties](resources-properties) through the <img src="../img/button/properties_button.jpg" class="ms-docbutton"/> button
+* Take a look at resources [Properties](resources-properties.md#details) through the <img src="../img/button/properties_button.jpg" class="ms-docbutton"/> button
 
 * Open resources and navigate inside them according to their [Permissions](resources-properties.md#permission-rules)
 

@@ -1,4 +1,4 @@
-# Хатняя старонка
+# Стартавая старонка сродка прагляду и візуалізацыі
 
 ***********
 
@@ -12,7 +12,7 @@
 
 ## Ананімны карыстальнік
 
-Пры доступе ў якасці ананімнага карыстальніка хатняя старонка адлюстроўваецца, як на малюнку ніжэй:
+Карыстальнік, які трапляе на стартавую старонку сродку прагляду карт і візуалізацыі дадзеных, валодае правамі доступу *ананімнага карыстальніка*. У такім выпадку стартавая старонка адлюстроўваецца, як на малюнку ніжэй:
 
 <img src="../img/home-page/homepage-anonym.jpg" class="ms-docimage"/>
 
@@ -28,7 +28,7 @@
 
 * Выканаць уваход <img src="../img/button/login-b.jpg" class="ms-docbutton"/>
 
-* Выконваць пошук рэсурсаў праз *радок пошуку*:
+* Выконваць пошук рэсурсаў праз *панэль пошуку*:
 
 <img src="../img/home-page/search-bar.jpg" class="ms-docimage"  style="max-width:500px;"/>
 
@@ -36,36 +36,36 @@
 
 <img src="../img/home-page/advanced-search-bar.jpg" class="ms-docimage"  style="max-width:500px;"/>
 
-* [Падзяліцца](share.md#sharing-resources) рэсурсам <img src="../img/button/share.jpg" class="ms-docbutton"/>
+* [Падзяліцца](share.md) рэсурсам <img src="../img/button/share.jpg" class="ms-docbutton"/>
 
-* Праглядаць [падрабязнасці](resources-properties.md#details) карты, калі яны даступныя <img src="../img/button/details_button.jpg" class="ms-docbutton"/>
+* Праглядаць [падрабязнасці](resources-properties.md#падрабязнасці) карты, калі яны даступныя <img src="../img/button/details_button.jpg" class="ms-docbutton"/>
 
-* Адкрываць рэсурсы і перамяшчацца па іх у адпаведнасці з іх [правамі доступу](resources-properties.md#permission-rules)
+* Адкрываць рэсурсы і перамяшчацца па іх у адпаведнасці з іх правамі доступу, устаноўленымі ў [правілах доступу](resources-properties.md#правілы-доступу)
 
 ## Звычайны карыстальнік
 
-Пры ўваходзе ў сістэму як звычайны карыстальнік, хатняя старонка адлюстроўваецца, як паказана ніжэй:
+Пры ўваходзе ў сістэму як *звычайны карыстальнік* (лагін і пароль улiковай запiсi ствараюцца і перадаюцца карыстальнiку адміністратарам субпартала/геапартала), стартавая старонка адлюстроўваецца, як паказана ніжэй:
 
 <img src="../img/home-page/homepage-user.jpg" class="ms-docimage" />
 
 Звычайны карыстальнік, у дадатак да магчымасцей ананімнага карыстальніка, можа:
 
-* Ствараць новыя рэсурсы, такія як [карта](exploring-maps.md), [інфармацыйная панэль](exploring-dashboards.md) і [геа-гісторыя](exploring-stories.md):
+* Ствараць новыя рэсурсы у сваiм субпартале, такія як [карта](exploring-maps.md), [інфармацыйная панэль](exploring-dashboards.md) і [геа-гісторыя](exploring-stories.md):
 
 <img src="../img/home-page/new-res.jpg" class="ms-docimage" style="max-width:150px;"/>
 
-* Праглядаць, рэдагаваць і выдаляць рэсурсы ў адпаведнасці з іх [правамі доступу](resources-properties.md#permission-rules) <img src="../img/button/remove-edit.jpg" class="ms-docbutton"/>
+* Праглядаць, рэдагаваць і выдаляць рэсурсы субпартала ў адпаведнасці з іх правамі доступу, устаноўленымі ў [правілах доступу](resources-properties.md#правілы-доступу) <img src="../img/button/remove-edit.jpg" class="ms-docbutton"/>
 
 ## Адміністратар
 
-Пасля ўваходу ў сістэму як *адміністратар*, хатняя старонка выглядае наступным чынам:
+Пасля ўваходу ў сістэму як *адміністратар*, стартавая старонка выглядае наступным чынам:
 
 <img src="../img/home-page/homepage-admin.jpg" class="ms-docimage" />
 
 Адміністратар можа праглядаць і рэдагаваць усё. У прыватнасці, у дадатак да магчымасцей звычайнага карыстальніка, адміністратар таксама можа:
 
-* Атрымаць доступ да кнопкі **Менеджар** <img src="../img/button/acc-manager.jpg" class="ms-docbutton"/> для кіравання ўліковымі запісамі
+* Атрымаць доступ да кнопкі **Упраўленне** <img src="../img/button/acc-manager.jpg" class="ms-docbutton"/> для кіравання ўліковымі запісамі у субпартале
 
-* Кіраваць рэсурсамі, уключаючы <img src="../img/button/featured.jpg" class="ms-docbutton"/> або выключаючы <img src="../img/button/unfeatured.jpg" class="ms-docbutton"/> іх з раздзела *Выбранае*
+* Кіраваць рэсурсамі субпартала, уключаючы <img src="../img/button/featured.jpg" class="ms-docbutton"/> або выключаючы <img src="../img/button/unfeatured.jpg" class="ms-docbutton"/> іх з раздзела *Выбранае*
 
-* Праглядаць, рэдагаваць і выдаляць любыя рэсурсы
+* Праглядаць, рэдагаваць і выдаляць любыя рэсурсы у межах свайго субпартала
