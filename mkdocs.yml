@@ -60,9 +60,9 @@ markdown_extensions:
 # Русская навигация
 nav:
   - 'Главная': index.md
-  - 'Помощь':
+  - 'Онлайн-справка':
     - help/index.md
-    - 'Главная страница':
+    - 'Главная страница каталога':
       - help/home/index.md
     - 'Страница поиска':
       - help/search/index.md
@@ -70,7 +70,7 @@ nav:
       - help/record/index.md
     - 'Страница карты':
       - help/map/index.md
-  - 'Пользователям':
+  - 'Руководство пользователя':
     - user-guide/index.md
     - user-guide/quick-start/index.md
     - 'Карты и визуализация данных':
@@ -236,9 +236,9 @@ plugins:
           site_name: 'Даведачная дакументация'
           nav:
             - 'Галоўная': index.md
-            - 'Дапамога':
+            - 'Анлайн-даведка':
               - help/index.md
-              - 'Галоўная старонка':
+              - 'Галоўная старонка каталога':
                 - help/home/index.md
               - 'Старонка пошуку':
                 - help/search/index.md
@@ -246,7 +246,7 @@ plugins:
                 - help/record/index.md
               - 'Старонка карты':
                 - help/map/index.md
-            - 'Карыстальнікам':
+            - 'Кіраўніцтва карыстальніка':
               - user-guide/index.md
               - user-guide/quick-start/index.md
               - 'Карты і візуалізацыя даных':
@@ -400,7 +400,7 @@ plugins:
           site_name: 'Documentation'
           nav:
             - 'Main Page': index.md
-            - 'Help':
+            - 'Online Help':
               - help/index.md
               - 'Home page':
                 - help/home/index.md

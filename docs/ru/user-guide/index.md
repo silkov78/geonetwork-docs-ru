@@ -1,14 +1,14 @@
-# Пользователям
+# Руководство пользователя
 
-Руководство пользователя, описывающее управление, редактирование и проверку записей метаданных.
+В следующих разделах описывается порядок создания, управления, редактирования и проверки записей в Каталоге метаданных.
 
 -   [Быстрый старт](quick-start/index.md)
--   [Визуализация карт и наборов данных](map/index.md)
+-   [Карты и визуализация данных](map/index.md)
 -   [Описание информации](describing-information/index.md)
--   [Связывание ресурсов](associating-resources/index.md)
--   [Классификация информации](tag-information/index.md)
+-   [Связывание со сторонними ресурсами](associating-resources/index.md)
+-   [Использование тегов](tag-information/index.md)
 -   [Публикация](publishing/index.md)
--   [Анализ данных](analyzing/index.md)
+-   [Анализ](analyzing/index.md)
 -   [Рабочий процесс](workflow/index.md)
--   [Сбор данных](harvesting/index.md)
--   [Экспорт записей](export/index.md)
+-   [Сборщики данных](harvesting/index.md)
+-   [Экспорт записей метаданных](export/index.md)
