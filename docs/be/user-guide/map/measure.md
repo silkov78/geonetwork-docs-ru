@@ -18,7 +18,7 @@
 
 * Дадаць вымярэнне ў якасці слоя ў [Панэль зместу](toc.md#table-of-contents) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
 
-* Дадаць вымярэнне ў якасці [Анатацыі](annotations.md#add-new-annotation) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
+* Дадаць вымярэнне ў якасці [Анатацыі](annotations.md) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
 
 !!! заўвага
     Карыстальнік можа выконваць некалькі вымярэнняў адначасова на карце, а затым адмяніць іх з дапамогай кнопкі **Ачысціць вымярэнні** <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
@@ -68,11 +68,11 @@
 
 ## Даданне вымярэння ў якасці анатацыі
 
-Пасля таго як вымярэнне намалявана, яго можна дадаць у якасці [Анатацыі](annotations.md#add-new-annotation) з дапамогай кнопкі <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>. Адкрыецца наступная панэль:
+Пасля таго як вымярэнне намалявана, яго можна дадаць у якасці [Анатацыі](annotations.md) з дапамогай кнопкі <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>. Адкрыецца наступная панэль:
 
 <img src="../img/measure/add-as-annotation-ex.jpg" class="ms-docimage"/>
 
-Пачынаючы з гэтага кроку, працэс стварэння такі ж, як апісана ў раздзеле [Анатацыі](annotations.md#add-new-annotation).
+Пачынаючы з гэтага кроку, працэс стварэння такі ж, як апісана ў раздзеле [Анатацыі](annotations.md).
 
 ## Вымярэнні ў 3D-навігацыі
 

@@ -53,11 +53,11 @@
 
 * [Імпарт](import.md#import-files), які знаходзіцца ў *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для імпарту файлаў карты і імпарту [вектарных файлаў](import.md#import-vector-files).
 
-* [Анатацыі](annotations.md#add-new-annotation), якія знаходзяцца ў *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для дадання анатацый на карту.
+* [Анатацыі](annotations.md), якія знаходзяцца ў *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для дадання анатацый на карту.
 
 * [Змест](toc.md#table-of-contents), праз кнопку <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, дзе адміністратар можа выкарыстоўваць усе даступныя функцыі для кіравання слаямі кантэксту.
 
-* [Селектар фонавых карт](background.md#background-selector), у левым ніжнім куце праглядчыка, дазваляе карыстальніку дадаваць, кіраваць і выдаляць фонавыя карты.
+* [Селектар фонавых карт](background.md), у левым ніжнім куце праглядчыка, дазваляе карыстальніку дадаваць, кіраваць і выдаляць фонавыя карты.
 
 * [Селектар СК](footer.md#crs-selector), праз кнопку <img src="../img/button/crs_selector_icon.jpg" class="ms-docbutton" /> у правым ніжнім куце *Ніжняга калантытула*, для пераключэння сістэмы каардынат карты.
 

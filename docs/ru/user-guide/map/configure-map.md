@@ -47,11 +47,11 @@
 
 * Добавление **слоев** с помощью кнопки <img src="../img/button/catalog-option.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Каталог служб](catalog.md#catalog-services).
 
-* Добавление **аннотаций**, нажав на кнопку <img src="../img/button/annotation-option.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Добавление аннотаций](annotations.md#add-new-annotation).
+* Добавление **аннотаций**, нажав на кнопку <img src="../img/button/annotation-option.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Добавление аннотаций](annotations.md).
 
 * **Импорт** карты или векторного файла, нажав на кнопку <img src="../img/button/import-button.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Импорт файлов](import.md#import-files).
 
-* **Изменение фона**, как объясняется в разделе [Селектор фоновых карт](background.md#background-selector).
+* **Изменение фона**, как объясняется в разделе [Селектор фоновых карт](background.md).
 
 * **Редактирование слоев**, нажав на кнопку "Слои" <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, как объясняется в разделе [Панели содержания](toc.md#table-of-contents).
 

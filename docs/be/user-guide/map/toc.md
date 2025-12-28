@@ -165,7 +165,7 @@
 
 * [Усталяваць фільтр](filtering-layers.md#filtering-layers) для гэтага слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
 
-* Атрымаць доступ да [Табліцы атрыбутаў](attributes-table.md#attribute-table) <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/>
+* Атрымаць доступ да [Табліцы атрыбутаў](attributes-table.md) <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/>
 
 * **Выдаліць** выбраны слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 

@@ -274,7 +274,7 @@
 
 <img src="../img/layer-settings/style_options.jpg" class="ms-docimage"  style="max-width:500px;">
 
-* **Фільтраваць** правіла стылю, як патлумачана [тут](filtering-layers.md#attribute-filter), каб прымяніць стыль толькі да пэўных аб'ектаў слоя. Гэта магчыма, націснуўшы на кнопку <img src="../img/button/filter_white_button.jpg" class="ms-docbutton"/>.
+* **Фільтраваць** правіла стылю, як патлумачана [тут](filtering-layers.md#Хуткі-фільтр-па-атрыбутах), каб прымяніць стыль толькі да пэўных аб'ектаў слоя. Гэта магчыма, націснуўшы на кнопку <img src="../img/button/filter_white_button.jpg" class="ms-docbutton"/>.
 
 * Дадаць **фільтр па маштабе** (`max` і `min` маштаб), каб адлюстроўваць правіла стылю толькі ў пэўных межах маштабу. Гэта магчыма, націснуўшы на кнопку <img src="../img/button/scale_denominator_button.jpg" class="ms-docbutton"/>.
 
@@ -567,7 +567,7 @@
     <video class="ms-docimage"  style="max-width:600px;" controls><source src="../img/layer-settings/image_on_template.mp4"/></video>
 
 Тут можна ўставіць тэкст, які будзе адлюстроўвацца з дапамогай [Інструмента "Ідэнтыфікацыя"](navigation-toolbar.md#identify-tool), з магчымасцю ўключэння жаданых уласцівасцей.
-Прывядзём прыклад: выкажам здагадку, у нас ёсць слой, дзе кожны запіс адпавядае геаметрыі штата ЗША на карце. У [Табліцы атрыбутаў](attributes-table.md#attribute-table) гэтага слоя ёсць поле `STATE_NAME`, якое для кожнага запісу змяшчае тэкставае значэнне з назвай штата.
+Прывядзём прыклад: выкажам здагадку, у нас ёсць слой, дзе кожны запіс адпавядае геаметрыі штата ЗША на карце. У [Табліцы атрыбутаў](attributes-table.md) гэтага слоя ёсць поле `STATE_NAME`, якое для кожнага запісу змяшчае тэкставае значэнне з назвай штата.
 Калі мэта — паказаць пры выкананні [Інструмента "Ідэнтыфікацыя"](navigation-toolbar.md#identify-tool) толькі назву штата, можна ўставіць наступны тэкст у тэкставы рэдактар шаблона:
 
 <img src="../img/layer-settings/GFI_template_ex.jpg" class="ms-docimage"  style="max-width:400px;"/>

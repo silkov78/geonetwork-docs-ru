@@ -21,7 +21,7 @@ GeoStory — гэта інструмент, які дазваляе ствара
 <img src="../img/exploring-stories/sections.jpg" class="ms-docimage" width="400px"/>
 
 * [Секцыя "Загаловак"](title-section.md#title-section)
-* [Секцыя "Банер"](banner-section.md#banner-section)
+* [Секцыя "Банер"](banner-section.md)
 * [Секцыя "Параграф"](paragraph-section.md#paragraph-section)
 * [Імерсіўная секцыя](immersive-section.md#immersive-section)
 * [Секцыя "Геа-карусель"](geocarousel-section.md#geocarousel-section)

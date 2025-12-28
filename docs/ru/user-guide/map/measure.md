@@ -18,7 +18,7 @@
 
 * Добавить измерение в качестве слоя в [Панели содержания](toc.md#table-of-contents) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
 
-* Добавить измерение в качестве [Аннотации](annotations.md#add-new-annotation) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
+* Добавить измерение в качестве [Аннотации](annotations.md) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
 
 !!! примечание
     Пользователь может выполнять несколько измерений одновременно на карте, а затем отменить их с помощью кнопки **Очистить измерения** <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
@@ -68,11 +68,11 @@
 
 ## Добавление измерения в качестве аннотации
 
-После того как измерение нарисовано, его можно добавить в качестве [Аннотации](annotations.md#add-new-annotation) с помощью кнопки <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>. Откроется следующая панель:
+После того как измерение нарисовано, его можно добавить в качестве [Аннотации](annotations.md) с помощью кнопки <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>. Откроется следующая панель:
 
 <img src="../img/measure/add-as-annotation-ex.jpg" class="ms-docimage"/>
 
-Начиная с этого шага, процесс создания такой же, как описано в разделе [Аннотации](annotations.md#add-new-annotation).
+Начиная с этого шага, процесс создания такой же, как описано в разделе [Аннотации](annotations.md).
 
 ## Измерения в 3D-навигации
 

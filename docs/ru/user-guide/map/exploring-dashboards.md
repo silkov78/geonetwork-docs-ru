@@ -28,7 +28,7 @@
 
 <img src="../img/exploring-dashboards/options-menu.jpg" class="ms-docimage"  style="max-width:150px;"/>
 
-* [Добавить новые виджеты](adding-widgets.md#adding-widgets) с помощью кнопки <img src="../img/button/++++.jpg" class="ms-docbutton"/>
+* [Добавить новые виджеты](adding-widgets.md) с помощью кнопки <img src="../img/button/++++.jpg" class="ms-docbutton"/>
 
 * Просматривать связи между виджетами с помощью кнопки <img src="../img/button/show-connections.jpg" class="ms-docbutton"/>, доступной при наличии связей (дополнительную информацию об этой опции см. в разделе [Соединение виджетов](connecting-widgets.md#connecting-widgets))
 
@@ -60,6 +60,6 @@
 
 <video class="ms-docimage" controls><source src="../img/exploring-dashboards/move-resize.mp4" /></video>
 
-* Получить доступ к меню виджетов <img src="../img/button/menu.jpg" class="ms-docbutton"/>, из которого пользователь может выбрать одну из нескольких опций (дополнительную информацию об опциях этого меню можно найти в разделе карты [Доступ к меню виджетов](widgets.md#access-widgets-menu))
+* Получить доступ к меню виджетов <img src="../img/button/menu.jpg" class="ms-docbutton"/>, из которого пользователь может выбрать одну из нескольких опций (дополнительную информацию об опциях этого меню можно найти в разделе карты [Доступ к меню виджетов](widgets.md#доступ-к-меню-виджетов))
 
 * Посмотреть *Описание* виджета (дополнительную информацию об *описании* виджета можно найти в разделе карты [Управление существующими виджетами](widgets.md#manage-existing-widgets))

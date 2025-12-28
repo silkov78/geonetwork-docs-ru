@@ -53,11 +53,11 @@
 
 * [Импорт](import.md#import-files), присутствующий в *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для импорта файлов карты и импорта [векторных файлов](import.md#import-vector-files).
 
-* [Аннотации](annotations.md#add-new-annotation), присутствующие в *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для добавления аннотаций на карту.
+* [Аннотации](annotations.md), присутствующие в *Бургер-меню* <img src="../img/button/burger.jpg" class="ms-docbutton" />, для добавления аннотаций на карту.
 
 * [Содержание](toc.md#table-of-contents), через кнопку <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, где администратор может использовать все доступные функции для управления слоями контекста.
 
-* [Селектор фоновых карт](background.md#background-selector), в левом нижнем углу просмотрщика, позволяет пользователю добавлять, управлять и удалять фоновые карты.
+* [Селектор фоновых карт](background.md), в левом нижнем углу просмотрщика, позволяет пользователю добавлять, управлять и удалять фоновые карты.
 
 * [Селектор СК](footer.md#crs-selector), через кнопку <img src="../img/button/crs_selector_icon.jpg" class="ms-docbutton" /> в правом нижнем углу *Нижнего колонтитула*, для переключения системы координат карты.
 

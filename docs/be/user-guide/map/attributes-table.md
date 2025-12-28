@@ -124,7 +124,7 @@
 
 У Табліцы атрыбутаў можна прымяняць фільтры чатырма спосабамі (як апісана ў раздзеле [Фільтрацыя слаёў](filtering-layers.md#filtering-layers)):
 
-* [Пашыраны пошук](filtering-layers.md#advanced-search)
+* [Пашыраны пошук](filtering-layers.md#пашыраны-пошук)
 
 * [Пстрычка па карце](filtering-layers.md#quick-filter-by-map-interaction)
 

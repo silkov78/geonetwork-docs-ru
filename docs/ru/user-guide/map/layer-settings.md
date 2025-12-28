@@ -274,7 +274,7 @@
 
 <img src="../img/layer-settings/style_options.jpg" class="ms-docimage"  style="max-width:500px;">
 
-* **Фильтровать** правило стиля, как объяснено [здесь](filtering-layers.md#attribute-filter), чтобы применить стиль только к определенным объектам слоя. Это возможно, нажав на кнопку <img src="../img/button/filter_white_button.jpg" class="ms-docbutton"/>.
+* **Фильтровать** правило стиля, как объяснено [здесь](filtering-layers.md#Быстрый-фильтр-по-атрибутам), чтобы применить стиль только к определенным объектам слоя. Это возможно, нажав на кнопку <img src="../img/button/filter_white_button.jpg" class="ms-docbutton"/>.
 
 * Добавить **фильтр по масштабу** (`max` и `min` масштаб), чтобы отображать правило стиля только в определенных пределах масштаба. Это возможно, нажав на кнопку <img src="../img/button/scale_denominator_button.jpg" class="ms-docbutton"/>.
 
@@ -567,7 +567,7 @@
     <video class="ms-docimage"  style="max-width:600px;" controls><source src="../img/layer-settings/image_on_template.mp4"/></video>
 
 Здесь можно вставить текст, который будет отображаться с помощью [Инструмента "Идентификация"](navigation-toolbar.md#identify-tool), с возможностью включения желаемых свойств.
-Приведем пример: предположим, у нас есть слой, где каждая запись соответствует геометрии штата США на карте. В [Таблице атрибутов](attributes-table.md#attribute-table) этого слоя есть поле `STATE_NAME`, которое для каждой записи содержит текстовое значение с названием штата.
+Приведем пример: предположим, у нас есть слой, где каждая запись соответствует геометрии штата США на карте. В [Таблице атрибутов](attributes-table.md) этого слоя есть поле `STATE_NAME`, которое для каждой записи содержит текстовое значение с названием штата.
 Если цель — показать при выполнении [Инструмента "Идентификация"](navigation-toolbar.md#identify-tool) только название штата, можно вставить следующий текст в текстовый редактор шаблона:
 
 <img src="../img/layer-settings/GFI_template_ex.jpg" class="ms-docimage"  style="max-width:400px;"/>

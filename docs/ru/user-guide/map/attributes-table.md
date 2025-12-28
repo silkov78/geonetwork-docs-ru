@@ -124,7 +124,7 @@
 
 В Таблице атрибутов можно применять фильтры четырьмя способами (как описано в разделе [Фильтрация слоев](filtering-layers.md#filtering-layers)):
 
-* [Расширенный поиск](filtering-layers.md#advanced-search)
+* [Расширенный поиск](filtering-layers.md#расширенный-поиск)
 
 * [Клик по карте](filtering-layers.md#quick-filter-by-map-interaction)
 

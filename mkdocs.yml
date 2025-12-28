@@ -159,16 +159,16 @@ nav:
       - user-guide/analyzing/metadata.md
     - 'Рабочий процесс':
       - user-guide/workflow/index.md
+      - user-guide/workflow/validation.md
+      - user-guide/workflow/suggestion.md
+      - user-guide/workflow/life-cycle.md
+      - user-guide/workflow/geopublication.md
+      - user-guide/workflow/versioning.md
       - 'Пакетное редактирование':
         - user-guide/workflow/batchupdate/index.md
         - user-guide/workflow/batchediting.md
         - user-guide/workflow/batchupdate-from-admin.md
         - user-guide/workflow/batchupdate-xsl.md
-      - user-guide/workflow/geopublication.md
-      - user-guide/workflow/life-cycle.md
-      - user-guide/workflow/suggestion.md
-      - user-guide/workflow/validation.md
-      - user-guide/workflow/versioning.md
     - 'Сборщики данных':
       - user-guide/harvesting/index.md
       - user-guide/harvesting/harvesting-csw.md
@@ -334,16 +334,16 @@ plugins:
                 - user-guide/analyzing/metadata.md
               - 'Працоўны працэс':
                 - user-guide/workflow/index.md
+                - user-guide/workflow/validation.md
+                - user-guide/workflow/suggestion.md
+                - user-guide/workflow/life-cycle.md
+                - user-guide/workflow/geopublication.md
+                - user-guide/workflow/versioning.md
                 - 'Пакетнае рэдагаванне':
                   - user-guide/workflow/batchupdate/index.md
                   - user-guide/workflow/batchediting.md
                   - user-guide/workflow/batchupdate-from-admin.md
                   - user-guide/workflow/batchupdate-xsl.md
-                - user-guide/workflow/geopublication.md
-                - user-guide/workflow/life-cycle.md
-                - user-guide/workflow/suggestion.md
-                - user-guide/workflow/validation.md
-                - user-guide/workflow/versioning.md
               - 'Зборшчыкі дадзеных':
                 - user-guide/harvesting/index.md
                 - user-guide/harvesting/harvesting-csw.md
@@ -497,16 +497,16 @@ plugins:
                 - user-guide/analyzing/metadata.md
               - 'Workflow':
                 - user-guide/workflow/index.md
+                - user-guide/workflow/validation.md
+                - user-guide/workflow/suggestion.md
+                - user-guide/workflow/life-cycle.md
+                - user-guide/workflow/geopublication.md
+                - user-guide/workflow/versioning.md
                 - 'Updating a set of records':
+                  - user-guide/workflow/batchupdate/index.md
                   - user-guide/workflow/batchediting.md
                   - user-guide/workflow/batchupdate-from-admin.md
                   - user-guide/workflow/batchupdate-xsl.md
-                  - user-guide/workflow/batchupdate.md
-                - user-guide/workflow/geopublication.md
-                - user-guide/workflow/life-cycle.md
-                - user-guide/workflow/suggestion.md
-                - user-guide/workflow/validation.md
-                - user-guide/workflow/versioning.md
               - 'Harvesting':
                 - user-guide/harvesting/index.md
                 - user-guide/harvesting/harvesting-csw.md

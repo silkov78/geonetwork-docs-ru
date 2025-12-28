@@ -28,7 +28,7 @@
 
 <img src="../img/exploring-dashboards/options-menu.jpg" class="ms-docimage"  style="max-width:150px;"/>
 
-* [Дадаць новыя віджэты](adding-widgets.md#adding-widgets) з дапамогай кнопкі <img src="../img/button/++++.jpg" class="ms-docbutton"/>
+* [Дадаць новыя віджэты](adding-widgets.md) з дапамогай кнопкі <img src="../img/button/++++.jpg" class="ms-docbutton"/>
 
 * Праглядаць сувязі паміж віджэтамі з дапамогай кнопкі <img src="../img/button/show-connections.jpg" class="ms-docbutton"/>, даступнай пры наяўнасці сувязей (дадатковую інфармацыю пра гэту опцыю гл. у раздзеле [Злучэнне віджэтаў](connecting-widgets.md#connecting-widgets))
 
@@ -60,6 +60,6 @@
 
 <video class="ms-docimage" controls><source src="../img/exploring-dashboards/move-resize.mp4" /></video>
 
-* Атрымаць доступ да меню віджэтаў <img src="../img/button/menu.jpg" class="ms-docbutton"/>, з якога карыстальнік можа выбраць адну з некалькіх опцый (дадатковую інфармацыю пра опцыі гэтага меню можна знайсці ў раздзеле карты [Доступ да меню віджэтаў](widgets.md#access-widgets-menu))
+* Атрымаць доступ да меню віджэтаў <img src="../img/button/menu.jpg" class="ms-docbutton"/>, з якога карыстальнік можа выбраць адну з некалькіх опцый (дадатковую інфармацыю пра опцыі гэтага меню можна знайсці ў раздзеле карты [Доступ да меню віджэтаў](widgets.md#доступ-да-меню-віджэтаў))
 
 * Паглядзець *Апісанне* віджэта (дадатковую інфармацыю пра *апісанне* віджэта можна знайсці ў раздзеле карты [Кіраванне існуючымі віджэтамі](widgets.md#manage-existing-widgets))
