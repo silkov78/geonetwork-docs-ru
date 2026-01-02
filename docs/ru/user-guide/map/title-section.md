@@ -107,4 +107,4 @@
 
 <img src="../img/title-section/map-toolbar.jpg" class="ms-docimage" style="width:300px"/>
 
-* **Редактировать конфигурацию карты**, с помощью которой можно [настроить карту](configure-map.md#configure-the-map).
+* **Редактировать конфигурацию карты**, с помощью которой можно [настроить карту](configure-map.md).

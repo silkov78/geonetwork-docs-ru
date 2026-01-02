@@ -30,9 +30,9 @@
 
 * [Добавить новые виджеты](adding-widgets.md) с помощью кнопки <img src="../img/button/++++.jpg" class="ms-docbutton"/>
 
-* Просматривать связи между виджетами с помощью кнопки <img src="../img/button/show-connections.jpg" class="ms-docbutton"/>, доступной при наличии связей (дополнительную информацию об этой опции см. в разделе [Соединение виджетов](connecting-widgets.md#connecting-widgets))
+* Просматривать связи между виджетами с помощью кнопки <img src="../img/button/show-connections.jpg" class="ms-docbutton"/>, доступной при наличии связей (дополнительную информацию об этой опции см. в разделе [Соединение виджетов](connecting-widgets.md))
 
-* Просмотреть панель **Об этой информационной панели**, нажав кнопку <img src="../img/button/details2.jpg" class="ms-docbutton"/>, при наличии [подробностей](resources-properties.md#details)
+* Просмотреть панель **Об этой информационной панели**, нажав кнопку <img src="../img/button/details2.jpg" class="ms-docbutton"/>, при наличии [подробностей](resources-properties.md#Подробности)
 
 * **Экспортировать** информационную панель в формате `json`, нажав кнопку <img src="../img/button/export2.jpg" class="ms-docbutton"/>
 

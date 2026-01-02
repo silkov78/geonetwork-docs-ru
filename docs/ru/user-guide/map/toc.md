@@ -22,7 +22,7 @@
 
 С помощью *панели инструментов TOC* пользователь может:
 
-* **Добавить новый слой** с помощью кнопки <img src="../img/button/add_layer_button.jpg" class="ms-docbutton"/>: откроется панель [Каталога](catalog.md#catalog-services), и пользователь сможет выбрать желаемый слой для добавления его на карту с помощью кнопки <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>.
+* **Добавить новый слой** с помощью кнопки <img src="../img/button/add_layer_button.jpg" class="ms-docbutton"/>: откроется панель [Каталога](catalog.md), и пользователь сможет выбрать желаемый слой для добавления его на карту с помощью кнопки <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>.
 
 <video class="ms-docimage" controls><source src="../img/toc/add-layer.mp4"/></video>
 
@@ -163,7 +163,7 @@
 
 * Получить доступ к [Настройкам выбранного слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/>
 
-* [Установить фильтр](filtering-layers.md#filtering-layers) для этого слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
+* [Установить фильтр](filtering-layers.md) для этого слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
 
 * Получить доступ к [Таблице атрибутов](attributes-table.md) <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/>
 
@@ -171,7 +171,7 @@
 
 * [Создать виджеты](widgets.md#widgets) для выбранного слоя <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
-* [Экспортировать](export-data.md#export-layer-data) данные выбранного слоя <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
+* [Экспортировать](export-data.md) данные выбранного слоя <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 
 * Открыть **Метаданные слоя** <img src="../img/button/info_button.jpg" class="ms-docbutton"/> (если настроено), чтобы получить метаданные слоя из удаленного источника каталога.
 

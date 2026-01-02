@@ -65,7 +65,7 @@
 
 <img src="../img/share/embed_maps_toc.jpg" class="ms-docimage"  style="max-width:400px;"/>
 
-* Для информационных панелей пользователь может показывать [связи](connecting-widgets.md#connecting-widgets) между виджетами на встроенной информационной панели, включив опцию **Показывать связи**.
+* Для информационных панелей пользователь может показывать [связи](connecting-widgets.md) между виджетами на встроенной информационной панели, включив опцию **Показывать связи**.
 
 <img src="../img/share/embed-dash.jpg" class="ms-docimage"  style="max-width:400px;"/>
 

@@ -13,7 +13,7 @@
 
 ## Добавление виджета
 
-Когда на карте присутствует хотя бы один слой (дополнительную информацию о добавлении слоев см. в разделе [Каталог](catalog.md#catalog-services)), можно создать виджет, выбрав этот слой в [Панели содержания](toc.md#table-of-contents) и нажав на кнопку <img src="../img/button/widgets.jpg" class="ms-docbutton"/> на [Панели инструментов слоя](toc.md#toolbar-options) или в [Таблице атрибутов](attributes-table.md). После выполнения этих действий появляется панель *Виджет*:
+Когда на карте присутствует хотя бы один слой (дополнительную информацию о добавлении слоев см. в разделе [Каталог](catalog.md)), можно создать виджет, выбрав этот слой в [Панели содержания](toc.md#table-of-contents) и нажав на кнопку <img src="../img/button/widgets.jpg" class="ms-docbutton"/> на [Панели инструментов слоя](toc.md#toolbar-options) или в [Таблице атрибутов](attributes-table.md). После выполнения этих действий появляется панель *Виджет*:
 
 <img src="../img/widgets/map-widgets-panel.jpg" class="ms-docimage" style="max-width:450px;"/>
 

@@ -10,7 +10,7 @@
 
 * **Изменить источник медиа** <img src="../img/button/change-media2.jpg" class="ms-docbutton"/>, получив доступ к [редактору медиа](media-editor-window.md#media-editor-window).
 
-* **Редактировать конфигурацию карты** <img src="../img/button/map-configuration.jpg" class="ms-docbutton"/>, с помощью которой можно [настроить карту](configure-map.md#configure-the-map).
+* **Редактировать конфигурацию карты** <img src="../img/button/map-configuration.jpg" class="ms-docbutton"/>, с помощью которой можно [настроить карту](configure-map.md).
 
 * **Изменить размер** <img src="../img/button/change-size2.jpg" class="ms-docbutton"/>, выбрав между *маленьким*, *средним*, *большим*.
 

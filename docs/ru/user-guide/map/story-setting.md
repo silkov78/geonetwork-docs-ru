@@ -18,11 +18,11 @@
 
 <video class="ms-docimage" controls><source src="../img/story-setting/font_family.mp4"/></video>
 
-* **Наложение** для выбора цвета фона и текста по умолчанию для *контента* наложений, присутствующих в [секции "Заголовок"](title-section.md#content) и [иммерсивной секции](immersive-section.md#content): при нажатии на кнопку *Изменить цвет* <img src="../img/button/color-picker.jpg" class="ms-docbutton"/> появляется палитра цветов для выбора желаемого цвета:
+* **Наложение** для выбора цвета фона и текста по умолчанию для *контента* наложений, присутствующих в [секции "Заголовок"](title-section.md#Контент) и [иммерсивной секции](immersive-section.md#Контент): при нажатии на кнопку *Изменить цвет* <img src="../img/button/color-picker.jpg" class="ms-docbutton"/> появляется палитра цветов для выбора желаемого цвета:
 
 <video class="ms-docimage" controls><source src="../img/story-setting/overlay.mp4"/></video>
 
-* *Тень* для *контента* наложений, присутствующих в [секции "Заголовок"](title-section.md#content) и [иммерсивной секции](immersive-section.md#content): для включения или отключения тени:
+* *Тень* для *контента* наложений, присутствующих в [секции "Заголовок"](title-section.md#Контент) и [иммерсивной секции](immersive-section.md#Контент): для включения или отключения тени:
 
 <video class="ms-docimage" controls><source src="../img/story-setting/shadow.mp4"/></video>
 

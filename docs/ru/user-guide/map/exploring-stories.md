@@ -24,7 +24,7 @@ GeoStory — это инструмент, который позволяет со
 * [Секция "Баннер"](banner-section.md)
 * [Секция "Параграф"](paragraph-section.md#paragraph-section)
 * [Иммерсивная секция](immersive-section.md#immersive-section)
-* [Секция "Гео-карусель"](geocarousel-section.md#geocarousel-section)
+* [Секция "Гео-карусель"](geocarousel-section.md)
 * [Медиа-секция](media-section.md#media-section)
 * [Секция "Веб-страница"](web-section.md#web-page-section)
 

@@ -14,7 +14,7 @@
 
     * Слои WMS и WFS в [Панели содержания](toc.md)
     * [Измерения](measure.md)
-    * [Импортированная карта GeoJSON](import.md#export-and-import-map-context-files)
+    * [Импортированная карта GeoJSON](import.md#Экспорт-и-импорт-файлов-контекста-карты)
     * [Импортированные Shape-файлы](import.md#import-vector-files)
     * [Аннотации](annotations.md)
 
