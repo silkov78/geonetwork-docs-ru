@@ -118,7 +118,7 @@ nav:
         - user-guide/map/content-web-toolbar.md
         - user-guide/map/media-editor-window.md
         - user-guide/map/configure-map.md
-    - 'Описание информации':
+    - 'Работа с записями метаданных':
       - user-guide/describing-information/index.md
       - user-guide/describing-information/managing-templates.md
       - user-guide/describing-information/creating-metadata.md
@@ -293,7 +293,7 @@ plugins:
                   - user-guide/map/content-web-toolbar.md
                   - user-guide/map/media-editor-window.md
                   - user-guide/map/configure-map.md
-              - 'Апісанне інфармацыі':
+              - 'Праца з запісамі метададзеных':
                 - user-guide/describing-information/index.md
                 - user-guide/describing-information/managing-templates.md
                 - user-guide/describing-information/creating-metadata.md
