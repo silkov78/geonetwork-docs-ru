@@ -22,7 +22,7 @@
 
 З дапамогай *панэлі інструментаў TOC* карыстальнік можа:
 
-* **Дадаць новы слой** з дапамогай кнопкі <img src="../img/button/add_layer_button.jpg" class="ms-docbutton"/>: адкрыецца панэль [Каталога](catalog.md#catalog-services), і карыстальнік зможа выбраць жаданы слой для дадання яго на карту з дапамогай кнопкі <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>.
+* **Дадаць новы слой** з дапамогай кнопкі <img src="../img/button/add_layer_button.jpg" class="ms-docbutton"/>: адкрыецца панэль [Каталога](catalog.md), і карыстальнік зможа выбраць жаданы слой для дадання яго на карту з дапамогай кнопкі <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>.
 
 <video class="ms-docimage" controls><source src="../img/toc/add-layer.mp4"/></video>
 

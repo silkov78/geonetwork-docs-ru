@@ -30,7 +30,7 @@
 
 * Уключыць/выключыць **панарамаванне** на карце.
 
-* Уключыць/выключыць **ідэнтыфікацыю** на карце. Як паведамляецца ў раздзеле [Інструмент "Ідэнтыфікацыя"](navigation-toolbar.md#identify-tool), для секцый карты ў гісторыі таксама можна ўключыць *інструмент "Ідэнтыфікацыя"* ў адным з фарматаў, якія падтрымліваюцца прыкладаннем (*TEXT*, *HTML* або *PROPERTIES*).
+* Уключыць/выключыць **ідэнтыфікацыю** на карце. Як паведамляецца ў раздзеле [Інструмент "Ідэнтыфікацыя"](navigation-toolbar.md#інструмент-ідэнтыфікацыя), для секцый карты ў гісторыі таксама можна ўключыць *інструмент "Ідэнтыфікацыя"* ў адным з фарматаў, якія падтрымліваюцца прыкладаннем (*TEXT*, *HTML* або *PROPERTIES*).
 
 <img src="../img/configure-map/identify-format.jpg" class="ms-docimage"/>
 
@@ -45,11 +45,11 @@
 
 Даступныя наступныя інструменты для змены карты:
 
-* Даданне **слаёў** з дапамогай кнопкі <img src="../img/button/catalog-option.jpg" class="ms-docbutton" style="max-height:20px;"/> ў *меню опцый* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, як тлумачыцца ў раздзеле [Каталог службаў](catalog.md#catalog-services).
+* Даданне **слаёў** з дапамогай кнопкі <img src="../img/button/catalog-option.jpg" class="ms-docbutton" style="max-height:20px;"/> ў *меню опцый* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, як тлумачыцца ў раздзеле [Каталог службаў](catalog.md).
 
 * Даданне **анатацый**, націснуўшы на кнопку <img src="../img/button/annotation-option.jpg" class="ms-docbutton" style="max-height:20px;"/> ў *меню опцый* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, як тлумачыцца ў раздзеле [Даданне анатацый](annotations.md).
 
-* **Імпарт** карты або вектарнага файла, націснуўшы на кнопку <img src="../img/button/import-button.jpg" class="ms-docbutton" style="max-height:20px;"/> ў *меню опцый* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, як тлумачыцца ў раздзеле [Імпарт файлаў](import.md#import-files).
+* **Імпарт** карты або вектарнага файла, націснуўшы на кнопку <img src="../img/button/import-button.jpg" class="ms-docbutton" style="max-height:20px;"/> ў *меню опцый* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, як тлумачыцца ў раздзеле [Імпарт файлаў](import.md).
 
 * **Змена фону**, як тлумачыцца ў раздзеле [Селектар фонавых карт](background.md).
 

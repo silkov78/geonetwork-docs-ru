@@ -22,7 +22,7 @@
 
 Гэты фільтр прымяняецца з дапамогай кнопкі **Фільтр слоя** <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слаёў](toc.md#наладкі-і-панэль-інструментаў-слоя) у Панэлі зместу і будзе захоўвацца ў наступных сітуацыях:
 
-* Пры выкарыстанні іншых інструментаў, такіх як [Інструмент "Ідэнтыфікацыя"](navigation-toolbar.md#identify-tool):
+* Пры выкарыстанні іншых інструментаў, такіх як [Інструмент "Ідэнтыфікацыя"](navigation-toolbar.md#інструмент-ідэнтыфікацыя):
 
 <video class="ms-docimage" controls><source src="../img/filtering-layers/get_filtered_features_info.mp4"/></video>
 
