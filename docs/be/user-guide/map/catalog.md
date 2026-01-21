@@ -3,7 +3,7 @@
 Служба каталогаў для веба (CSW) — гэта [стандарт OGC](https://www.ogc.org/standards), які выкарыстоўваецца для публікацыі і пошуку геапрасторавых даных і звязаных з імі метаданых у інтэрнэце. Ён апісвае геапрасторавыя службы, такія як Web Map Service (WMS) і Web Map Tile Service (WMTS).
 
 У Каталогу прадастаўляецца магчымасць доступу да аддаленых службаў WMS, WFS, CSW, WMTS і TMS і дадання адпаведных слаёў на карту. Па змаўчанні, як толькі карыстальнік адкрывае Каталог, становяцца даступнымі дэманстрацыйныя службы CSW, WMS і WMTS, якія дазваляюць імпартаваць слаі з GeoServer ад GeoSolutions.
-Карыстальнік можа атрымаць доступ да Каталога, націснуўшы на кнопку <img src="../img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar). Пры першым адкрыцці ён выглядае наступным чынам:
+Карыстальнік можа атрымаць доступ да Каталога, націснуўшы на кнопку <img src="../img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў). Пры першым адкрыцці ён выглядае наступным чынам:
 
 <img src="../img/catalog/catalog_panel.jpg" class="ms-docimage"  style="max-width:500px;" />
 
@@ -17,7 +17,7 @@
 
 <img src="../img/catalog/catalog_search.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
-Націснуўшы на кнопку <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой канчаткова дадаецца ў [Панэль зместу](toc.md#table-of-contents) і адлюстроўваецца ў акне прагляду карты:
+Націснуўшы на кнопку <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой канчаткова дадаецца ў [Панэль зместу](toc.md) і адлюстроўваецца ў акне прагляду карты:
 
 <img src="../img/catalog/added_layer.jpg" class="ms-docimage"/>
 
@@ -395,7 +395,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 <img src="../img/catalog/advanced_settings_cog.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
-* *Спампаваць метаданыя файла пры пошуку*: гэта опцыя атрымае метаданыя для падтрымкі набліжэння да слоя, калі слой дадаецца ў [Панэль зместу](toc.md#table-of-contents).
+* *Спампаваць метаданыя файла пры пошуку*: гэта опцыя атрымае метаданыя для падтрымкі набліжэння да слоя, калі слой дадаецца ў [Панэль зместу](toc.md).
 
 !!! Увага
     У цяперашні час для слаёў COG даступныя наступныя магчымасці інструментаў:

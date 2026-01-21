@@ -7,7 +7,7 @@
 !!! заўвага
     Плагін працуе толькі ў тым выпадку, калі ў [GeoServer](http://geoserver.org/) правільна ўсталяваны **працэс WPS "Падоўжны профіль"**. Для атрымання дадатковай інфармацыі пра гэты працэс і яго ўстаноўку звярніцеся да афіцыйнай [анлайн-дакументацыі](https://docs.geoserver.org/latest/en/user/community/wps-longitudinal-profile/index.html). Модуль падоўжнага профілю для GeoServer даступны пачынаючы з версіі Geoserver v2.20.x ад жніўня 2023 года.
 
-Пры націску на кнопку **Падоўжны профіль** <img src="../img/button/long-profile-button.jpg" class="ms-docbutton"/>, даступную на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar), адкрываецца выпадальнае меню, у якім карыстальнік можа кіраваць даступнымі опцыямі, уключаючы розныя спосабы разліку профілю:
+Пры націску на кнопку **Падоўжны профіль** <img src="../img/button/long-profile-button.jpg" class="ms-docbutton"/>, даступную на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў), адкрываецца выпадальнае меню, у якім карыстальнік можа кіраваць даступнымі опцыямі, уключаючы розныя спосабы разліку профілю:
 
 <img src="../img/longitudinal-profile/dropdown-menu-long-profile.jpg" class="ms-docimage"/>
 

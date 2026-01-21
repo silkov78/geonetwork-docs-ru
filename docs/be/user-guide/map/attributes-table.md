@@ -9,21 +9,21 @@
 
 Атрымаўшы доступ да гэтай панэлі, карыстальнік можа выконваць наступныя асноўныя аперацыі:
 
-* [Рэдагаваць запісы](#рэдагаванне-і-выдаленне-існуючых-аб'ектаў) з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
+* [Рэдагаваць запісы](#рэдагаванне-і-выдаленне-існуючых-абектаў) з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
 
 * Фільтраваць запісы ў Табліцы атрыбутаў рознымі спосабамі, як апісана ў раздзеле [Устаноўка фільтраў](#устаноўка-фільтраў) ніжэй
 
-* Адкрыць інструмент [Пашыраны пошук](filtering-layers.md#query-panel) з дапамогай кнопкі <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
+* Адкрыць інструмент [Пашыраны пошук](filtering-layers.md#пашыраны-пошук) з дапамогай кнопкі <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
 
-* Актываваць [фільтрацыю па бягучым бачным экстэнце](filtering-layers.md#quick-filter-by-viewport) з дапамогай кнопкі <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
+* Актываваць [фільтрацыю па бягучым бачным экстэнце](filtering-layers.md#хуткі-фільтр-па-бачным-экстэнце) з дапамогай кнопкі <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
 
-* Актываваць магчымасці фільтрацыі [пстрычкай па карце](filtering-layers.md#quick-filter-by-map-interaction) з дапамогай кнопкі <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
+* Актываваць магчымасці фільтрацыі [пстрычкай па карце](filtering-layers.md#хуткі-фільтр-па-ўзаемадзеянні-з-картай) з дапамогай кнопкі <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
 
-* Выкарыстоўваць [хуткі фільтр па атрыбуце](filtering-layers.md#quick-filter-by-attributes)
+* Выкарыстоўваць [хуткі фільтр па атрыбуце](filtering-layers.md#хуткі-фільтр-па-атрыбутах)
 
 * Спампаваць даныя табліцы з дапамогай кнопкі <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 
-* Стварыць [віджэты](widgets.md#widgets) з дапамогай кнопкі <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
+* Стварыць [віджэты](widgets.md) з дапамогай кнопкі <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
 * Наладзіць адлюстраванне табліцы атрыбутаў з дапамогай кнопкі <img src="../img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
 
@@ -122,15 +122,15 @@
 
 ## Устаноўка фільтраў
 
-У Табліцы атрыбутаў можна прымяняць фільтры чатырма спосабамі (як апісана ў раздзеле [Фільтрацыя слаёў](filtering-layers.md#filtering-layers)):
+У Табліцы атрыбутаў можна прымяняць фільтры чатырма спосабамі (як апісана ў раздзеле [Фільтрацыя слаёў](filtering-layers.md)):
 
 * [Пашыраны пошук](filtering-layers.md#пашыраны-пошук)
 
-* [Пстрычка па карце](filtering-layers.md#quick-filter-by-map-interaction)
+* [Пстрычка па карце](filtering-layers.md#хуткі-фільтр-па-ўзаемадзеянні-з-картай)
 
-* [Хуткі фільтр](filtering-layers.md#quick-filter-by-attributes)
+* [Хуткі фільтр](filtering-layers.md#хуткі-фільтр-па-атрыбутах)
 
-* [Фільтр па бачным экстэнце](filtering-layers.md#quick-filter-by-viewport)
+* [Фільтр па бачным экстэнце](filtering-layers.md#хуткі-фільтр-па-бачным-экстэнце)
 
 Пасля прымянення гэтыя фільтры можна зрабіць бачнымі на карце, уключыўшы кнопку <img src="../img/button/sync.jpg" class="ms-docbutton"/>.
 

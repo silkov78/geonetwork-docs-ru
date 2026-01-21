@@ -5,7 +5,7 @@
 !!! Папярэджанне
     Каб прадухіліць магчымыя памылкі ў метадах накладання геаметрыі з-за складаных і цяжкіх геаметрый, у выкарыстоўваны GeoServer неабходна дадаць [сістэмную ўласцівасць JTS](https://github.com/locationtech/jts/blob/master/USING.md#jts-system-properties) (ва ўласцівасцях JAVA павінна быць уключана `-Djts.overlay=ng`).
 
-Пры націску кнопкі **Інструмент геаапрацоўкі** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, даступнай на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar), адкрываецца панэль, дзе карыстальнік можа выбраць геаграфічныя аперацыі: **Буфер** і **Перасячэнне**.
+Пры націску кнопкі **Інструмент геаапрацоўкі** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, даступнай на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў), адкрываецца панэль, дзе карыстальнік можа выбраць геаграфічныя аперацыі: **Буфер** і **Перасячэнне**.
 
 <img src="../img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
 

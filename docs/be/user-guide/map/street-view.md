@@ -6,7 +6,7 @@
 
 ## Google Street View
 
-З дапамогай кнопкі <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/>, даступнай на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar), можна актываваць інструмент для навігацыі па карце з дапамогай [Google Street View](https://www.google.com/streetview/).
+З дапамогай кнопкі <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/>, даступнай на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў), можна актываваць інструмент для навігацыі па карце з дапамогай [Google Street View](https://www.google.com/streetview/).
 
 <img src="../img/street-view/streetview-popup.jpg" class="ms-docimage" width="500px"/>
 
@@ -28,7 +28,7 @@
 
 ## Cyclomedia Street Smart
 
-Калі ў якасці правайдэра для інструмента "Прагляд вуліц" наладжаны [Cyclomedia Street Smart](https://www.cyclomedia.com/en/street-smart), карыстальніцкі досвед застаецца ранейшым: інструмент можна актываваць з дапамогай той жа кнопкі <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar).
+Калі ў якасці правайдэра для інструмента "Прагляд вуліц" наладжаны [Cyclomedia Street Smart](https://www.cyclomedia.com/en/street-smart), карыстальніцкі досвед застаецца ранейшым: інструмент можна актываваць з дапамогай той жа кнопкі <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў).
 
 <img src="../img/street-view/cyclomedia-popup.jpg" class="ms-docimage" width="500px"/>
 

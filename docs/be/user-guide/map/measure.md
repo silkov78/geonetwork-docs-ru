@@ -1,6 +1,6 @@
 # Выкананне вымярэнняў
 
-Інструмент "Вымярэнне" дазваляе карыстальніку выконваць розныя віды вымярэнняў (такія як адлегласць, плошча, азімут і г. д.) на карце. Ён таксама прадастаўляе некаторыя дадатковыя функцыі, якія апісаны ў гэтым раздзеле дакументацыі. Інструмент даступны з [Бакавой панэлі інструментаў](mapstore-toolbars.md#side-toolbar) пры выбары кнопкі <img src="../img/button/measurament.jpg" class="ms-docbutton" style="max-height:20px;"/>, якая адкрывае наступную панэль інструментаў:
+Інструмент "Вымярэнне" дазваляе карыстальніку выконваць розныя віды вымярэнняў (такія як адлегласць, плошча, азімут і г. д.) на карце. Ён таксама прадастаўляе некаторыя дадатковыя функцыі, якія апісаны ў гэтым раздзеле дакументацыі. Інструмент даступны з [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў) пры выбары кнопкі <img src="../img/button/measurament.jpg" class="ms-docbutton" style="max-height:20px;"/>, якая адкрывае наступную панэль інструментаў:
 
 <img src="../img/measure/measure.jpg" class="ms-docimage" style="max-width:600px;"/>
 
@@ -16,7 +16,7 @@
 
 * Экспартаваць вымярэнні ў *GeoJSON* <img src="../img/button/json_export_button.jpg" class="ms-docbutton"/>
 
-* Дадаць вымярэнне ў якасці слоя ў [Панэль зместу](toc.md#table-of-contents) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
+* Дадаць вымярэнне ў якасці слоя ў [Панэль зместу](toc.md) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
 
 * Дадаць вымярэнне ў якасці [Анатацыі](annotations.md) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
 
@@ -62,7 +62,7 @@
 
 ## Даданне вымярэння ў якасці слоя
 
-Пасля таго як вымярэнне намалявана, яго можна дадаць у якасці слоя з дапамогай кнопкі <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>. Створаны слой дадаецца ў [Панэль зместу](toc.md#table-of-contents) наступным чынам:
+Пасля таго як вымярэнне намалявана, яго можна дадаць у якасці слоя з дапамогай кнопкі <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>. Створаны слой дадаецца ў [Панэль зместу](toc.md) наступным чынам:
 
 <img src="../img/measure/as_layer.jpg" class="ms-docimage"/>
 
