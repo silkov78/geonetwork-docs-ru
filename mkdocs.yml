@@ -485,6 +485,7 @@ plugins:
                 - administrator-guide/managing-users-and-groups/creating-group.md
                 - administrator-guide/managing-users-and-groups/creating-user.md
                 - administrator-guide/managing-users-and-groups/user-self-registration.md
+                - administrator-guide/managing-users-and-groups/user-reset-password.md
               - 'Classification Systems':
                 - administrator-guide/managing-classification-systems/index.md
                 - administrator-guide/managing-classification-systems/managing-categories.md
@@ -495,3 +496,7 @@ plugins:
                 - administrator-guide/managing-metadata-standards/configure-validation.md
                 - administrator-guide/managing-metadata-standards/metadata-identifier.md
                 - administrator-guide/managing-metadata-standards/standards.md
+              - 'Additional Information':
+                - annexes/mef-format.md
+                - api/search.md
+                - customizing-application/creating-custom-view.md
