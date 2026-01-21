@@ -1,10 +1,10 @@
-# Руководство для администраторов
+# Кіраўніцтва для адміністратараў
 
--   [Конфигурация католога](configuring-the-catalog/index.md)
--   [Управление типами пользователей и группами](managing-users-and-groups/index.md)
--   [Управление системами классификаций](managing-classification-systems/index.md)
--   [Управление метаданными и шаблонами](../../en/administrator-guide/managing-metadata-standards/index.md)
+-   [Канфігурацыя каталога](configuring-the-catalog/index.md)
+-   [Кіраванне тыпамі карыстальнікаў і групамі](managing-users-and-groups/index.md)
+-   [Кіраванне сістэмамі класіфікацый](managing-classification-systems/index.md)
+-   [Кіраванне метаданымі і шаблонамі](managing-metadata-standards/index.md)
 
 ![](img/admin.png)
 
-Все функции администратора доступны в `Панели админа` в главном меню. В `Панели админа` находятся все параметры администрирования, доступные для роли пользователя.
+Усе функцыі адміністратара даступныя ў `Панэлі адміністратара` ў галоўным меню.
