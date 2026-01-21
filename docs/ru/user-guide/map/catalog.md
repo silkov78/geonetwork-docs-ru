@@ -3,7 +3,7 @@
 Служба каталогов для веба (CSW) — это [стандарт OGC](https://www.ogc.org/standards), используемый для публикации и поиска геопространственных данных и связанных с ними метаданных в интернете. Он описывает геопространственные службы, такие как Web Map Service (WMS) и Web Map Tile Service (WMTS).
 
 В Каталоге предоставляется возможность доступа к удаленным службам WMS, WFS, CSW, WMTS и TMS и добавления соответствующих слоев на карту. По умолчанию, как только пользователь открывает Каталог, становятся доступны демонстрационные службы CSW, WMS и WMTS, позволяющие импортировать слои из GeoServer от GeoSolutions.
-Пользователь может получить доступ к Каталогу, нажав на кнопку <img src="../img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Боковой панели инструментов](mapstore-toolbars.md#side-toolbar). При первом открытии он выглядит следующим образом:
+Пользователь может получить доступ к Каталогу, нажав на кнопку <img src="../img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов). При первом открытии он выглядит следующим образом:
 
 <img src="../img/catalog/catalog_panel.jpg" class="ms-docimage"  style="max-width:500px;" />
 
@@ -17,7 +17,7 @@
 
 <img src="../img/catalog/catalog_search.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
-Нажав на кнопку <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой окончательно добавляется в [Панель содержания](toc.md#table-of-contents) и отображается в окне просмотра карты:
+Нажав на кнопку <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой окончательно добавляется в [Панель содержания](toc.md) и отображается в окне просмотра карты:
 
 <img src="../img/catalog/added_layer.jpg" class="ms-docimage"/>
 
@@ -217,11 +217,11 @@
 
       - Создания локализованного вывода для запросов GetFeatureInfo (шаблон freemarker должен быть правильно настроен для получения [локали из запроса](https://docs.geoserver.org/stable/en/user/tutorials/freemarker.html))
 
-При включении этой опции все слои, добавленные на карту из этого источника каталога, будут локализованы, как описано выше (эту настройку можно снова изменить для каждого отдельного слоя, открыв [Настройки слоя](layer-settings.md#Отображение) в Панели содержания).
+При включении этой опции все слои, добавленные на карту из этого источника каталога, будут локализованы, как описано выше (эту настройку можно снова изменить для каждого отдельного слоя, открыв [Настройки слоя](layer-settings.md#отображение) в Панели содержания).
 
 * *Установить пределы видимости*: доступно только для слоев WMS из источников каталога типа CSW или WMS. Если флажок установлен и в WMS Capabilities присутствуют ограничения по масштабу (например, MinScaleDenominator и/или MaxScaleDenominator), они будут автоматически применены к настройкам слоя, когда слой добавляется на карту из этого источника.
 
-* *Единый тайл* (только для службы WMS): если флажок установлен, слои, загруженные из соответствующего источника каталога, отображаются как один тайл. Для слоев, уже загруженных на карту, эту опцию можно отключить с помощью инструмента [Настройки слоя](layer-settings.md#Отображение), как обычно.
+* *Единый тайл* (только для службы WMS): если флажок установлен, слои, загруженные из соответствующего источника каталога, отображаются как один тайл. Для слоев, уже загруженных на карту, эту опцию можно отключить с помощью инструмента [Настройки слоя](layer-settings.md#отображение), как обычно.
 
 * *Разрешить небезопасные слои*: если включено, позволяет использовать небезопасные URL-адреса каталогов (только http). Добавление слоев из источников WMS с этой активной опцией также заставит слой использовать прокси для всех запросов, обходя ограничение браузера на смешанный контент.
 
@@ -358,7 +358,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
     В настоящее время для слоев 3D Tiles доступны следующие возможности инструментов:
 
 * *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-* Доступ к [Настройкам слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#Общая-информация), опций [Отображения](layer-settings.md#3d-tiles-layer) и [Стиля](layer-settings.md#styling-of-3d-tiles-layer)
+* Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-3d-tiles) и [Стиля](layer-settings.md#стилизация-слоя-3d-tiles)
 * *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог COG
@@ -394,13 +394,13 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 <img src="../img/catalog/advanced_settings_cog.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
-* *Скачать метаданные файла при поиске*: эта опция получит метаданные для поддержки приближения к слою, когда слой добавляется в [Панели содержания](toc.md#table-of-contents).
+* *Скачать метаданные файла при поиске*: эта опция получит метаданные для поддержки приближения к слою, когда слой добавляется в [Панели содержания](toc.md).
 
 !!! Внимание
     В настоящее время для слоев COG доступны следующие возможности инструментов:
 
 * *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-* Доступ к [Настройкам слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#Общая-информация), опций [Отображения](layer-settings.md#Слой-COG) и [Стиля](layer-settings.md#styling-for-cog-layer)
+* Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-cog) и [Стиля](layer-settings.md#стилизация-для-слоя-cog)
 * *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог моделей IFC
@@ -415,5 +415,6 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
     В настоящее время для слоев моделей IFC доступны следующие возможности инструментов:
 
     * *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-    * Доступ к [Настройкам слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#Общая-информация) и опций [Отображения](layer-settings.md#ifc-layer)
+    * Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация) и опций 
+[Отображения](layer-settings.md#слой-ifc)
     * *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>

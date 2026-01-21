@@ -6,7 +6,7 @@
 
 ## Google Street View
 
-С помощью кнопки <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#side-toolbar), можно активировать инструмент для навигации по карте с помощью [Google Street View](https://www.google.com/streetview/).
+С помощью кнопки <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов), можно активировать инструмент для навигации по карте с помощью [Google Street View](https://www.google.com/streetview/).
 
 <img src="../img/street-view/streetview-popup.jpg" class="ms-docimage" width="500px"/>
 
@@ -28,7 +28,7 @@
 
 ## Cyclomedia Street Smart
 
-Если в качестве провайдера для инструмента "Просмотр улиц" настроен [Cyclomedia Street Smart](https://www.cyclomedia.com/en/street-smart), пользовательский опыт остается прежним: инструмент можно активировать с помощью той же кнопки <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/> на [Боковой панели инструментов](mapstore-toolbars.md#side-toolbar).
+Если в качестве провайдера для инструмента "Просмотр улиц" настроен [Cyclomedia Street Smart](https://www.cyclomedia.com/en/street-smart), пользовательский опыт остается прежним: инструмент можно активировать с помощью той же кнопки <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов).
 
 <img src="../img/street-view/cyclomedia-popup.jpg" class="ms-docimage" width="500px"/>
 

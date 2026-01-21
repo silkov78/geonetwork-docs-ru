@@ -161,7 +161,7 @@
 
 * **Приблизить к экстенту выбранного слоя** <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: чтобы приблизить карту к экстенту слоя
 
-* Получить доступ к [Настройкам выбранного слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/>
+* Получить доступ к [Настройкам выбранного слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/>
 
 * [Установить фильтр](filtering-layers.md) для этого слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
 
@@ -169,7 +169,7 @@
 
 * **Удалить** выбранный слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
-* [Создать виджеты](widgets.md#widgets) для выбранного слоя <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
+* [Создать виджеты](widgets.md) для выбранного слоя <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
 * [Экспортировать](export-data.md) данные выбранного слоя <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 

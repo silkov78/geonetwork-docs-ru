@@ -5,7 +5,7 @@
 !!! Предупреждение
     Чтобы предотвратить возможные ошибки в методах наложения геометрии из-за сложных и тяжелых геометрий, в используемый GeoServer необходимо добавить [системное свойство JTS](https://github.com/locationtech/jts/blob/master/USING.md#jts-system-properties) (в свойствах JAVA должно быть включено `-Djts.overlay=ng`).
 
-При нажатии кнопки **Инструмент геообработки** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#side-toolbar), открывается панель, где пользователь может выбрать географические операции: **Буфер** и **Пересечение**.
+При нажатии кнопки **Инструмент геообработки** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов), открывается панель, где пользователь может выбрать географические операции: **Буфер** и **Пересечение**.
 
 <img src="../img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
 
@@ -14,7 +14,7 @@
 
     * Слои WMS и WFS в [Панели содержания](toc.md)
     * [Измерения](measure.md)
-    * [Импортированная карта GeoJSON](import.md#Экспорт-и-импорт-файлов-контекста-карты)
+    * [Импортированная карта GeoJSON](import.md#экспорт-и-импорт-файлов-контекста-карты)
     * [Импортированные Shape-файлы](import.md#import-vector-files)
     * [Аннотации](annotations.md)
 

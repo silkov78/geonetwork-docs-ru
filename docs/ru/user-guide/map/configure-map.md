@@ -30,7 +30,7 @@
 
 * Включить/отключить **панорамирование** на карте.
 
-* Включить/отключить **идентификацию** на карте. Как сообщается в разделе [Инструмент "Идентификация"](navigation-toolbar.md#identify-tool), для секций карты в истории также можно включить *инструмент "Идентификация"* в одном из форматов, поддерживаемых приложением (*TEXT*, *HTML* или *PROPERTIES*).
+* Включить/отключить **идентификацию** на карте. Как сообщается в разделе [Инструмент "Идентификация"](navigation-toolbar.md#инструмент-идентификация), для секций карты в истории также можно включить *инструмент "Идентификация"* в одном из форматов, поддерживаемых приложением (*TEXT*, *HTML* или *PROPERTIES*).
 
 <img src="../img/configure-map/identify-format.jpg" class="ms-docimage"/>
 
@@ -49,11 +49,11 @@
 
 * Добавление **аннотаций**, нажав на кнопку <img src="../img/button/annotation-option.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Добавление аннотаций](annotations.md).
 
-* **Импорт** карты или векторного файла, нажав на кнопку <img src="../img/button/import-button.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Импорт файлов](import.md#import-files).
+* **Импорт** карты или векторного файла, нажав на кнопку <img src="../img/button/import-button.jpg" class="ms-docbutton" style="max-height:20px;"/> в *меню опций* <img src="../img/button/burger.jpg" class="ms-docbutton"/>, как объясняется в разделе [Импорт файлов](import.md).
 
 * **Изменение фона**, как объясняется в разделе [Селектор фоновых карт](background.md).
 
-* **Редактирование слоев**, нажав на кнопку "Слои" <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, как объясняется в разделе [Панели содержания](toc.md#table-of-contents).
+* **Редактирование слоев**, нажав на кнопку "Слои" <img src="../img/button/show-layers.jpg" class="ms-docbutton"/>, как объясняется в разделе [Панели содержания](toc.md).
 
 После завершения расширенного редактирования карты можно нажать **Применить**, чтобы увидеть конечный результат в истории.
 

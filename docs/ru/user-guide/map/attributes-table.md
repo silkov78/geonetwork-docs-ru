@@ -3,7 +3,7 @@
 *****************
 
 В ГИС Таблица атрибутов, связанная с векторным слоем, — это таблица, в которой хранится табличная информация, относящаяся к этому слою. Столбцы таблицы называются полями, а строки — записями. Каждая запись в таблице атрибутов соответствует геометрии одного из объектов слоя. Эта связь позволяет находить записи в таблице (информацию), выбирая объекты на карте, и наоборот.
-Пользователь с помощью кнопки <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#toolbar-options) можно получить доступ к Таблице атрибутов:
+Пользователь с помощью кнопки <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#настройки-и-панель-инструментов-toc) можно получить доступ к Таблице атрибутов:
 
 <img src="../img/attributes-table/attributes-table-1.jpg" class="ms-docimage"/>
 
@@ -13,17 +13,17 @@
 
 * Фильтровать записи в Таблице атрибутов различными способами, как описано в разделе [Установка фильтров](#установка-фильтров) ниже
 
-* Открыть инструмент [Расширенный поиск](filtering-layers.md#query-panel) с помощью кнопки <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
+* Открыть инструмент [Расширенный поиск](filtering-layers.md#расширенный-поиск) с помощью кнопки <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
 
-* Активировать [фильтрацию по текущему видимому экстенту](filtering-layers.md#quick-filter-by-viewport) с помощью кнопки <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
+* Активировать [фильтрацию по текущему видимому экстенту](filtering-layers.md#быстрый-фильтр-по-видимому-экстенту) с помощью кнопки <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
 
-* Активировать возможности фильтрации [кликом по карте](filtering-layers.md#quick-filter-by-map-interaction) с помощью кнопки <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
+* Активировать возможности фильтрации [кликом по карте](filtering-layers.md#быстрый-фильтр-по-взаимодействию-с-картой) с помощью кнопки <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
 
-* Использовать [быстрый фильтр по атрибуту](filtering-layers.md#quick-filter-by-attributes)
+* Использовать [быстрый фильтр по атрибуту](filtering-layers.md#быстрый-фильтр-по-атрибутам)
 
 * Скачать данные таблицы с помощью кнопки <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 
-* Создать [виджеты](widgets.md#widgets) с помощью кнопки <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
+* Создать [виджеты](widgets.md) с помощью кнопки <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
 * Настроить отображение таблицы атрибутов с помощью кнопки <img src="../img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
 
@@ -126,11 +126,11 @@
 
 * [Расширенный поиск](filtering-layers.md#расширенный-поиск)
 
-* [Клик по карте](filtering-layers.md#quick-filter-by-map-interaction)
+* [Клик по карте](filtering-layers.md#быстрый-фильтр-по-взаимодействию-с-картой)
 
-* [Быстрый фильтр](filtering-layers.md#quick-filter-by-attributes)
+* [Быстрый фильтр](filtering-layers.md#быстрый-фильтр-по-атрибутам)
 
-* [Фильтр по видимому экстенту](filtering-layers.md#quick-filter-by-viewport)
+* [Фильтр по видимому экстенту](filtering-layers.md#быстрый-фильтр-по-видимому-экстенту)
 
 После применения эти фильтры можно сделать видимыми на карте, включив кнопку <img src="../img/button/sync.jpg" class="ms-docbutton"/>.
 

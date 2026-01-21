@@ -1,36 +1,37 @@
-# User 'Forgot your password?' function {#user_forgot_password}
+# Восстановление пароля пользователя {#user_forgot_password}
 
-!!! note
-    This function requires an email server configured. See [System configuration](../configuring-the-catalog/system-configuration.md#system-config-feedback).
+> Примечание
+> Данный функционал требует наличие настроенного сервера электронной почты. Информация о настройке находится в [соответствующем разделе](../configuring-the-catalog/system-configuration.md#system-config-feedback).
 
-This function allows users who have forgotten their password to request a new one. Go to the sign in page to access the form:
+Функция восстановления пароля позволяет запросить пользователю новый пароль, если был забыт или утерян старый. На странице авторизации пользователь должен перейти по соответствующей ссылке для того, чтобы открылась форма восстановления пароля:
 
 ![](img/password-forgot.png)
 
-If a user takes this option they will receive an email inviting them to change their password as follows:
+Указав имя пользователя и нажав на кнопку "Отправить ссылку на электронную почту" пользователь получает электронное письмо с приглашением перейти по ссылке для смены пароля:
 
-    You have requested to change your Greenhouse GeoNetwork Site password.
+	Вы запросили смену Вашего пароля от учётной записи в каталоге метаданных Национального геопортала.
+	
+	Вы можете изменить свой пароль, перейдя по следующей ссылке:
+	http://localhost:8080/geonetwork/srv/en/password.change.form?username=dubya.shrub@greenhouse.gov&changeKey=635d6c84ddda782a9b6ca9dda0f568b011bb7733
+	
+	Ссылка доступна только в течении следующих 24 часов с момента получения данного письма.
+	
+	С уважением,
+	Команда Национального геопортала
 
-    You can change your password using the following link:
+После получения запроса от пользователя, Каталог метаданных генерирует ключ изменения пароля (changeKey) на основе старого пароля пользователя и текущей даты (даты запроса смены пароля) и помещает ключ в ссылку, которая направляется пользователю в электронном письме.
 
-    http://localhost:8080/geonetwork/srv/en/password.change.form?username=dubya.shrub@greenhouse.gov&changeKey=635d6c84ddda782a9b6ca9dda0f568b011bb7733
+Если Вы хотите изменить текст сообщения такого электронного письма, то изменения вносятся в файл `xslt/service/account/password-forgotten-email.xsl`.
 
-    This link is valid for today only.
+Когда пользователь переходит по ссылке, в его браузере отобразится форма страницы смены пароля, в которой он может ввести новый пароль. После отправки заполненной формы ключ изменения пароля (changeKey) генерируется повторно и сравнивается с ключом, который был создан при получении запроса на смену пароля. В случае совпадения двух этих ключей пароль изменяется на новый, введенный пользователем.
 
-    Greenhouse GeoNetwork Site
+Последним шагом процесса становится отправка электронного письма пользователю с подтверждением смены пароля от учётной записи:
 
-The catalog has generated a changeKey from the forgotten password and the current date and emailed that to the user as part of a link to a change password form.
-
-If you want to change the content of this email, you should modify `xslt/service/account/password-forgotten-email.xsl`.
-
-When the user clicks on the link, a change password form is displayed in their browser and a new password can be entered. When that form is submitted, the changeKey is regenerated and checked with the changeKey supplied in the link, if they match then the password is changed to the new password supplied by the user.
-
-The final step in this process is a verification email sent to the email address of the user confirming that a change of password has taken place:
-
-    Your Greenhouse GeoNetwork Site password has been changed.
-
-    If you did not change this password contact the Greenhouse GeoNetwork Site helpdesk
-
-    The Greenhouse GeoNetwork Site team
-
-If you want to change the content of this email, you should modify `xslt/service/account/password-changed-email.xsl`.
+	Пароль от Вашей учётной записи каталога метаданных Национального геопортала был успешно изменен.
+	
+	Если Вы не изменяли свой пароль, свяжитесь с нашими специалистами технической поддержки.
+	
+	С уважением,
+	Команда Национального геопортала
+	
+Если Вы хотите изменить текст сообщения такого электронного письма, то изменения вносятся в файл `xslt/service/account/password-changed-email.xsl`.

@@ -2,7 +2,7 @@
 
 The following sections describe how to create, manage, edit, and validate records in the Metadata Catalog.
 
-- [Maps and Data Visualization](map/index.md)
+- [Maps and Data Visualization](map/exploring-maps.md)
 - [Describing Information](describing-information/index.md)
 - [Associating Resources](associating-resources/index.md)
 - [Tag Information](tag-information/index.md)
