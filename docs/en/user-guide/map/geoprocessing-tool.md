@@ -2,9 +2,6 @@
 
 This tool aims to provide a set of geo-processing utilities on layers present in map. WPS calls are made by the tool to produce the result to be displayed in the map. Supported WPS processes are *geo:buffer* and *gs:IntersectionFeatureCollection* (the [WPS plugin](https://docs.geoserver.org/latest/en/user/services/wps/install.html) need to be installed for your GeoServer version in order to use this tool).
 
-!!! note
-    The **GeoProcessing Tool** is not included by default in the MapStore configuration but it can be configured within an [application contexts](application-context.md#configure-plugins) if needed or directly included in the standard [application configuration](../developer-guide/local-config.md).
-
 !!! warning
     To prevent possible errors in geometry overlay methods due to complex and heavy geometries, the [JTS system property](https://github.com/locationtech/jts/blob/master/USING.md#jts-system-properties) must be added to the GeoServer in use (the `-Djts.overlay=ng` should be enabled in JAVA properties).
 

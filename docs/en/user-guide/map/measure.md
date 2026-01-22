@@ -18,7 +18,7 @@ Through this window it is possible to:
 
 * Add the measure as a layer in [TOC](toc.md#table-of-contents) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
 
-* Add the measure as an [Annotation](annotations.md#add-new-annotation) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
+* Add the measure as an [Annotation section](annotations.md) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
 
 !!! note
     The user can perform more than one measurement simultaneously on the map and then cancel it with the **Clear Measures** button <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
