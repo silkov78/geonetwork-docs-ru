@@ -500,3 +500,4 @@ plugins:
                 - annexes/mef-format.md
                 - api/search.md
                 - customizing-application/creating-custom-view.md
+                - customizing-application/configuring-faceted-search.md

@@ -44,7 +44,7 @@ The list of sub-portal available is at <http://localhost:8080/geonetwork/srv/api
 
 ### Configuring a Datahub interface for a sub-portal
 
-If the [Datahub Integration Plugin](../../install-guide/plugins.md#datahub-integration-gn-datahub-integration) is installed, a Datahub interface can be configured for a sub-portal. Two settings are available for this:
+If the Datahub Integration Plugin is installed, a Datahub interface can be configured for a sub-portal. Two settings are available for this:
 
 * Datahub enabled (checkbox)
 * Datahub configuration (text field in TOML format)

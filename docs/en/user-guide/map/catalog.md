@@ -344,7 +344,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 ##### TMS Known Services
 
-The other known services are listed as providers below "custom" and "TMS 1.0.0". They are a static list configured inside the application. Selecting one of the provider listed and saving the new catalog service allows to browse al the variants known for that service. For more information about the list of available providers, see the developer documentation about [Tile Providers](../../developer-guide/maps-configuration/#tileprovider)
+The other known services are listed as providers below "custom" and "TMS 1.0.0". They are a static list configured inside the application. Selecting one of the provider listed and saving the new catalog service allows to browse al the variants known for that service. For more information about the list of available providers, see the developer documentation about [Tile Providers](https://docs.mapstore.geosolutionsgroup.com/en/latest/developer-guide/maps-configuration/)
 
 <img src="../img/catalog/tms_known_edit.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Select a known TMS provider</p>
@@ -366,7 +366,7 @@ In **General Settings** of 3D Tiles service, the user can specify the title to a
     MapStore allows you to load also [Google Photorealistic 3D Tiles](https://cloud.google.com/blog/products/maps-platform/create-immersive-3d-map-experiences-photorealistic-3d-tiles) and some constraints need to be respected in this case.
     Since the Google Photorealistic 3D Tiles are not ‘survey-grade’ at this time, the use of certain MapStore tools could be considered derivative and, for this reason, prohibited. Please, make sure you have read the [Google conditions of use](https://developers.google.com/maps/documentation/tile/policies)
     (some [FAQs](https://cloud.google.com/blog/products/maps-platform/commonly-asked-questions-about-our-recently-launched-photorealistic-3d-tiles) are also available online for this purpose) before providing Google Photorealistic 3D Tile in your MapStore maps in order to enable only allowed tools (e.g. *Measurement* and *Identify* tools should be probably disabled).
-    For this purpose it is possible to appropriately set the [configuration of MapStore plugins](../../developer-guide/maps-configuration/#map-options)  to exclude tools that could conflict with Google policies. Alternatively, it is possible to use a dedicated [application context](application-context.md#configure-plugins) to show Photorealistic 3D Tiles by including only the permitted tools within it.
+    For this purpose it is possible to appropriately set the [configuration of MapStore plugins](https://docs.mapstore.geosolutionsgroup.com/en/latest//developer-guide/maps-configuration/)  to exclude tools that could conflict with Google policies. Alternatively, it is possible to use a dedicated [application context](https://docs.mapstore.geosolutionsgroup.com/en/latest/user-guide/application-context/) to show Photorealistic 3D Tiles by including only the permitted tools within it.
 
 !!! Note
     The tool capabilities currently available for 3D Tiles layers are:
@@ -386,11 +386,11 @@ In **General Settings** of a COG source type, it is possible to specify the serv
 <img src="../img/catalog/cog_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 !!! Note
-    To properly display COG layers in your MapStore map, it is necessary to add the reference system definition supported by the COG in the MapStore [projectionDefs configuration](../../developer-guide/local-config/#projectiondefs-configuration)
+    To properly display COG layers in your MapStore map, it is necessary to add the reference system definition supported by the COG in the MapStore [projectionDefs configuration](https://docs.mapstore.geosolutionsgroup.com/en/latest/developer-guide/local-config/)
 
 !!! warning
      The COG catalog type in MapStore is still in experimental state and for this reason not directly available in the default service types list of the Catalog tool.
-    In order to enable this service, update the default [Catalog tool configuration](https://mapstore.geosolutionsgroup.com/mapstore/docs/api/plugins#plugins.MetadataExplorer) in `localConfig.json`  or inside the application context wizard as shown below:
+    In order to enable this service, update the default [Catalog tool configuration](https://mapstore.geosolutionsgroup.com/mapstore/docs/api/plugins) in `localConfig.json`  or inside the application context wizard as shown below:
 
     ```diff
     {
