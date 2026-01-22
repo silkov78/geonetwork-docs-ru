@@ -82,6 +82,6 @@
 	
 `anonymizer?protocol=MYLOCALNETWORK:FILEPATH&email=gis@organization.org&thesaurus=MYORGONLYTHESAURUS`
 
-### Привилении
+### Привилегии
 
 Задаются привилегии для просмотра, редактирования или публикации собранных записей метаданных в Каталоге метаданных.
