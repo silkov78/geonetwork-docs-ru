@@ -1,4 +1,4 @@
-# Классификация информации {#tag-information}
+# Класіфікацыя інфармацыі {#tag-information}
 
--   [Классифицирование по категориям](tagging-with-categories.md)
--   [Классифицирование по ключевым словам](tagging-with-keywords.md)
+- [Класіфікаванне па катэгорыях](tagging-with-categories.md)
+- [Класіфікаванне па ключавых словах](tagging-with-keywords.md)

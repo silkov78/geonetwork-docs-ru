@@ -1,5 +1,5 @@
-#  Публикация метаданных
+# Публікацыя метададзеных
 
--   [Управление привелегиями](managing-privileges.md)
--   [Ограничение информации по разделам метаданных](restricting-information-to-metadata-sections.md)
--   [Передача привилегий](transferring-privileges.md)
+- [Кіраванне прывілеямі](managing-privileges.md)
+- [Абмежаванне інфармацыі па раздзелах метададзеных](restricting-information-to-metadata-sections.md)
+- [Перадача прывілеяў](transferring-privileges.md)
