@@ -193,8 +193,6 @@
 
 * Прагледзець панэль **Аб гэтай карце**, націснуўшы кнопку <img src="../img/button/details2.jpg" class="ms-docbutton"/>, калі падрабязнасці аб карце прысутнічаюць
 
-* Адкрыць [Дакументацыю MapStore](https://mapstore.readthedocs.io/en/latest/), націснуўшы кнопку <img src="../img/button/doc2.jpg" class="ms-docbutton"/>
-
 * Пачаць **Навучанне**, націснуўшы кнопку <img src="../img/button/tutorial2.jpg" class="ms-docbutton"/>
 
 * Даведацца больш інфармацыі **Аб прыкладанні** і разгорнутай **Версіі**, націснуўшы кнопку <img src="../img/button/about2.jpg" class="ms-docbutton"/>

@@ -47,7 +47,7 @@
 
 * **Аддаліць** графік з дапамогай кнопкі <img src="../img/button/zoom_out_chart.jpg" class="ms-docbutton"/>.
 
-* **Аўтамаштаб** для аўтаматычнага маштабавання восей па адлюстраваных даных з дапамогай кнопкі <img src="../img/button/autoscale_chart.jpg" class="ms-docbutton"/>.
+* **Аўтамаштаб** для аўтаматычнага маштабавання восей па адлюстраваных дадзеных з дапамогай кнопкі <img src="../img/button/autoscale_chart.jpg" class="ms-docbutton"/>.
 
 * **Скінуць восі** для вяртання графіка ў зыходны стан з дапамогай кнопкі <img src="../img/button/reset_axes_chart.jpg" class="ms-docbutton"/>.
 

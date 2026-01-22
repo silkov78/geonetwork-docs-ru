@@ -16,9 +16,6 @@
 
 <video class="ms-docimage" controls><source src="../img/footer/CRS_selector.mp4" /></video>
 
-!!! Внимание
-    Список доступных СК зависит от [конфигурации Селектора СК](https://mapstore.readthedocs.io/en/latest/developer-guide/local-config/#crs-selector-configuration).
-
 Для поиска нужной СК пользователь также может отфильтровать список СК, введя текст в поле поиска.
 
 <img src="../img/footer/searchCRS.jpg" class="ms-docimage" style="max-width:200px;"/>

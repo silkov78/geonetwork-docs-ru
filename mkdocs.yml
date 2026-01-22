@@ -94,7 +94,6 @@ nav:
       - user-guide/map/measure.md
       - user-guide/map/annotations.md
       - user-guide/map/map-views.md
-      - user-guide/map/street-view.md
       - user-guide/map/longitudinal-profile.md
       - user-guide/map/geoprocessing-tool.md
       - user-guide/map/navigation-toolbar.md
@@ -250,7 +249,6 @@ plugins:
                 - user-guide/map/measure.md
                 - user-guide/map/annotations.md
                 - user-guide/map/map-views.md
-                - user-guide/map/street-view.md
                 - user-guide/map/longitudinal-profile.md
                 - user-guide/map/geoprocessing-tool.md
                 - user-guide/map/navigation-toolbar.md
@@ -345,12 +343,12 @@ plugins:
                 - administrator-guide/managing-users-and-groups/creating-user.md
                 - administrator-guide/managing-users-and-groups/user-self-registration.md
                 - administrator-guide/managing-users-and-groups/user-reset-password.md
-              - 'Сістэмы класіфікацыі метаданых':
+              - 'Сістэмы класіфікацыі метададзеных':
                 - administrator-guide/managing-classification-systems/index.md
                 - administrator-guide/managing-classification-systems/managing-categories.md
                 - administrator-guide/managing-classification-systems/managing-directories.md
                 - administrator-guide/managing-classification-systems/managing-thesaurus.md
-              - 'Стандарты метаданых':
+              - 'Стандарты метададзеных':
                 - administrator-guide/managing-metadata-standards/index.md
                 - administrator-guide/managing-metadata-standards/configure-validation.md
                 - administrator-guide/managing-metadata-standards/metadata-identifier.md
@@ -395,7 +393,6 @@ plugins:
                 - user-guide/map/measure.md
                 - user-guide/map/annotations.md
                 - user-guide/map/map-views.md
-                - user-guide/map/street-view.md
                 - user-guide/map/longitudinal-profile.md
                 - user-guide/map/geoprocessing-tool.md
                 - user-guide/map/navigation-toolbar.md

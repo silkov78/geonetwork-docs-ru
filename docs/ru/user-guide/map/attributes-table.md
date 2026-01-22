@@ -37,9 +37,6 @@
 
 Базовый сервис Web Feature Service позволяет запрашивать и получать объекты. С помощью транзакционного Web Feature Service (WFS-T) пользователь может создавать, удалять и обновлять объекты.
 
-!!! Предупреждение
-    По умолчанию функции редактирования доступны только для пользователей с правами *администратора*. Другие пользователи могут использовать эти инструменты, только если это явно указано в конфигурации плагина (подробнее см. в [документации API](https://dev-mapstore.geosolutionsgroup.com/mapstore/docs/api/plugins#plugins.FeatureEditor)). В любом случае, для редактирования слоя пользователь должен иметь на него права (см., например, [Настройки безопасности GeoServer](https://docs.geoserver.org/stable/en/user/security/webadmin/data.html)).
-
 В *Режим редактирования* можно перейти с помощью кнопки <img src="../img/button/editing-button.jpg" class="ms-docbutton"/> на панели *Таблица атрибутов*, что позволяет управлять только тем слоем, к которому относится таблица:
 
 <img src="../img/attributes-table/attribute-table-editing-layer.jpg" class="ms-docimage"/>

@@ -1,5 +1,5 @@
-# Кіраванне метаданымі і шаблонамі {#metadata-and-template}
+# Кіраванне метададзенымі і шаблонамі {#metadata-and-template}
 
-- [Кіраванне стандартамі метаданых](standards.md)
+- [Кіраванне стандартамі метададзеных](standards.md)
 - [Наладка ўзроўняў праверкі](configure-validation.md)
-- [Наладка ідэнтыфікатара метаданых](metadata-identifier.md)
+- [Наладка ідэнтыфікатара метададзеных](metadata-identifier.md)

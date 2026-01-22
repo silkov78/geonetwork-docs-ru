@@ -16,9 +16,6 @@
 
 <video class="ms-docimage" controls><source src="../img/footer/CRS_selector.mp4" /></video>
 
-!!! Увага
-    Спіс даступных СК залежыць ад [канфігурацыі Селектара СК](https://mapstore.readthedocs.io/en/latest/developer-guide/local-config/#crs-selector-configuration).
-
 Для пошуку патрэбнай СК карыстальнік таксама можа адфільтраваць спіс СК, увёўшы тэкст у поле пошуку.
 
 <img src="../img/footer/searchCRS.jpg" class="ms-docimage" style="max-width:200px;"/>
