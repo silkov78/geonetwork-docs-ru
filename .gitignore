@@ -1,6 +1,5 @@
 .idea
 .venv
 target
-overrides
 venv
 log.txt
