@@ -4,9 +4,6 @@
 
 The **Street View** tool allows the user to browse 360 imagery in [MapStore](https://mapstore.geosolutionsgroup.com/mapstore/#/) from different supported providers such as [Google Street View](https://www.google.com/streetview/) or  [Cyclomedia Street Smart](https://www.cyclomedia.com/en/street-smart).
 
-!!! note
-    The **Street View** plugin is not active by default in MapStore due to licensing reasons. It is anyway ready to be configured for [application contexts](application-context.md#configure-plugins) using the desired provider.
-
 ## Google Street View
 
  Through the <img src="../img/button/street-view-button.jpg" class="ms-docbutton"/> button available in the [Side Toolbar](mapstore-toolbars.md#side-toolbar), the tool can be activated so that it is possible to navigate the map with [Google Street View](https://www.google.com/streetview/).

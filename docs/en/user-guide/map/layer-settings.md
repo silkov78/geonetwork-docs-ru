@@ -237,7 +237,7 @@ In this case the user is allowed to:
 !!!note
     By the default [service security rules](https://docs.geoserver.org/stable/en/user/security/service.html#service-security) the GeoServer's REST APIs are available only for the GeoServer administrators, so a basic authentication form will appears in MapStore to enter the *Admin* credentials. Without Admin rights, the editing capabilities on styles are not available and only the list of available styles will appear to allow the user to select one of them to the layer.
 
-    Take a look at the [User Integration with GeoServer](../developer-guide/integrations/users/geoserver.md#geoserver-integrations) section of [Developer Guide](../developer-guide/index.md#quick-setup-and-run) in order to understand how to configure the way MapStore and GeoServer share users, groups and roles. If the users integration between GeoServer and MapStore is configured, the editing functionalities of the styles will be available according to the role of the authenticated user in MapStore in a more transparent way.
+    Take a look at the User Integration with GeoServer section of Developer Guide in order to understand how to configure the way MapStore and GeoServer share users, groups and roles. If the users integration between GeoServer and MapStore is configured, the editing functionalities of the styles will be available according to the role of the authenticated user in MapStore in a more transparent way.
 
 ### Create a new style
 

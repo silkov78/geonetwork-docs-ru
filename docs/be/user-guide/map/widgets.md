@@ -86,7 +86,7 @@
 
 * Змяніць слой трасы з дапамогай кнопкі <img src="../img/button/timeline-playback-settings-button.jpg" class="ms-docbutton"/> (па змаўчанні слой аўтаматычна супадае з першай вызначанай трасай)
 
-* Адкрыць [*Панэль запытаў*](filtering-layers.md#query-panel) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
+* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
 
 * Вызначыць **Атрыбут X** дыяграмы (або **Групаваць па** для *Кругавых дыяграм*), выбраўшы з палёў слоя
 
@@ -358,7 +358,7 @@
 
 * Падключыць <img src="../img/button/connect-widget.jpg" class="ms-docbutton"/> або адключыць <img src="../img/button/disconnect-widget.jpg" class="ms-docbutton"/> віджэт ад карты. Калі віджэт падключаны да карты, ён аўтаматычна фільтруецца прасторава па бачным экстэнце карты. Калі віджэт не звязаны, ён адлюстроўвае ўвесь набор даных гэтага слоя незалежна ад бачнага экстэнта карты.
 
-* Адкрыць [*Панэль запытаў*](filtering-layers.md#query-panel) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
+* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
 
 * Перайсці наперад <img src="../img/button/next.jpg" class="ms-docbutton"/> да наступнага кроку, калі наладкі завершаны. Кнопка не дазваляе карыстальніку перайсці да наступнага кроку майстра, калі наладка некаторых палёў у форме дыяграмы несапраўдная.
 

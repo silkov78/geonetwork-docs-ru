@@ -19,13 +19,13 @@ Here the user, in order to import a file, can drag and drop it inside the import
 
 A map context is, for example, the file that an user download selecting the <img src="../img/button/export2.jpg" class="ms-docbutton"/> button from the [Side Toolbar](mapstore-toolbars.md#side-toolbar). Map contexts can be exported in two different format:
 
-* The <img src="../img/button/mapstore_format_button.jpg" class="ms-docbutton"/> file, is an export in `json` format of the current map context state: current projections, coordinates, zoom, extent, layers present in the map, widgets and more (additional information can be found in the [Maps Configuration](../developer-guide/maps-configuration.md#map-configuration) section of the [Developer Guide](https://mapstore.readthedocs.io/en/latest/developer-guide/)).
+* The <img src="../img/button/mapstore_format_button.jpg" class="ms-docbutton"/> file, is an export in `json` format of the current map context state: current projections, coordinates, zoom, extent, layers present in the map, widgets and more (additional information can be found in the [Maps Configuration](https://docs.mapstore.geosolutionsgroup.com/en/latest/developer-guide/maps-configuration) section of the [Developer Guide](https://mapstore.readthedocs.io/en/latest/developer-guide/)).
 
 Adding a MapStore configuration file the behavior is similar to the following:
 
 <video class="ms-docimage" controls><source src="../img/import/export-import.mp4"/></video>
 
-* The <img src="../img/button/wmc_format_button.jpg" class="ms-docbutton"/> (Web Map Context) file, is a `xml` format where only WMS layers present in the map are exported including their settings related to projections, coordinates, zoom and extension (additional information can be found in the  [Maps Configuration](../developer-guide/maps-configuration.md#web-map-context) section of the [Developer Guide](https://mapstore.readthedocs.io/en/latest/developer-guide/)).
+* The <img src="../img/button/wmc_format_button.jpg" class="ms-docbutton"/> (Web Map Context) file, is a `xml` format where only WMS layers present in the map are exported including their settings related to projections, coordinates, zoom and extension (additional information can be found in the  [Maps Configuration](https://docs.mapstore.geosolutionsgroup.com/en/latest/developer-guide/maps-configuration.md) section of the [Developer Guide](https://mapstore.readthedocs.io/en/latest/developer-guide/)).
 
 Adding a WMC configuration file the behavior is similar to the following:
 

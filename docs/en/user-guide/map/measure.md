@@ -18,7 +18,7 @@ Through this window it is possible to:
 
 * Add the measure as a layer in [TOC](toc.md#table-of-contents) <img src="../img/button/layers_button.jpg" class="ms-docbutton"/>
 
-* Add the measure as an [Annotation](annotations.md#add-new-annotation) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
+* Add the measure as an [Annotation section](annotations.md) <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/>
 
 !!! note
     The user can perform more than one measurement simultaneously on the map and then cancel it with the **Clear Measures** button <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
@@ -68,11 +68,11 @@ Once a measure is drawn, it is possible to add it as a layer through the <img sr
 
 ## Add measure as annotation
 
-Once a measure is drawn, it is possible to add it as an [Annotation](annotations.md#add-new-annotation) through the <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/> button. The following panel opens:
+Once a measure is drawn, it is possible to add it as an [Annotation](annotations.md) through the <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/> button. The following panel opens:
 
 <img src="../img/measure/add-as-annotation-ex.jpg" class="ms-docimage"/>
 
-From this step the creation process is the same described in the [Annotations section](annotations.md#add-new-annotation).
+From this step the creation process is the same described in the [Annotations section](annotations.md).
 
 ## Measurement on the 3D navigation
 

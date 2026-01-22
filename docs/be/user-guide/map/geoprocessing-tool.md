@@ -14,8 +14,8 @@
 
     * Слаі WMS і WFS у [Панэлі зместу](toc.md)
     * [Вымярэнні](measure.md)
-    * [Імпартаваная карта GeoJSON](import.md#export-and-import-map-context-files)
-    * [Імпартаваныя Shape-файлы](import.md#import-vector-files)
+    * [Імпартаваная карта GeoJSON](import.md#экспарт-і-імпарт-файлаў-кантэксту-карты)
+    * [Імпартаваныя Shape-файлы](import.md#імпарт-вектарных-файлаў)
     * [Анатацыі](annotations.md)
 
 ## Інструмент "Буфер"

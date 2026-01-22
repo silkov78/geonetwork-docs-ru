@@ -13,7 +13,7 @@ In [MapStore](https://mapstore.geosolutionsgroup.com/mapstore/#/) it is possible
 
 ## Add a Widget
 
-Once at least one layer is present in the map (see [Catalog](catalog.md#catalog-services) section for more information about adding layers), it is possible to create a widget by selecting that layer in the [TOC](toc.md#table-of-contents) and by clicking on the <img src="../img/button/widgets.jpg" class="ms-docbutton"/> button from the [Layer Toolbar](toc.md#toolbar-options) or from the [Attribute Table](attributes-table.md#attribute-table). Performing these operations the *Widget* panel appears:
+Once at least one layer is present in the map (see [Catalog](catalog.md#catalog-services) section for more information about adding layers), it is possible to create a widget by selecting that layer in the [TOC](toc.md#table-of-contents) and by clicking on the <img src="../img/button/widgets.jpg" class="ms-docbutton"/> button from the [Layer Toolbar](toc.md#layer-settings-and-toolbar) or from the [Attribute Table](attributes-table.md#attribute-table). Performing these operations the *Widget* panel appears:
 
 <img src="../img/widgets/map-widgets-panel.jpg" class="ms-docimage" style="max-width:450px;"/>
 
@@ -355,7 +355,7 @@ Here the user can:
 
 * Write the text of the widget
 
-* Format the text through the [Text Editor Toolbar](text-editor-toolbar.md#text-editor-toolbar)
+* Format the text through the Text Editor Toolbar
 
 !!! note
     From the *Text Editor Toolbar* the user can also add the following:

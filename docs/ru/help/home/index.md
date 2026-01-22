@@ -74,7 +74,9 @@ hide:
     </div>
     *Расширенный поиск записей метаданных*
 
-    > **Примечание:** подробное описание возможностей расширенного поиска (описание операторов, подстановочных знаков и диапазонов) движка Национального геопортала можно найти в официальной документации **[Elasticsearch - Query String Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)**
+    !!! **Примечание** 
+        
+        Подробное описание возможностей расширенного поиска (описание операторов, подстановочных знаков и диапазонов) движка Национального геопортала можно найти в официальной документации **[Elasticsearch - Query String Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)**
 
 7. Результаты поиска отображаются на вкладке **Поиск**, которая позволяет фильтровать и изучать записи.
 

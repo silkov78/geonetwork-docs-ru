@@ -117,7 +117,7 @@ This section describes how an administrator can configure the different maps in 
 ### External viewer
 
 -   **Use an external viewer**: This option allows a third party mapping application to be used in place of the default GeoNetwork map. In this case, most of the settings below will no longer be used.
--   **Allow 3D mode**: If enabled, the user has the option to switch to 3D mode in the main map (see [Quick start](../../user-guide/quick-start/index.md)).
+-   **Allow 3D mode**: If enabled, the user has the option to switch to 3D mode in the main map (see [Navigation Toolbar](../../user-guide/map/navigation-toolbar.md#3d-navigation)).
 -   **Allow users to save maps as metadata record**: This option enables users to save layers and base maps configuration as a record in the catalog. Optionally users can add a title and an abstract.
 -   **Export map as image**: If enabled, users can export the map as an image but requires CORS to be enabled on any external WMS services displayed on the map. This option is disabled by default to avoid issues with WMS layers.
 

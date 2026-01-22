@@ -122,7 +122,7 @@ Examples:
 
 -   [NGR National Georegister](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?any=atom&fast=index), [Statistics Netherlands Land Use 2015 ATOM](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a657f732-e1b3-4638-9933-67cab10d9081)
 
-The catalog also provides the capability to produce ATOM feeds for services and datasets from metadata records. To enable this, check the ATOM API (see [OpenSearch and INSPIRE ATOM](../../api/opensearch.md)). A GML dataset can be exposed using the following encoding in order to be published in a dataset ATOM feed:
+The catalog also provides the capability to produce ATOM feeds for services and datasets from metadata records. To enable this, check the ATOM API (see [OpenSearch and INSPIRE ATOM](https://docs.geonetwork-opensource.org/4.4/api/opensearch/)). A GML dataset can be exposed using the following encoding in order to be published in a dataset ATOM feed:
 
 ``` xml
 <gmd:transferOptions>

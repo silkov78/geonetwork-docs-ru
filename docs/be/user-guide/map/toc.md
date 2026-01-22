@@ -161,17 +161,17 @@
 
 * **Наблізіць да экстэнту выбранага слоя** <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: каб наблізіць карту да экстэнту слоя
 
-* Атрымаць доступ да [Наладак выбранага слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/>
+* Атрымаць доступ да [Наладак выбранага слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/>
 
-* [Усталяваць фільтр](filtering-layers.md#filtering-layers) для гэтага слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
+* [Усталяваць фільтр](filtering-layers.md) для гэтага слоя <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/>
 
 * Атрымаць доступ да [Табліцы атрыбутаў](attributes-table.md) <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/>
 
 * **Выдаліць** выбраны слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
-* [Стварыць віджэты](widgets.md#widgets) для выбранага слоя <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
+* [Стварыць віджэты](widgets.md) для выбранага слоя <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
 
-* [Экспартаваць](export-data.md#export-layer-data) даныя выбранага слоя <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
+* [Экспартаваць](export-data.md) даныя выбранага слоя <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
 
 * Адкрыць **Метаданыя слоя** <img src="../img/button/info_button.jpg" class="ms-docbutton"/> (калі наладжана), каб атрымаць метаданыя слоя з аддаленай крыніцы каталога.
 
