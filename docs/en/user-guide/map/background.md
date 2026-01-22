@@ -14,7 +14,7 @@ For example choosing *OpenTopoMap*, the map background will change like in the f
 
 <img src="../img/background/back-selector.jpg" class="ms-docimage"/>
 
-If the user has editing permissions on the map (independently on the role, see [Resource Properties](resources-properties.md#resource-properties) section for more information about permissions), it is also possible to add, edit or remove backgrounds.
+If the user has editing permissions on the map, it is also possible to add, edit or remove backgrounds.
 
 ## Add background
 

@@ -68,11 +68,11 @@ Once a measure is drawn, it is possible to add it as a layer through the <img sr
 
 ## Add measure as annotation
 
-Once a measure is drawn, it is possible to add it as an [Annotation](annotations.md#add-new-annotation) through the <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/> button. The following panel opens:
+Once a measure is drawn, it is possible to add it as an [Annotation](annotations.md) through the <img src="../img/button/add-as-annotation.jpg" class="ms-docbutton"/> button. The following panel opens:
 
 <img src="../img/measure/add-as-annotation-ex.jpg" class="ms-docimage"/>
 
-From this step the creation process is the same described in the [Annotations section](annotations.md#add-new-annotation).
+From this step the creation process is the same described in the [Annotations section](annotations.md).
 
 ## Measurement on the 3D navigation
 

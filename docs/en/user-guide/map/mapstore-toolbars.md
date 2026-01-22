@@ -205,7 +205,7 @@ In particular, with these options it is possible to:
         - **Specific UTC Date-Time**: to define a precise UTC date and time for the light source. When selected, a date-time picker appears to customize a daily time more in line with the one of the visualized data source in map. An example could be the following:
         <video class="ms-docimage" style="max-width:600px;" controls><source src="../img/menu-bar/date-time-picker.mp4"/></video>
 
-* See the **About this map** panel by clicking the <img src="../img/button/details2.jpg" class="ms-docbutton"/> button, when [Details](resources-properties.md#details) are present
+* See the **About this map** panel by clicking the <img src="../img/button/details2.jpg" class="ms-docbutton"/> button
 
 * Open the [MapStore Documentation](https://mapstore.readthedocs.io/en/latest/) by clicking the <img src="../img/button/doc2.jpg" class="ms-docbutton"/> button
 

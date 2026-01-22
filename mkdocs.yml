@@ -379,6 +379,7 @@ plugins:
               - 'Maps and Data Visualization':   
                 - user-guide/map/exploring-maps.md
                 - user-guide/map/toc.md
+                - user-guide/map/top-bar.md
                 - user-guide/map/layer-settings.md
                 - user-guide/map/filtering-layers.md
                 - user-guide/map/attributes-table.md
@@ -501,3 +502,4 @@ plugins:
                 - api/search.md
                 - customizing-application/creating-custom-view.md
                 - customizing-application/configuring-faceted-search.md
+                - customizing-application/advanced-configuration.md

@@ -8,7 +8,7 @@ In each [MapStore](https://mapstore.geosolutionsgroup.com/mapstore/#/) resource,
 
 Specifically, the user can use the **Top Bar** to:
 
-* **Login/Logout** by clicking the <img src="../img/button/logged.jpg" class="ms-docbutton"/> button (for more information see the [Managing Users and Groups](managing-users-and-groups.md) section)
+* **Login/Logout** by clicking the <img src="../img/button/logged.jpg" class="ms-docbutton"/> button
 
 * Go back to the [Homepage](https://mapstore.geosolutionsgroup.com/mapstore/#/) by clicking the <img src="../img/button/home-page-icon.jpg" class="ms-docbutton"/> button
 
@@ -26,6 +26,6 @@ Specifically, the user can use the **Top Bar** to:
 
 * **Delete Map** in order to delete the current map by clicking the <img src="../img/button/delete2.jpg" class="ms-docbutton"/> button
 
-* [Open properties](resources-properties.md) panel of the map
+* Open **properties panel** of the map
 
 * View the **Name** of the map
