@@ -217,11 +217,11 @@
 
       - Стварэння лакалізаванага вываду для запытаў GetFeatureInfo (шаблон freemarker павінен быць правільна наладжаны для атрымання [лакалі з запыту](https://docs.geoserver.org/stable/en/user/tutorials/freemarker.html))
 
-Пры ўключэнні гэтай опцыі ўсе слаі, дададзеныя на карту з гэтай крыніцы каталога, будуць лакалізаваны, як апісана вышэй (гэту наладку можна зноў змяніць для кожнага асобнага слоя, адкрыўшы [Наладкі слоя](layer-settings.md#наладкі-слоя) у Панэлі зместу).
+Пры ўключэнні гэтай опцыі ўсе слаі, дададзеныя на карту з гэтай крыніцы каталога, будуць лакалізаваны, як апісана вышэй (гэту наладку можна зноў змяніць для кожнага асобнага слоя, адкрыўшы [Наладкі слоя](layer-settings.md) у Панэлі зместу).
 
 * *Усталяваць межы бачнасці*: даступна толькі для слаёў WMS з крыніц каталога тыпу CSW або WMS. Калі сцяжок усталяваны і ў WMS Capabilities прысутнічаюць абмежаванні па маштабе (напрыклад, MinScaleDenominator і/або MaxScaleDenominator), яны будуць аўтаматычна прыменены да наладак слоя, калі слой дадаецца на карту з гэтай крыніцы.
 
-* *Адзіны тайл* (толькі для службы WMS): калі сцяжок усталяваны, слаі, загружаныя з адпаведнай крыніцы каталога, адлюстроўваюцца як адзін тайл. Для слаёў, ужо загружаных на карту, гэту опцыю можна адключыць з дапамогай інструмента [Наладкі слоя](layer-settings.md#наладкі-слояy), як звычайна.
+* *Адзіны тайл* (толькі для службы WMS): калі сцяжок усталяваны, слаі, загружаныя з адпаведнай крыніцы каталога, адлюстроўваюцца як адзін тайл. Для слаёў, ужо загружаных на карту, гэту опцыю можна адключыць з дапамогай інструмента [Наладкі слоя](layer-settings.md), як звычайна.
 
 * *Дазволіць небяспечныя слаі*: калі ўключана, дазваляе выкарыстоўваць небяспечныя URL-адрасы каталогаў (толькі http). Даданне слаёў з крыніц WMS з гэтай актыўнай опцыяй таксама прымусіць слой выкарыстоўваць проксі для ўсіх запытаў, абыходзячы абмежаванне браўзера на змешаны кантэнт.
 
@@ -359,7 +359,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
     У цяперашні час для слаёў 3D Tiles даступныя наступныя магчымасці інструментаў:
 
     * *Наблізіць да экстэнту абранага слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для набліжэння карты да экстэнту слоя
-    * Доступ да [Наладак слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#general-information), опцый [Адлюстравання](layer-settings.md#3d-tiles-layer) і [Стылю](layer-settings.md#styling-of-3d-tiles-layer)
+    * Доступ да [Наладак слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#агульная-інфармацыя), опцый [Адлюстравання](layer-settings.md#слой-3d-tiles) і [Стылю](layer-settings.md#стылізацыя-слоя-3d-tiles)
     * *Выдаліць* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог COG
@@ -401,7 +401,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
     У цяперашні час для слаёў COG даступныя наступныя магчымасці інструментаў:
 
     * *Наблізіць да экстэнту абранага слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для набліжэння карты да экстэнту слоя
-    * Доступ да [Наладак слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#general-information), опцый [Адлюстравання](layer-settings.md#cog-layer) і [Стылю](layer-settings.md#styling-for-cog-layer)
+    * Доступ да [Наладак слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#агульная-інфармацыя), опцый [Адлюстравання](layer-settings.md#слой-cog) і [Стылю](layer-settings.md#стылізацыя-для-слоя-cog)
     * *Выдаліць* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог мадэляў IFC
@@ -416,5 +416,5 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
     У цяперашні час для слаёў мадэляў IFC даступныя наступныя магчымасці інструментаў:
 
     * *Наблізіць да экстэнту абранага слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для набліжэння карты да экстэнту слоя
-    * Доступ да [Наладак слоя](layer-settings.md#layer-settings) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#general-information) і опцый [Адлюстравання](layer-settings.md#ifc-layer)
+    * Доступ да [Наладак слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для прагляду/рэдагавання [Агульнай інфармацыі](layer-settings.md#агульная-інфармацыя) і опцый [Адлюстравання](layer-settings.md#слой-ifc)
     * *Выдаліць* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>

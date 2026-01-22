@@ -86,7 +86,7 @@
 
 * Змяніць слой трасы з дапамогай кнопкі <img src="../img/button/timeline-playback-settings-button.jpg" class="ms-docbutton"/> (па змаўчанні слой аўтаматычна супадае з першай вызначанай трасай)
 
-* Адкрыць [*Панэль запытаў*](filtering-layers.md#query-panel) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
+* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
 
 * Вызначыць **Атрыбут X** дыяграмы (або **Групаваць па** для *Кругавых дыяграм*), выбраўшы з палёў слоя
 
