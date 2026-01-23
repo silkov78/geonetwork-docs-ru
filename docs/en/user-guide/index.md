@@ -1,14 +1,13 @@
 # User Guide
 
-Operational user-guide describing the editing, review and management of records.
+The following sections describe how to create, manage, edit, and validate records in the Metadata Catalog.
 
--   [Quick start](quick-start/index.md)
--   [Maps and dataset visualisation](map/index.md)
--   [Describing information](describing-information/index.md)
--   [Associating resources](associating-resources/index.md)
--   [Classify information](tag-information/index.md)
--   [Publishing](publishing/index.md)
--   [Analyzing data](analyzing/index.md)
--   [Workflow](workflow/index.md)
--   [Harvesting](harvesting/index.md)
--   [Exporting records](export/index.md)
+- [Maps and Data Visualization](map/exploring-maps.md)
+- [Describing Information](describing-information/index.md)
+- [Associating Resources](associating-resources/index.md)
+- [Tag Information](tag-information/index.md)
+- [Publishing](publishing/index.md)
+- [Analyzing](analyzing/index.md)
+- [Workflow](workflow/index.md)
+- [Harvesting](harvesting/index.md)
+- [Exporting Records](export/index.md)

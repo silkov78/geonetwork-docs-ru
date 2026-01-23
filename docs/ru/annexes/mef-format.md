@@ -1,118 +1,118 @@
-# Metadata Exchange Format (MEF) {#mef_format}
+# Формат обмена метаданными (MEF) {#mef_format}
 
-## Introduction
+## Введение
 
-The metadata exchange format (MEF in short) is a specially designed file format for the purpose of metadata exchange between different platforms. A metadata exported as a MEF can be imported by any platform which is able to understand MEF. This format has been developed with GeoNetwork in mind so the information it contains is mainly related to GeoNetwork. Nevertheless, it can be used as an interoperability format between different platforms.
+Формат обмена метаданными (сокращенно MEF) — это специально разработанный файловый формат для обмена метаданными между различными платформами. Метаданные, экспортированные в формате MEF, могут быть импортированы любой платформой, способной понимать MEF. Этот формат был разработан с учетом GeoNetwork, поэтому информация, которую он содержит, в основном связана с GeoNetwork. Тем не менее, его можно использовать как формат для обеспечения совместимости между различными платформами.
 
-This format has been designed with the following needs in mind:
+Этот формат был разработан с учетом следующих потребностей:
 
-1.  Export a metadata record for backup purposes
-2.  Import a metadata record from a previous backup
-3.  Import a metadata record from a different GeoNetwork version to allow a smooth migration from one version to another.
-4.  Capture metadata plus thumbnails and any data uploaded with the metadata record.
+1.  Экспорт записи метаданных для целей резервного копирования.
+2.  Импорт записи метаданных из предыдущей резервной копии.
+3.  Импорт записи метаданных из другой версии GeoNetwork для обеспечения плавного перехода от одной версии к другой.
+4.  Сбор метаданных, а также эскизов и любых данных, загруженных вместе с записью метаданных.
 
-In the paragraphs below, some terms should be intended as follows:
+В последующих параграфах некоторые термины следует понимать следующим образом:
 
-1.  the term actor is used to indicate any system (application, service etc\...) that operates on metadata.
-2.  the term reader will be used to indicate any actor that can import metadata from a MEF file.
-3.  the term writer will be used to indicate any actor that can generate a MEF file.
+1.  Термин **актор** (actor) используется для обозначения любой системы (приложения, службы и т.д.), которая работает с метаданными.
+2.  Термин **читатель** (reader) будет использоваться для обозначения любого актора, который может импортировать метаданные из файла MEF.
+3.  Термин **писатель** (writer) будет использоваться для обозначения любого актора, который может генерировать файл MEF.
 
-## MEF v1 file format
+## Формат файла MEF v1
 
-A MEF file is simply a ZIP file which contains the following files:
+Файл MEF — это просто ZIP-файл, который содержит следующие файлы:
 
 ``` text
-Root
+Корень
  |
  +--- metadata.xml
  +--- info.xml
  +--- public
- |        +---- all public documents and thumbnails
+ |        +---- все публичные документы и эскизы
  +--- private
-           +---- all private documents and thumbnails
+           +---- все приватные документы и эскизы
 ```
 
-1.  *metadata.xml*: this file contains the metadata itself, in XML format. The text encoding of the metadata (eg. UTF-8) is specified in the XML declaration.
-2.  *info.xml*: this is a special XML file which contains information related to the metadata (metadata about the metadata). Examples of the information in the info.xml file are: creation date, modification date, privileges This information is needed by GeoNetwork.
-3.  *public*: this is a directory used to store the metadata thumbnails and other public files. There are no restrictions on the image format but it is strongly recommended to use the portable network graphics (PNG), JPEG or GIF format.
-4.  *private*: this is a directory used to store all data (maps, shape files etc\...) uploaded with the metadata in the GeoNetwork editor. Files in this directory are *private* in the sense that authorisation is required to access them. There are no restrictions on the file types that can be stored into this directory.
+1.  *metadata.xml*: этот файл содержит сами метаданные в формате XML. Кодировка текста метаданных (например, UTF-8) указывается в XML-декларации.
+2.  *info.xml*: это специальный XML-файл, который содержит информацию, относящуюся к метаданным (метаданные о метаданных). Примеры информации в файле info.xml: дата создания, дата изменения, права доступа. Эта информация необходима для GeoNetwork.
+3.  *public*: это каталог, используемый для хранения эскизов метаданных и других публичных файлов. Ограничений на формат изображений нет, но настоятельно рекомендуется использовать форматы Portable Network Graphics (PNG), JPEG или GIF.
+4.  *private*: это каталог, используемый для хранения всех данных (карт, шейп-файлов и т.д.), загруженных вместе с метаданными в редакторе GeoNetwork. Файлы в этом каталоге являются *приватными* в том смысле, что для доступа к ним требуется авторизация. Ограничений на типы файлов, которые могут храниться в этом каталоге, нет.
 
-Any other file or directory present in the MEF file should be ignored by readers that don't recognise them. This allows actors to add custom extensions to the MEF file.
+Любые другие файлы или каталоги, присутствующие в файле MEF, должны игнорироваться читателями, которые их не распознают. Это позволяет акторам добавлять в файл MEF пользовательские расширения.
 
-A MEF file can have empty public and private folders depending upon the export format, which can be:
+Файл MEF может иметь пустые папки `public` и `private` в зависимости от формата экспорта, который может быть:
 
--   *simple*: both public and private are omitted.
--   *partial*: only public files are provided.
--   *full*: both public and private files are provided.
+-   *простой* (simple): и `public`, и `private` опущены.
+-   *частичный* (partial): предоставляются только публичные файлы.
+-   *полный* (full): предоставляются как публичные, так и приватные файлы.
 
-It is recommended to use the .mef extension when naming MEF files.
+При именовании файлов MEF рекомендуется использовать расширение `.mef`.
 
-## MEF v2 file format
+## Формат файла MEF v2
 
-MEF version 2 support the following:
+MEF версии 2 поддерживает следующее:
 
--   multi-metadata support: more than one metadata record and data can be stored in a single MEF file.
--   multi-schema support: be able to store in a single MEF n formats (eg. for an ISO profile, also store a version of that record in the base ISO19115/ISO19139 schema).
+-   поддержка нескольких метаданных: в одном файле MEF может храниться более одной записи метаданных и данных.
+-   поддержка нескольких схем: возможность хранить в одном MEF-файле `n` форматов (например, для профиля ISO также хранить версию этой записи в базовой схеме ISO19115/ISO19139).
 
-Current export services that create MEF files from a metadata record with related records (eg. paent, feature catalog etc), can include these related metadata records in the MEF.
+Текущие службы экспорта, которые создают файлы MEF из записи метаданных со связанными записями (например, родительской, каталогом объектов и т.д.), могут включать эти связанные записи метаданных в MEF.
 
-MEF v2 format structure is the following:
+Структура формата MEF v2 следующая:
 
 ``` text
-Root
+Корень
   |
  + 0..n metadata
      |
      +--- metadata
      |     +--- metadata.xml
-     |     +--- (optional) metadata.iso19139.xml
+     |     +--- (опционально) metadata.iso19139.xml
      +--- info.xml
      +--- applschema
-     |     +--- (optional) metadata.xml (ISO19110 Feature Catalog)
+     |     +--- (опционально) metadata.xml (Каталог объектов ISO19110)
      +--- public
-     |     +---- all public documents and thumbnails
+     |     +---- все публичные документы и эскизы
      +--- private
-           +---- all private documents and thumbnails
+           +---- все приватные документы и эскизы
 ```
 
-!!! note
+!!! примечание
 
-    metadata.iso19139.xml is generated by GeoNetwork actors on export if the metadata record in metadata.xml is an ISO19115/19139 profile. On import, this record may be selected for loading if the ISO19115/19139 profile is not present.
+    `metadata.iso19139.xml` генерируется акторами GeoNetwork при экспорте, если запись метаданных в `metadata.xml` является профилем ISO19115/19139. При импорте эта запись может быть выбрана для загрузки, если профиль ISO19115/19139 отсутствует.
 
 
-## The info.xml file
+## Файл info.xml
 
-This file contains general information about a metadata. It must have an info root element with a mandatory version attribute. This attribute must be in the X.Y form, where X represents the major version and Y the minor one. The purpose of this attribute is to allow future changes of this format maintaining compatibility with older readers. The policy behind the version is this:
+Этот файл содержит общую информацию о метаданных. Он должен иметь корневой элемент `info` с обязательным атрибутом `version`. Этот атрибут должен быть в формате X.Y, где X представляет основную версию, а Y — минорную. Цель этого атрибута — позволить в будущем изменять этот формат, сохраняя совместимость со старыми читателями. Политика в отношении версий следующая:
 
-1.  A change to Y means a minor change. All existing elements in the previous version must be left unchanged: only new elements or attributes may be added. A reader capable of reading version X.Y is also capable of reading version X.Y' with Y'>Y.
-2.  A change to X means a major change. Usually, a reader of version X.Y is not able to read version X'.Y with X'>X.
+1.  Изменение Y означает незначительное изменение. Все существующие элементы в предыдущей версии должны оставаться без изменений: могут быть добавлены только новые элементы или атрибуты. Читатель, способный читать версию X.Y, также способен читать версию X.Y' при Y'>Y.
+2.  Изменение X означает крупное изменение. Обычно читатель версии X.Y не сможет прочитать версию X'.Y при X'>X.
 
-The root element must have the following children:
+Корневой элемент должен иметь следующие дочерние элементы:
 
-1.  *general*: a container for general information. It must have the following children:
-    -   *uuid*: this is the universally unique identifier assigned to the metadata and must be a valid UUID. This element is optional and, when omitted, the reader should generate one. A metadata without a UUID can be imported several times into the same system without breaking uniqueness constraints. When missing, the reader should also generate the siteId value.
-    -   *createDate*: This date indicates when the metadata was created.
-    -   *changeDate*: This date keeps track of the most recent change to the metadata.
-    -   *siteId*: This is an UUID that identifies the actor that created the metadata and must be a valid UUID. When the UUID element is missing, this element should be missing too. If present, it will be ignored.
-    -   *siteName*: This is a human readable name for the actor that created the metadata. It must be present only if the siteId is present.
-    -   *schema*: The name of the schema for the metadata record in metadata.xml. When the MEF is imported by a GeoNetwork actor, this name should be the name of a metadata schema handled by the actor (eg. iso19139). If the GeoNetwork actor does not have such a schema, it may try and select another metadata with a schema that is present (eg. the metadata in metadata-iso19139.xml could be loaded because the iso19139 schema is present).
-    -   *format*: Indicates the MEF export format. The element's value must belong to the following set: { *simple*, *partial*, *full* }.
-    -   *localId*: This is an optional element. If present, indicates the id used locally by the sourceId actor to store the metadata. Its purpose is just to allow the reuse of the same local id when reimporting a metadata.
-    -   *isTemplate*: A boolean field that indicates if this metadata is a template used to create new ones. There is no real distinction between a real metadata and a template but some actors use it to allow fast metadata creation. The value must be: { *true*, *false* }.
-    -   *rating*: This is an optional element. If present, indicates the users' rating of the metadata ranging from 1 (a bad rating) to 5 (an excellent rating). The special value 0 means that the metadata has not been rated yet. Can be used to sort search results.
-    -   *popularity*: Another optional value. If present, indicates the popularity of the metadata. The value must be positive and high values mean high popularity. The criteria used to set the popularity is left to the writer. Its main purpose is to provide a metadata ordering during a search.
-2.  *categories*: a container for categories associated to this metadata. A category is just a name, like 'audio-video' that classifies the metadata to allow an easy search. Each category is specified by a category element which must have a name attribute. This attribute is used to store the category's name. If there are no categories, the categories element will be empty.
-3.  *privileges*: a container for privileges associated to this metadata. Privileges are operations that a group (which represents a set of users) can do on a metadata and are specified by a set of group elements. Each one of these, has a mandatory name attribute to store the group's name and a set of operation elements used to store the operations allowed on the metadata. Each operation element must have a name attribute which value must belong to the following set: { *view*, *download*, *notify*, *dynamic*, *featured* }. If there are no groups or the actor does not have the concept of group, the privileges element will be empty. A group element without any operation element must be ignored by readers.
-4.  *public*: All metadata thumbnails (and any other public file) must be listed here. This container contains a file element for each file. Mandatory attributes of this element are name, which represents the file's name and changeDate, which contains the date of the latest change to the file. The public element is optional but, if present, must contain all the files present in the metadata's public directory and any reader that imports these files must set the latest change date on these using the provided ones. The purpose of this element is to provide more information in the case the MEF format is used for metadata harvesting.
-5.  *private*: This element has the same purpose and structure of the public element but is related to maps and all other private files.
+1.  *general*: контейнер для общей информации. Он должен иметь следующие дочерние элементы:
+    -   *uuid*: это универсальный уникальный идентификатор, присвоенный метаданным, и он должен быть действительным UUID. Этот элемент является необязательным, и, если он опущен, читатель должен его сгенерировать. Метаданные без UUID могут быть импортированы несколько раз в одну и ту же систему без нарушения ограничений уникальности. При отсутствии `uuid` читатель также должен сгенерировать значение `siteId`.
+    -   *createDate*: эта дата указывает, когда были созданы метаданные.
+    -   *changeDate*: эта дата отслеживает последнее изменение метаданных.
+    -   *siteId*: это UUID, который идентифицирует актора, создавшего метаданные, и должен быть действительным UUID. Если элемент `uuid` отсутствует, этот элемент также должен отсутствовать. Если он присутствует, он будет проигнорирован.
+    -   *siteName*: это удобочитаемое имя актора, создавшего метаданные. Он должен присутствовать только в том случае, если присутствует `siteId`.
+    -   *schema*: название схемы для записи метаданных в `metadata.xml`. Когда MEF импортируется актором GeoNetwork, это имя должно быть названием схемы метаданных, обрабатываемой актором (например, `iso19139`). Если у актора GeoNetwork нет такой схемы, он может попытаться выбрать другие метаданные со схемой, которая присутствует (например, метаданные в `metadata-iso19139.xml` могут быть загружены, потому что схема `iso19139` присутствует).
+    -   *format*: указывает формат экспорта MEF. Значение элемента должно принадлежать следующему набору: { *simple*, *partial*, *full* }.
+    -   *localId*: это необязательный элемент. Если он присутствует, он указывает идентификатор, используемый локально актором `sourceId` для хранения метаданных. Его цель — просто позволить повторно использовать тот же локальный идентификатор при повторном импорте метаданных.
+    -   *isTemplate*: логическое поле, указывающее, являются ли эти метаданные шаблоном для создания новых. Реального различия между настоящими метаданными и шаблоном нет, но некоторые акторы используют его для быстрого создания метаданных. Значение должно быть: { *true*, *false* }.
+    -   *rating*: это необязательный элемент. Если он присутствует, он указывает пользовательский рейтинг метаданных в диапазоне от 1 (плохая оценка) до 5 (отличная оценка). Специальное значение 0 означает, что метаданные еще не были оценены. Может использоваться для сортировки результатов поиска.
+    -   *popularity*: еще одно необязательное значение. Если оно присутствует, оно указывает на популярность метаданных. Значение должно быть положительным, и высокие значения означают высокую популярность. Критерии, используемые для определения популярности, остаются на усмотрение писателя. Его основная цель — обеспечить упорядочивание метаданных при поиске.
+2.  *categories*: контейнер для категорий, связанных с этими метаданными. Категория — это просто название, например, 'audio-video', которое классифицирует метаданные для облегчения поиска. Каждая категория задается элементом `category`, который должен иметь атрибут `name`. Этот атрибут используется для хранения названия категории. Если категорий нет, элемент `categories` будет пустым.
+3.  *privileges*: контейнер для прав доступа, связанных с этими метаданными. Права доступа — это операции, которые группа (представляющая набор пользователей) может выполнять с метаданными, и они задаются набором элементов `group`. Каждый из них имеет обязательный атрибут `name` для хранения названия группы и набор элементов `operation`, используемых для хранения разрешенных операций с метаданными. Каждый элемент `operation` должен иметь атрибут `name`, значение которого должно принадлежать следующему набору: { *view*, *download*, *notify*, *dynamic*, *featured* }. Если групп нет или у актора нет понятия группы, элемент `privileges` будет пустым. Элемент `group` без каких-либо элементов `operation` должен игнорироваться читателями.
+4.  *public*: все эскизы метаданных (и любые другие публичные файлы) должны быть перечислены здесь. Этот контейнер содержит элемент `file` для каждого файла. Обязательными атрибутами этого элемента являются `name`, который представляет имя файла, и `changeDate`, который содержит дату последнего изменения файла. Элемент `public` является необязательным, но, если он присутствует, он должен содержать все файлы, присутствующие в публичном каталоге метаданных, и любой читатель, который импортирует эти файлы, должен установить для них дату последнего изменения, используя предоставленные значения. Цель этого элемента — предоставить больше информации в случае, если формат MEF используется для сбора метаданных.
+5.  *private*: этот элемент имеет ту же цель и структуру, что и элемент `public`, но относится к картам и всем другим приватным файлам.
 
-Any other element or attribute should be ignored by readers that don't understand them. This allows actors to add custom attributes or subtrees to the XML.
+Любой другой элемент или атрибут должен игнорироваться читателями, которые их не понимают. Это позволяет акторам добавлять в XML пользовательские атрибуты или поддеревья.
 
-### Date format {#info_xml}
+### Формат даты {#info_xml}
 
-Unless differently specified, all dates in this file must be in the ISO/8601 format. The pattern must be ``YYYY-MM-DDTHH:mm:SS`` and the timezone should be the local one.
+Если не указано иное, все даты в этом файле должны быть в формате ISO/8601. Шаблон должен быть ``YYYY-MM-DDTHH:mm:SS``, а часовой пояс должен быть локальным.
 
-Example of info file:
+Пример файла `info.xml`:
 
 ``` xml
 <info version="1.0">

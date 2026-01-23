@@ -1,25 +1,28 @@
 ---
 hide:
-  - navigation
+- navigation
 ---
 
-# GeoNetwork 4.4 {#toc}
+Welcome to the main page of the **documentation for working with the Metadata Catalog of the National Geoportal of the Republic of Belarus**. This documentation is organized into separate guides targeted at different audiences.
 
-Welcome to GeoNetwork. This documentation is organized into specific guides targeting different audience. 
+<div class="grid cards" markdown style="grid-template-columns: 1fr;">
 
-<div class="grid cards" markdown>
+- :fontawesome-solid-signs-post: [Online Help](help/index.md)
 
+---
 
-:fontawesome-solid-circle-info:   [Online Help](../help/index.md)
+Help and a brief description for catalog visitors.
 
-: Online help for visitors to the catalogue (no login required).
+- :fontawesome-solid-person-circle-question: [User Guide](user-guide/index.md)
 
-:fontawesome-solid-person-circle-question:   [User Guide](../user-guide/index.md)
+---
 
-: Operational user-guide describing the editing, review and management of records (requires-login).
+User guide describing editing, validating, and managing records (some features are only available to registered users).
 
-:fontawesome-solid-screwdriver-wrench:   [Maintainer Guide](../maintainer-guide/index.md)
+- :fontawesome-regular-bookmark: [Administration](administrator-guide/index.md)
 
-: Installation, setup and update instructions
+---
+
+Instructions for installing, configuring, and other GeoNetwork administration details (for registered users with administrator rights).
 
 </div>

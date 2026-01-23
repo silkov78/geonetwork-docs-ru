@@ -18,7 +18,7 @@ You can assign templates to limited groups, so only these groups can use the tem
 
 The `Metadata and Templates` page in the Administration page displays all available standards.
 
-![](../../install-guide/img/metadata-and-templates.png)
+![](img/metadata-and-templates.png)
 
 If you have provided these in the schema plugin, using this page, users can:
 
@@ -27,7 +27,7 @@ If you have provided these in the schema plugin, using this page, users can:
 
 **Note**: You have to be logged in as an administrator to access this page and function.
 
-![](../../install-guide/img/templates.png)
+![](img/templates.png)
 
 ## Importing templates
 
@@ -52,4 +52,4 @@ In a template, you should:
 
 The main goal is to guide editor work without requiring too much knowledge of the standard use.
 
-For further customization, you could improve the schema plugin by defining custom documentation, recommended values, \... (see [Implementing schema plugins](../../customizing-application/implementing-a-schema-plugin.md)) or creating custom view (see [Customizing editor](../../customizing-application/editor-ui/creating-custom-editor.md)).
+For further customization, you could improve the schema plugin by defining custom documentation, recommended values (see [Implementing schema plugins](https://docs.geonetwork-opensource.org/4.4//customizing-application/implementing-a-schema-plugin)) or creating custom view (see [Customizing editor](https://docs.geonetwork-opensource.org/4.4/customizing-application/editor-ui/creating-custom-editor)).

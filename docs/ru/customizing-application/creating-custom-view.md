@@ -1,13 +1,13 @@
-# Customizing metadata views {#creating-custom-view}
+# Настройка представлений метаданных {#creating-custom-view}
 
-GeoNetwork facilitates developers to easily change or add a metadata view. A User can change the view to his/her needs.
+GeoNetwork позволяет разработчикам легко изменять или добавлять представления метаданных. Пользователь может изменить представление в соответствии со своими потребностями.
 
-By default the initial view is an AngularJS view on the results returned from the search service. Therefore the view can only contain the fields from the Lucene Index. If you require more fields, you can either add fields to the index or don't use the AngularJS view. This view is defined in `web-ui/src/main/resources/catalog/views/default/templates/recordView.html`.
+По умолчанию начальное представление — это AngularJS-представление результатов, возвращаемых службой поиска. Поэтому это представление может содержать только поля из индекса Lucene. Если вам требуются дополнительные поля, вы можете либо добавить поля в индекс, либо не использовать AngularJS-представление. Это представление определено в файле `web-ui/src/main/resources/catalog/views/default/templates/recordView.html`.
 
-Metadata views are called 'formatters'. They are located in the schema-plugin related to the metadata that you are formatting. Formatters use either XSLT or Groovy to transform the XML to the required format (html, xml, pdf, json).
+Представления метаданных называются "форматтерами". Они располагаются в schema-plugin, связанном с метаданными, которые вы форматируете. Форматтеры используют либо XSLT, либо Groovy для преобразования XML в требуемый формат (html, xml, pdf, json).
 
-A formatter can be updated from the web interface in the `admin console`, `metadata and templates`, tab 'formatters'. On this page you can upload, change and preview formatters.
+Форматтер можно обновить через веб-интерфейс в `консоли администратора`, на вкладке `метаданные и шаблоны`, `форматтеры`. На этой странице вы можете загружать, изменять и просматривать форматтеры.
 
 ![](img/formatter.png)
 
-After having created a new formatter you will have to update your application code, so the new formatter-output can be visualised from your application. If the goal of the formatter is to introduce a new html view on metadata, then you can add a reference to it in `web-ui/src/main/resources/catalog/views/default/config.js` (searchSettings.formatter.list).
+После создания нового форматтера вам нужно будет обновить код вашего приложения, чтобы вывод нового форматтера мог быть визуализирован. Если цель форматтера — ввести новое HTML-представление метаданных, вы можете добавить ссылку на него в файл `web-ui/src/main/resources/catalog/views/default/config.js` (в `searchSettings.formatter.list`).

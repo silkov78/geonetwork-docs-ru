@@ -116,7 +116,7 @@ URL | URL | URL файла, созданный после загрузки в к
 
 - [NGR National Georegister](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?any=atom&fast=index), [Statistics Netherlands Land Use 2015 ATOM](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a657f732-e1b3-4638-9933-67cab10d9081).
 
-Каталог также предоставляет возможность создавать ATOM-каналы для сервисов и наборов данных на основе записей метаданных. Чтобы сделать это, проверьте ATOM API (см. [OpenSearch and INSPIRE ATOM](../../api/opensearch.md)). Набор данных GML может быть представлен в следующей кодировке, чтобы быть опубликованным в ленте данных ATOM:
+Каталог также предоставляет возможность создавать ATOM-каналы для сервисов и наборов данных на основе записей метаданных. Набор данных GML может быть представлен в следующей кодировке, чтобы быть опубликованным в ленте данных ATOM:
 
 ``` xml
 <gmd:transferOptions>

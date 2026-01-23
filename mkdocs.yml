@@ -1,17 +1,13 @@
-# Project information
-site_name: GeoNetwork opensource
-site_description: GeoNetwork catalogue for listing, searching and reviewing records.
+# Информация о проекте
+site_name: 'Справочная документация'
+site_description: 'Добро пожаловать на главную страницу справочной документации по работе с Каталогом метаданных Национального геопортала Республики Беларусь. Эта документация организована в виде отдельных руководств, ориентированных на различную аудиторию.'
 site_dir: target/html
-#site_url: https://docs.geonetwork-opensource.org/
-site_url: https://silkov78.github.io/geonetwork-html-ru/
+site_url: https://docs.geonetwork-opensource.org/
 
-# Repository
-repo_name: core-geonetwork
-repo_url: https://github.com/geonetwork/core-geonetwork
-edit_uri: edit/main/docs/manual/docs
+# Копирайт
+copyright: Все права защищены &copy; 2001 - 2024 ФАО-ООН и другие
 
-# Copyright
-copyright: Copyright &copy; 2001 - 2023 FAO-UN and others
+#docs_dir: docs/
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -19,12 +15,12 @@ extra_css:
 # Configuration
 theme:
   name: material
-  language: en
   custom_dir: overrides
-  logo: assets/images/geonetwork-logo.svg
-  favicon: assets/images/geonetwork-logo.png
+  logo: assets/images/geoportal_logo.svg
+  favicon: assets/images/geoportal_logo_favicon.png
   icon:
     repo: fontawesome/brands/github
+  font: false
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -40,166 +36,227 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - content.action.view
-    - content.action.edit
-    - content.code.copy
-    - content.tabs.link
-    - navigation.tabs
+    - toc.follow
     - navigation.tracking
+    - navigation.top
+    - navigation.tabs
     - navigation.prune
     - navigation.indexes
-    - toc.follow
-    - navigation.top
     - navigation.footer
+    - header.autohide
+    - content.tabs.link
+    - content.code.copy
+    - content.action.view
+    - content.action.edit
     - announce.dismiss
 
-# Page tree
-nav:
-  - 'GeoNetwork': index.md
-  - 'Help':
-    - help/index.md
-    - 'Home page':
-      - help/home/index.md
-    - 'Search page':
-      - help/search/index.md
-    - 'Detail page':
-      - help/record/index.md
-    - 'Map page':
-      - help/map/index.md
-      - help/map/visualize/index.md
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
-  - 'User Guide':
+# Русская навигация
+nav:
+  - 'Главная': index.md
+  - 'Онлайн-справка':
+    - help/index.md
+    - 'Главная страница каталога':
+      - help/home/index.md
+    - 'Страница поиска':
+      - help/search/index.md
+    - 'Просмотр записи':
+      - help/record/index.md
+    - 'Страница карты':
+      - help/map/index.md
+  - 'Руководство пользователя':
     - user-guide/index.md
-    - user-guide/quick-start/index.md
-    - user-guide/map/index.md
-    - 'Describing Information':
+    - 'Карты и визуализация данных':   
+      - user-guide/map/exploring-maps.md
+      - user-guide/map/toc.md
+      - user-guide/map/layer-settings.md
+      - user-guide/map/filtering-layers.md
+      - user-guide/map/attributes-table.md
+      - user-guide/map/widgets.md
+      - user-guide/map/export-data.md
+      - user-guide/map/mapstore-toolbars.md
+      - user-guide/map/print.md
+      - user-guide/map/import.md
+      - user-guide/map/catalog.md
+      - user-guide/map/measure.md
+      - user-guide/map/annotations.md
+      - user-guide/map/map-views.md
+      - user-guide/map/longitudinal-profile.md
+      - user-guide/map/geoprocessing-tool.md
+      - user-guide/map/navigation-toolbar.md
+      - user-guide/map/background.md
+      - user-guide/map/timeline.md                
+      - user-guide/map/footer.md
+      - user-guide/map/configure-map.md
+    - 'Работа с записями метаданных':
       - user-guide/describing-information/index.md
-      - user-guide/describing-information/creating-metadata.md
-      - user-guide/describing-information/deleting-metadata.md
-      - user-guide/describing-information/editing-metadata.md
-      - user-guide/describing-information/importing-metadata.md
-      - user-guide/describing-information/inspire-editing.md
       - user-guide/describing-information/managing-templates.md
+      - user-guide/describing-information/creating-metadata.md
+      - user-guide/describing-information/importing-metadata.md
+      - user-guide/describing-information/editing-metadata.md
+      - user-guide/describing-information/deleting-metadata.md
       - user-guide/describing-information/multilingual-editing.md
-    - 'Associating Resources':
+      - user-guide/describing-information/inspire-editing.md
+    - 'Связывание со сторонними ресурсами':
       - user-guide/associating-resources/index.md
-      - user-guide/associating-resources/cite.md
+      - 'Связывание с документами':
+        - user-guide/associating-resources/linking-documents.md
+        - user-guide/associating-resources/using-filestore.md
+        - user-guide/associating-resources/linking-thumbnail.md
+        - user-guide/associating-resources/linking-online-resources.md
+      - 'Связывание с другими записями':
+        - user-guide/associating-resources/linking-records.md
+        - user-guide/associating-resources/linking-parent.md
+        - user-guide/associating-resources/linking-source.md
+        - user-guide/associating-resources/linking-dataset-or-service.md
+        - user-guide/associating-resources/linking-feature-catalog.md
+        - user-guide/associating-resources/linking-others.md
+        - user-guide/associating-resources/linking-remote-records.md
       - user-guide/associating-resources/doi.md
-      - user-guide/associating-resources/linking-dataset-or-service.md
-      - user-guide/associating-resources/linking-documents.md
-      - user-guide/associating-resources/linking-feature-catalog.md
-      - user-guide/associating-resources/linking-online-resources.md
-      - user-guide/associating-resources/linking-others.md
-      - user-guide/associating-resources/linking-parent.md
-      - user-guide/associating-resources/linking-records.md
-      - user-guide/associating-resources/linking-remote-records.md
-      - user-guide/associating-resources/linking-source.md
-      - user-guide/associating-resources/linking-thumbnail.md
-      - user-guide/associating-resources/using-filestore.md
-    - 'Tag information':
+      - user-guide/associating-resources/cite.md
+    - 'Использование тегов':
       - user-guide/tag-information/index.md
       - user-guide/tag-information/tagging-with-categories.md
       - user-guide/tag-information/tagging-with-keywords.md
-    - 'Publishing':
+    - 'Публикация':
       - user-guide/publishing/index.md
       - user-guide/publishing/managing-privileges.md
       - user-guide/publishing/restricting-information-to-metadata-sections.md
       - user-guide/publishing/transferring-privileges.md
-    - 'Analyzing':
+    - 'Анализ':
       - user-guide/analyzing/index.md
       - user-guide/analyzing/data.md
       - user-guide/analyzing/metadata.md
-    - 'Workflow':
+    - 'Рабочий процесс':
       - user-guide/workflow/index.md
-      - user-guide/workflow/batchediting.md
-      - user-guide/workflow/batchupdate-from-admin.md
-      - user-guide/workflow/batchupdate-xsl.md
-      - user-guide/workflow/batchupdate.md
-      - user-guide/workflow/geopublication.md
-      - user-guide/workflow/life-cycle.md
-      - user-guide/workflow/suggestion.md
       - user-guide/workflow/validation.md
+      - user-guide/workflow/suggestion.md
+      - user-guide/workflow/life-cycle.md
+      - user-guide/workflow/geopublication.md
       - user-guide/workflow/versioning.md
-    - 'Harvesting':
+      - 'Пакетное редактирование':
+        - user-guide/workflow/batchupdate/index.md
+        - user-guide/workflow/batchediting.md
+        - user-guide/workflow/batchupdate-from-admin.md
+        - user-guide/workflow/batchupdate-xsl.md
+    - 'Сборщики данных':
       - user-guide/harvesting/index.md
       - user-guide/harvesting/harvesting-csw.md
       - user-guide/harvesting/harvesting-filesystem.md
+      - user-guide/harvesting/harvesting-geonetwork-4.md
       - user-guide/harvesting/harvesting-geonetwork.md
+      - user-guide/harvesting/harvesting-geonetwork-2.md
       - user-guide/harvesting/harvesting-geoportal.md
       - user-guide/harvesting/harvesting-oaipmh.md
       - user-guide/harvesting/harvesting-ogcwxs.md
       - user-guide/harvesting/harvesting-sde.md
+      - user-guide/harvesting/harvesting-sftp.md
       - user-guide/harvesting/harvesting-simpleurl.md
       - user-guide/harvesting/harvesting-thredds.md
       - user-guide/harvesting/harvesting-webdav.md
       - user-guide/harvesting/harvesting-wfs-features.md
+      - user-guide/harvesting/harvesting-database.md
     - user-guide/export/index.md
+  - 'Администрирование':
+    - administrator-guide/index.md
+    - 'Каталог':
+      - administrator-guide/configuring-the-catalog/index.md
+      - administrator-guide/configuring-the-catalog/system-configuration.md
+      - administrator-guide/configuring-the-catalog/user-interface-configuration.md
+      - administrator-guide/configuring-the-catalog/css-configuration.md
+      - administrator-guide/configuring-the-catalog/csw-configuration.md
+      - administrator-guide/configuring-the-catalog/portal-configuration.md
+      - administrator-guide/configuring-the-catalog/inspire-configuration.md
+      - administrator-guide/configuring-the-catalog/map-server-configuration.md
+    - 'Типы пользователей и группы':
+      - administrator-guide/managing-users-and-groups/index.md
+      - administrator-guide/managing-users-and-groups/authentication-mode.md
+      - administrator-guide/managing-users-and-groups/creating-group.md
+      - administrator-guide/managing-users-and-groups/creating-user.md
+      - administrator-guide/managing-users-and-groups/user-self-registration.md
+      - administrator-guide/managing-users-and-groups/user-reset-password.md
+    - 'Системы классификации метаданных':
+      - administrator-guide/managing-classification-systems/index.md
+      - administrator-guide/managing-classification-systems/managing-categories.md
+      - administrator-guide/managing-classification-systems/managing-directories.md
+      - administrator-guide/managing-classification-systems/managing-thesaurus.md
+    - 'Стандарты метаданных':
+      - administrator-guide/managing-metadata-standards/index.md
+      - administrator-guide/managing-metadata-standards/configure-validation.md
+      - administrator-guide/managing-metadata-standards/metadata-identifier.md
+      - administrator-guide/managing-metadata-standards/standards.md
+    - 'Дополнительная информация':
+      - annexes\mef-format.md
+      - api\search.md
+      - customizing-application\creating-custom-view.md
 
-  - 'Administration':
-      - administrator-guide/index.md
-      - 'Catalog':
-        - administrator-guide/configuring-the-catalog/index.md
-        - administrator-guide/configuring-the-catalog/system-configuration.md
-        - administrator-guide/configuring-the-catalog/user-interface-configuration.md
-        - administrator-guide/configuring-the-catalog/css-configuration.md
-        - administrator-guide/configuring-the-catalog/csw-configuration.md
-        - administrator-guide/configuring-the-catalog/portal-configuration.md
-        - administrator-guide/configuring-the-catalog/inspire-configuration.md
-        - administrator-guide/configuring-the-catalog/map-server-configuration.md
-      - 'Users and Groups':
-        - administrator-guide/managing-users-and-groups/index.md
-        - administrator-guide/managing-users-and-groups/authentication-mode.md
-        - administrator-guide/managing-users-and-groups/creating-group.md
-        - administrator-guide/managing-users-and-groups/creating-user.md
-        - administrator-guide/managing-users-and-groups/user-self-registration.md
-      - 'Classification Systems':
-        - administrator-guide/managing-classification-systems/index.md
-        - administrator-guide/managing-classification-systems/managing-categories.md
-        - administrator-guide/managing-classification-systems/managing-directories.md
-        - administrator-guide/managing-classification-systems/managing-thesaurus.md
-      - 'Metadata Standards':
-        - administrator-guide/managing-metadata-standards/index.md
-        - administrator-guide/managing-metadata-standards/configure-validation.md
-        - administrator-guide/managing-metadata-standards/metadata-identifier.md
-        - administrator-guide/managing-metadata-standards/standards.md
-
-# Plugins - install using: pip3 install -r requirements.txt
+# Плагины
 plugins:
   - search
+  - include-markdown
+  - exclude
   - i18n:
       docs_structure: folder
-      reconfigure_material: true
       languages:
-        - locale: en
-          name: English
-          default: true
-          build: true
-          site_name: 'GeoNetwork opensource (EN)'
         - locale: ru
           name: Русский
-          build: true
-          site_name: 'GeoNetwork (RU)'
-          site_description: Добро пожаловать на GeoNetwork. Данная документация разделена на отдельные гайды по различным темам.
-
+          default: true
+        # Беларуская навiгацыя
+        - locale: be
+          name: Беларуская
+          copyright: 'Усе правы абаронены &copy; 2001 - 2024 ФАО-ААН і іншыя'
+          site_description: 'Сардэчна запрашаем у на галоўную старонку **даведачнай дакументацыі па рабоце з Каталогам метададзеных Нацыянальнага геапартала Рэспублікі Беларусь**. Гэта дакументацыя арганізавана ў выглядзе асобных кіраўніцтваў, арыентаваных на розную аўдыторыю.'
+          site_name: 'Даведачная дакументация'
           nav:
-            - 'GeoNetwork': index.md
-
-            - 'Помощь':
+            - 'Галоўная': index.md
+            - 'Анлайн-даведка':
               - help/index.md
-              - 'Главная страница':
+              - 'Галоўная старонка каталога':
                 - help/home/index.md
-              - 'Страница поиска':
+              - 'Старонка пошуку':
                 - help/search/index.md
-              - 'Просмотр записи':
+              - 'Прагляд запісу':
                 - help/record/index.md
-              - 'Страница карты':
+              - 'Старонка карты':
                 - help/map/index.md
-
-            - 'Пользователям':
+            - 'Кіраўніцтва карыстальніка':
               - user-guide/index.md
-              - user-guide/quick-start/index.md
-              - user-guide/map/index.md
-              - 'Описание информации':
+              - 'Карты і візуалізацыя дадзеных':   
+                - user-guide/map/exploring-maps.md
+                - user-guide/map/toc.md
+                - user-guide/map/layer-settings.md
+                - user-guide/map/filtering-layers.md
+                - user-guide/map/attributes-table.md
+                - user-guide/map/widgets.md
+                - user-guide/map/export-data.md
+                - user-guide/map/mapstore-toolbars.md
+                - user-guide/map/print.md
+                - user-guide/map/import.md
+                - user-guide/map/catalog.md
+                - user-guide/map/measure.md
+                - user-guide/map/annotations.md
+                - user-guide/map/map-views.md
+                - user-guide/map/longitudinal-profile.md
+                - user-guide/map/geoprocessing-tool.md
+                - user-guide/map/navigation-toolbar.md
+                - user-guide/map/background.md
+                - user-guide/map/timeline.md                
+                - user-guide/map/footer.md
+                - user-guide/map/configure-map.md
+              - 'Праца з запісамі метададзеных':
                 - user-guide/describing-information/index.md
                 - user-guide/describing-information/managing-templates.md
                 - user-guide/describing-information/creating-metadata.md
@@ -208,65 +265,67 @@ plugins:
                 - user-guide/describing-information/deleting-metadata.md
                 - user-guide/describing-information/multilingual-editing.md
                 - user-guide/describing-information/inspire-editing.md
-              - 'Связывание со сторонними ресурсами':
+              - 'Звязванне са знешнімі рэсурсамі':
                 - user-guide/associating-resources/index.md
-                - 'Связывание с документами':
-                    - user-guide/associating-resources/linking-documents.md
-                    - user-guide/associating-resources/using-filestore.md
-                    - user-guide/associating-resources/linking-thumbnail.md
-                    - user-guide/associating-resources/linking-online-resources.md
-                - 'Связывание с другими записями':
-                    - user-guide/associating-resources/linking-records.md
-                    - user-guide/associating-resources/linking-parent.md
-                    - user-guide/associating-resources/linking-source.md
-                    - user-guide/associating-resources/linking-dataset-or-service.md
-                    - user-guide/associating-resources/linking-feature-catalog.md
-                    - user-guide/associating-resources/linking-others.md
-                    - user-guide/associating-resources/linking-remote-records.md
+                - 'Звязванне з дакументамі':
+                  - user-guide/associating-resources/linking-documents.md
+                  - user-guide/associating-resources/using-filestore.md
+                  - user-guide/associating-resources/linking-thumbnail.md
+                  - user-guide/associating-resources/linking-online-resources.md
+                - 'Звязванне з іншымі запісамі':
+                  - user-guide/associating-resources/linking-records.md
+                  - user-guide/associating-resources/linking-parent.md
+                  - user-guide/associating-resources/linking-source.md
+                  - user-guide/associating-resources/linking-dataset-or-service.md
+                  - user-guide/associating-resources/linking-feature-catalog.md
+                  - user-guide/associating-resources/linking-others.md
+                  - user-guide/associating-resources/linking-remote-records.md
                 - user-guide/associating-resources/doi.md
                 - user-guide/associating-resources/cite.md
-              - 'Использование тегов':
+              - 'Выкарыстанне тэгаў':
                 - user-guide/tag-information/index.md
                 - user-guide/tag-information/tagging-with-categories.md
                 - user-guide/tag-information/tagging-with-keywords.md
-              - 'Публикация':
+              - 'Публікацыя':
                 - user-guide/publishing/index.md
                 - user-guide/publishing/managing-privileges.md
                 - user-guide/publishing/restricting-information-to-metadata-sections.md
                 - user-guide/publishing/transferring-privileges.md
-              - 'Анализ':
+              - 'Аналіз':
                 - user-guide/analyzing/index.md
                 - user-guide/analyzing/data.md
                 - user-guide/analyzing/metadata.md
-              - 'Рабочий процесс':
+              - 'Працоўны працэс':
                 - user-guide/workflow/index.md
-                - 'Пакетное редактирование':
-                  - user-guide/workflow/batchupdate.md
+                - user-guide/workflow/validation.md
+                - user-guide/workflow/suggestion.md
+                - user-guide/workflow/life-cycle.md
+                - user-guide/workflow/geopublication.md
+                - user-guide/workflow/versioning.md
+                - 'Пакетнае рэдагаванне':
+                  - user-guide/workflow/batchupdate/index.md
                   - user-guide/workflow/batchediting.md
                   - user-guide/workflow/batchupdate-from-admin.md
                   - user-guide/workflow/batchupdate-xsl.md
-                - user-guide/workflow/geopublication.md
-                - user-guide/workflow/life-cycle.md
-                - user-guide/workflow/suggestion.md
-                - user-guide/workflow/validation.md
-                - user-guide/workflow/versioning.md
-              - 'Сборщики данных':
+              - 'Зборшчыкі дадзеных':
                 - user-guide/harvesting/index.md
-                - user-guide/harvesting/harvesting-geonetwork.md
                 - user-guide/harvesting/harvesting-csw.md
-                - user-guide/harvesting/harvesting-ogcwxs.md
                 - user-guide/harvesting/harvesting-filesystem.md
+                - user-guide/harvesting/harvesting-geonetwork-4.md
+                - user-guide/harvesting/harvesting-geonetwork.md
+                - user-guide/harvesting/harvesting-geonetwork-2.md
                 - user-guide/harvesting/harvesting-geoportal.md
                 - user-guide/harvesting/harvesting-oaipmh.md
-
+                - user-guide/harvesting/harvesting-ogcwxs.md
                 - user-guide/harvesting/harvesting-sde.md
+                - user-guide/harvesting/harvesting-sftp.md
                 - user-guide/harvesting/harvesting-simpleurl.md
                 - user-guide/harvesting/harvesting-thredds.md
                 - user-guide/harvesting/harvesting-webdav.md
                 - user-guide/harvesting/harvesting-wfs-features.md
+                - user-guide/harvesting/harvesting-database.md
               - user-guide/export/index.md
-
-            - 'Администрирование':
+            - 'Адміністраванне':
               - administrator-guide/index.md
               - 'Каталог':
                 - administrator-guide/configuring-the-catalog/index.md
@@ -277,65 +336,170 @@ plugins:
                 - administrator-guide/configuring-the-catalog/portal-configuration.md
                 - administrator-guide/configuring-the-catalog/inspire-configuration.md
                 - administrator-guide/configuring-the-catalog/map-server-configuration.md
-              - 'Типы пользователей и Группы':
+              - 'Тыпы карыстальнікаў і групы':
                 - administrator-guide/managing-users-and-groups/index.md
                 - administrator-guide/managing-users-and-groups/authentication-mode.md
                 - administrator-guide/managing-users-and-groups/creating-group.md
                 - administrator-guide/managing-users-and-groups/creating-user.md
                 - administrator-guide/managing-users-and-groups/user-self-registration.md
-              - 'Системы классификации метаданных':
+                - administrator-guide/managing-users-and-groups/user-reset-password.md
+              - 'Сістэмы класіфікацыі метададзеных':
                 - administrator-guide/managing-classification-systems/index.md
                 - administrator-guide/managing-classification-systems/managing-categories.md
                 - administrator-guide/managing-classification-systems/managing-directories.md
                 - administrator-guide/managing-classification-systems/managing-thesaurus.md
-              - 'Стандарты метаданных':
+              - 'Стандарты метададзеных':
                 - administrator-guide/managing-metadata-standards/index.md
                 - administrator-guide/managing-metadata-standards/configure-validation.md
                 - administrator-guide/managing-metadata-standards/metadata-identifier.md
                 - administrator-guide/managing-metadata-standards/standards.md
-
-# Customizations
-extra:
-  version:
-    provider: mike
-    default: stable
-  homepage: https://geonetwork-opensource.org/
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/geonetwork
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/_/geonetwork
-    - icon: geonetwork/logo_bw
-      link: https://geonetwork-opensource.org/
-      name: GeoNetwork Website
-
-# Extensions
-# - These are carefully chosen to work with pandoc markdown support for whole document translation
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.smartsymbols
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - tables
-  - md_in_html
+              - 'Дадатковая інфармацыя':
+                - annexes\mef-format.md
+                - api\search.md
+                - customizing-application\creating-custom-view.md
+        # English navigation
+        - locale: en
+          name: English
+          copyright: 'Copyright &copy; 2001 - 2023 FAO-UN and others'
+          site_description: 'Welcome to the main page of the documentation for working with the Metadata Catalog of the National Geoportal of the Republic of Belarus. This documentation is organized into separate guides targeted at different audiences.'
+          site_name: 'Documentation'
+          nav:
+            - 'Main Page': index.md
+            - 'Online Help':
+              - help/index.md
+              - 'Home page':
+                - help/home/index.md
+              - 'Search page':
+                - help/search/index.md
+              - 'Detail page':
+                - help/record/index.md
+              - 'Map page':
+                - help/map/index.md
+            - 'User Guide':
+              - user-guide/index.md
+              - 'Maps and Data Visualization':   
+                - user-guide/map/exploring-maps.md
+                - user-guide/map/toc.md
+                - user-guide/map/top-bar.md
+                - user-guide/map/layer-settings.md
+                - user-guide/map/filtering-layers.md
+                - user-guide/map/attributes-table.md
+                - user-guide/map/widgets.md
+                - user-guide/map/export-data.md
+                - user-guide/map/mapstore-toolbars.md
+                - user-guide/map/print.md
+                - user-guide/map/import.md
+                - user-guide/map/catalog.md
+                - user-guide/map/measure.md
+                - user-guide/map/annotations.md
+                - user-guide/map/map-views.md
+                - user-guide/map/longitudinal-profile.md
+                - user-guide/map/geoprocessing-tool.md
+                - user-guide/map/navigation-toolbar.md
+                - user-guide/map/background.md
+                - user-guide/map/timeline.md                
+                - user-guide/map/footer.md
+                - user-guide/map/configure-map.md
+              - 'Describing Information':
+                - user-guide/describing-information/index.md
+                - user-guide/describing-information/creating-metadata.md
+                - user-guide/describing-information/deleting-metadata.md
+                - user-guide/describing-information/editing-metadata.md
+                - user-guide/describing-information/importing-metadata.md
+                - user-guide/describing-information/inspire-editing.md
+                - user-guide/describing-information/managing-templates.md
+                - user-guide/describing-information/multilingual-editing.md
+              - 'Associating Resources':
+                - user-guide/associating-resources/index.md
+                - 'Associating Documents':
+                  - user-guide/associating-resources/linking-documents.md
+                  - user-guide/associating-resources/using-filestore.md
+                  - user-guide/associating-resources/linking-thumbnail.md
+                  - user-guide/associating-resources/linking-online-resources.md
+                - 'Associating Another Records':
+                  - user-guide/associating-resources/linking-records.md
+                  - user-guide/associating-resources/linking-parent.md
+                  - user-guide/associating-resources/linking-source.md
+                  - user-guide/associating-resources/linking-dataset-or-service.md
+                  - user-guide/associating-resources/linking-feature-catalog.md
+                  - user-guide/associating-resources/linking-others.md
+                  - user-guide/associating-resources/linking-remote-records.md
+                - user-guide/associating-resources/doi.md
+                - user-guide/associating-resources/cite.md
+              - 'Tag information':
+                - user-guide/tag-information/index.md
+                - user-guide/tag-information/tagging-with-categories.md
+                - user-guide/tag-information/tagging-with-keywords.md
+              - 'Publishing':
+                - user-guide/publishing/index.md
+                - user-guide/publishing/managing-privileges.md
+                - user-guide/publishing/restricting-information-to-metadata-sections.md
+                - user-guide/publishing/transferring-privileges.md
+              - 'Analyzing':
+                - user-guide/analyzing/index.md
+                - user-guide/analyzing/data.md
+                - user-guide/analyzing/metadata.md
+              - 'Workflow':
+                - user-guide/workflow/index.md
+                - user-guide/workflow/validation.md
+                - user-guide/workflow/suggestion.md
+                - user-guide/workflow/life-cycle.md
+                - user-guide/workflow/geopublication.md
+                - user-guide/workflow/versioning.md
+                - 'Updating a set of records':
+                  - user-guide/workflow/batchupdate/index.md
+                  - user-guide/workflow/batchediting.md
+                  - user-guide/workflow/batchupdate-from-admin.md
+                  - user-guide/workflow/batchupdate-xsl.md
+              - 'Harvesting':
+                - user-guide/harvesting/index.md
+                - user-guide/harvesting/harvesting-csw.md
+                - user-guide/harvesting/harvesting-filesystem.md
+                - user-guide/harvesting/harvesting-geonetwork-4.md
+                - user-guide/harvesting/harvesting-geonetwork.md
+                - user-guide/harvesting/harvesting-geonetwork-2.md
+                - user-guide/harvesting/harvesting-geoportal.md
+                - user-guide/harvesting/harvesting-oaipmh.md
+                - user-guide/harvesting/harvesting-ogcwxs.md
+                - user-guide/harvesting/harvesting-sde.md
+                - user-guide/harvesting/harvesting-sftp.md
+                - user-guide/harvesting/harvesting-simpleurl.md
+                - user-guide/harvesting/harvesting-thredds.md
+                - user-guide/harvesting/harvesting-webdav.md
+                - user-guide/harvesting/harvesting-wfs-features.md
+                - user-guide/harvesting/harvesting-database.md
+              - user-guide/export/index.md
+            - 'Administration':
+              - administrator-guide/index.md
+              - 'Catalog':
+                - administrator-guide/configuring-the-catalog/index.md
+                - administrator-guide/configuring-the-catalog/system-configuration.md
+                - administrator-guide/configuring-the-catalog/user-interface-configuration.md
+                - administrator-guide/configuring-the-catalog/css-configuration.md
+                - administrator-guide/configuring-the-catalog/csw-configuration.md
+                - administrator-guide/configuring-the-catalog/portal-configuration.md
+                - administrator-guide/configuring-the-catalog/inspire-configuration.md
+                - administrator-guide/configuring-the-catalog/map-server-configuration.md
+              - 'Users and Groups':
+                - administrator-guide/managing-users-and-groups/index.md
+                - administrator-guide/managing-users-and-groups/authentication-mode.md
+                - administrator-guide/managing-users-and-groups/creating-group.md
+                - administrator-guide/managing-users-and-groups/creating-user.md
+                - administrator-guide/managing-users-and-groups/user-self-registration.md
+                - administrator-guide/managing-users-and-groups/user-reset-password.md
+              - 'Classification Systems':
+                - administrator-guide/managing-classification-systems/index.md
+                - administrator-guide/managing-classification-systems/managing-categories.md
+                - administrator-guide/managing-classification-systems/managing-directories.md
+                - administrator-guide/managing-classification-systems/managing-thesaurus.md
+              - 'Metadata Standards':
+                - administrator-guide/managing-metadata-standards/index.md
+                - administrator-guide/managing-metadata-standards/configure-validation.md
+                - administrator-guide/managing-metadata-standards/metadata-identifier.md
+                - administrator-guide/managing-metadata-standards/standards.md
+              - 'Additional Information':
+                - annexes/mef-format.md
+                - api/search.md
+                - customizing-application/creating-custom-view.md
+                - customizing-application/configuring-faceted-search.md
+                - customizing-application/advanced-configuration.md
