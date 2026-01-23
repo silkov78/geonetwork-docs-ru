@@ -4,6 +4,9 @@ site_description: 'Добро пожаловать на главную стра�
 site_dir: target/html
 site_url: https://docs.geonetwork-opensource.org/
 
+# Add index.html in links
+use_directory_urls: false
+
 # Копирайт
 copyright: Все права защищены &copy; 2001 - 2024 ФАО-ООН и другие
 
