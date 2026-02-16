@@ -279,11 +279,11 @@ ldap.sync.group.search.pattern=EL_(.*)
 5. Запыт LDAP для пошуку груп, членам якіх з'яўляецца карыстальнік
 6. Як пераўтварыць групу LDAP у групу/профіль GeoNetwork
 
-!!! Увага
+!!! info "Увага"
 
   Існуе [відэачат распрацоўшчыкаў]( у якім падрабязна распавядаецца, як наладзіць LDAP, уключаючы наладку папярэдне сканфігураванага сервера LDAP (з выкарыстаннем Apache Directory Studio) для тэсціравання/адладкі/навучання.
 
-!!! Увага
+!!! info "Увага"
 
    Ці варта выкарыстоўваць іерархічную або зыходную канфігурацыю? Калі ў вас ужо ёсць існуючая (зыходная) канфігурацыя, няма неабходнасці пераходзіць на новую. Большая частка кода паміж імі аднолькавая. Калі вы пачынаеце новую канфігурацыю, я б рэкамендаваў іерархічную канфігурацыю. Яна крыху прасцейшая і падтрымліваецца тэставымі прыкладамі і інфраструктурай тэсціравання. Яна таксама падтрымлівае LDAP, дзе карыстальнікі/групы знаходзяцца ў некалькіх каталогах.
 
@@ -291,7 +291,7 @@ ldap.sync.group.search.pattern=EL_(.*)
 
 GeoNetwork пастаўляецца з прыкладам канфігурацыі LDAP, які вы можаце выкарыстоўваць у Apache Directory Studio для стварэння таго ж сервера LDAP, які выкарыстоўваецца ў тэставых прыкладах. Таксама ёсць прыклад канфігурацыі GeoNetwork, якая падключаецца да гэтага сервера LDAP. Гл. `core-geonetwork/blob/master/core/src/test/resources/org/fao/geonet/kernel/security/ldap/README.md`{.interpreted-text role="repo"} або [відэачат распрацоўшчыкаў]( для інструкцый.
 
-!!! Увага
+!!! info "Увага"
 
    Каб выкарыстоўваць гэтую канфігурацыю, раскаментуйце радок "<import resource="config-security-ldap-recursive.xml"/>" у ``web/src/main/webapp/WEB-INF/config-security/config-security.xml``
 
@@ -507,7 +507,7 @@ cas.logout.url=${cas.baseURL}/logout?url=${geonetwork.https.url}/
 
 URL да JSON-дакумента метададзеных знешняга сервера OIDC. Звычайна гэта ``/.well-known/openid-configuration`` на серверы IDP.
 
-!!! Увага
+!!! info "Увага"
 
    Гэта будзе загружаць канфігурацыю сервера кожны раз пры запуску GeoNetwork, што можа быць праблемай бяспекі. Для бяспекі выкарыстоўвайце URL `ps`.
 
@@ -531,7 +531,7 @@ URL да JSON-дакумента метададзеных знешняга се�
 
 Гэта пераўтворыць "GeonetworkAdmin" (з сервера OpenID) у ролю "Administrator" Geonetwork.
 
-!!! Увага
+!!! info "Увага"
 
    Як і ў плагіне keycloak, вы можаце выкарыстоўваць імёны роляў/груп віду "group:role", каб прызначыць карыстальніка ў групу Geonetwork і ўзровень дазволаў.
 
@@ -654,11 +654,11 @@ OPENIDCONNECT_IDTOKENROLELOCATION='groups'
 OPENIDCONNECT_ROLECONVERTER='3a94275f-7d53-4205-8d78-11f39e9ffa5a=Administrator,d93c6444-feee-4b67-8c0f-15d6796370cb=Reviewer'
 ```
 
-!!! Увага
+!!! info "Увага"
 
     Ролі знаходзяцца ў частцы "roles" токена ID.
 
-!!! Увага
+!!! info "Увага"
 
    OPENIDCONNECT_ROLECONVERTER пераўтварае Object ID групы Azure AD у ролю Geonetwork.
 
@@ -697,11 +697,11 @@ OPENIDCONNECT_SERVERMETADATA_JSON_TEXT='...big json text...'
 OPENIDCONNECT_IDTOKENROLELOCATION='roles'
 ```
 
-!!! Увага
+!!! info "Увага"
 
     Ролі знаходзяцца ў частцы "roles" токена ID.
 
-!!! Увага
+!!! info "Увага"
 
    Вам звычайна не трэба выконваць пераўтварэнне роляў, так як імя ролі будзе выкарыстоўвацца ў токене ID.
 

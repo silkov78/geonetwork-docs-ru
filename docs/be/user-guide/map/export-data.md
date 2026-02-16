@@ -7,11 +7,11 @@
 
 <img src="../img/export_data/export_data_ex.jpg" class="ms-docimage"/>
 
-!!! Увага
+!!! info "Увага"
     Калі служба `WFS` з'яўляецца адзінай даступнай, то пасля адкрыцця акна **Экспарт дадзеных** карыстальнік зможа выбраць толькі *Фармат файла* і *Сістэму прасторавых каардынат* (як апісана ніжэй).
     <img src="../img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
 
-!!! Увага
+!!! info "Увага"
     Толькі для **Вектарнага слоя** карыстальнік таксама можа спампаваць дадзеныя, адкрыўшы Табліцу атрыбутаў <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> са [Панэлі зместу](toc.md) і націснуўшы кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/>.
 
 На панэлі **Экспарт дадзеных** карыстальнік можа:

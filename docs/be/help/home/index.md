@@ -74,7 +74,7 @@ hide:
     </div>
     *Пашыраны пошук запісаў метададзеных*
 
-    !!! **Заўвага** 
+    !!! note "Заўвага"
     
         Падрабязнае апісанне магчымасцей пашыранага пошуку (апісанне аператараў, падстановачных знакаў і дыяпазонаў) рухавіка Нацыянальнага геапартала можна знайсці ў афіцыйнай дакументацыі **[Elasticsearch - Query String Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)**
 

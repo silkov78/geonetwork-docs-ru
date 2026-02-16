@@ -34,7 +34,7 @@
 
 <img src="../img/configure-map/identify-format.jpg" class="ms-docimage"/>
 
-!!! заўвага
+!!! note "Заўвага"
     Запыт на ідэнтыфікацыю выконваецца як звычайна, калі карыстальнік націскае на слой на карце, як паказана ніжэй: <video class="ms-docimage" controls><source src="../img/configure-map/identify-on-map.mp4" /></video>
 
 ## Пашыраны рэдактар карт
