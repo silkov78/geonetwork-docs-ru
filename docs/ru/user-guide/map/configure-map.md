@@ -34,7 +34,7 @@
 
 <img src="../img/configure-map/identify-format.jpg" class="ms-docimage"/>
 
-!!! примечание
+!!! note "Примечание"
     Запрос на идентификацию выполняется как обычно, когда пользователь нажимает на слой на карте, как показано ниже: <video class="ms-docimage" controls><source src="../img/configure-map/identify-on-map.mp4" /></video>
 
 ## Расширенный редактор карт

@@ -7,11 +7,11 @@
 
 <img src="../img/export_data/export_data_ex.jpg" class="ms-docimage"/>
 
-!!! Внимание
+!!! info "Внимание"
     Если служба `WFS` является единственной доступной, то после открытия окна **Экспорт данных** пользователь сможет выбрать только *Формат файла* и *Систему пространственных координат* (как описано ниже).
     <img src="../img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
 
-!!! Внимание
+!!! info "Внимание"
     Только для **Векторного слоя** пользователь также может скачать данные, открыв Таблицу атрибутов <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> из [Панели содержания](toc.md) и нажав кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/>.
 
 На панели **Экспорт данных** пользователь может:

@@ -279,11 +279,11 @@ ldap.sync.group.search.pattern=EL_(.*)
 5. Запрос LDAP для поиска групп, членом которых является пользователь
 6. Как преобразовать группу LDAP в группу/профиль GeoNetwork
 
-!!! note
+!!! note "Примечание"
 
     Существует [видеочат разработчиков]( в котором подробно рассказывается, как настроить LDAP, включая настройку предварительно сконфигурированного сервера LDAP (с использованием Apache Directory Studio) для тестирования/отладки/обучения.
 
-!!! note
+!!! note "Примечание"
 
     Стоит ли использовать иерархическую или исходную конфигурацию?
 
@@ -295,7 +295,7 @@ ldap.sync.group.search.pattern=EL_(.*)
 
 GeoNetwork поставляется с примером конфигурации LDAP, который вы можете использовать в Apache Directory Studio для создания того же сервера LDAP, который используется в тестовых примерах. Также есть пример конфигурации GeoNetwork, которая подключается к этому серверу LDAP. См. `core-geonetwork/blob/master/core/src/test/resources/org/fao/geonet/kernel/security/ldap/README.md`{.interpreted-text role="repo"} или [видеочат разработчиков]( для инструкций.
 
-!!! note
+!!! note "Примечание"
 
     Чтобы использовать эту конфигурацию, раскомментируйте строку "<import resource="config-security-ldap-recursive.xml"/>" в ``web/src/main/webapp/WEB-INF/config-security/config-security.xml``
 
@@ -511,7 +511,7 @@ cas.logout.url=${cas.baseURL}/logout?url=${geonetwork.https.url}/
 
 URL к JSON-документу метаданных внешнего сервера OIDC. Обычно это ``/.well-known/openid-configuration`` на сервере IDP.
 
-!!! note
+!!! note "Примечание"
 
     Это будет загружать конфигурацию сервера каждый раз при запуске GeoNetwork, что может быть проблемой безопасности. Для безопасности используйте URL `ps`.
 
@@ -535,7 +535,7 @@ URL к JSON-документу метаданных внешнего серве�
 
 Это преобразует "GeonetworkAdmin" (с сервера OpenID) в роль "Administrator" Geonetwork.
 
-!!! note
+!!! note "Примечание"
 
     Как и в плагине keycloak, вы можете использовать имена ролей/групп вида "group:role", чтобы назначить пользователя в группу Geonetwork и уровень разрешений.
 
@@ -658,11 +658,11 @@ OPENIDCONNECT_IDTOKENROLELOCATION='groups'
 OPENIDCONNECT_ROLECONVERTER='3a94275f-7d53-4205-8d78-11f39e9ffa5a=Administrator,d93c6444-feee-4b67-8c0f-15d6796370cb=Reviewer'
 ```
 
-!!! note
+!!! note "Примечание"
 
     Роли находятся в части "roles" токена ID.
 
-!!! note
+!!! note "Примечание"
 
     OPENIDCONNECT_ROLECONVERTER преобразует Object ID группы Azure AD в роль Geonetwork.
 
@@ -701,11 +701,11 @@ OPENIDCONNECT_SERVERMETADATA_JSON_TEXT='...big json text...'
 OPENIDCONNECT_IDTOKENROLELOCATION='roles'
 ```
 
-!!! note
+!!! note "Примечание"
 
     Роли находятся в части "roles" токена ID.
 
-!!! note
+!!! note "Примечание"
 
     Вам обычно не нужно выполнять преобразование ролей, так как имя роли будет использоваться в токене ID.
 
