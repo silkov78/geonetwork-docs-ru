@@ -3,31 +3,31 @@
 *****************
 
 В ГИС Таблица атрибутов, связанная с векторным слоем, — это таблица, в которой хранится табличная информация, относящаяся к этому слою. Столбцы таблицы называются полями, а строки — записями. Каждая запись в таблице атрибутов соответствует геометрии одного из объектов слоя. Эта связь позволяет находить записи в таблице (информацию), выбирая объекты на карте, и наоборот.
-Пользователь с помощью кнопки <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#настройки-и-панель-инструментов-toc) можно получить доступ к Таблице атрибутов:
+Пользователь с помощью кнопки <img src="img/button/attributes-table.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#настройки-и-панель-инструментов-toc) можно получить доступ к Таблице атрибутов:
 
-<img src="../img/attributes-table/attributes-table-1.jpg" class="ms-docimage"/>
+<img src="img/attributes-table/attributes-table-1.jpg" class="ms-docimage"/>
 
 Получив доступ к этой панели, пользователь может выполнять следующие основные операции:
 
-* [Редактировать записи](#редактирование-и-удаление-существующих-объектов) с помощью кнопки <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
+* [Редактировать записи](#редактирование-и-удаление-существующих-объектов) с помощью кнопки <img src="img/button/edit_button.jpg" class="ms-docbutton"/>
 
 * Фильтровать записи в Таблице атрибутов различными способами, как описано в разделе [Установка фильтров](#установка-фильтров) ниже
 
-* Открыть инструмент [Расширенный поиск](filtering-layers.md#расширенный-поиск) с помощью кнопки <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/>
+* Открыть инструмент [Расширенный поиск](filtering-layers.md#расширенный-поиск) с помощью кнопки <img src="img/button/filter-icon.jpg" class="ms-docbutton"/>
 
-* Активировать [фильтрацию по текущему видимому экстенту](filtering-layers.md#быстрый-фильтр-по-видимому-экстенту) с помощью кнопки <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
+* Активировать [фильтрацию по текущему видимому экстенту](filtering-layers.md#быстрый-фильтр-по-видимому-экстенту) с помощью кнопки <img src="img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>
 
-* Активировать возможности фильтрации [кликом по карте](filtering-layers.md#быстрый-фильтр-по-взаимодействию-с-картой) с помощью кнопки <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
+* Активировать возможности фильтрации [кликом по карте](filtering-layers.md#быстрый-фильтр-по-взаимодействию-с-картой) с помощью кнопки <img src="img/button/filter_geometry_button.jpg" class="ms-docbutton"/>
 
 * Использовать [быстрый фильтр по атрибуту](filtering-layers.md#быстрый-фильтр-по-атрибутам)
 
-* Скачать данные таблицы с помощью кнопки <img src="../img/button/export_data.jpg" class="ms-docbutton"/>
+* Скачать данные таблицы с помощью кнопки <img src="img/button/export_data.jpg" class="ms-docbutton"/>
 
-* Создать [виджеты](widgets.md) с помощью кнопки <img src="../img/button/widgets.jpg" class="ms-docbutton"/>
+* Создать [виджеты](widgets.md) с помощью кнопки <img src="img/button/widgets.jpg" class="ms-docbutton"/>
 
-* Настроить отображение таблицы атрибутов с помощью кнопки <img src="../img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
+* Настроить отображение таблицы атрибутов с помощью кнопки <img src="img/button/customize_attribute_table.jpg" class="ms-docbutton"/>
 
-* Приблизить к объектам с помощью кнопки <img src="../img/button/zoom-feature.jpg" class="ms-docbutton"/>, доступной у каждой записи, или приблизить к максимальному экстенту страницы с помощью кнопки <img src="../img/button/zoom_button.jpg" class="ms-docbutton"/> (доступно, только если виртуальная прокрутка отключена; по умолчанию она включена).
+* Приблизить к объектам с помощью кнопки <img src="img/button/zoom-feature.jpg" class="ms-docbutton"/>, доступной у каждой записи, или приблизить к максимальному экстенту страницы с помощью кнопки <img src="img/button/zoom_button.jpg" class="ms-docbutton"/> (доступно, только если виртуальная прокрутка отключена; по умолчанию она включена).
 
 !!! warning "Предупреждение"
     Когда GeoServer настроен на строгое соответствие CITE для WFS (по умолчанию), таблица объектов работает некорректно.
@@ -37,62 +37,62 @@
 
 Базовый сервис Web Feature Service позволяет запрашивать и получать объекты. С помощью транзакционного Web Feature Service (WFS-T) пользователь может создавать, удалять и обновлять объекты.
 
-В *Режим редактирования* можно перейти с помощью кнопки <img src="../img/button/editing-button.jpg" class="ms-docbutton"/> на панели *Таблица атрибутов*, что позволяет управлять только тем слоем, к которому относится таблица:
+В *Режим редактирования* можно перейти с помощью кнопки <img src="img/button/editing-button.jpg" class="ms-docbutton"/> на панели *Таблица атрибутов*, что позволяет управлять только тем слоем, к которому относится таблица:
 
-<img src="../img/attributes-table/attribute-table-editing-layer.jpg" class="ms-docimage"/>
+<img src="img/attributes-table/attribute-table-editing-layer.jpg" class="ms-docimage"/>
 
 !!! info "Внимание"
     Когда *Режим редактирования* включен, пользователю доступны только функции редактирования, все остальные инструменты деактивированы.
 
 По умолчанию в *Режиме редактирования* вы увидите панель, подобную следующей:
 
-<img src="../img/attributes-table/edit-mode.jpg" class="ms-docimage"/>
+<img src="img/attributes-table/edit-mode.jpg" class="ms-docimage"/>
 
-С помощью кнопки **Выйти из режима редактирования** <img src="../img/button/quit-edit-mode-button.jpg" class="ms-docbutton"/> вы можете завершить сеанс редактирования, чтобы снова сделать доступными другие функции.
+С помощью кнопки **Выйти из режима редактирования** <img src="img/button/quit-edit-mode-button.jpg" class="ms-docbutton"/> вы можете завершить сеанс редактирования, чтобы снова сделать доступными другие функции.
 
 ### Создание новых объектов
 
-После включения *Режима редактирования* можно создать новый объект, нажав кнопку **Добавить новый объект** <img src="../img/button/add-new-feature-icon.jpg" class="ms-docbutton"/>. После этого пользователь может заполнить поля и отредактировать геометрию нового объекта:
+После включения *Режима редактирования* можно создать новый объект, нажав кнопку **Добавить новый объект** <img src="img/button/add-new-feature-icon.jpg" class="ms-docbutton"/>. После этого пользователь может заполнить поля и отредактировать геометрию нового объекта:
 
-<img src="../img/attributes-table/add-new-feature-attributes.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/attributes-table/add-new-feature-attributes.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 Для редактирования атрибутов карты предоставляется поля ввода в зависимости от типа атрибута, что заставляет пользователя вводить допустимое значение. Если атрибут имеет тип `text`, интерфейс также покажет выпадающее меню со списком существующих значений для этого атрибута, чтобы обеспечить быстрый выбор.
 
 !!! info "Внимание"
     Выпадающее меню доступно только в том случае, если сервер предоставляет процесс WPS `gs:PagedUnique`.
 
-Восклицательный знак *Отсутствующая геометрия* <img src="../img/button/missing-geometry-exclamation-point.jpg" class="ms-docbutton"/> во втором столбце *Таблицы атрибутов* означает, что у объекта еще нет геометрии. Ее можно добавить позже или нарисовать на карте перед сохранением:
+Восклицательный знак *Отсутствующая геометрия* <img src="img/button/missing-geometry-exclamation-point.jpg" class="ms-docbutton"/> во втором столбце *Таблицы атрибутов* означает, что у объекта еще нет геометрии. Ее можно добавить позже или нарисовать на карте перед сохранением:
 
-<img src="../img/attributes-table/missing-geometry.jpg" class="ms-docimage" style="max-width:300px;"/>
+<img src="img/attributes-table/missing-geometry.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-Для сохранения внесенных изменений есть кнопка <img src="../img/button/save-changes.jpg" class="ms-docbutton"/>, а для их отмены — кнопка <img src="../img/button/cancel-changes.jpg" class="ms-docbutton"/>.
-После создания новой записи для нее можно нарисовать геометрию, нажав на кнопку <img src="../img/button/add-shape-icon.jpg" class="ms-docbutton"/>, которая появляется при выборе этого объекта. Процесс рисования новой геометрии немного отличается в зависимости от типа слоя:
+Для сохранения внесенных изменений есть кнопка <img src="img/button/save-changes.jpg" class="ms-docbutton"/>, а для их отмены — кнопка <img src="img/button/cancel-changes.jpg" class="ms-docbutton"/>.
+После создания новой записи для нее можно нарисовать геометрию, нажав на кнопку <img src="img/button/add-shape-icon.jpg" class="ms-docbutton"/>, которая появляется при выборе этого объекта. Процесс рисования новой геометрии немного отличается в зависимости от типа слоя:
 
 * Для слоев *Полигонов* и *Мультиполигонов* каждый щелчок на карте добавляет новую вершину (минимум 3). После установки вершин можно изменять форму, создавая новые вершины или перетаскивая существующие:
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-polygon-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/drawing-polygon-shape.mp4"/></video>
 
 * Для слоев *Линий* и *Мультилиний* функция рисования формы работает примерно так же. Единственное отличие в том, что для рисования линии требуется как минимум две вершины, а не три, как для полигонов:
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-line-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/drawing-line-shape.mp4"/></video>
 
 * Для слоев *Точек* точка рисуется при каждом щелчке на карте:
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/drawing-point-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/drawing-point-shape.mp4"/></video>
 
-Пользователь всегда может удалить нарисованную форму с помощью кнопки <img src="../img/button/delete-geometry-button.jpg" class="ms-docbutton"/>.
+Пользователь всегда может удалить нарисованную форму с помощью кнопки <img src="img/button/delete-geometry-button.jpg" class="ms-docbutton"/>.
 
 #### Создание новой геометрии с привязкой
 
-Для точной настройки положения вершин при редактировании или создании геометрии нового объекта можно воспользоваться функцией привязки. С помощью этой функции <img src="../img/button/snapping.jpg" class="ms-docbutton"/> можно привязываться к вершинам объектов того же или других слоев во время редактирования.
+Для точной настройки положения вершин при редактировании или создании геометрии нового объекта можно воспользоваться функцией привязки. С помощью этой функции <img src="img/button/snapping.jpg" class="ms-docbutton"/> можно привязываться к вершинам объектов того же или других слоев во время редактирования.
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/add-new-snapping-geometry.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/add-new-snapping-geometry.mp4"/></video>
 
 Инструмент позволяет настроить функцию привязки, чтобы пользователь мог:
 
 * Выбрать один из видимых слоев карты в Панели содержания для использования привязки.
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/snap-new-layer.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/snap-new-layer.mp4"/></video>
 
 * Выбрать, к чему привязываться на слое, включая/отключая **Ребро** и/или **Вершину**.
 
@@ -107,15 +107,15 @@
 
 ### Редактирование и удаление существующих объектов
 
-Чтобы отредактировать существующий объект, необходимо переключить Таблицу атрибутов в режим редактирования, нажав кнопку *Режим редактирования* <img src="../img/button/editing-button.jpg" class="ms-docbutton"/>. Если цель — отредактировать записи в Таблице атрибутов, пользователь может просто выбрать их и ввести нужное значение в поле ввода. Однако также можно изменить геометрию, связанную с записью, отредактировав ее на карте (добавив или изменив ее вершины).
+Чтобы отредактировать существующий объект, необходимо переключить Таблицу атрибутов в режим редактирования, нажав кнопку *Режим редактирования* <img src="img/button/editing-button.jpg" class="ms-docbutton"/>. Если цель — отредактировать записи в Таблице атрибутов, пользователь может просто выбрать их и ввести нужное значение в поле ввода. Однако также можно изменить геометрию, связанную с записью, отредактировав ее на карте (добавив или изменив ее вершины).
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/update-polygon-shape.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/update-polygon-shape.mp4"/></video>
 
 !!! info "Внимание"
     Можно редактировать значение атрибута для нескольких записей одновременно, выделив соответствующую ячейку в таблице и перетащив ее содержимое на несколько ячеек, как показано ниже:
-    <video  class="ms-docimage" style="max-width:300px;" controls><source src="../img/attributes-table/multiple_features.mp4"/></video>
+    <video  class="ms-docimage" style="max-width:300px;" controls><source src="img/attributes-table/multiple_features.mp4"/></video>
 
-При нажатии на **Сохранить изменения** <img src="../img/button/save-changes.jpg" class="ms-docbutton"/> эти изменения станут постоянными. В *Режиме редактирования* пользователь также может удалить некоторые объекты, выделив их в таблице и нажав кнопку <img src="../img/button/delete-features-button.jpg" class="ms-docbutton" />.
+При нажатии на **Сохранить изменения** <img src="img/button/save-changes.jpg" class="ms-docbutton"/> эти изменения станут постоянными. В *Режиме редактирования* пользователь также может удалить некоторые объекты, выделив их в таблице и нажав кнопку <img src="img/button/delete-features-button.jpg" class="ms-docbutton" />.
 
 ## Установка фильтров
 
@@ -129,13 +129,13 @@
 
 * [Фильтр по видимому экстенту](filtering-layers.md#быстрый-фильтр-по-видимому-экстенту)
 
-После применения эти фильтры можно сделать видимыми на карте, включив кнопку <img src="../img/button/sync.jpg" class="ms-docbutton"/>.
+После применения эти фильтры можно сделать видимыми на карте, включив кнопку <img src="img/button/sync.jpg" class="ms-docbutton"/>.
 
 ## Скачивание данных таблицы
 
-Из Таблицы атрибутов также можно скачать данные с помощью кнопки <img src="../img/button/export_data.jpg" class="ms-docbutton"/>. Откроется следующее окно:
+Из Таблицы атрибутов также можно скачать данные с помощью кнопки <img src="img/button/export_data.jpg" class="ms-docbutton"/>. Откроется следующее окно:
 
-<img src="../img/attributes-table/download_grid.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/attributes-table/download_grid.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 В этом окне можно установить:
 
@@ -143,7 +143,7 @@
 
 * **Систему пространственных координат** (по умолчанию `Исходная` или `WGS84`)
 
-При нажатии на кнопку <img src="../img/button/export_at.jpg" class="ms-docbutton"/> браузер скачает файл.
+При нажатии на кнопку <img src="img/button/export_at.jpg" class="ms-docbutton"/> браузер скачает файл.
 
 ## Настройка отображения таблицы атрибутов
 
@@ -151,8 +151,8 @@
 
 * Сортировка записей в алфавитном порядке (если это текстовое поле) или от минимального до максимального значения и наоборот (если это числовое поле):
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/ordering_records.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/ordering_records.mp4"/></video>
 
-* Выбор, какие столбцы показывать, а какие скрывать, с помощью кнопки <img src="../img/button/hide_show_col.jpg" class="ms-docbutton"/>:
+* Выбор, какие столбцы показывать, а какие скрывать, с помощью кнопки <img src="img/button/hide_show_col.jpg" class="ms-docbutton"/>:
 
-<video  class="ms-docimage" controls><source src="../img/attributes-table/show_hide_columns.mp4"/></video>
+<video  class="ms-docimage" controls><source src="img/attributes-table/show_hide_columns.mp4"/></video>

@@ -4,18 +4,18 @@
 
 Некоторая информация о карте отображается в *Нижнем колонтитуле*. По умолчанию, как только пользователь открывает карту, отображаются масштабная линейка и переключатель масштаба, чтобы пользователь мог изменять масштаб карты путем приближения/отдаления или выбора масштаба через переключатель.
 
-<img src="../img/footer/show_scale1.jpg" class="ms-docimage" />
+<img src="img/footer/show_scale1.jpg" class="ms-docimage" />
 
-Чтобы отобразить координаты карты, соответствующие указателю мыши в выбранной *Системе Координат* карты, пользователь может нажать на кнопку <img src="../img/button/mouse-icon.jpg" class="ms-docbutton"/>
+Чтобы отобразить координаты карты, соответствующие указателю мыши в выбранной *Системе Координат* карты, пользователь может нажать на кнопку <img src="img/button/mouse-icon.jpg" class="ms-docbutton"/>
 
-<img src="../img/footer/show_coordinates1.jpg" class="ms-docimage" />
+<img src="img/footer/show_coordinates1.jpg" class="ms-docimage" />
 
 ## Селектор СК
 
-Также можно изменить *Систему Координат* карты, нажав на кнопку **Выбрать проекцию** <img src="../img/button/crs_selector_icon.jpg" class="ms-docbutton"/>. Откроется селектор СК для выбора одной из доступных СК, как показано ниже:
+Также можно изменить *Систему Координат* карты, нажав на кнопку **Выбрать проекцию** <img src="img/button/crs_selector_icon.jpg" class="ms-docbutton"/>. Откроется селектор СК для выбора одной из доступных СК, как показано ниже:
 
-<video class="ms-docimage" controls><source src="../img/footer/CRS_selector.mp4" /></video>
+<video class="ms-docimage" controls><source src="img/footer/CRS_selector.mp4" /></video>
 
 Для поиска нужной СК пользователь также может отфильтровать список СК, введя текст в поле поиска.
 
-<img src="../img/footer/searchCRS.jpg" class="ms-docimage" style="max-width:200px;"/>
+<img src="img/footer/searchCRS.jpg" class="ms-docimage" style="max-width:200px;"/>

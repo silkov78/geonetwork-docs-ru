@@ -5,9 +5,9 @@ This tool aims to provide a set of geo-processing utilities on layers present in
 !!! warning
     To prevent possible errors in geometry overlay methods due to complex and heavy geometries, the [JTS system property](https://github.com/locationtech/jts/blob/master/USING.md#jts-system-properties) must be added to the GeoServer in use (the `-Djts.overlay=ng` should be enabled in JAVA properties).
 
-By clicking the **GeoProcessing Tool** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/> button, available in the [Side Toolbar](mapstore-toolbars.md#side-toolbar), a panel opens so that the user can choose the geographic operations between **Buffer** and **Intersection**.
+By clicking the **GeoProcessing Tool** <img src="img/button/geoprocessing-button.jpg" class="ms-docbutton"/> button, available in the [Side Toolbar](mapstore-toolbars.md#side-toolbar), a panel opens so that the user can choose the geographic operations between **Buffer** and **Intersection**.
 
-<img src="../img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
+<img src="img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
 
 !!! note
     All the following layer types in MapStore are supported and can be used in the *GeoProcessing tool*:
@@ -24,15 +24,15 @@ The **Buffer** tool allows to create a buffer around the input geometries and wh
 
 * Select a layer from the **Source Layer** option drop down menu. The dropdown shows the layers available for the process from the ones present in TOC.
 
-* Select one of the layer features from the **Source Feature** option. The feature can be selected from the dropdown menu or directly clicking on map by activating the <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/> button.
+* Select one of the layer features from the **Source Feature** option. The feature can be selected from the dropdown menu or directly clicking on map by activating the <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/> button.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/select-buffer-feature.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/select-buffer-feature.mp4"/></video>
 
 * Insert the desired **Distance** for the buffer (supported are *m* and *km*).
 
-When all mandatory process parameters have been provided, it is possible to click on  <img src="../img/button/run_button.jpg" class="ms-docbutton"/> button to start the process to generate and visualize the buffer layer.
+When all mandatory process parameters have been provided, it is possible to click on  <img src="img/button/run_button.jpg" class="ms-docbutton"/> button to start the process to generate and visualize the buffer layer.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/run_buffer-layer.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/run_buffer-layer.mp4"/></video>
 
 The buffer layer is added in [TOC](toc.md) inside a new group created for the purpose.
 
@@ -40,7 +40,7 @@ The buffer layer is added in [TOC](toc.md) inside a new group created for the pu
 
 Enabling the *Advanced options* the user can include further (not mandatory) parameters for the *Buffer* process:
 
-<img src="../img/geoprocessing-tool/buffer-advanced-options.jpg" class="ms-docimage" width="400px" />
+<img src="img/geoprocessing-tool/buffer-advanced-options.jpg" class="ms-docimage" width="400px" />
 
 * Enter the **Quadrant Segments**, that is the number of line segments used to approximate a quarter circle.
 
@@ -48,29 +48,29 @@ Enabling the *Advanced options* the user can include further (not mandatory) par
 
 ## Intersection tool
 
-Once **Intersection** is selected as a process to be used from the first dropdown, the user can also select the layer to use as **Source Layer** for the intersection as well as the layer to be intersected with the given source (**Intersection Layer** option). For both options it is possible to select a feature to use for the intersection process; this is possible by enabling the <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/> buttons in order to select the layer features directly with a click on the map. If no layer feature is provided for one of the to layer options, the operation will be performed on the entire layer.
+Once **Intersection** is selected as a process to be used from the first dropdown, the user can also select the layer to use as **Source Layer** for the intersection as well as the layer to be intersected with the given source (**Intersection Layer** option). For both options it is possible to select a feature to use for the intersection process; this is possible by enabling the <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/> buttons in order to select the layer features directly with a click on the map. If no layer feature is provided for one of the to layer options, the operation will be performed on the entire layer.
 
 The user can then:
 
 * Select the **Source Layer** from the drop down menu.
 
-* Select the layer feature from the **Source Feature**. The feature can be selected from the drop down menu or by clicking directly on the map by activating the <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/> button.
+* Select the layer feature from the **Source Feature**. The feature can be selected from the drop down menu or by clicking directly on the map by activating the <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/> button.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/select-feature.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/select-feature.mp4"/></video>
 
-In the same way it is possible to select the **Intersection Layer** and the corresponding **Intersection Feature** to obtain the new intersected layer by clicking on <img src="../img/button/run_button.jpg" class="ms-docbutton"/> button.
+In the same way it is possible to select the **Intersection Layer** and the corresponding **Intersection Feature** to obtain the new intersected layer by clicking on <img src="img/button/run_button.jpg" class="ms-docbutton"/> button.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/run_intersection-layer.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/run_intersection-layer.mp4"/></video>
 
 The new layer, result of the intersection of the features selected, will be added to the [TOC](toc.md) inside a dedicated group and visible in the map viewer.
 
-<img src="../img/geoprocessing-tool/intersection-layer.jpg" class="ms-docimage" />
+<img src="img/geoprocessing-tool/intersection-layer.jpg" class="ms-docimage" />
 
 ### Advanced Settings
 
 Enabling the *Advanced options* the user can include further (not mandatory) parameters for the *Intersection* process:
 
-<img src="../img/geoprocessing-tool/intersection-advanced-options.jpg" class="ms-docimage" width="400px"/>
+<img src="img/geoprocessing-tool/intersection-advanced-options.jpg" class="ms-docimage" width="400px"/>
 
 * Enter the **First attribute to retain**, which is the first attribute to display
 

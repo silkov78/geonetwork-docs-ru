@@ -1,6 +1,6 @@
 # Печать карты
 
-Карту можно распечатать, выбрав кнопку **Печать** <img src="../img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов). Процесс печати состоит из двух основных этапов:
+Карту можно распечатать, выбрав кнопку **Печать** <img src="img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов). Процесс печати состоит из двух основных этапов:
 
 * Определение *настроек печати*
 
@@ -8,9 +8,9 @@
 
 ## Настройки печати
 
-Как только выбрана кнопка *Печать* <img src="../img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/>, открывается следующее окно:
+Как только выбрана кнопка *Печать* <img src="img/button/print2.jpg" class="ms-docbutton"  style="max-height:20px;"/>, открывается следующее окно:
 
-<img src="../img/print/print-page.jpg" class="ms-docimage"/>
+<img src="img/print/print-page.jpg" class="ms-docimage"/>
 
 В этом окне можно:
 
@@ -31,13 +31,13 @@
 !!! note "Примечание"
     В предварительном просмотре *настроек печати* отображается та часть карты, которая будет выведена на печатный лист. Чтобы центрировать карту, пользователь может перемещать ее до тех пор, пока в предварительном просмотре не отобразится желаемый экстент.
 
-    <video class="ms-docimage" style="max-width:500px;" controls><source src="../img/print/print.mp4" /></video>
+    <video class="ms-docimage" style="max-width:500px;" controls><source src="img/print/print.mp4" /></video>
 
 ### Макет
 
 При открытии меню настроек **Макета** появляется следующее меню:
 
-<img src="../img/print/first-layout-print.jpg" class="ms-docimage"/>
+<img src="img/print/first-layout-print.jpg" class="ms-docimage"/>
 
 Здесь, в частности, можно:
 
@@ -53,7 +53,7 @@
 
 Легенду можно настроить через меню **Опции легенды**:
 
-<img src="../img/print/first-legend-options.jpg" class="ms-docimage"/>
+<img src="img/print/first-legend-options.jpg" class="ms-docimage"/>
 
 В этом меню пользователю разрешено:
 
@@ -69,18 +69,18 @@
 
 ## Предварительный просмотр
 
-Когда настройки печати выбраны, можно перейти к предварительному просмотру, нажав на кнопку <img src="../img/button/print_button.jpg" class="ms-docbutton"/>. Появится окно, подобное следующему:
+Когда настройки печати выбраны, можно перейти к предварительному просмотру, нажав на кнопку <img src="img/button/print_button.jpg" class="ms-docbutton"/>. Появится окно, подобное следующему:
 
-<img src="../img/print/preview.jpg" class="ms-docimage"/>
+<img src="img/print/preview.jpg" class="ms-docimage"/>
 
 Здесь можно:
 
-* Увеличивать/уменьшать масштаб в предварительном просмотре <img src="../img/button/zoom-in-out.jpg" class="ms-docbutton"/>
+* Увеличивать/уменьшать масштаб в предварительном просмотре <img src="img/button/zoom-in-out.jpg" class="ms-docbutton"/>
 
-* Перемещаться между страницами (когда страниц больше одной) <img src="../img/button/navigate-preview.jpg" class="ms-docbutton"/>
+* Перемещаться между страницами (когда страниц больше одной) <img src="img/button/navigate-preview.jpg" class="ms-docbutton"/>
 
-* Скачать файл в формате .pdf <img src="../img/button/download-layout.jpg" class="ms-docbutton"/>
+* Скачать файл в формате .pdf <img src="img/button/download-layout.jpg" class="ms-docbutton"/>
 
 Простая распечатанная карта может, например, выглядеть следующим образом:
 
-<img src="../img/print/print.jpg" class="ms-docimage"/>
+<img src="img/print/print.jpg" class="ms-docimage"/>

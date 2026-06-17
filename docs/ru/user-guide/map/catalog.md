@@ -3,39 +3,39 @@
 Служба каталогов для веба (CSW) — это [стандарт OGC](https://www.ogc.org/standards), используемый для публикации и поиска геопространственных данных и связанных с ними метаданных в интернете. Он описывает геопространственные службы, такие как Web Map Service (WMS) и Web Map Tile Service (WMTS).
 
 В Каталоге предоставляется возможность доступа к удаленным службам WMS, WFS, CSW, WMTS и TMS и добавления соответствующих слоев на карту. По умолчанию, как только пользователь открывает Каталог, становятся доступны демонстрационные службы CSW, WMS и WMTS, позволяющие импортировать слои из GeoServer от GeoSolutions.
-Пользователь может получить доступ к Каталогу, нажав на кнопку <img src="../img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов). При первом открытии он выглядит следующим образом:
+Пользователь может получить доступ к Каталогу, нажав на кнопку <img src="img/button/catalog2.jpg" class="ms-docbutton" style="max-height:25px;" /> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов). При первом открытии он выглядит следующим образом:
 
-<img src="../img/catalog/catalog_panel.jpg" class="ms-docimage"  style="max-width:500px;" />
+<img src="img/catalog/catalog_panel.jpg" class="ms-docimage"  style="max-width:500px;" />
 
 ## Добавление слоев из удаленных служб
 
 Чтобы добавить слой, пользователь может сначала открыть каталог и выбрать из следующего выпадающего меню удаленную службу, из которой будет добавлен слой:
 
-<img src="../img/catalog/service_list.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/service_list.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 После выбора удаленной службы можно найти нужный слой, введя текст в строку поиска:
 
-<img src="../img/catalog/catalog_search.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/catalog_search.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
-Нажав на кнопку <img src="../img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой окончательно добавляется в [Панель содержания](toc.md) и отображается в окне просмотра карты:
+Нажав на кнопку <img src="img/button/add_to_map_button.jpg" class="ms-docbutton"/>, слой окончательно добавляется в [Панель содержания](toc.md) и отображается в окне просмотра карты:
 
-<img src="../img/catalog/added_layer.jpg" class="ms-docimage"/>
+<img src="img/catalog/added_layer.jpg" class="ms-docimage"/>
 
 !!! info "Внимание"
-    Для слоев с длинными описаниями или большим объемом метаданных содержимое обрезается, чтобы соответствовать размеру *Карточки слоя*. Чтобы получить доступ к полной информации, пользователь может развернуть карточку с помощью кнопки <img src="../img/button/expand_card_icon.jpg" class="ms-docbutton" style="max-height:20px;"/>:
+    Для слоев с длинными описаниями или большим объемом метаданных содержимое обрезается, чтобы соответствовать размеру *Карточки слоя*. Чтобы получить доступ к полной информации, пользователь может развернуть карточку с помощью кнопки <img src="img/button/expand_card_icon.jpg" class="ms-docbutton" style="max-height:20px;"/>:
 
-    <video class="ms-docimage" style="max-width:400px;" controls><source src="../img/catalog/expand_card.mp4"></video>
+    <video class="ms-docimage" style="max-width:400px;" controls><source src="img/catalog/expand_card.mp4"></video>
 
 ## Управление удаленными службами
 
-Также можно добавлять новые удаленные службы в проект карты (<img src="../img/button/+.jpg" class="ms-docbutton"/>) или редактировать/удалять существующие (<img src="../img/button/edit-service.jpg" class="ms-docbutton" />).
+Также можно добавлять новые удаленные службы в проект карты (<img src="img/button/+.jpg" class="ms-docbutton"/>) или редактировать/удалять существующие (<img src="img/button/edit-service.jpg" class="ms-docbutton" />).
 
-<img src="../img/catalog/add_edit_services.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/add_edit_services.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 Процесс добавления/редактирования очень похож, и единственное различие заключается в том, что при редактировании существующей службы поля ввода уже будут заполнены ее настройками, в то время как при добавлении новой все поля будут пустыми. Кроме того, только при редактировании существующей службы ее можно будет удалить из списка служб.
 Например, при редактировании существующей службы начальный вид будет следующим:
 
-<img src="../img/catalog/new_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/new_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 Здесь пользователь может установить параметры службы, которые можно разделить на:
 
@@ -43,14 +43,14 @@
 
 * **Расширенные настройки**
 
-После правильной установки параметров можно <img src="../img/button/save_service.jpg" class="ms-docbutton"/> службу. Если пользователь хочет отменить изменения, есть кнопка <img src="../img/button/cancel_service.jpg" class="ms-docbutton"/>.
-Существующую службу можно окончательно удалить из списка служб с помощью кнопки <img src="../img/button/delete_service.jpg" class="ms-docbutton"/> (эта опция недоступна при создании новой удаленной службы).
+После правильной установки параметров можно <img src="img/button/save_service.jpg" class="ms-docbutton"/> службу. Если пользователь хочет отменить изменения, есть кнопка <img src="img/button/cancel_service.jpg" class="ms-docbutton"/>.
+Существующую службу можно окончательно удалить из списка служб с помощью кнопки <img src="img/button/delete_service.jpg" class="ms-docbutton"/> (эта опция недоступна при создании новой удаленной службы).
 
 ### Общие настройки
 
 Общие настройки — это три обязательных поля, которые должна иметь каждая удаленная служба:
 
-<img src="../img/catalog/general_settings.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/general_settings.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 В частности:
 
@@ -62,9 +62,9 @@
 
 ### Расширенные настройки
 
-Раздел "Расширенные настройки" открывается нажатием на значок <img src="../img/button/expand_card_icon.jpg" class="ms-docbutton"/>:
+Раздел "Расширенные настройки" открывается нажатием на значок <img src="img/button/expand_card_icon.jpg" class="ms-docbutton"/>:
 
-<img src="../img/catalog/advanced_settings.jpg" class="ms-docimage"  style="max-width:500px;" />
+<img src="img/catalog/advanced_settings.jpg" class="ms-docimage"  style="max-width:500px;" />
 
 Содержимое расширенных настроек зависит от типа каталога, но некоторые опции являются общими для всех типов служб:
 
@@ -81,18 +81,18 @@
 
 В **общих настройках** службы CSW пользователь может указать заголовок для этой службы и ее URL.
 
-<img src="../img/catalog/general_settings.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/general_settings.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 #### Расширенные настройки
 
-<img src="../img/catalog/advanced_settings_csw.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/advanced_settings_csw.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 * *Тип сервера*: для указания типа сервера онлайн-ресурсов WMS, на которые ссылаются метаданные, предоставляемые по URL службы CSW. Возможны два варианта: `Geoserver` или `No Vendor`, которыми могут быть, например, MapProxy, MapServer или другие.
 
 !!! info "Внимание"
     Если установлено **No Vendor**, то в OGC-запросах, где задействован этот источник, не будут использоваться какие-либо вендор-специфичные опции, поддерживаемые только GeoServer.
 
-* *Формат*: для назначения формата *Тайла* по умолчанию для слоев, добавляемых на карту (например, `png`, `png8`, `jpeg`, `vnd.jpeg-png`, `vnd.jpeg-png8` или `gif`), и для определения формата *Информационного листа* по умолчанию для слоев, добавляемых на карту (`text/plain`, `text/html`, `application/json` или `application/geo+json`). Список доступных форматов автоматически извлекается из тех, что поддерживаются сервером WMS, и при необходимости может быть получен вручную с помощью кнопки **Получить поддерживаемые форматы** <img src = "../img/button/update_button.jpg" Button = "ms-docbutton" />.
+* *Формат*: для назначения формата *Тайла* по умолчанию для слоев, добавляемых на карту (например, `png`, `png8`, `jpeg`, `vnd.jpeg-png`, `vnd.jpeg-png8` или `gif`), и для определения формата *Информационного листа* по умолчанию для слоев, добавляемых на карту (`text/plain`, `text/html`, `application/json` или `application/geo+json`). Список доступных форматов автоматически извлекается из тех, что поддерживаются сервером WMS, и при необходимости может быть получен вручную с помощью кнопки **Получить поддерживаемые форматы** <img src = "img/button/update_button.jpg" Button = "ms-docbutton" />.
 
 !!! info "Внимание"
     *Тайл* и *Информационный лист*, настроенные с помощью этой опции, будут автоматически использоваться для всех слоев, загруженных из соответствующего источника каталога (по умолчанию используется *Тайл* `image/png` и *Информационный лист* `text/plain`).
@@ -118,7 +118,7 @@
 
 При включении опции *Показывать шаблон метаданных* появляется текстовый редактор, с помощью которого можно вставить пользовательскую информацию из метаданных для этой службы. Чтобы динамически анализировать значение метаданных каждого слоя, пользователь может вставить желаемые имена свойств в формате `${property_name}`:
 
-<img src="../img/catalog/metadata-tooltip.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/catalog/metadata-tooltip.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 В этом случае можно добавить следующий текст, чтобы представить желаемые свойства метаданных:
 
@@ -154,7 +154,7 @@
 
 После вставки этого текста и сохранения результатом будет то, что каждый слой будет отображать свои свойства в каталоге в установленном нами формате:
 
-<video class="ms-docimage"  style="max-width:500px;" controls><source src="../img/catalog/metadata-det.mp4"></video>
+<video class="ms-docimage"  style="max-width:500px;" controls><source src="img/catalog/metadata-det.mp4"></video>
 
 !!! info "Внимание"
     Если некоторые метаданные отсутствуют, ответ сервера будет `source Not Available` (источник недоступен).
@@ -167,7 +167,7 @@
 
 * В текстовой области *Статический фильтр* можно вставить пользовательский фильтр для этой службы.
 
-<img src="../img/catalog/csw_static_filters.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/catalog/csw_static_filters.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 Чтобы представить желаемую конфигурацию *Статического фильтра*, можно добавить следующий текст:
 
@@ -186,7 +186,7 @@
 
 * В текстовой области *Динамический фильтр* можно вставить пользовательский фильтр, который будет применяться через оператор AND со *Статическим фильтром*. Шаблон используется с плейсхолдером ${searchText} для добавления поисковой строки.
 
-<img src="../img/catalog/csw_dynamic_filters.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/catalog/csw_dynamic_filters.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 В этом случае можно добавить следующий текст:
 
@@ -207,7 +207,7 @@
 
 В дополнение к стандартным опциям, только для источников каталога WMS, через **Расширенные настройки** пользователь может также настроить следующие опции:
 
-<img src="../img/catalog/advanced_settings_wms.jpg" class="ms-docimage"  style="max-width:500px;" />
+<img src="img/catalog/advanced_settings_wms.jpg" class="ms-docimage"  style="max-width:500px;" />
 
 * *Локализованные стили* (только для службы WMS): если включено, позволяет включать локаль Каталога метаданных в каждый запрос **GetMap**, **GetLegendGraphic** и **GetFeatureInfo** к серверу, чтобы WMS-сервер, если он правильно настроен, мог использовать эту локаль для:
 
@@ -230,14 +230,14 @@
 !!! info "Внимание"
     Если установлено **No Vendor**, то в OGC-запросах, где задействован этот источник, не будут использоваться какие-либо вендор-специфичные опции, поддерживаемые только GeoServer.
 
-* *Формат*: для определения формата *Тайла* по умолчанию для слоев, добавляемых на карту (`png`, `png8`, `jpeg`, `vnd.jpeg-png`, `vnd.jpeg-png8` или `gif`), и для определения формата *Информационного листа* по умолчанию для слоев, добавляемых на карту (`text/plain`, `text/html`, `application/json` или `application/geo+json`). Список доступных форматов автоматически извлекается из тех, что поддерживаются сервером WMS, и при необходимости может быть получен вручную с помощью кнопки **Получить поддерживаемые форматы** <img src = "../img/button/update_button.jpg" Button = "ms-docbutton" />.
+* *Формат*: для определения формата *Тайла* по умолчанию для слоев, добавляемых на карту (`png`, `png8`, `jpeg`, `vnd.jpeg-png`, `vnd.jpeg-png8` или `gif`), и для определения формата *Информационного листа* по умолчанию для слоев, добавляемых на карту (`text/plain`, `text/html`, `application/json` или `application/geo+json`). Список доступных форматов автоматически извлекается из тех, что поддерживаются сервером WMS, и при необходимости может быть получен вручную с помощью кнопки **Получить поддерживаемые форматы** <img src = "img/button/update_button.jpg" Button = "ms-docbutton" />.
 
 !!! info "Внимание"
     *Тайл* и *Информационный лист*, настроенные с помощью этой опции, будут автоматически использоваться для всех слоев, загруженных из соответствующего источника каталога (по умолчанию используется *Тайл* `image/png` и *Информационный лист* `text/plain`).
 
 * *Размер тайла (WMS)*: представляет размер тайла (ширину и высоту), который будет использоваться для тайлов всех слоев, добавленных на карту из источника каталога (`256x256` или `512x512`).
 
-* *Псевдонимы домена*: доступно только для каталогов типа WMS. Эта опция используется для повышения производительности приложения при запросах тайловых слоев, когда на стороне сервера для настроенного источника каталога можно определить несколько доменов (шардинг доменов). Пользователь может настроить несколько URL-адресов, ссылающихся на одну и ту же службу WMS, с помощью кнопки **Добавить псевдоним** <img src = "../img/button/++.jpg" Button = "ms-docbutton" />.
+* *Псевдонимы домена*: доступно только для каталогов типа WMS. Эта опция используется для повышения производительности приложения при запросах тайловых слоев, когда на стороне сервера для настроенного источника каталога можно определить несколько доменов (шардинг доменов). Пользователь может настроить несколько URL-адресов, ссылающихся на одну и ту же службу WMS, с помощью кнопки **Добавить псевдоним** <img src = "img/button/++.jpg" Button = "ms-docbutton" />.
 
 ### Каталог TMS
 
@@ -248,7 +248,7 @@
 * TMS 1.0.0, с указанием URL.
 * Выбор из списка известных служб TMS, со всеми вариантами.
 
-<img src="../img/catalog/tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
+<img src="img/catalog/tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
 <p class="ms-doc-caption">Выберите провайдера для TMS. Список провайдеров содержит "custom", "TMS 1.0.0" и другие ресурсы</p>
 
 !!! info "Внимание"
@@ -258,7 +258,7 @@
 
 Выбрав провайдера **custom**, пользователь может вручную ввести шаблон URL тайла. Шаблон URL — это URL с некоторыми плейсхолдерами, которые будут заменены переменными. Плейсхолдеры определяются строками в фигурных скобках, например: `{variable_name}`.
 
-<img src="../img/catalog/custom_tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
+<img src="img/catalog/custom_tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
 <p class="ms-doc-caption">Редактирование пользовательского TMS</p>
 
 Допустимые плейсхолдеры:
@@ -278,7 +278,7 @@
 
 Когда пользователь сохраняет эту пользовательскую службу каталога и нажимает на поиск, он увидит только один результат, который можно добавить на карту: варианты в настоящее время не поддерживаются для этого типа провайдера.
 
-<img src="../img/catalog/custom_tms_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="img/catalog/custom_tms_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Просмотр пользовательской службы TMS. Она содержит только один результат</p>
 
 ##### Пример пользовательского TMS
@@ -310,15 +310,15 @@ url: https://nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg
 
 Выбрав провайдера "TMS 1.0.0", пользователь может ввести URL службы Tile Map Service (см. [Спецификацию TMS](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification)). Например, в GeoServer это URL ссылки "TMS" на главной странице.
 
-<img src="../img/catalog/gs-tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
+<img src="img/catalog/gs-tms.jpg" class="ms-docimage"  style="max-width:500px;"/>
 <p class="ms-doc-caption">URL TMS 1.1.0 из GeoServer</p>
 
 После сохранения этого, пользователь сможет просматривать и добавлять на карту слои TMS, предоставляемые службой. Приложение отфильтрует опубликованные слои, показывая только тайловые карты в текущей EPSG.
 
-<img src="../img/catalog/tms100_edit.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="img/catalog/tms100_edit.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Редактирование провайдера TMS 1.0.0</p>
 
-<img src="../img/catalog/tms100_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="img/catalog/tms100_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Просмотр слоев TMS 1.0.0</p>
 
 ##### Примеры служб TMS 1.0.0
@@ -333,10 +333,10 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 Другие известные службы перечислены как провайдеры ниже "custom" и "TMS 1.0.0". Это статический список, настроенный внутри приложения. Выбор одного из перечисленных провайдеров и сохранение новой службы каталога позволяет просматривать все известные варианты для этой службы.
 
-<img src="../img/catalog/tms_known_edit.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="img/catalog/tms_known_edit.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Выберите известного провайдера TMS</p>
 
-<img src="../img/catalog/tms_known_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
+<img src="img/catalog/tms_known_browse.jpg" class="ms-docimage"  style="max-width:400px;"/>
 <p class="ms-doc-caption">Просмотр вариантов TMS</p>
 
 ### Каталог 3D Tiles
@@ -347,14 +347,14 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 В **Общих настройках** службы 3D Tiles пользователь может указать заголовок для этой службы и ее URL.
 
-<img src="../img/catalog/3dtiles_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/3dtiles_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 !!! info "Внимание"
     В настоящее время для слоев 3D Tiles доступны следующие возможности инструментов:
 
-* *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-* Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-3d-tiles) и [Стиля](layer-settings.md#стилизация-слоя-3d-tiles)
-* *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
+* *Приблизить к экстенту выбранного слоя* <img src="img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
+* Доступ к [Настройкам слоя](layer-settings.md) <img src="img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-3d-tiles) и [Стиля](layer-settings.md#стилизация-слоя-3d-tiles)
+* *Удалить* слой <img src="img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог COG
 
@@ -364,7 +364,7 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 В **Общих настройках** источника типа COG можно указать `Заголовок` службы и ее `URL`.
 
-<img src="../img/catalog/cog_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/cog_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 !!! warning "Предупреждение"
     
@@ -375,16 +375,16 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 В дополнение к стандартным опциям, только для источников каталога COG, через **Расширенные настройки** пользователь может также настроить следующую опцию:
 
-<img src="../img/catalog/advanced_settings_cog.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/advanced_settings_cog.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 * *Скачать метаданные файла при поиске*: эта опция получит метаданные для поддержки приближения к слою, когда слой добавляется в [Панели содержания](toc.md).
 
 !!! info "Внимание"
     В настоящее время для слоев COG доступны следующие возможности инструментов:
 
-* *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-* Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-cog) и [Стиля](layer-settings.md#стилизация-для-слоя-cog)
-* *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
+* *Приблизить к экстенту выбранного слоя* <img src="img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
+* Доступ к [Настройкам слоя](layer-settings.md) <img src="img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация), опций [Отображения](layer-settings.md#слой-cog) и [Стиля](layer-settings.md#стилизация-для-слоя-cog)
+* *Удалить* слой <img src="img/button/delete.jpg" class="ms-docbutton"/>
 
 ### Каталог моделей IFC
 
@@ -392,12 +392,12 @@ https://gs-stable.geosolutionsgroup.com/geoserver/gwc/service/tms/1.0.0
 
 В **Общих настройках** источника типа IFC можно указать `Заголовок` службы и ее `URL`.
 
-<img src="../img/catalog/ifc_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
+<img src="img/catalog/ifc_service.jpg" class="ms-docimage"  style="max-width:600px;"/>
 
 !!! info "Внимание"
     В настоящее время для слоев моделей IFC доступны следующие возможности инструментов:
 
-    * *Приблизить к экстенту выбранного слоя* <img src="../img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
-    * Доступ к [Настройкам слоя](layer-settings.md) <img src="../img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация) и опций 
+    * *Приблизить к экстенту выбранного слоя* <img src="img/button/zoom-layer.jpg" class="ms-docbutton"/>: для приближения карты к экстенту слоя
+    * Доступ к [Настройкам слоя](layer-settings.md) <img src="img/button/properties.jpg" class="ms-docbutton"/> для просмотра/редактирования [Общей информации](layer-settings.md#общая-информация) и опций 
 [Отображения](layer-settings.md#слой-ifc)
-    * *Удалить* слой <img src="../img/button/delete.jpg" class="ms-docbutton"/>
+    * *Удалить* слой <img src="img/button/delete.jpg" class="ms-docbutton"/>

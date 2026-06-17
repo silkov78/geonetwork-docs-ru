@@ -5,9 +5,9 @@
 !!! warning "Предупреждение"
     Чтобы предотвратить возможные ошибки в методах наложения геометрии из-за сложных и тяжелых геометрий, в используемый GeoServer необходимо добавить [системное свойство JTS](https://github.com/locationtech/jts/blob/master/USING.md#jts-system-properties) (в свойствах JAVA должно быть включено `-Djts.overlay=ng`).
 
-При нажатии кнопки **Инструмент геообработки** <img src="../img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов), открывается панель, где пользователь может выбрать географические операции: **Буфер** и **Пересечение**.
+При нажатии кнопки **Инструмент геообработки** <img src="img/button/geoprocessing-button.jpg" class="ms-docbutton"/>, доступной на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов), открывается панель, где пользователь может выбрать географические операции: **Буфер** и **Пересечение**.
 
-<img src="../img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
+<img src="img/geoprocessing-tool/geoprocessing-panel.jpg" class="ms-docimage" width="400px"/>
 
 !!! info "Внимание"
     Все следующие типы слоев поддерживаются и могут использоваться в инструменте *Геообработка*:
@@ -24,15 +24,15 @@
 
 * Выбрать слой из выпадающего меню опции **Исходный слой**. В выпадающем меню отображаются слои, доступные для процесса из числа присутствующих в Панели содержания.
 
-* Выбрать один из объектов слоя в опции **Исходный объект**. Объект можно выбрать из выпадающего меню или непосредственно щелкнув по карте, активировав кнопку <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/>.
+* Выбрать один из объектов слоя в опции **Исходный объект**. Объект можно выбрать из выпадающего меню или непосредственно щелкнув по карте, активировав кнопку <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/>.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/select-buffer-feature.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/select-buffer-feature.mp4"/></video>
 
 * Ввести желаемое **Расстояние** для буфера (поддерживаются *м* и *км*).
 
-Когда все обязательные параметры процесса предоставлены, можно нажать кнопку <img src="../img/button/run_button.jpg" class="ms-docbutton"/> для запуска процесса создания и визуализации буферного слоя.
+Когда все обязательные параметры процесса предоставлены, можно нажать кнопку <img src="img/button/run_button.jpg" class="ms-docbutton"/> для запуска процесса создания и визуализации буферного слоя.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/run_buffer-layer.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/run_buffer-layer.mp4"/></video>
 
 Буферный слой добавляется в [Панель содержания](toc.md) в новую группу, созданную для этой цели.
 
@@ -40,7 +40,7 @@
 
 Включив *Расширенные опции*, пользователь может добавить дополнительные (необязательные) параметры для процесса *Буфер*:
 
-<img src="../img/geoprocessing-tool/buffer-advanced-options.jpg" class="ms-docimage" width="400px" />
+<img src="img/geoprocessing-tool/buffer-advanced-options.jpg" class="ms-docimage" width="400px" />
 
 * Ввести **Сегменты квадранта**, то есть количество линейных сегментов, используемых для аппроксимации четверти круга.
 
@@ -48,29 +48,29 @@
 
 ## Инструмент "Пересечение"
 
-После выбора **Пересечения** в качестве процесса в первом выпадающем меню, пользователь может также выбрать слой для использования в качестве **Исходного слоя** для пересечения, а также слой, который будет пересекаться с заданным источником (опция **Слой пересечения**). Для обеих опций можно выбрать объект для использования в процессе пересечения; это возможно, включив кнопки <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/>, чтобы выбрать объекты слоя непосредственно щелчком по карте. Если для одной из опций слоя не предоставлен объект, операция будет выполнена над всем слоем.
+После выбора **Пересечения** в качестве процесса в первом выпадающем меню, пользователь может также выбрать слой для использования в качестве **Исходного слоя** для пересечения, а также слой, который будет пересекаться с заданным источником (опция **Слой пересечения**). Для обеих опций можно выбрать объект для использования в процессе пересечения; это возможно, включив кнопки <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/>, чтобы выбрать объекты слоя непосредственно щелчком по карте. Если для одной из опций слоя не предоставлен объект, операция будет выполнена над всем слоем.
 
 Затем пользователь может:
 
 * Выбрать **Исходный слой** из выпадающего меню.
 
-* Выбрать объект слоя в **Исходный объект**. Объект можно выбрать из выпадающего меню или щелкнув непосредственно по карте, активировав кнопку <img src="../img/button/add_marker_button.jpg" class="ms-docbutton"/>.
+* Выбрать объект слоя в **Исходный объект**. Объект можно выбрать из выпадающего меню или щелкнув непосредственно по карте, активировав кнопку <img src="img/button/add_marker_button.jpg" class="ms-docbutton"/>.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/select-feature.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/select-feature.mp4"/></video>
 
-Таким же образом можно выбрать **Слой пересечения** и соответствующий **Объект пересечения**, чтобы получить новый пересеченный слой, нажав кнопку <img src="../img/button/run_button.jpg" class="ms-docbutton"/>.
+Таким же образом можно выбрать **Слой пересечения** и соответствующий **Объект пересечения**, чтобы получить новый пересеченный слой, нажав кнопку <img src="img/button/run_button.jpg" class="ms-docbutton"/>.
 
-<video class="ms-docimage" controls><source src="../img/geoprocessing-tool/run_intersection-layer.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/geoprocessing-tool/run_intersection-layer.mp4"/></video>
 
 Новый слой, результат пересечения выбранных объектов, будет добавлен в [Панель содержания](toc.md) в специальную группу и будет виден в окне просмотра карты.
 
-<img src="../img/geoprocessing-tool/intersection-layer.jpg" class="ms-docimage" />
+<img src="img/geoprocessing-tool/intersection-layer.jpg" class="ms-docimage" />
 
 ### Расширенные настройки
 
 Включив *Расширенные опции*, пользователь может добавить дополнительные (необязательные) параметры для процесса *Пересечение*:
 
-<img src="../img/geoprocessing-tool/intersection-advanced-options.jpg" class="ms-docimage" width="400px"/>
+<img src="img/geoprocessing-tool/intersection-advanced-options.jpg" class="ms-docimage" width="400px"/>
 
 * Ввести **Первый сохраняемый атрибут**, который является первым отображаемым атрибутом.
 

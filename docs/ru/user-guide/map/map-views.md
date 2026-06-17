@@ -7,50 +7,50 @@
 
 ## Добавление нового вида
 
-После того как пользователь открывает карту, инструменты *Виды карты* можно открыть с помощью кнопки <img src="../img/button/map-views-button.jpg" class="ms-docbutton" /> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов).
+После того как пользователь открывает карту, инструменты *Виды карты* можно открыть с помощью кнопки <img src="img/button/map-views-button.jpg" class="ms-docbutton" /> на [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов).
 
-<img src="../img/map-views/map-views-panel.jpg" class="ms-docimage"/>
+<img src="img/map-views/map-views-panel.jpg" class="ms-docimage"/>
 
-Чтобы создать новый простой вид, пользователь может просто переместить карту в интересующую область, включить желаемые слои в Содержании для отображения на карте и, наконец, нажать на кнопку <img src="../img/button/+++.jpg" class="ms-docbutton" />. Вид будет создан и виден в списке *Виды* при нажатии на кнопку <img src="../img/button/timeline-layers-list-button.jpg" class="ms-docbutton" />.
+Чтобы создать новый простой вид, пользователь может просто переместить карту в интересующую область, включить желаемые слои в Содержании для отображения на карте и, наконец, нажать на кнопку <img src="img/button/+++.jpg" class="ms-docbutton" />. Вид будет создан и виден в списке *Виды* при нажатии на кнопку <img src="img/button/timeline-layers-list-button.jpg" class="ms-docbutton" />.
 
-<video class="ms-docimage" controls><source src="../img/map-views/add-view.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/add-view.mp4"/></video>
 
-Приложение позволяет настраивать и редактировать новый вид, открыв панель редактирования с помощью кнопки <img src="../img/button/editing-button.jpg" class="ms-docbutton" />. Здесь пользователю разрешено:
+Приложение позволяет настраивать и редактировать новый вид, открыв панель редактирования с помощью кнопки <img src="img/button/editing-button.jpg" class="ms-docbutton" />. Здесь пользователю разрешено:
 
 * Добавлять текст, изображения, видео или гиперссылки через раздел **Описание**. *Описание* видно во время [Навигации по видам](map-views.md#навигация-по-3d-видам). Взгляните на следующий пример.
 
-<img src="../img/map-views/description.jpg" class="ms-docimage"/>
+<img src="img/map-views/description.jpg" class="ms-docimage"/>
 
-* *Захватывать позиции вида* с помощью кнопки <img src="../img/button/capture-view-position-button.jpg" class="ms-docbutton" /> или изменять долготу, широту и высоту *Положения камеры* и *Центральной точки* (доступно только для *3D* режима) с помощью раздела **Положение**.
+* *Захватывать позиции вида* с помощью кнопки <img src="img/button/capture-view-position-button.jpg" class="ms-docbutton" /> или изменять долготу, широту и высоту *Положения камеры* и *Центральной точки* (доступно только для *3D* режима) с помощью раздела **Положение**.
 
-<img src="../img/map-views/position.jpg" class="ms-docimage"/>
+<img src="img/map-views/position.jpg" class="ms-docimage"/>
 
 * Изменять длительность анимации и включать/отключать эффект перехода во время [Навигации по видам](map-views.md#навигация-по-3d-видам) с помощью раздела **Анимация**.
 
-<img src="../img/map-views/animation.jpg" class="ms-docimage"/>
+<img src="img/map-views/animation.jpg" class="ms-docimage"/>
 
 * В 3D режиме использовать раздел **Маска** для выбора слоя WFS или Векторного слоя, доступного в Содержании, для создания маски на всех 3D тайлах, видимых на карте. Слой маски необходимо добавить на карту перед использованием этой функции, чтобы можно было использовать объекты слоя в качестве областей маскирования: если на карте присутствует несколько слоев WFS или Векторных слоев (с полигональными объектами), все они используются вместе для представления конечных областей маскирования.
 
-<img src="../img/map-views/mask-panel.jpg" class="ms-docimage"/>
+<img src="img/map-views/mask-panel.jpg" class="ms-docimage"/>
 
 Если пользователь включает опцию **Инвертировать**, просто применяется инвертированная маска с использованием того же слоя, так что каждый объект используется для создания отверстия на всех видимых 3D тайлах.
 
-<img src="../img/map-views/mask-inverse.jpg" class="ms-docimage"/>
+<img src="img/map-views/mask-inverse.jpg" class="ms-docimage"/>
 
 * Включать прозрачность глобуса через раздел **Прозрачность глобуса**, чтобы можно было видеть слои под поверхностью глобуса.
 
-<img src="../img/map-views/translucency.jpg" class="ms-docimage"/>
+<img src="img/map-views/translucency.jpg" class="ms-docimage"/>
 
 * Выбирать, какой слой должен быть видим, когда вид активен, через раздел **Опции слоя**. В 2D режиме пользователь может просто включать или отключать все слои, присутствующие в [Содержании](toc.md), и изменять прозрачность.
 
-<img src="../img/map-views/layer-options-tool.jpg" class="ms-docimage"/>
+<img src="img/map-views/layer-options-tool.jpg" class="ms-docimage"/>
 
 !!! info "Внимание"
     В *2D режиме* слои *3D тайлов* и *Рельефа* не отображаются в *Опциях слоя*.
 
 В *3D режиме*, используя ту же логику, что и для опции Маскирования, также можно Обрезать (не Маскировать) каждый слой 3D тайлов или Рельефа, используя слой WFS или векторный слой в качестве источника обрезки. Кроме того, в этом случае пользователь также может выбрать, какой объект слоя можно использовать в качестве *Объекта обрезки*.
 
-<video class="ms-docimage" controls><source src="../img/map-views/clipping.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/clipping.mp4"/></video>
 
 !!! info "Внимание"
     Слой обрезки должен иметь выпуклые полигональные объекты. Вогнутые полигоны не поддерживаются этим типом обрезки.
@@ -64,10 +64,10 @@
 
 ## Навигация по 3D видам
 
-После добавления нескольких видов в инструмент *Виды карты* можно просматривать их последовательно, нажимая на кнопку <img src="../img/button/timeline-play-button.jpg" class="ms-docbutton" />. При этом запускается режим презентации, и каждый вид отображается в Окне просмотра карты вместе с его описательной панелью (если она настроена) с левой стороны экрана в течение времени, зависящего от ранее настроенной длительности.
+После добавления нескольких видов в инструмент *Виды карты* можно просматривать их последовательно, нажимая на кнопку <img src="img/button/timeline-play-button.jpg" class="ms-docbutton" />. При этом запускается режим презентации, и каждый вид отображается в Окне просмотра карты вместе с его описательной панелью (если она настроена) с левой стороны экрана в течение времени, зависящего от ранее настроенной длительности.
 
-<video class="ms-docimage" controls><source src="../img/map-views/views-navigation.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/views-navigation.mp4"/></video>
 
 Пользователь также может выбирать навигацию по каждому виду вручную с помощью панели навигации, предоставляемой инструментом.
 
-<img src="../img/map-views/views-navigation-toolbar.jpg" class="ms-docimage"/>
+<img src="img/map-views/views-navigation-toolbar.jpg" class="ms-docimage"/>

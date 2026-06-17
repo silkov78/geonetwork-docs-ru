@@ -3,73 +3,73 @@
 В режиме картографического просмотра пользователь имеет возможность дополнять карту специальными объектами, которые отображают дополнительную информацию, отмечают определенные места на карте и так далее.
 Эти объекты составляют так называемые слои **Аннотаций**.
 
-В окне просмотра карты редактор может получить доступ к инструменту **Аннотации** <img src="../img/button/annotations2.jpg" class="ms-docbutton" style="max-height:30px;"/> на [Панели содержания](toc.md) <img src="../img/button/show-layers.jpg" class="ms-docbutton" style="max-height:30px;"/> в левом верхнем углу окна просмотра карты.
+В окне просмотра карты редактор может получить доступ к инструменту **Аннотации** <img src="img/button/annotations2.jpg" class="ms-docbutton" style="max-height:30px;"/> на [Панели содержания](toc.md) <img src="img/button/show-layers.jpg" class="ms-docbutton" style="max-height:30px;"/> в левом верхнем углу окна просмотра карты.
 
-<img src="../img/annotations/annotations_on_toc.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="img/annotations/annotations_on_toc.jpg" class="ms-docimage" style="max-width:500px;" />
 
 Откроется панель аннотаций, где редактор может ввести **Заголовок** (обязательно) и **Описание** (необязательно).
 
-<img src="../img/annotations/annotation_tool.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="img/annotations/annotation_tool.jpg" class="ms-docimage" style="max-width:500px;" />
 
 На вкладке *Геометрия* редактор может выбрать один из пяти различных типов **геометрии**:
 
-* **Маркер** <img src="../img/button/marker2.jpg" class="ms-docbutton" />
-* **Линия** <img src="../img/button/line2.jpg" class="ms-docbutton" />
-* **Полигон** <img src="../img/button/polygon2.jpg" class="ms-docbutton" />
-* **Текст** <img src="../img/button/text2.jpg" class="ms-docbutton" />
-* **Круг** <img src="../img/button/circle2.jpg" class="ms-docbutton" />
+* **Маркер** <img src="img/button/marker2.jpg" class="ms-docbutton" />
+* **Линия** <img src="img/button/line2.jpg" class="ms-docbutton" />
+* **Полигон** <img src="img/button/polygon2.jpg" class="ms-docbutton" />
+* **Текст** <img src="img/button/text2.jpg" class="ms-docbutton" />
+* **Круг** <img src="img/button/circle2.jpg" class="ms-docbutton" />
 
-<img src="../img/annotations/geometries-tab.jpg" class="ms-docimage"  style="max-width:500px;"/>
+<img src="img/annotations/geometries-tab.jpg" class="ms-docimage"  style="max-width:500px;"/>
 
 После выбора типа геометрии редактор может:
 
 * Нарисовать *геометрию* на карте.
 
-<video class="ms-docimage" style="max-width:700px;"controls><source src="../img/annotations/line_annotation_drawing.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;"controls><source src="img/annotations/line_annotation_drawing.mp4" ></video>
 
 * Ввести вершины геометрии или изменить существующие через **Редактор координат**, используя `Десятичный` или `Аэронавигационный` форматы.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/annotations/coordinates_format_switcher.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="img/annotations/coordinates_format_switcher.mp4" ></video>
 
-* Для *Линии* и *Полигона* добавить новые вершины, нажав кнопку <img src="../img/button/++.jpg" class="ms-docbutton" /> и введя значения `широты` и `долготы`.
+* Для *Линии* и *Полигона* добавить новые вершины, нажав кнопку <img src="img/button/++.jpg" class="ms-docbutton" /> и введя значения `широты` и `долготы`.
 
-<video class="ms-docimage" style="max-width:700px;"controls><source src="../img/annotations/add_vertex_button.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;"controls><source src="img/annotations/add_vertex_button.mp4" ></video>
 
 !!! info "Внимание"
     Если координаты вершин некорректны, они помечаются красным восклицательным знаком, а поле геометрии обводится красной рамкой.
-    <img src="../img/annotations/invalid_vertex.jpg" class="ms-docimage" style="max-width:500px;" />
+    <img src="img/annotations/invalid_vertex.jpg" class="ms-docimage" style="max-width:500px;" />
     В этом случае сохранить аннотацию невозможно, как показано ниже:
-    <video class="ms-docimage" style="max-width:500px;" controls><source src="../img/annotations/invalid_vertex2.mp4" ></video>
+    <video class="ms-docimage" style="max-width:500px;" controls><source src="img/annotations/invalid_vertex2.mp4" ></video>
 
 * Настроить **Стиль** аннотации, как описано в следующем параграфе.
 
 Для каждой созданной геометрии редактор может выполнить следующие операции:
 
-* **Приблизить** к геометрии аннотации на карте с помощью кнопки <img src="../img/button/zoom_button.jpg" class="ms-docbutton" />
+* **Приблизить** к геометрии аннотации на карте с помощью кнопки <img src="img/button/zoom_button.jpg" class="ms-docbutton" />
 
-* **Удалить** геометрию аннотации с помощью кнопки <img src="../img/button/delete_button.jpg" class="ms-docbutton" />
+* **Удалить** геометрию аннотации с помощью кнопки <img src="img/button/delete_button.jpg" class="ms-docbutton" />
 
-После создания всех геометрий пользователь может вернуться в [Панель содержания](toc.md), нажав кнопку <img src="../img/button/x2.jpg" class="ms-docbutton" />. Здесь появится новый слой аннотаций.
+После создания всех геометрий пользователь может вернуться в [Панель содержания](toc.md), нажав кнопку <img src="img/button/x2.jpg" class="ms-docbutton" />. Здесь появится новый слой аннотаций.
 
-<img src="../img/annotations/annotation2.jpg" class="ms-docimage" />
+<img src="img/annotations/annotation2.jpg" class="ms-docimage" />
 
 В [Панели содержания](toc.md) *панель инструментов Аннотаций* позволяет пользователю:
 
-<img src="../img/annotations/annotation3.jpg" class="ms-docimage" />
+<img src="img/annotations/annotation3.jpg" class="ms-docimage" />
 
-* **Приблизить** к экстенту аннотации с помощью кнопки <img src="../img/button/zoom_button.jpg" class="ms-docbutton" />
+* **Приблизить** к экстенту аннотации с помощью кнопки <img src="img/button/zoom_button.jpg" class="ms-docbutton" />
 
-* **Удалить** аннотацию с помощью кнопки <img src="../img/button/delete_button.jpg" class="ms-docbutton" />
+* **Удалить** аннотацию с помощью кнопки <img src="img/button/delete_button.jpg" class="ms-docbutton" />
 
-* **Редактировать** аннотацию с помощью кнопки <img src="../img/button/edit_button.jpg" class="ms-docbutton" />
+* **Редактировать** аннотацию с помощью кнопки <img src="img/button/edit_button.jpg" class="ms-docbutton" />
 
-* **Скачать** аннотацию с помощью кнопки <img src="../img/button/download_annotation_button.jpg" class="ms-docbutton" />
+* **Скачать** аннотацию с помощью кнопки <img src="img/button/download_annotation_button.jpg" class="ms-docbutton" />
 
 ## Стилизация аннотаций
 
 В зависимости от выбранного типа аннотации, пользователь может настраивать ее стиль с помощью мощного редактора стилей. Он доступен на вкладке *Стиль* в окне просмотра аннотаций.
 
-<img src="../img/annotations/annotations_toolbar.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/annotations_toolbar.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 !!! info "Внимание"
     Для каждого символа стиля доступно множество опций 3D-стиля, как показано в разделе [Стилизация в 3D](annotations.md#аннотации-в-3d-навигации) ниже.
@@ -78,18 +78,18 @@
 
 Пользователю предоставляются различные стили аннотаций типа *Маркер*:
 
-* Тип *Знак*: при нажатии на кнопку <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> открывается панель настройки знака.
+* Тип *Знак*: при нажатии на кнопку <img src="img/button/add_mark_button.jpg" class="ms-docbutton"/> открывается панель настройки знака.
 
-<img src="../img/annotations/marker_type_selection.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/marker_type_selection.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 Знак может иметь разную `Форму`, `Цвет заливки` и `Обводку` с различными `Цветом обводки`, `Шириной`, `Стилем обводки`, а также настраиваемые `Радиус` и `Поворот`. Взгляните на следующий пример.
 
-<img src="../img/annotations/marker_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/marker_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-* Тип *Иконка*: при нажатии на кнопку <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/> открывается панель настройки иконки.
+* Тип *Иконка*: при нажатии на кнопку <img src="img/button/add_icon_button.jpg" class="ms-docbutton"/> открывается панель настройки иконки.
 Иконка может иметь различное `Изображение`. Нажав на него, пользователь может выбрать *Маркер* и *Глиф*, как показано ниже:
 
-<video class="ms-docimage" controls><source src="../img/annotations/icon_style_editor.mp4" ></video>
+<video class="ms-docimage" controls><source src="img/annotations/icon_style_editor.mp4" ></video>
 
 Иконка также настраивается с помощью различных параметров: `Прозрачность`, `Размер`, `Поворот` и `Точка привязки`.
 
@@ -100,39 +100,39 @@
 
 Аннотация типа *Линия* имеет специальную панель стилизации с настраиваемой `Обводкой` с различными `Цветом`, `Шириной` и `Стилем`, а также различными типами `Окончания линии` (*Прямое*, *Круглое*, *Квадратное*) и `Соединения линий` (*Скошенное*, *Круглое*, *Острое*). Взгляните на изображение ниже.
 
-<img src="../img/annotations/polyline_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/polyline_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-Аннотацию типа Линия также можно настроить, добавив символ типа Знак, нажав кнопку <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/>, или Иконку с помощью кнопки <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/>, и выбрав *Начальная точка*, *Центр* или *Конечная точка* в опции `Преобразование геометрии`.
+Аннотацию типа Линия также можно настроить, добавив символ типа Знак, нажав кнопку <img src="img/button/add_mark_button.jpg" class="ms-docbutton"/>, или Иконку с помощью кнопки <img src="img/button/add_icon_button.jpg" class="ms-docbutton"/>, и выбрав *Начальная точка*, *Центр* или *Конечная точка* в опции `Преобразование геометрии`.
 
-<video class="ms-docimage" controls><source src="../img/annotations/start_point_option.mp4" ></video>
+<video class="ms-docimage" controls><source src="img/annotations/start_point_option.mp4" ></video>
 
 ***Полигон***
 
 Аннотация типа *Полигон* может иметь различный цвет `Заливки` и `Контур` с различными `Цветом`, `Шириной` и `Стилем`. Взгляните на следующий пример.
 
-<img src="../img/annotations/polygon_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/polygon_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-Также для полигона можно добавить символ *Знак* <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> или *Иконку* <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/> таким же образом, как и для аннотаций типа Линия.
+Также для полигона можно добавить символ *Знак* <img src="img/button/add_mark_button.jpg" class="ms-docbutton"/> или *Иконку* <img src="img/button/add_icon_button.jpg" class="ms-docbutton"/> таким же образом, как и для аннотаций типа Линия.
 
 ***Текст***
 
 Определяя точечную геометрию с привязанным текстом, аннотация типа *Текст* позволяет настраивать надпись с помощью множества опций, таких как: `Семейство шрифтов` (*DejaVu Sans*, *Serif* и т.д.), `Цвет` шрифта, `Размер`, `Стиль` (*Обычный* или *Курсив*) и `Насыщенность шрифта` (*Обычный* или *Жирный*), а также позволяет выбрать желаемую `Точку привязки` (*Центр*, *Нижний левый* и т.д.), `Цвет ореола` и `Толщину ореола`. Также можно выбрать `Поворот` и `Смещение` текста (*x* и *y*). Ниже приведен пример.
 
-<img src="../img/annotations/text_annotation_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/text_annotation_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ***Круг***
 
 Аннотация типа *Круг* имеет собственную панель символов для настройки `Цвета` и `Контура` с различными `Цветом`, `Шириной` и `Стилем`. Взгляните на следующий пример.
 
-<img src="../img/annotations/circle_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/annotations/circle_style_editor.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-*Центр* аннотации типа *Круг* также можно настроить, добавив символ *Знак* <img src="../img/button/add_mark_button.jpg" class="ms-docbutton"/> или *Иконку* <img src="../img/button/add_icon_button.jpg" class="ms-docbutton"/>, как и в случае аннотаций типа Линия и Полигон.
+*Центр* аннотации типа *Круг* также можно настроить, добавив символ *Знак* <img src="img/button/add_mark_button.jpg" class="ms-docbutton"/> или *Иконку* <img src="img/button/add_icon_button.jpg" class="ms-docbutton"/>, как и в случае аннотаций типа Линия и Полигон.
 
 ## Настройки аннотаций
 
 После создания всех *геометрий* аннотации пользователь может настроить **Пределы видимости**, перейдя на вкладку *Настройки*.
 
-<img src="../img/annotations/settings_tab.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="img/annotations/settings_tab.jpg" class="ms-docimage" style="max-width:500px;" />
 
 **Пределы видимости** позволяют отображать аннотацию только в определенных масштабах. Пользователь может установить *Максимальное значение* и *Минимальное значение* и выбрать *Тип пределов* между `Масштабом` или `Разрешением`.
 
@@ -140,43 +140,43 @@
 
 Функционал режима картографического просмотра позволяет визуализировать *Аннотации* также и в режиме [3D-навигации](navigation-toolbar.md#3d-навигация).
 
-<img src="../img/annotations/3d_annotations.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="img/annotations/3d_annotations.jpg" class="ms-docimage" style="max-width:500px;" />
 
 ### Геометрия в 3D
 
 В режиме [3D-навигации](navigation-toolbar.md#3d-навигация), после выбора типа геометрии и ее отрисовки на карте, пользователь также может изменять **Высоту** геометрии для каждой координаты.
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/annotations/height_switcher.mp4" ></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="img/annotations/height_switcher.mp4" ></video>
 
 ### Стилизация в 3D
 
 Для аннотаций типа *Маркер* в режиме [3D-навигации](navigation-toolbar.md#3d-навигация) также доступен тип символа **3D-модель**.
-На вкладке *Стиль*, при нажатии на кнопку <img src="../img/button/3D-model-button.jpg" class="ms-docbutton"/>, открывается опция 3D-модели, позволяющая добавить 3D-модель (на основе [glTF](https://github.com/KhronosGroup/glTF), также поддерживается GLB) в качестве внешней графики, указав ее *URL* (см. также [документацию Cesium](https://cesium.com/learn/cesiumjs/ref-doc/ModelGraphics.html?classFilter=Model)). Кроме того, можно настроить `Масштаб`, `Поворот` и `Цвет` 3D-модели. Взгляните на следующий пример.
+На вкладке *Стиль*, при нажатии на кнопку <img src="img/button/3D-model-button.jpg" class="ms-docbutton"/>, открывается опция 3D-модели, позволяющая добавить 3D-модель (на основе [glTF](https://github.com/KhronosGroup/glTF), также поддерживается GLB) в качестве внешней графики, указав ее *URL* (см. также [документацию Cesium](https://cesium.com/learn/cesiumjs/ref-doc/ModelGraphics.html?classFilter=Model)). Кроме того, можно настроить `Масштаб`, `Поворот` и `Цвет` 3D-модели. Взгляните на следующий пример.
 
-<img src="../img/annotations/3d_model_type.jpg" class="ms-docimage" style="max-width:500px;" />
+<img src="img/annotations/3d_model_type.jpg" class="ms-docimage" style="max-width:500px;" />
 
 Кроме того, для [3D-навигации](navigation-toolbar.md#3d-навигация) пользователю доступны некоторые дополнительные опции стилизации, такие как:
 
 * **На передний план** (доступно для точечных и текстовых геометрий), чтобы вынести вперед и, таким образом, сделать видимой (если установлено значение *true*) аннотацию, перекрытую слоями 3D-тайлов и слоем рельефа (в последнем случае, когда опция *проверки глубины относительно рельефа* включена в Глобальных настройках).
 
-<img src="../img/annotations/bring-to-front.jpg" class="ms-docimage">
+<img src="img/annotations/bring-to-front.jpg" class="ms-docimage">
 
 * **Отсчет высоты от земли** (доступно для точечных и текстовых геометрий) для указания точки отсчета высоты: `Нет` (от абсолютного нуля), `Относительно` (от уровня слоя рельефа) или `По поверхности` (аннотация привязывается к рельефу, если он есть, или к поверхности земли). Также можно точно настроить значение **Высоты** точки.
 
-<img src="../img/annotations/height-reference.jpg" class="ms-docimage">
+<img src="img/annotations/height-reference.jpg" class="ms-docimage">
 
 * **Линия-выноска** (доступно для точечных и текстовых геометрий) для добавления линии, соединяющей символ точки с рельефом/поверхностью земли, чтобы иметь более четкое представление о фактическом положении точки при изменении ориентации камеры. Редактор может выбрать **Ширину** линии и **Цвет** с помощью обычного *инструмента выбора цвета*.
 
-<img src="../img/annotations/leader-line.jpg" class="ms-docimage">
+<img src="img/annotations/leader-line.jpg" class="ms-docimage">
 
 * **Привязать к поверхности** для включения/отключения логического свойства, указывающего, должна ли линия или полигон привязываться к поверхности (эта опция доступна для геометрий типа Линия и Полигон).
 
-<img src="../img/annotations/clamp-to-ground.jpg" class="ms-docimage">
+<img src="img/annotations/clamp-to-ground.jpg" class="ms-docimage">
 
 * **Источник для привязки к поверхности** для выбора, на что должен влиять эффект драпировки: `3D-тайлы`, `Рельеф` или `Оба`. Эта опция доступна для геометрий типа Линия, Полигон и Круг и активна только тогда, когда опция *Привязать к поверхности* установлена в `True`.
 
-<img src="../img/annotations/polygon-type.jpg" class="ms-docimage">
+<img src="img/annotations/polygon-type.jpg" class="ms-docimage">
 
 * **Высота выдавливания** (доступно для геометрий типа Линия и Заливка) для настройки значения высоты, на которую будет выдавлен объект. Также можно включить/отключить опцию **Выдавливание относительно геометрии** (от самой высокой точки геометрии объекта), и только для геометрий типа *Линия* пользователь может настроить **Цвет выдавливания** и **Тип выдавливания**, выбрав между опциями `Стена`, `Круг` и `Квадрат` для выдавленных объектов.
 
-<img src="../img/annotations/extrusion-geometry.jpg" class="ms-docimage">
+<img src="img/annotations/extrusion-geometry.jpg" class="ms-docimage">

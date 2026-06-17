@@ -20,29 +20,29 @@ In [MapStore](https://mapstore.geosolutionsgroup.com/mapstore/#/) it is possible
 
 ### Layer Filters
 
-This filter is applicable from the **Filter layer** button <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/> in TOC's [Layers Toolbar](toc.md#layer-settings-and-toolbar) and it will persist in the following situations:
+This filter is applicable from the **Filter layer** button <img src="img/button/filter-layer.jpg" class="ms-docbutton"/> in TOC's [Layers Toolbar](toc.md#layer-settings-and-toolbar) and it will persist in the following situations:
 
 * Using other tools like the [Identify tool](navigation-toolbar.md#identify-tool):
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/get_filtered_features_info.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/get_filtered_features_info.mp4"/></video>
 
 * Applying another type of filter
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
 
 * Opening the map next time (you need to Save the map from the [Side Toolbar](mapstore-toolbars.md#side-toolbar) after applying a filter)
 
 Once a *Layer filter* is set, it is possible to enable/disable it simply by clicking on the button that will appear near the layer name in [TOC](toc.md#table-of-contents):
 
-<img src="../img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
+<img src="img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-This filter is applied through the [Query Panel](#query-panel). Once the settings are chosen, it is possible to **Apply** <img src="../img/button/apply_button.jpg" class="ms-docbutton"/> them. After that the user can:
+This filter is applied through the [Query Panel](#query-panel). Once the settings are chosen, it is possible to **Apply** <img src="img/button/apply_button.jpg" class="ms-docbutton"/> them. After that the user can:
 
-* **Undo** <img src="../img/button/undo_button.jpg" class="ms-docbutton"/> the last changes
+* **Undo** <img src="img/button/undo_button.jpg" class="ms-docbutton"/> the last changes
 
-* **Reset** <img src="../img/button/reset_button.jpg" class="ms-docbutton"/> the filter to the initial situation
+* **Reset** <img src="img/button/reset_button.jpg" class="ms-docbutton"/> the filter to the initial situation
 
-* **Save** <img src="../img/button/save_button.jpg" class="ms-docbutton"/> the filter in order to make it persistent
+* **Save** <img src="img/button/save_button.jpg" class="ms-docbutton"/> the filter in order to make it persistent
 
 ### Query Panel
 
@@ -54,7 +54,7 @@ This tool is used to define advanced filters in [MapStore](https://mapstore.geos
 
 * **Layer Filter**
 
-<img src="../img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 #### Attribute Filter
 
@@ -67,7 +67,7 @@ First of all it is possible to choose if the filter will match:
 
 * **None** conditions
 
-After that, the user can insert one or more conditions, that can also be grouped in one or more condition groups (use the <img src="../img/button/condition_group.jpg" class="ms-docbutton"/> button in order to create a group).<br>
+After that, the user can insert one or more conditions, that can also be grouped in one or more condition groups (use the <img src="img/button/condition_group.jpg" class="ms-docbutton"/> button in order to create a group).<br>
 A condition can be set by selecting a value for each of the three input boxes:
 
 * The first input box allows to choose a layer field
@@ -78,14 +78,14 @@ A condition can be set by selecting a value for each of the three input boxes:
 
 !!! Note
     For the *Query Panel*, the *Date Picker* tool also allows the user to perform select **Quick Date Selections** such as: `Now`, `Yesterday` for single *Date* or *DateTime* and `Tomorrow` or also quick date ranges like `Now`, `This week`, `This month`, `7 days from now`, `30 days from now` and `90 days from now` for *Date* or *DateTime* intervals depending on the operator selected. An example can be the following:
-    <video class="ms-docimage" style="max-width:500px;" controls><source src="../img/filtering-layers/quick_date_ranges.mp4"/></video>
+    <video class="ms-docimage" style="max-width:500px;" controls><source src="img/filtering-layers/quick_date_ranges.mp4"/></video>
 
 !!! Note
     the "paginated list of available field values" above is available only if the server provides the WPS process `gs:PagedUnique`
 
 A simple *Attribute Filter* applied for a numerical field can be, for example:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/att_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/att_filter.mp4"/></video>
 
 #### Area of Interest
 
@@ -97,11 +97,11 @@ In order to set this filter the user can:
 
 Applying a *Rectangle* filter with *Intersect* operation, for example, the process could be similar to the following:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/geom_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/geom_filter.mp4"/></video>
 
-Once this filter is set, it is always possible to edit the coordinates and the dimensions of the drawn filter's geometry by clicking on the **Details** button <img src="../img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Editing a circle, for example, it is possible to change the center coordinates (*x*, *y*) and the radius dimension (*m*):
+Once this filter is set, it is always possible to edit the coordinates and the dimensions of the drawn filter's geometry by clicking on the **Details** button <img src="img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Editing a circle, for example, it is possible to change the center coordinates (*x*, *y*) and the radius dimension (*m*):
 
-<img src="../img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 #### Layer Filter
 
@@ -120,11 +120,11 @@ In order to set up a cross-layer filter the options below are required:
 
 In order to better understand this type of filter, let's make an example. We suppose that the user want to filter the Italian Regions with the Unesco Item's one:
 
-<img src="../img/filtering-layers/layer-filter-1.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/layer-filter-1.jpg" class="ms-docimage"/>
 
 In particular, if our goal is to take a look at the Italian Regions that contain the Unesco sites with *serial code=1*, the operations to perform can be the following:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/layer_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/layer_filter.mp4"/></video>
 
 #### Combining Multiple Filtering
 
@@ -132,4 +132,4 @@ To filter a layer, the user can also combine the two methods described above. Th
 
 The following example shows this workflow: the meteorites layer is filtered using a square area of interest, and then a second filter excludes features located in the state of California by using the USA States layer. It is also worth clarifying that the AOI thus defined is used in this case to also restrict the [Layer Filter's](filtering-layers.md#layer-filter) action to that area only.
 
-<img src="../img/filtering-layers/cascading-search-filter.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/cascading-search-filter.jpg" class="ms-docimage"/>

@@ -15,9 +15,9 @@
 
 ## Даданне віджэта
 
-Калі на карце прысутнічае хаця б адзін слой (дадатковую інфармацыю аб даданні слаёў гл. у раздзеле [Каталог](catalog.md)), можна стварыць віджэт, выбраўшы гэты слой у [Панэлі зместу](toc.md) і націснуўшы на кнопку <img src="../img/button/widgets.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слоя](toc.md#наладкі-і-панэль-інструментаў-слоя) або ў [Табліцы атрыбутаў](attributes-table.md). Пасля выканання гэтых дзеянняў з'яўляецца панэль *Віджэт*:
+Калі на карце прысутнічае хаця б адзін слой (дадатковую інфармацыю аб даданні слаёў гл. у раздзеле [Каталог](catalog.md)), можна стварыць віджэт, выбраўшы гэты слой у [Панэлі зместу](toc.md) і націснуўшы на кнопку <img src="img/button/widgets.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слоя](toc.md#наладкі-і-панэль-інструментаў-слоя) або ў [Табліцы атрыбутаў](attributes-table.md). Пасля выканання гэтых дзеянняў з'яўляецца панэль *Віджэт*:
 
-<img src="../img/widgets/map-widgets-panel.jpg" class="ms-docimage" style="max-width:450px;"/>
+<img src="img/widgets/map-widgets-panel.jpg" class="ms-docimage" style="max-width:450px;"/>
 
 Тут карыстальнік можа выбраць адзін з чатырох розных тыпаў віджэтаў:
 
@@ -33,41 +33,41 @@
 
 Віджэты дыяграм дазваляюць выбраць некалькі слаёў для стварэння віджэта, які дазваляе карыстальніку наладжваць параметры дыяграмы для кожнага слоя. І пераключацца паміж некалькімі дыяграмамі ў адным віджэце.
 
-<img src="../img/widgets/chart-layer-selection.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/chart-layer-selection.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Пры выбары *Слоя* або *Слаёў* карыстальніку прадстаўляюцца наступныя опцыі *Дыяграмы*:
 
-<img src="../img/widgets/chart-options.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/chart-options.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 З дапамогай верхняй панэлі інструментаў гэтай панэлі карыстальнік можа:
 
-* Вярнуцца <img src="../img/button/back.jpg" class="ms-docbutton"/> да раздзела выбару тыпу віджэта.
+* Вярнуцца <img src="img/button/back.jpg" class="ms-docbutton"/> да раздзела выбару тыпу віджэта.
 
-* Падключыць <img src="../img/button/connect-widget.jpg" class="ms-docbutton"/> або адключыць <img src="../img/button/disconnect-widget.jpg" class="ms-docbutton"/> віджэт ад карты. Калі віджэт падключаны да карты, ён аўтаматычна фільтруецца прасторава па бачным экстэнце карты. Калі віджэт не звязаны, ён адлюстроўвае ўвесь набор дадзеных гэтага слоя незалежна ад бачнага экстэнта карты.
+* Падключыць <img src="img/button/connect-widget.jpg" class="ms-docbutton"/> або адключыць <img src="img/button/disconnect-widget.jpg" class="ms-docbutton"/> віджэт ад карты. Калі віджэт падключаны да карты, ён аўтаматычна фільтруецца прасторава па бачным экстэнце карты. Калі віджэт не звязаны, ён адлюстроўвае ўвесь набор дадзеных гэтага слоя незалежна ад бачнага экстэнта карты.
 
-* Перайсці наперад <img src="../img/button/next.jpg" class="ms-docbutton"/> да наступнага кроку, калі наладкі завершаны. Кнопка не дазваляе карыстальніку перайсці да наступнага кроку майстра, калі наладка некаторых палёў у форме дыяграмы несапраўдная.
+* Перайсці наперад <img src="img/button/next.jpg" class="ms-docbutton"/> да наступнага кроку, калі наладкі завершаны. Кнопка не дазваляе карыстальніку перайсці да наступнага кроку майстра, калі наладка некаторых палёў у форме дыяграмы несапраўдная.
 
 На старонцы канфігурацыі дыяграмы карыстальнік можа спачатку выканаць наступныя аперацыі:
 
-* *Рэдагаваць* *Загаловак дыяграмы* з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
+* *Рэдагаваць* *Загаловак дыяграмы* з дапамогай кнопкі <img src="img/button/edit_button.jpg" class="ms-docbutton"/>
 
-* *Дадаць новую дыяграму* да бягучага віджэта з дапамогай кнопкі <img src="../img/button/+++.jpg" class="ms-docbutton"/>
+* *Дадаць новую дыяграму* да бягучага віджэта з дапамогай кнопкі <img src="img/button/+++.jpg" class="ms-docbutton"/>
 
-* *Выдаліць* выбраную дыяграму і яе канфігурацыю з віджэта з дапамогай кнопкі <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
+* *Выдаліць* выбраную дыяграму і яе канфігурацыю з віджэта з дапамогай кнопкі <img src="img/button/delete_button.jpg" class="ms-docbutton"/>
 
 #### Трасы
 
 Для кожнай дыяграмы можна вызначыць некалькі трас. З дапамогай трасы можна вызначыць дадатковае прадстаўленне дыяграмы (па змаўчанні для таго ж слоя), якое будзе адлюстроўвацца ў тым жа выглядзе дыяграмы: усе трасы адлюстроўваюцца разам на адной дыяграме. Прама пад папярэднім праглядам дыяграмы знаходзіцца ўкладка *Трасы*, дзе карыстальнік можа:
 
-<img src="../img/widgets/traces_tab.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/traces_tab.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 * Выбраць паміж **Гістаграмай**, **Кругавой дыяграмай** або **Лінейнай дыяграмай**. Па змаўчанні абрана *Гістаграма*.
 
-* *Рэдагаваць* бягучы *Загаловак трасы* з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
+* *Рэдагаваць* бягучы *Загаловак трасы* з дапамогай кнопкі <img src="img/button/edit_button.jpg" class="ms-docbutton"/>
 
-* *Дадаць новую трасу* з дапамогай кнопкі <img src="../img/button/+++.jpg" class="ms-docbutton"/>
+* *Дадаць новую трасу* з дапамогай кнопкі <img src="img/button/+++.jpg" class="ms-docbutton"/>
 
-* *Выдаліць* бягучую трасу з дапамогай кнопкі <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
+* *Выдаліць* бягучую трасу з дапамогай кнопкі <img src="img/button/delete_button.jpg" class="ms-docbutton"/>
 
 Пасля выбару тыпу дыяграмы можна наладзіць трасу з дапамогай наступных опцый:
 
@@ -80,13 +80,13 @@
 
 *Даныя трасы* адлюстроўваюцца наступным чынам:
 
-<img src="../img/widgets/trace_data.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_data.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 У гэтым раздзеле карыстальнік можа:
 
-* Змяніць слой трасы з дапамогай кнопкі <img src="../img/button/timeline-playback-settings-button.jpg" class="ms-docbutton"/> (па змаўчанні слой аўтаматычна супадае з першай вызначанай трасай)
+* Змяніць слой трасы з дапамогай кнопкі <img src="img/button/timeline-playback-settings-button.jpg" class="ms-docbutton"/> (па змаўчанні слой аўтаматычна супадае з першай вызначанай трасай)
 
-* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
+* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="img/button/advanced-search.jpg" class="ms-docbutton"/>.
 
 * Вызначыць **Атрыбут X** дыяграмы (або **Групаваць па** для *Кругавых дыяграм*), выбраўшы з палёў слоя
 
@@ -101,30 +101,30 @@
 
 *Стыль трасы* адлюстроўваецца наступным чынам:
 
-<img src="../img/widgets/trace_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Карыстальнік можа наладзіць стыль, выбраўшы паміж `Простым стылем` або `Класіфікацыйным стылем`.
 
 З **Простым стылем** рэдактар можа наладжваць `Колер заліўкі`, `Колер контуру` і `Шырыню контуру`.
 
-<img src="../img/widgets/trace_simple_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_simple_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 ###### Класіфікацыйны стыль
 
 Для *Гістаграм* і *Кругавых дыяграм* прадастаўляецца магчымасць наладжваць колеры слупкоў і сектараў дыяграм. Можна класіфікаваць стыль на аснове атрыбутаў слоя. У гэтым выпадку можна выбраць `Атрыбут` для класіфікацыі, а таксама `Метад` класіфікацыі (*Квантыль*, *Роўныя інтэрвалы*, *Натуральныя межы* і *Унікальныя інтэрвалы*) і выбраць, ці варта `Сартаваць` класіфікацыю па *Атрыбуце X* або *Атрыбуце Y*. Выберыце `Каляровую шкалу`, колькасць `Інтэрвалаў` класіфікацыі і парадак (`Адваротны парадак`) колераў інтэрвалаў класіфікацыі. Нарэшце, наладзьце `Колер контуру` і `Шырыню контуру`.
 
-<img src="../img/widgets/trace_classification_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_classification_style.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
-У опцыі **Каляровая шкала** карыстальнік можа выбраць опцыю *Карыстальніцкія колеры* і адкрыць мадальнае акно **Наладкі карыстальніцкіх колераў** з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>.
+У опцыі **Каляровая шкала** карыстальнік можа выбраць опцыю *Карыстальніцкія колеры* і адкрыць мадальнае акно **Наладкі карыстальніцкіх колераў** з дапамогай кнопкі <img src="img/button/edit_button.jpg" class="ms-docbutton"/>.
 У гэтым мадальным акне карыстальнік можа:
 
 * Змяніць **Колер** па змаўчанні для слупкоў або сектараў (у залежнасці ад тыпу дыяграмы) з дапамогай *палітры колераў*. Гэты колер будзе прыменены да ўсіх значэнняў, для якіх не быў наладжаны *Колер класа*.
 
-<video class="ms-docimage" controls><source src="../img/widgets/custom_colors.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/widgets/custom_colors.mp4"/></video>
 
 * Увесці **Метку класа па змаўчанні**, якая будзе выкарыстоўвацца ў легендзе для ўсіх значэнняў, якія не будуць спецыяльна класіфікаваны ў наступным спісе.
 
-<img src="../img/widgets/default_class_label.jpg" class="ms-docimage"/>
+<img src="img/widgets/default_class_label.jpg" class="ms-docimage"/>
 
 !!! note "Заўвага"
     Як для *Меткі класа па змаўчанні*, так і для *Меткі класа* можна выкарыстоўваць '${legendValue}' у якасці плейсхолдэра для атрыбута Y (які можна дадаткова наладзіць з дапамогай звычайнай *Пашыранай опцыі*).
@@ -135,7 +135,7 @@
 
 Калі значэнні атрыбута класіфікацыі маюць тып String, карыстальнік можа:
 
-<img src="../img/widgets/alphanumeric.jpg" class="ms-docimage"/>
+<img src="img/widgets/alphanumeric.jpg" class="ms-docimage"/>
 
 * Змяніць **Колер класа** з дапамогай *палітры колераў*.
 
@@ -146,13 +146,13 @@
 !!! note "Заўвага"
     Для *Меткі класа* можна выкарыстоўваць '${legendValue}' у якасці плейсхолдэра для атрыбута Y (які можна дадаткова наладзіць з дапамогай звычайнай *Пашыранай опцыі*).
 
-З дапамогай кнопкі <img src="../img/button/menu.jpg" class="ms-docbutton"/> карыстальнік можа дадаваць новыя значэнні да з дапамогай кнопкі <img src="../img/widgets/add-new-entry-before.jpg" class="ms-docimage"/> або пасля з дапамогай кнопкі <img src="../img/widgets/add-new-entry-after.jpg" class="ms-docimage"/>.
+З дапамогай кнопкі <img src="img/button/menu.jpg" class="ms-docbutton"/> карыстальнік можа дадаваць новыя значэнні да з дапамогай кнопкі <img src="img/widgets/add-new-entry-before.jpg" class="ms-docimage"/> або пасля з дапамогай кнопкі <img src="img/widgets/add-new-entry-after.jpg" class="ms-docimage"/>.
 
 ###### Атрыбут класіфікацыі тыпу Number
 
 Калі значэнні атрыбута класіфікацыі з'яўляюцца лікамі, карыстальнік можа наладзіць каляровую шкалу і, такім чынам:
 
-<img src="../img/widgets/numeric.jpg" class="ms-docimage"/>
+<img src="img/widgets/numeric.jpg" class="ms-docimage"/>
 
 * Змяніць **Колер класа** з дапамогай *палітры колераў*.
 
@@ -169,46 +169,46 @@
 
 Калі *Восі* былі наладжаны на ўкладцы [Восі](#восі), карыстальнік можа выбраць, якія карыстальніцкія восі выкарыстоўваць для бягучай трасы.
 
-<img src="../img/widgets/trace_axes.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_axes.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 ##### Фарматаванне значэнняў трасы
 
 Карыстальнік можа наладжваць усплывальныя падказкі значэнняў трасы, дадаючы *Прэфікс* (напрыклад, `~`), карыстальніцкі *Фармат* (напрыклад, `0%: акруглены працэнт, '12%'` або больш) або *Суфікс* (напрыклад, `км`). Таксама можна наладзіць *Формулу* для пераўтварэння значэнняў метак па меры неабходнасці (напрыклад, `value + 2` або `value / 100` або больш).
 
-<img src="../img/widgets/trace_value_formatting.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_value_formatting.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 !!! note "Заўвага"
     Дадатковую інфармацыю пра сінтаксічныя опцыі, дазволеныя для **Фармату**, можна знайсці [тут](https://d3-wiki.readthedocs.io/zh_CN/master/Formatting/), а дазволеныя выразы для выкарыстання ў якасці **Формулы** — [тут](https://github.com/m93a/filtrex#expressions) у анлайн-дакументацыі.
 
 Прыкладам карыстальніцкай усплывальнай падказкі значэння трасы можа быць наступны:
 
-<img src="../img/widgets/custom_trace_value_tooltip.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/custom_trace_value_tooltip.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 ##### Опцыі легенды трасы
 
 Для *Кругавых дыяграм* даступна опцыя *Опцыі легенды трасы*, якая адлюстроўваецца наступным чынам:
 
-<img src="../img/widgets/trace_legend_options.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/trace_legend_options.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Карыстальнік можа:
 
 * Паказваць/хаваць працэнты ў легендзе з дапамогай элемента кіравання **Уключыць працэнты ў легенду**. Прыкладам з працэнтамі ў легендзе можа быць наступны:
 
-<img src="../img/widgets/percentages_in_legend.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/percentages_in_legend.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 #### Восі
 
 Можна наладжваць **вось Y** і **вось X** для *Гістаграм* і *Лінейных дыяграм* на ўкладцы *Восі*.
 
-<img src="../img/widgets/axes_tab.jpg" class="ms-docimage"/>
+<img src="img/widgets/axes_tab.jpg" class="ms-docimage"/>
 
 У гэтым раздзеле для кожнай восі карыстальнік можа:
 
-* *Рэдагаваць* бягучы **Загаловак восі** з дапамогай кнопкі <img src="../img/button/edit_button.jpg" class="ms-docbutton"/>
+* *Рэдагаваць* бягучы **Загаловак восі** з дапамогай кнопкі <img src="img/button/edit_button.jpg" class="ms-docbutton"/>
 
-* Калі існуе больш за адну [Трасу](#трасы), *Дадаць новую вось* з дапамогай кнопкі <img src="../img/button/+++.jpg" class="ms-docbutton"/>
+* Калі існуе больш за адну [Трасу](#трасы), *Дадаць новую вось* з дапамогай кнопкі <img src="img/button/+++.jpg" class="ms-docbutton"/>
 
-* Калі існуе больш за адну [Трасу](#трасы), *Выдаліць* бягучую вось з дапамогай кнопкі <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
+* Калі існуе больш за адну [Трасу](#трасы), *Выдаліць* бягучую вось з дапамогай кнопкі <img src="img/button/delete_button.jpg" class="ms-docbutton"/>
 
 * Выбраць **Тып** (паміж `Аўта`, `Лінейны`, `Катэгарыяльны`, `Лагарыфмічны` або `Дата`): тып восі аўтаматычна вызначаецца на аснове дадзеных(опцыя *Аўта* кіруецца і выбіраецца інструментам аўтаматычна і звычайна добра падыходзіць у якасці наладкі па змаўчанні).
 
@@ -240,7 +240,7 @@
 
 На ўкладцы *Макет* карыстальнік таксама можа наладзіць **Макет** дыяграмы і **Шрыфт** па змаўчанні для ўсіх метак, якія прысутнічаюць на дыяграме.
 
-<img src="../img/widgets/layout.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/layout.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Тут карыстальнік можа:
 
@@ -256,17 +256,17 @@
 
 Калі да *Гістаграмы* дададзены *Атрыбут класіфікацыі* ў [Стылі трасы](#стыль-трасы), адлюстроўваецца опцыя **Тып гістаграмы**.
 
-<img src="../img/widgets/bar_type.jpg" class="ms-docimage"/>
+<img src="img/widgets/bar_type.jpg" class="ms-docimage"/>
 
 Карыстальнік можа наладжваць слупкі, выбіраючы паміж:
 
 * **Згрупаванымі**. Прыкладам можа быць наступны:
 
-<img src="../img/widgets/grouped_chart.jpg" class="ms-docimage" style="max-width:450px;"/>
+<img src="img/widgets/grouped_chart.jpg" class="ms-docimage" style="max-width:450px;"/>
 
 * **Накапляльнымі**. Прыкладам можа быць наступны:
 
-<img src="../img/widgets/stacked-chart.jpg" class="ms-docimage" style="max-width:450px;"/>
+<img src="img/widgets/stacked-chart.jpg" class="ms-docimage" style="max-width:450px;"/>
 
 !!! note "Заўвага"
     Па змаўчанні тып гістаграмы — **Накапляльная**.
@@ -275,13 +275,13 @@
 
 Пасля завяршэння наладак адлюстроўваецца наступны крок стварэння/канфігурацыі віджэта дыяграмы:
 
-<img src="../img/widgets/widget-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/widget-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Карыстальнік можа:
 
-* Вярнуцца да опцый дыяграмы з дапамогай кнопкі <img src="../img/widgets/widget-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
+* Вярнуцца да опцый дыяграмы з дапамогай кнопкі <img src="img/widgets/widget-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
-* Дадаць віджэт на карту з дапамогай кнопкі <img src="../img/button/save-icon.jpg" class="ms-docbutton"/>
+* Дадаць віджэт на карту з дапамогай кнопкі <img src="img/button/save-icon.jpg" class="ms-docbutton"/>
 
 Прама пад папярэднім праглядам дыяграмы карыстальнік можа ўсталяваць:
 
@@ -294,39 +294,39 @@
 
 Прыкладам віджэта дыяграмы можа быць:
 
-<img src="../img/widgets/chart-ex.jpg" class="ms-docimage"/>
+<img src="img/widgets/chart-ex.jpg" class="ms-docimage"/>
 
 **Панэль інструментаў дыяграмы**, якая адлюстроўваецца ў правым куце дыяграмы, дазваляе карыстальніку:
 
-<img src="../img/widgets/bar_charts.jpg" class="ms-docimage"/>
+<img src="img/widgets/bar_charts.jpg" class="ms-docimage"/>
 
-* **Спампаваць** дыяграму ў фармаце `png` з дапамогай кнопкі <img src="../img/button/download_png.jpg" class="ms-docbutton"/>.
+* **Спампаваць** дыяграму ў фармаце `png` з дапамогай кнопкі <img src="img/button/download_png.jpg" class="ms-docbutton"/>.
 
-* **Маштабаваць** дыяграму з дапамогай кнопкі <img src="../img/button/zoom_chart.jpg" class="ms-docbutton"/>.
+* **Маштабаваць** дыяграму з дапамогай кнопкі <img src="img/button/zoom_chart.jpg" class="ms-docbutton"/>.
 
-* **Перамяшчаць** дыяграму з дапамогай кнопкі <img src="../img/button/pan_chart.jpg" class="ms-docbutton"/>.
+* **Перамяшчаць** дыяграму з дапамогай кнопкі <img src="img/button/pan_chart.jpg" class="ms-docbutton"/>.
 
-* **Наблізіць** дыяграму з дапамогай кнопкі <img src="../img/button/zoom_in_chart.jpg" class="ms-docbutton"/>.
+* **Наблізіць** дыяграму з дапамогай кнопкі <img src="img/button/zoom_in_chart.jpg" class="ms-docbutton"/>.
 
-* **Аддаліць** дыяграму з дапамогай кнопкі <img src="../img/button/zoom_out_chart.jpg" class="ms-docbutton"/>.
+* **Аддаліць** дыяграму з дапамогай кнопкі <img src="img/button/zoom_out_chart.jpg" class="ms-docbutton"/>.
 
-* **Аўтамаштаб** для аўтаматычнага маштабавання восей па адлюстраваных дадзеных з дапамогай кнопкі <img src="../img/button/autoscale_chart.jpg" class="ms-docbutton"/>.
+* **Аўтамаштаб** для аўтаматычнага маштабавання восей па адлюстраваных дадзеных з дапамогай кнопкі <img src="img/button/autoscale_chart.jpg" class="ms-docbutton"/>.
 
-* **Скінуць восі** для вяртання дыяграмы ў зыходны стан з дапамогай кнопкі <img src="../img/button/reset_axes_chart.jpg" class="ms-docbutton"/>.
+* **Скінуць восі** для вяртання дыяграмы ў зыходны стан з дапамогай кнопкі <img src="img/button/reset_axes_chart.jpg" class="ms-docbutton"/>.
 
-* **Пераключыць накіроўчыя лініі**, каб паказваць пункцірныя лініі для значэнняў X і Y пры навядзенні мышы на дыяграму. Гэта карысна для лепшага прагляду значэнняў дамена на абедзвюх восях у выпадку складаных дыяграм. Гэтую опцыю можна актываваць з дапамогай кнопкі <img src="../img/button/toggle_lines_chart.jpg" class="ms-docbutton"/>.
+* **Пераключыць накіроўчыя лініі**, каб паказваць пункцірныя лініі для значэнняў X і Y пры навядзенні мышы на дыяграму. Гэта карысна для лепшага прагляду значэнняў дамена на абедзвюх восях у выпадку складаных дыяграм. Гэтую опцыю можна актываваць з дапамогай кнопкі <img src="img/button/toggle_lines_chart.jpg" class="ms-docbutton"/>.
 
 ### Тэкст
 
 Пры стварэнні новага тэкставага віджэта адкрываецца наступнае акно:
 
-<img src="../img/widgets/text-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/text-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 З дапамогай панэлі інструментаў можна:
 
-* Вярнуцца да выбару тыпу віджэта з дапамогай кнопкі <img src="../img/button/back.jpg" class="ms-docbutton"/>
+* Вярнуцца да выбару тыпу віджэта з дапамогай кнопкі <img src="img/button/back.jpg" class="ms-docbutton"/>
 
-* Дадаць віджэт на карту з дапамогай кнопкі <img src="../img/button/save-icon.jpg" class="ms-docbutton"/>
+* Дадаць віджэт на карту з дапамогай кнопкі <img src="img/button/save-icon.jpg" class="ms-docbutton"/>
 
 Тут карыстальнік можа:
 
@@ -337,65 +337,65 @@
 * Адфарматаваць тэкст з дапамогай панэлі інструментаў тэкставага рэдактара.
 
 !!! note "Заўвага"
-    З *Панэлі інструментаў тэкставага рэдактара* карыстальнік таксама можа дадаць **URL-адрас выявы** з дапамогай кнопкі <img src="../img/button/image_button.jpg" class="ms-docbutton"/> і дадаць **Убудаваную спасылку** з дапамогай кнопкі <img src="../img/button/embedded_link_buttton.jpg" class="ms-docbutton"/>.
+    З *Панэлі інструментаў тэкставага рэдактара* карыстальнік таксама можа дадаць **URL-адрас выявы** з дапамогай кнопкі <img src="img/button/image_button.jpg" class="ms-docbutton"/> і дадаць **Убудаваную спасылку** з дапамогай кнопкі <img src="img/button/embedded_link_buttton.jpg" class="ms-docbutton"/>.
 
 !!! note "Заўвага"
     Ніводная з гэтых опцый не з'яўляецца абавязковай, вы можаце дадаць віджэт на карту, не запаўняючы гэтыя палі.
 
 Прыкладам тэкставага віджэта можа быць:
 
-<img src="../img/widgets/text-ex.jpg" class="ms-docimage"/>
+<img src="img/widgets/text-ex.jpg" class="ms-docimage"/>
 
 ### Табліца
 
 Пры даданні таблічнага віджэта на карту адкрываецца панэль, падобная на наступную:
 
-<img src="../img/widgets/table-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/table-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 З дапамогай верхняй панэлі інструментаў гэтай панэлі карыстальнік можа:
 
-* Вярнуцца <img src="../img/button/back.jpg" class="ms-docbutton"/> да раздзела выбару тыпу віджэта.
+* Вярнуцца <img src="img/button/back.jpg" class="ms-docbutton"/> да раздзела выбару тыпу віджэта.
 
-* Падключыць <img src="../img/button/connect-widget.jpg" class="ms-docbutton"/> або адключыць <img src="../img/button/disconnect-widget.jpg" class="ms-docbutton"/> віджэт ад карты. Калі віджэт падключаны да карты, ён аўтаматычна фільтруецца прасторава па бачным экстэнце карты. Калі віджэт не звязаны, ён адлюстроўвае ўвесь набор дадзеных гэтага слоя незалежна ад бачнага экстэнта карты.
+* Падключыць <img src="img/button/connect-widget.jpg" class="ms-docbutton"/> або адключыць <img src="img/button/disconnect-widget.jpg" class="ms-docbutton"/> віджэт ад карты. Калі віджэт падключаны да карты, ён аўтаматычна фільтруецца прасторава па бачным экстэнце карты. Калі віджэт не звязаны, ён адлюстроўвае ўвесь набор дадзеных гэтага слоя незалежна ад бачнага экстэнта карты.
 
-* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/>.
+* Адкрыць [*Панэль запытаў*](filtering-layers.md#панэль-запытаў) для наладкі **Фільтра слоя** для абранага слоя з дапамогай кнопкі <img src="img/button/advanced-search.jpg" class="ms-docbutton"/>.
 
-* Перайсці наперад <img src="../img/button/next.jpg" class="ms-docbutton"/> да наступнага кроку, калі наладкі завершаны. Кнопка не дазваляе карыстальніку перайсці да наступнага кроку майстра, калі наладка некаторых палёў у форме дыяграмы несапраўдная.
+* Перайсці наперад <img src="img/button/next.jpg" class="ms-docbutton"/> да наступнага кроку, калі наладкі завершаны. Кнопка не дазваляе карыстальніку перайсці да наступнага кроку майстра, калі наладка некаторых палёў у форме дыяграмы несапраўдная.
 
 У *Таблічным віджэце* карыстальнік можа:
 
 * **Уключаць/выключаць** палі слоя, якія будуць адлюстроўвацца ў віджэце ў выглядзе слупкоў.
 
-<video class="ms-docimage" controls><source src="../img/widgets/table-attribute.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/widgets/table-attribute.mp4"/></video>
 
 !!! info "Увага"
     Для пераходу да наступнага кроку канфігурацыі павінна быць абрана хаця б адно поле.
 
 * Увесці **Загаловак** для кожнага слупка, які будзе адлюстроўвацца ў загалоўку табліцы замест *Назвы* поля слоя.
 
-<video class="ms-docimage" controls><source src="../img/widgets/table-title.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/widgets/table-title.mp4"/></video>
 
 * Увесці **Апісанне** для кожнага поля, якое будзе адлюстроўвацца ў выглядзе ўсплывальнай падказкі пры навядзенні мышы на загаловак слупка.
 
-<video class="ms-docimage" controls><source src="../img/widgets/table-description.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/widgets/table-description.mp4"/></video>
 
-Пасля выбару жаданых палёў пстрычка па кнопцы <img src="../img/button/next.jpg" class="ms-docbutton"/> адкрывае наступную панэль:
+Пасля выбару жаданых палёў пстрычка па кнопцы <img src="img/button/next.jpg" class="ms-docbutton"/> адкрывае наступную панэль:
 
-<img src="../img/widgets/table-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/table-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 На гэтым апошнім кроку стварэння віджэта панэль інструментаў і ўводзімая інфармацыя аналагічныя тым, што апісаны ў [раздзеле "Дыяграма"](#дыяграма).
 Прыкладам таблічнага віджэта можа быць:
 
-<img src="../img/widgets/table-ex.jpg" class="ms-docimage"/>
+<img src="img/widgets/table-ex.jpg" class="ms-docimage"/>
 
 !!! note "Заўвага"
-    Калі *Табліца* падключана да карты або карты падключаны да *Табліцы*, карыстальнік можа **Наблізіцца да аб'екта** з дапамогай кнопкі <img src="../img/button/zoom-feature.jpg" class="ms-docbutton"/>, даступнай у кожнага запісу.
+    Калі *Табліца* падключана да карты або карты падключаны да *Табліцы*, карыстальнік можа **Наблізіцца да аб'екта** з дапамогай кнопкі <img src="img/button/zoom-feature.jpg" class="ms-docbutton"/>, даступнай у кожнага запісу.
 
 ### Лічыльнік
 
 Пры выбары опцыі "лічыльнік" адкрываецца наступнае акно:
 
-<img src="../img/widgets/counter-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/counter-panel.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
 Верхняя панэль інструментаў гэтай панэлі аналагічная той, што прысутнічае ў [раздзеле "Табліца"](#табліца).
 Тут карыстальніку дазволена:
@@ -416,51 +416,51 @@
 !!! info "Увага"
     Для пераходу да наступнага кроку абавязковымі палямі лічацца толькі **Выкарыстоўваць** і **Аперацыя**.
 
-Пасля націску кнопкі <img src="../img/button/next.jpg" class="ms-docbutton"/> з'яўляецца панэль апошняга кроку:
+Пасля націску кнопкі <img src="img/button/next.jpg" class="ms-docbutton"/> з'яўляецца панэль апошняга кроку:
 
-<img src="../img/widgets/counter-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
+<img src="img/widgets/counter-info.jpg" class="ms-docimage"  style="max-width:450px;"/>
 
-У гэтым выпадку панэль інструментаў і ўводзімая інфармацыя таксама аналагічныя тым, што апісаны ў [раздзеле "Дыяграма"](#дыяграма), за выключэннем таго, што кнопка **Фільтрацыя** <img src="../img/button/filter-icon.jpg" class="ms-docbutton"/> адсутнічае.
+У гэтым выпадку панэль інструментаў і ўводзімая інфармацыя таксама аналагічныя тым, што апісаны ў [раздзеле "Дыяграма"](#дыяграма), за выключэннем таго, што кнопка **Фільтрацыя** <img src="img/button/filter-icon.jpg" class="ms-docbutton"/> адсутнічае.
 Прыкладам віджэта-лічыльніка можа быць:
 
-<img src="../img/widgets/counter-ex.jpg" class="ms-docimage" style="max-width:600px;"/>
+<img src="img/widgets/counter-ex.jpg" class="ms-docimage" style="max-width:600px;"/>
 
 ## Кіраванне існуючымі віджэтамі
 
 Пасля стварэння віджэты размяшчаюцца ў правым ніжнім куце акна прагляду карты, і з'яўляецца *Панэль віджэтаў*:
 
-<img src="../img/widgets/widgets-tray.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/widgets/widgets-tray.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 З дапамогай кнопак, даступных на кожным віджэце, карыстальнік можа выконваць наступныя аперацыі:
 
-<img src="../img/widgets/widget-button.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/widgets/widget-button.jpg" class="ms-docimage" style="max-width:500px;"/>
 
-* Перацягваць віджэт для перамяшчэння яго ў вобласці карты і **змяняць яго памер** з дапамогай кнопкі <img src="../img/button/resize-button.jpg" class="ms-docbutton"/> (таксама даступна для віджэтаў у інфармацыйнай панэлі)
+* Перацягваць віджэт для перамяшчэння яго ў вобласці карты і **змяняць яго памер** з дапамогай кнопкі <img src="img/button/resize-button.jpg" class="ms-docbutton"/> (таксама даступна для віджэтаў у інфармацыйнай панэлі)
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/widgets/ded-widgets.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/widgets/ded-widgets.mp4"/></video>
 
-* **Замацаваць** становішча і памер віджэта з дапамогай кнопкі <img src="../img/button/pin.jpg" class="ms-docbutton"/>
+* **Замацаваць** становішча і памер віджэта з дапамогай кнопкі <img src="img/button/pin.jpg" class="ms-docbutton"/>
 
-* **Згарнуць** віджэт з дапамогай кнопкі <img src="../img/button/collapse-button.jpg" class="ms-docbutton"/> і разгарнуць яго зноў, націснуўшы на адпаведную кнопку на *Панэлі віджэтаў*
+* **Згарнуць** віджэт з дапамогай кнопкі <img src="img/button/collapse-button.jpg" class="ms-docbutton"/> і разгарнуць яго зноў, націснуўшы на адпаведную кнопку на *Панэлі віджэтаў*
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/widgets/collapse-widgets.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/widgets/collapse-widgets.mp4"/></video>
 
 !!! note "Заўвага"
-    *Панэль віджэтаў* дазваляе карыстальніку разгортваць/згортваць кожны асобны віджэт <img src="../img/button/wid-tray-single.jpg" class="ms-docbutton"/> або ўсе адразу з дапамогай кнопкі <img src="../img/button/wid-tray-all.jpg" class="ms-docbutton"/>.
+    *Панэль віджэтаў* дазваляе карыстальніку разгортваць/згортваць кожны асобны віджэт <img src="img/button/wid-tray-single.jpg" class="ms-docbutton"/> або ўсе адразу з дапамогай кнопкі <img src="img/button/wid-tray-all.jpg" class="ms-docbutton"/>.
 
-* Разгарнуць віджэт на **ўвесь экран** з дапамогай кнопкі <img src="../img/button/maximize-button.jpg" class="ms-docbutton"/> (таксама даступна для віджэтаў у інфармацыйнай панэлі)
+* Разгарнуць віджэт на **ўвесь экран** з дапамогай кнопкі <img src="img/button/maximize-button.jpg" class="ms-docbutton"/> (таксама даступна для віджэтаў у інфармацыйнай панэлі)
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/widgets/maximize-widgets.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/widgets/maximize-widgets.mp4"/></video>
 
-* Атрымаць доступ да інфармацыі пра *Загаловак* і *Апісанне* з дапамогай кнопкі <img src="../img/button/info.jpg" class="ms-docbutton"/>, калі гэтая інфармацыя была прадастаўлена пры канфігурацыі/стварэнні віджэта
+* Атрымаць доступ да інфармацыі пра *Загаловак* і *Апісанне* з дапамогай кнопкі <img src="img/button/info.jpg" class="ms-docbutton"/>, калі гэтая інфармацыя была прадастаўлена пры канфігурацыі/стварэнні віджэта
 
-<img src="../img/widgets/wid-description.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/widgets/wid-description.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ### Доступ да меню віджэтаў
 
-Пасля дадання віджэта на карту можна атрымаць доступ да яго **Меню** з дапамогай кнопкі <img src="../img/button/menu.jpg" class="ms-docbutton"/>. Для віджэтаў *Тэкст*, *Табліца* і *Лічыльнік* з'яўляецца наступнае меню:
+Пасля дадання віджэта на карту можна атрымаць доступ да яго **Меню** з дапамогай кнопкі <img src="img/button/menu.jpg" class="ms-docbutton"/>. Для віджэтаў *Тэкст*, *Табліца* і *Лічыльнік* з'яўляецца наступнае меню:
 
-<img src="../img/widgets/widgets-menu.jpg" class="ms-docimage" style="max-width:200px;"/>
+<img src="img/widgets/widgets-menu.jpg" class="ms-docimage" style="max-width:200px;"/>
 
 Тут карыстальнік можа:
 
@@ -470,7 +470,7 @@
 
 Толькі для *Дыяграм* меню выглядае наступным чынам:
 
-<img src="../img/widgets/widgets-menu2.jpg" class="ms-docimage" style="max-width:200px;"/>
+<img src="img/widgets/widgets-menu2.jpg" class="ms-docimage" style="max-width:200px;"/>
 
 У прыватнасці, карыстальнік таксама можа:
 

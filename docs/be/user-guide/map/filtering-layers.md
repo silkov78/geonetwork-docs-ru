@@ -20,45 +20,45 @@
 
 ### Фільтр слоя
 
-Гэты фільтр прымяняецца з дапамогай кнопкі **Фільтр слоя** <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слаёў](toc.md#наладкі-і-панэль-інструментаў-слоя) у Панэлі зместу і будзе захоўвацца ў наступных сітуацыях:
+Гэты фільтр прымяняецца з дапамогай кнопкі **Фільтр слоя** <img src="img/button/filter-layer.jpg" class="ms-docbutton"/> на [Панэлі інструментаў слаёў](toc.md#наладкі-і-панэль-інструментаў-слоя) у Панэлі зместу і будзе захоўвацца ў наступных сітуацыях:
 
 * Пры выкарыстанні іншых інструментаў, такіх як [Інструмент "Ідэнтыфікацыя"](navigation-toolbar.md#інструмент-ідэнтыфікацыя):
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/get_filtered_features_info.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/get_filtered_features_info.mp4"/></video>
 
 * Пры прымяненні іншага тыпу фільтра
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
 
 * Пры наступным адкрыцці карты (неабходна Захаваць карту з [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў) пасля прымянення фільтра)
 
 Пасля ўстаноўкі *Фільтра слоя* яго можна ўключыць/выключыць, проста націснуўшы на кнопку, якая з'явіцца побач з назвай слоя ў [Панэлі зместу](toc.md):
 
-<img src="../img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
+<img src="img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-Гэты фільтр прымяняецца праз [Панэль запытаў](#панэль-запытаў). Пасля выбару наладак іх можна **Прымяніць** <img src="../img/button/apply_button.jpg" class="ms-docbutton"/>. Пасля гэтага карыстальнік можа:
+Гэты фільтр прымяняецца праз [Панэль запытаў](#панэль-запытаў). Пасля выбару наладак іх можна **Прымяніць** <img src="img/button/apply_button.jpg" class="ms-docbutton"/>. Пасля гэтага карыстальнік можа:
 
-* **Адмяніць** <img src="../img/button/undo_button.jpg" class="ms-docbutton"/> апошнія змены
+* **Адмяніць** <img src="img/button/undo_button.jpg" class="ms-docbutton"/> апошнія змены
 
-* **Скінуць** <img src="../img/button/reset_button.jpg" class="ms-docbutton"/> фільтр да зыходнага стану
+* **Скінуць** <img src="img/button/reset_button.jpg" class="ms-docbutton"/> фільтр да зыходнага стану
 
-* **Захаваць** <img src="../img/button/save_button.jpg" class="ms-docbutton"/> фільтр, каб зрабіць яго пастаянным
+* **Захаваць** <img src="img/button/save_button.jpg" class="ms-docbutton"/> фільтр, каб зрабіць яго пастаянным
 
 ### Пашыраны пошук
 
-Гэты фільтр, які прымяняецца з дапамогай кнопкі **Пашыраны пошук** <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/> у [Табліцы атрыбутаў](attributes-table.md), паводзіць сябе наступным чынам:
+Гэты фільтр, які прымяняецца з дапамогай кнопкі **Пашыраны пошук** <img src="img/button/advanced-search.jpg" class="ms-docbutton"/> у [Табліцы атрыбутаў](attributes-table.md), паводзіць сябе наступным чынам:
 
 * Яго можна выкарыстоўваць для прымянення фільтра да слоя для пошуку ў [Табліцы атрыбутаў](attributes-table.md): гэты фільтр прымяняецца па ўмове `AND` да *Фільтра слоя*, калі ён ужо ўсталяваны.
 
-<img src="../img/filtering-layers/filtered_features_grid.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/filtered_features_grid.jpg" class="ms-docimage"/>
 
-* Гэты фільтр можна сінхранізаваць з картай з дапамогай значка <img src="../img/button/sync.jpg" class="ms-docbutton"/>:
+* Гэты фільтр можна сінхранізаваць з картай з дапамогай значка <img src="img/button/sync.jpg" class="ms-docbutton"/>:
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/filtering-layers/ar_sync.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/filtering-layers/ar_sync.mp4"/></video>
 
 * Ён будзе аўтаматычна выдаляцца/прымяняцца зноў пры закрыцці/адкрыцці [Табліцы атрыбутаў](attributes-table.md)
 
-Гэты фільтр таксама прымяняецца праз [Панэль запытаў](#панэль-запытаў), але ў гэтым выпадку яго нельга Захаваць і зрабіць пастаянным пры паўторным адкрыцці карты. Карыстальнік можа толькі прымяніць яго, націснуўшы **Пошук** <img src="../img/button/search.jpg" class="ms-docbutton"/>, або, пры неабходнасці, **Скінуць** <img src="../img/button/reset_button.jpg" class="ms-docbutton"/> яго.
+Гэты фільтр таксама прымяняецца праз [Панэль запытаў](#панэль-запытаў), але ў гэтым выпадку яго нельга Захаваць і зрабіць пастаянным пры паўторным адкрыцці карты. Карыстальнік можа толькі прымяніць яго, націснуўшы **Пошук** <img src="img/button/search.jpg" class="ms-docbutton"/>, або, пры неабходнасці, **Скінуць** <img src="img/button/reset_button.jpg" class="ms-docbutton"/> яго.
 
 ### Хуткі фільтр
 
@@ -70,55 +70,55 @@
 
 * Фільтр па **бачным экстэнце**
 
-<img src="../img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 #### Хуткі фільтр па атрыбутах
 
 Гэты фільтр даступны для кожнага слупка ў [Табліцы атрыбутаў](attributes-table.md) прама пад назвамі палёў і можа выкарыстоўвацца ў спалучэнні з іншымі прымененымі фільтрамі:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filtered_quick_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filtered_quick_filter.mp4"/></video>
 
 Карыстальнік мае магчымасць прымяняць простыя фільтры па атрыбутах, уводзячы значэнне фільтра ў даступныя палі ўводу (у залежнасці ад тыпу дадзеных атрыбутаў даступныя віджэты выбару даты або часу). Пры фільтрацыі па адным або некалькіх атрыбутах запісы слоя ў [Табліцы атрыбутаў](attributes-table.md) аўтаматычна фільтруюцца адпаведным чынам.
 
 Калі карыстальнік хоча адфільтраваць па атрыбуце, ён можа проста ўвесці жаданае значэнне фільтра ў поле ўводу, і спіс запісаў у табліцы будзе аўтаматычна адфільтраваны па супадзенні з уведзеным тэкстам.
 
-<img src="../img/filtering-layers/attribute-table-quick-filter-1.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/attribute-table-quick-filter-1.jpg" class="ms-docimage"/>
 
 Карыстальнік таксама можа адфільтраваць атрыбут, выкарыстоўваючы поле выбару аперацыі. З выпадальнага меню можна выбраць аперацыю для выканання (для атрыбута тыпу *String* гэта могуць быць `=`, `like`, `ilike` або `isNull`, для атрыбута тыпу *Integer*, *Date* або *Time* — `=`, `>`, `<`, `>=`, `<=`, `<>` або `isNull`)
 
-<img src="../img/filtering-layers/operations_drop_down_menu.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/operations_drop_down_menu.jpg" class="ms-docimage"/>
 
 Прыкладам фільтрацыі лікавага поля па супадзенні запісаў, якія *большыя або роўныя* пэўнаму парогаваму значэнню, можа быць:
 
-<img src="../img/filtering-layers/attribute-table-quick-filter-3.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/attribute-table-quick-filter-3.jpg" class="ms-docimage"/>
 
-Карыстальнік таксама можа фільтраваць запісы атрыбутаў тыпу *Date*, *Time* і *DateTime* з дапамогай опцыі *Выбар даты/часу*, націснуўшы на кнопку <img src="../img/button/date_picker.jpg" class="ms-docbutton"/> для атрыбутаў *Date*, кнопку <img src="../img/button/time_picker.jpg" class="ms-docbutton"/> для атрыбутаў *Time* і кнопку <img src="../img/button/date_time_picker.jpg" class="ms-docbutton"/> для атрыбутаў *DateTime*. Прыкладам фільтрацыі атрыбута *DateTime* з выкарыстаннем опцыі *Выбар даты/часу* можа быць наступны:
+Карыстальнік таксама можа фільтраваць запісы атрыбутаў тыпу *Date*, *Time* і *DateTime* з дапамогай опцыі *Выбар даты/часу*, націснуўшы на кнопку <img src="img/button/date_picker.jpg" class="ms-docbutton"/> для атрыбутаў *Date*, кнопку <img src="img/button/time_picker.jpg" class="ms-docbutton"/> для атрыбутаў *Time* і кнопку <img src="img/button/date_time_picker.jpg" class="ms-docbutton"/> для атрыбутаў *DateTime*. Прыкладам фільтрацыі атрыбута *DateTime* з выкарыстаннем опцыі *Выбар даты/часу* можа быць наступны:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/filtering-layers/data_time_picker_example.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="img/filtering-layers/data_time_picker_example.mp4"/></video>
 
 #### Хуткі фільтр па ўзаемадзеянні з картай
 
-Можна фільтраваць запісы ў [Табліцы атрыбутаў](attributes-table.md), пстрыкаючы па карце або робячы выбарку некалькіх аб'ектаў непасрэдна на карце. Карыстальнік можа актываваць кнопку **Фільтр на карце** <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/> (пасля націску кнопка становіцца сіняй), а затым:
+Можна фільтраваць запісы ў [Табліцы атрыбутаў](attributes-table.md), пстрыкаючы па карце або робячы выбарку некалькіх аб'ектаў непасрэдна на карце. Карыстальнік можа актываваць кнопку **Фільтр на карце** <img src="img/button/filter_geometry_button.jpg" class="ms-docbutton"/> (пасля націску кнопка становіцца сіняй), а затым:
 
 * Пстрыкнуць на карце па аб'ектах, якія ён хоча выбраць
 
 * Дадаць некалькі аб'ектаў у выбарку, націснуўшы Ctrl і зноў пстрыкнуўшы па іншых аб'ектах на карце
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filter_geometry.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filter_geometry.mp4"/></video>
 
 * Дадаць некалькі аб'ектаў у выбарку, націснуўшы Ctrl + Alt і намаляваўшы на карце рамку выбару
 
- <video class="ms-docimage" controls><source src="../img/filtering-layers/filter_geometries.mp4"/></video>
+ <video class="ms-docimage" controls><source src="img/filtering-layers/filter_geometries.mp4"/></video>
 
-Спіс запісаў у *Табліцы атрыбутаў* будзе аўтаматычна адфільтраваны ў адпаведнасці з выбарам карыстальніка, пасля чаго карыстальнік можа адключыць геаметрычны фільтр з дапамогай кнопкі **Выдаліць фільтр** <img src="../img/button/remove_filter_geometry.jpg" class="ms-docbutton"/>.
+Спіс запісаў у *Табліцы атрыбутаў* будзе аўтаматычна адфільтраваны ў адпаведнасці з выбарам карыстальніка, пасля чаго карыстальнік можа адключыць геаметрычны фільтр з дапамогай кнопкі **Выдаліць фільтр** <img src="img/button/remove_filter_geometry.jpg" class="ms-docbutton"/>.
 
 #### Хуткі фільтр па бачным экстэнце
 
-З [Табліцы атрыбутаў](attributes-table.md) карыстальнік можа фільтраваць дадзеныя па бачным экстэнце карты з дапамогай кнопкі **Фільтр па экстэнце** <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>. Пасля націску кнопка-пераключальнік становіцца зялёнай, і спіс запісаў у *Табліцы атрыбутаў* фільтруецца, паказваючы толькі запісы, якія адпавядаюць аб'ектам слоя, што прысутнічаюць у бягучым бачным экстэнце карты.
+З [Табліцы атрыбутаў](attributes-table.md) карыстальнік можа фільтраваць дадзеныя па бачным экстэнце карты з дапамогай кнопкі **Фільтр па экстэнце** <img src="img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>. Пасля націску кнопка-пераключальнік становіцца зялёнай, і спіс запісаў у *Табліцы атрыбутаў* фільтруецца, паказваючы толькі запісы, якія адпавядаюць аб'ектам слоя, што прысутнічаюць у бягучым бачным экстэнце карты.
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/filtering-layers/filter_viewport.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/filtering-layers/filter_viewport.mp4"/></video>
 
-Спіс запісаў у *Табліцы атрыбутаў* аўтаматычна абнаўляецца, калі карыстальнік перамяшчае/маштабуе выгляд карты. Можна дэактываваць **Фільтр па экстэнце** <img src="../img/button/filter-by-viewport-enable.jpg" class="ms-docbutton"/>, зноў націснуўшы тую ж кнопку-пераключальнік.
+Спіс запісаў у *Табліцы атрыбутаў* аўтаматычна абнаўляецца, калі карыстальнік перамяшчае/маштабуе выгляд карты. Можна дэактываваць **Фільтр па экстэнце** <img src="img/button/filter-by-viewport-enable.jpg" class="ms-docbutton"/>, зноў націснуўшы тую ж кнопку-пераключальнік.
 
 !!! info "Увага"
     *Хуткі фільтр* застаецца актыўным, пакуль адкрыта [Табліца атрыбутаў](attributes-table.md), але, у адрозненне ад *Пашыранага пошуку*, пасля закрыцця [Табліцы атрыбутаў](attributes-table.md) ён больш не з'явіцца, калі [Табліца атрыбутаў](attributes-table.md) будзе адкрыта паўторна.
@@ -133,7 +133,7 @@
 
 * **Фільтр па слоі**
 
-<img src="../img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ### Фільтр па атрыбутах
 
@@ -146,7 +146,7 @@
 
 * **Ніводнай** з умоў
 
-Пасля гэтага карыстальнік можа ўставіць адну або некалькі ўмоў, якія таксама могуць быць згрупаваны ў адну або некалькі груп умоў (выкарыстоўвайце кнопку <img src="../img/button/condition_group.jpg" class="ms-docbutton"/> для стварэння групы).
+Пасля гэтага карыстальнік можа ўставіць адну або некалькі ўмоў, якія таксама могуць быць згрупаваны ў адну або некалькі груп умоў (выкарыстоўвайце кнопку <img src="img/button/condition_group.jpg" class="ms-docbutton"/> для стварэння групы).
 Умову можна ўсталяваць, выбраўшы значэнне для кожнага з трох палёў уводу:
 
 * Першае поле ўводу дазваляе выбраць поле слоя
@@ -160,7 +160,7 @@
 
 Просты *Фільтр па атрыбутах*, прыменены для лікавага поля, можа быць, напрыклад, такім:
 
-<video class="ms-docimage" style="max-width:600px;" controls><source src="../img/filtering-layers/att_filter.mp4"/></video>
+<video class="ms-docimage" style="max-width:600px;" controls><source src="img/filtering-layers/att_filter.mp4"/></video>
 
 ### Вобласць інтарэсаў
 
@@ -172,11 +172,11 @@
 
 Прымяняючы, напрыклад, фільтр *Прамавугольнік* з аперацыяй *Перасякае*, працэс можа выглядаць наступным чынам:
 
-<video class="ms-docimage" style="max-width:600px;" controls><source src="../img/filtering-layers/geom_filter.mp4"/></video>
+<video class="ms-docimage" style="max-width:600px;" controls><source src="img/filtering-layers/geom_filter.mp4"/></video>
 
-Пасля ўстаноўкі гэтага фільтра заўсёды можна адрэдагаваць каардынаты і памеры намаляванай геаметрыі фільтра, націснуўшы на кнопку **Дэталі** <img src="../img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Рэдагуючы, напрыклад, круг, можна змяніць каардынаты цэнтра (*x*, *y*) і памер радыуса (*м*):
+Пасля ўстаноўкі гэтага фільтра заўсёды можна адрэдагаваць каардынаты і памеры намаляванай геаметрыі фільтра, націснуўшы на кнопку **Дэталі** <img src="img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Рэдагуючы, напрыклад, круг, можна змяніць каардынаты цэнтра (*x*, *y*) і памер радыуса (*м*):
 
-<img src="../img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ### Фільтр па слоі
 
@@ -195,8 +195,8 @@
 
 Каб лепш зразумець гэты тып фільтра, прывядзём прыклад. Выкажам здагадку, карыстальнік хоча адфільтраваць рэгіёны Італіі па аб'ектах ЮНЕСКА:
 
-<img src="../img/filtering-layers/layer-filter-1.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/layer-filter-1.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 У прыватнасці, калі наша мэта — паглядзець на рэгіёны Італіі, якія ўтрымліваюць аб'екты ЮНЕСКА з *серыйным кодам = 1*, аперацыі могуць быць наступнымі:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/layer_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/layer_filter.mp4"/></video>

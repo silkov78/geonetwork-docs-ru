@@ -3,16 +3,16 @@
 **************************
 
 Приложение позволяет экспортировать как векторные, так и растровые слои, представленные в [Панели содержания](toc.md). Для предоставления расширенных возможностей экспорта в GeoServer должен быть установлен и доступен процесс [WPS Download](https://docs.geoserver.org/stable/en/user/community/wps-download/index.html). Приложение выполняет превентивную проверку, как только пользователь открывает инструмент: если процесс WPS Download недоступен, в качестве запасного варианта используется служба WFS, и параметры экспорта будут ограничены (например, можно будет экспортировать только векторные данные).
-После выбора слоя в [Панели содержания](toc.md) пользователь может открыть инструмент **Экспорт данных**, нажав кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/> на панели инструментов слоя.
+После выбора слоя в [Панели содержания](toc.md) пользователь может открыть инструмент **Экспорт данных**, нажав кнопку <img src="img/button/export_data.jpg" class="ms-docbutton"/> на панели инструментов слоя.
 
-<img src="../img/export_data/export_data_ex.jpg" class="ms-docimage"/>
+<img src="img/export_data/export_data_ex.jpg" class="ms-docimage"/>
 
 !!! info "Внимание"
     Если служба `WFS` является единственной доступной, то после открытия окна **Экспорт данных** пользователь сможет выбрать только *Формат файла* и *Систему пространственных координат* (как описано ниже).
-    <img src="../img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
+    <img src="img/export_data/wfs-export-data.jpg" class="ms-docimage"/>
 
 !!! info "Внимание"
-    Только для **Векторного слоя** пользователь также может скачать данные, открыв Таблицу атрибутов <img src="../img/button/attributes-table.jpg" class="ms-docbutton"/> из [Панели содержания](toc.md) и нажав кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/>.
+    Только для **Векторного слоя** пользователь также может скачать данные, открыв Таблицу атрибутов <img src="img/button/attributes-table.jpg" class="ms-docbutton"/> из [Панели содержания](toc.md) и нажав кнопку <img src="img/button/export_data.jpg" class="ms-docbutton"/>.
 
 На панели **Экспорт данных** пользователь может:
 
@@ -26,7 +26,7 @@
 
 * Только для *Векторного слоя*, позволяет учесть при скачивании возможный фильтр, примененный к слою с помощью инструмента [Фильтр слоя](filtering-layers.md#фильтр-слоя) (эта опция присутствует в форме, только если доступен процесс WPS Download)
 
-<img src="../img/export_data/export_data_vector.jpg" class="ms-docimage"/>
+<img src="img/export_data/export_data_vector.jpg" class="ms-docimage"/>
 
 * Только для *Растрового слоя* (и если доступен процесс WPS Download) пользователь может открыть **Расширенные опции**, чтобы выбрать:
 
@@ -35,18 +35,18 @@
 * **Ширина** внутренних тайлов в пикселях
 * **Высота** внутренних тайлов в пикселях
 
-<img src="../img/export_data/export_data_raster.jpg" class="ms-docimage"/>
+<img src="img/export_data/export_data_raster.jpg" class="ms-docimage"/>
 
-При нажатии на кнопку <img src="../img/button/export_at.jpg" class="ms-docbutton"/> выполняется запрос на экспорт. В случае доступности процесса WPS Download можно асинхронно выполнять несколько запросов на экспорт. Информационное всплывающее окно сообщает пользователю о начале процесса экспорта, и пользователь может проверить статус самого процесса, открыв панель **Результаты экспорта данных**, нажав на кнопку <img src="../img/button/export_data.jpg" class="ms-docbutton"/> в правой части нижнего колонтитула.
+При нажатии на кнопку <img src="img/button/export_at.jpg" class="ms-docbutton"/> выполняется запрос на экспорт. В случае доступности процесса WPS Download можно асинхронно выполнять несколько запросов на экспорт. Информационное всплывающее окно сообщает пользователю о начале процесса экспорта, и пользователь может проверить статус самого процесса, открыв панель **Результаты экспорта данных**, нажав на кнопку <img src="img/button/export_data.jpg" class="ms-docbutton"/> в правой части нижнего колонтитула.
 
-<img src="../img/export_data/export_data_download.jpg" class="ms-docimage"/>
+<img src="img/export_data/export_data_download.jpg" class="ms-docimage"/>
 
 Панель **Результаты экспорта данных** предоставляет список запущенных пользователем процессов экспорта и их статусы: как только WPS завершает операцию экспорта, ее статус сообщается пользователю (в процессе, завершено и готово к скачиванию, или ошибка). Таким образом, пользователь может:
 
-<img src="../img/export_data/export_data_result.jpg" class="ms-docimage"/>
+<img src="img/export_data/export_data_result.jpg" class="ms-docimage"/>
 
 * Проверить наличие сообщений об ошибках: специальный значок информирует пользователя о сбое процесса с помощью всплывающего сообщения.
 
-* **Скачать** итоговый `zip`-файл: нажав кнопку <img src="../img/button/save-changes.jpg" class="ms-docbutton"/>
+* **Скачать** итоговый `zip`-файл: нажав кнопку <img src="img/button/save-changes.jpg" class="ms-docbutton"/>
 
-* **Удалить** итоговый `zip`-файл: нажав кнопку <img src="../img/button/delete_button.jpg" class="ms-docbutton"/>
+* **Удалить** итоговый `zip`-файл: нажав кнопку <img src="img/button/delete_button.jpg" class="ms-docbutton"/>

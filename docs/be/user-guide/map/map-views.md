@@ -7,50 +7,50 @@
 
 ## Даданне новага віду
 
-Пасля таго як карыстальнік адкрывае карту, інструменты *Віды карты* можна адкрыць з дапамогай кнопкі <img src="../img/button/map-views-button.jpg" class="ms-docbutton" /> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў).
+Пасля таго як карыстальнік адкрывае карту, інструменты *Віды карты* можна адкрыць з дапамогай кнопкі <img src="img/button/map-views-button.jpg" class="ms-docbutton" /> на [Бакавой панэлі інструментаў](mapstore-toolbars.md#бакавая-панэль-інструментаў).
 
-<img src="../img/map-views/map-views-panel.jpg" class="ms-docimage"/>
+<img src="img/map-views/map-views-panel.jpg" class="ms-docimage"/>
 
-Каб стварыць новы просты від, карыстальнік можа проста перамясціць карту ў цікавую для яго вобласць, уключыць жаданыя слаі ў Панэлі зместу для адлюстравання на карце і, нарэшце, націснуць на кнопку <img src="../img/button/+++.jpg" class="ms-docbutton" />. Від будзе створаны і бачны ў спісе *Віды* пры націску на кнопку <img src="../img/button/timeline-layers-list-button.jpg" class="ms-docbutton" />.
+Каб стварыць новы просты від, карыстальнік можа проста перамясціць карту ў цікавую для яго вобласць, уключыць жаданыя слаі ў Панэлі зместу для адлюстравання на карце і, нарэшце, націснуць на кнопку <img src="img/button/+++.jpg" class="ms-docbutton" />. Від будзе створаны і бачны ў спісе *Віды* пры націску на кнопку <img src="img/button/timeline-layers-list-button.jpg" class="ms-docbutton" />.
 
-<video class="ms-docimage" controls><source src="../img/map-views/add-view.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/add-view.mp4"/></video>
 
-Прыкладанне дазваляе наладжваць і рэдагаваць новы від, адкрыўшы панэль рэдагавання з дапамогай кнопкі <img src="../img/button/editing-button.jpg" class="ms-docbutton" />. Тут карыстальніку дазволена:
+Прыкладанне дазваляе наладжваць і рэдагаваць новы від, адкрыўшы панэль рэдагавання з дапамогай кнопкі <img src="img/button/editing-button.jpg" class="ms-docbutton" />. Тут карыстальніку дазволена:
 
 * Дадаваць тэкст, выявы, відэа ці гіперспасылкі праз раздзел **Апісанне**. *Апісанне* бачна падчас [Навігацыі па відах](#навігацыя-па-3d-відах). Зірніце на наступны прыклад.
 
-<img src="../img/map-views/description.jpg" class="ms-docimage"/>
+<img src="img/map-views/description.jpg" class="ms-docimage"/>
 
-* *Захапіць пазіцыі віду* з дапамогай кнопкі <img src="../img/button/capture-view-position-button.jpg" class="ms-docbutton" /> або змяняць даўгату, шырату і вышыню *Становішча камеры* і *Цэнтральнага пункта* (даступна толькі для *3D* рэжыму) з дапамогай раздзела **Становішча**.
+* *Захапіць пазіцыі віду* з дапамогай кнопкі <img src="img/button/capture-view-position-button.jpg" class="ms-docbutton" /> або змяняць даўгату, шырату і вышыню *Становішча камеры* і *Цэнтральнага пункта* (даступна толькі для *3D* рэжыму) з дапамогай раздзела **Становішча**.
 
-<img src="../img/map-views/position.jpg" class="ms-docimage"/>
+<img src="img/map-views/position.jpg" class="ms-docimage"/>
 
 * Змяняць працягласць анімацыі і ўключаць/выключаць эфект пераходу падчас [Навігацыі па відах](#навігацыя-па-3d-відах) з дапамогай раздзела **Анімацыя**.
 
-<img src="../img/map-views/animation.jpg" class="ms-docimage"/>
+<img src="img/map-views/animation.jpg" class="ms-docimage"/>
 
 * У 3D-рэжыме выкарыстоўваць раздзел **Маска** для выбару слоя WFS або Вектарнага слоя, даступнага ў Панэлі зместу, для стварэння маскі на ўсіх 3D-тайлах, бачных на карце. Слой маскі неабходна дадаць на карту перад выкарыстаннем гэтай функцыі, каб можна было выкарыстоўваць аб'екты слоя ў якасці абласцей маскіравання: калі на карце прысутнічае некалькі слаёў WFS або Вектарных слаёў (з паліганальнымі аб'ектамі), усе яны выкарыстоўваюцца разам для прадстаўлення канчатковых абласцей маскіравання.
 
-<img src="../img/map-views/mask-panel.jpg" class="ms-docimage"/>
+<img src="img/map-views/mask-panel.jpg" class="ms-docimage"/>
 
 Калі карыстальнік уключае опцыю **Інвертаваць**, проста прымяняецца інвертаваная маска з выкарыстаннем таго ж слоя, так што кожны аб'ект выкарыстоўваецца для стварэння адтуліны на ўсіх бачных 3D-тайлах.
 
-<img src="../img/map-views/mask-inverse.jpg" class="ms-docimage"/>
+<img src="img/map-views/mask-inverse.jpg" class="ms-docimage"/>
 
 * Уключаць празрыстасць глобуса праз раздзел **Празрыстасць глобуса**, каб можна было бачыць слаі пад паверхняй глобуса.
 
-<img src="../img/map-views/translucency.jpg" class="ms-docimage"/>
+<img src="img/map-views/translucency.jpg" class="ms-docimage"/>
 
 * Выбіраць, які слой павінен быць бачны, калі від актыўны, праз раздзел **Опцыі слоя**. У 2D-рэжыме карыстальнік можа проста ўключаць або выключаць усе слаі, якія прысутнічаюць у [Панэлі зместу](toc.md), і змяняць празрыстасць.
 
-<img src="../img/map-views/layer-options-tool.jpg" class="ms-docimage"/>
+<img src="img/map-views/layer-options-tool.jpg" class="ms-docimage"/>
 
 !!! info "Увага"
     У *2D-рэжыме* слаі *3D-тайлаў* і *Рэльефу* не адлюстроўваюцца ў *Опцыях слоя*.
 
 У *3D-рэжыме*, выкарыстоўваючы тую ж логіку, што і для опцыі Маскіравання, таксама можна Абрэзаць (не Маскіраваць) кожны слой 3D-тайлаў або Рэльефу, выкарыстоўваючы слой WFS або вектарны слой у якасці крыніцы абрэзкі. Акрамя таго, у гэтым выпадку карыстальнік таксама можа выбраць, які аб'ект слоя можна выкарыстоўваць у якасці *Аб'екта абрэзкі*.
 
-<video class="ms-docimage" controls><source src="../img/map-views/clipping.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/clipping.mp4"/></video>
 
 !!! info "Увага"
     Слой абрэзкі павінен мець выпуклыя паліганальныя аб'екты. Увагнутыя палігоны не падтрымліваюцца гэтым тыпам абрэзкі.
@@ -64,10 +64,10 @@
 
 ## Навігацыя па 3D-відах
 
-Пасля дадання некалькіх відаў у інструмент *Віды карты* можна праглядаць іх паслядоўна, націскаючы на кнопку <img src="../img/button/timeline-play-button.jpg" class="ms-docbutton" />. Пры гэтым запускаецца рэжым прэзентацыі, і кожны від адлюстроўваецца ў Акне прагляду карты разам з яго апісальнай панэллю (калі яна наладжана) з левага боку экрана на працягу часу, які залежыць ад раней наладжанай працягласці.
+Пасля дадання некалькіх відаў у інструмент *Віды карты* можна праглядаць іх паслядоўна, націскаючы на кнопку <img src="img/button/timeline-play-button.jpg" class="ms-docbutton" />. Пры гэтым запускаецца рэжым прэзентацыі, і кожны від адлюстроўваецца ў Акне прагляду карты разам з яго апісальнай панэллю (калі яна наладжана) з левага боку экрана на працягу часу, які залежыць ад раней наладжанай працягласці.
 
-<video class="ms-docimage" controls><source src="../img/map-views/views-navigation.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/map-views/views-navigation.mp4"/></video>
 
 Карыстальнік таксама можа выбіраць навігацыю па кожным відзе ўручную з дапамогай панэлі навігацыі, якая прадастаўляецца інструментам.
 
-<img src="../img/map-views/views-navigation-toolbar.jpg" class="ms-docimage"/>
+<img src="img/map-views/views-navigation-toolbar.jpg" class="ms-docimage"/>

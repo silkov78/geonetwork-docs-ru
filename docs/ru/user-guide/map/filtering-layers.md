@@ -20,45 +20,45 @@
 
 ### Фильтр слоя
 
-Этот фильтр применяется с помощью кнопки **Фильтр слоя** <img src="../img/button/filter-layer.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#настройки-и-панель-инструментов-слоя) в Панели содержания и будет сохраняться в следующих ситуациях:
+Этот фильтр применяется с помощью кнопки **Фильтр слоя** <img src="img/button/filter-layer.jpg" class="ms-docbutton"/> на [Панели инструментов слоев](toc.md#настройки-и-панель-инструментов-слоя) в Панели содержания и будет сохраняться в следующих ситуациях:
 
 * При использовании других инструментов, таких как [Инструмент "Идентификация"](navigation-toolbar.md#инструмент-идентификация):
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/get_filtered_features_info.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/get_filtered_features_info.mp4"/></video>
 
 * При применении другого типа фильтра
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filtered_advanced_filtering.mp4"/></video>
 
 * При следующем открытии карты (необходимо Сохранить карту с [Боковой панели инструментов](mapstore-toolbars.md#боковая-панель-инструментов) после применения фильтра)
 
 После установки *Фильтра слоя* его можно включить/отключить, просто нажав на кнопку, которая появится рядом с названием слоя в [Панели содержания](toc.md):
 
-<img src="../img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
+<img src="img/filtering-layers/toogle-layer.jpg" class="ms-docimage" style="max-width:300px;"/>
 
-Этот фильтр применяется через [Панель запросов](#панель-запросов). После выбора настроек их можно **Применить** <img src="../img/button/apply_button.jpg" class="ms-docbutton"/>. После этого пользователь может:
+Этот фильтр применяется через [Панель запросов](#панель-запросов). После выбора настроек их можно **Применить** <img src="img/button/apply_button.jpg" class="ms-docbutton"/>. После этого пользователь может:
 
-* **Отменить** <img src="../img/button/undo_button.jpg" class="ms-docbutton"/> последние изменения
+* **Отменить** <img src="img/button/undo_button.jpg" class="ms-docbutton"/> последние изменения
 
-* **Сбросить** <img src="../img/button/reset_button.jpg" class="ms-docbutton"/> фильтр до исходного состояния
+* **Сбросить** <img src="img/button/reset_button.jpg" class="ms-docbutton"/> фильтр до исходного состояния
 
-* **Сохранить** <img src="../img/button/save_button.jpg" class="ms-docbutton"/> фильтр, чтобы сделать его постоянным
+* **Сохранить** <img src="img/button/save_button.jpg" class="ms-docbutton"/> фильтр, чтобы сделать его постоянным
 
 ### Расширенный поиск
 
-Этот фильтр, применяемый с помощью кнопки **Расширенный поиск** <img src="../img/button/advanced-search.jpg" class="ms-docbutton"/> в [Таблице атрибутов](attributes-table.md), ведет себя следующим образом:
+Этот фильтр, применяемый с помощью кнопки **Расширенный поиск** <img src="img/button/advanced-search.jpg" class="ms-docbutton"/> в [Таблице атрибутов](attributes-table.md), ведет себя следующим образом:
 
 * Его можно использовать для применения фильтра к слою для поиска в [Таблице атрибутов](attributes-table.md): этот фильтр применяется по условию `AND` к *Фильтру слоя*, если он уже установлен.
 
-<img src="../img/filtering-layers/filtered_features_grid.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/filtered_features_grid.jpg" class="ms-docimage"/>
 
-* Этот фильтр можно синхронизировать с картой с помощью значка <img src="../img/button/sync.jpg" class="ms-docbutton"/>:
+* Этот фильтр можно синхронизировать с картой с помощью значка <img src="img/button/sync.jpg" class="ms-docbutton"/>:
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/filtering-layers/ar_sync.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/filtering-layers/ar_sync.mp4"/></video>
 
 * Он будет автоматически удаляться/применяться заново при закрытии/открытии [Таблицы атрибутов](attributes-table.md)
 
-Этот фильтр также применяется через [Панель запросов](#панель-запросов), но в этом случае его нельзя Сохранить и сделать постоянным при повторном открытии карты. Пользователь может только применить его, нажав **Поиск** <img src="../img/button/search.jpg" class="ms-docbutton"/>, или, при необходимости, **Сбросить** <img src="../img/button/reset_button.jpg" class="ms-docbutton"/> его.
+Этот фильтр также применяется через [Панель запросов](#панель-запросов), но в этом случае его нельзя Сохранить и сделать постоянным при повторном открытии карты. Пользователь может только применить его, нажав **Поиск** <img src="img/button/search.jpg" class="ms-docbutton"/>, или, при необходимости, **Сбросить** <img src="img/button/reset_button.jpg" class="ms-docbutton"/> его.
 
 ### Быстрый фильтр
 
@@ -70,55 +70,55 @@
 
 * Фильтр по **видимому экстенту**
 
-<img src="../img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 #### Быстрый фильтр по атрибутам
 
 Этот фильтр доступен для каждого столбца в [Таблице атрибутов](attributes-table.md) прямо под именами полей и может использоваться в сочетании с другими примененными фильтрами:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filtered_quick_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filtered_quick_filter.mp4"/></video>
 
 Пользователь имеет возможность применять простые фильтры по атрибутам, вводя значение фильтра в доступные поля ввода (в зависимости от типа данных атрибутов доступны виджеты выбора даты или времени). При фильтрации по одному или нескольким атрибутам записи слоя в [Таблице атрибутов](attributes-table.md) автоматически фильтруются соответствующим образом.
 
 Если пользователь хочет отфильтровать по атрибуту, он может просто ввести желаемое значение фильтра в поле ввода, и список записей в таблице будет автоматически отфильтрован по совпадению с введенным текстом.
 
-<img src="../img/filtering-layers/attribute-table-quick-filter-1.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/attribute-table-quick-filter-1.jpg" class="ms-docimage"/>
 
 Пользователь также может отфильтровать атрибут, используя поле выбора операции. Из выпадающего меню можно выбрать операцию для выполнения (для атрибута типа *String* это могут быть `=`, `like`, `ilike` или `isNull`, для атрибута типа *Integer*, *Date* или *Time* — `=`, `>`, `<`, `>=`, `<=`, `<>` или `isNull`)
 
-<img src="../img/filtering-layers/operations_drop_down_menu.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/operations_drop_down_menu.jpg" class="ms-docimage"/>
 
 Примером фильтрации числового поля по совпадению записей, которые *больше или равны* определенному пороговому значению, может быть:
 
-<img src="../img/filtering-layers/attribute-table-quick-filter-3.jpg" class="ms-docimage"/>
+<img src="img/filtering-layers/attribute-table-quick-filter-3.jpg" class="ms-docimage"/>
 
-Пользователь также может фильтровать записи атрибутов типа *Date*, *Time* и *DateTime* с помощью опции *Выбор даты/времени*, нажав на кнопку <img src="../img/button/date_picker.jpg" class="ms-docbutton"/> для атрибутов *Date*, кнопку <img src="../img/button/time_picker.jpg" class="ms-docbutton"/> для атрибутов *Time* и кнопку <img src="../img/button/date_time_picker.jpg" class="ms-docbutton"/> для атрибутов *DateTime*. Примером фильтрации атрибута *DateTime* с использованием опции *Выбор даты/времени* может быть следующий:
+Пользователь также может фильтровать записи атрибутов типа *Date*, *Time* и *DateTime* с помощью опции *Выбор даты/времени*, нажав на кнопку <img src="img/button/date_picker.jpg" class="ms-docbutton"/> для атрибутов *Date*, кнопку <img src="img/button/time_picker.jpg" class="ms-docbutton"/> для атрибутов *Time* и кнопку <img src="img/button/date_time_picker.jpg" class="ms-docbutton"/> для атрибутов *DateTime*. Примером фильтрации атрибута *DateTime* с использованием опции *Выбор даты/времени* может быть следующий:
 
-<video class="ms-docimage" style="max-width:700px;" controls><source src="../img/filtering-layers/data_time_picker_example.mp4"/></video>
+<video class="ms-docimage" style="max-width:700px;" controls><source src="img/filtering-layers/data_time_picker_example.mp4"/></video>
 
 #### Быстрый фильтр по взаимодействию с картой
 
-Можно фильтровать записи в [Таблице атрибутов](attributes-table.md), щелкая по карте или делая выборку нескольких объектов непосредственно на карте. Пользователь может активировать кнопку **Фильтр на карте** <img src="../img/button/filter_geometry_button.jpg" class="ms-docbutton"/> (после нажатия кнопка становится синей), а затем:
+Можно фильтровать записи в [Таблице атрибутов](attributes-table.md), щелкая по карте или делая выборку нескольких объектов непосредственно на карте. Пользователь может активировать кнопку **Фильтр на карте** <img src="img/button/filter_geometry_button.jpg" class="ms-docbutton"/> (после нажатия кнопка становится синей), а затем:
 
 * Щелкнуть на карте по объектам, которые он хочет выбрать
 
 * Добавить несколько объектов в выборку, нажав Ctrl и снова щелкнув по другим объектам на карте
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/filter_geometry.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/filter_geometry.mp4"/></video>
 
 * Добавить несколько объектов в выборку, нажав Ctrl + Alt и нарисовав на карте рамку выбора
 
- <video class="ms-docimage" controls><source src="../img/filtering-layers/filter_geometries.mp4"/></video>
+ <video class="ms-docimage" controls><source src="img/filtering-layers/filter_geometries.mp4"/></video>
 
-Список записей в *Таблице атрибутов* будет автоматически отфильтрован в соответствии с выбором пользователя, после чего пользователь может отключить геометрический фильтр с помощью кнопки **Удалить фильтр** <img src="../img/button/remove_filter_geometry.jpg" class="ms-docbutton"/>.
+Список записей в *Таблице атрибутов* будет автоматически отфильтрован в соответствии с выбором пользователя, после чего пользователь может отключить геометрический фильтр с помощью кнопки **Удалить фильтр** <img src="img/button/remove_filter_geometry.jpg" class="ms-docbutton"/>.
 
 #### Быстрый фильтр по видимому экстенту
 
-Из [Таблицы атрибутов](attributes-table.md) пользователь может фильтровать данные по видимому экстенту карты с помощью кнопки **Фильтр по экстенту** <img src="../img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>. После нажатия кнопка-переключатель становится зеленой, и список записей в *Таблице атрибутов* фильтруется, показывая только записи, соответствующие объектам слоя, присутствующим в текущем видимом экстенте карты.
+Из [Таблицы атрибутов](attributes-table.md) пользователь может фильтровать данные по видимому экстенту карты с помощью кнопки **Фильтр по экстенту** <img src="img/button/filter-by-viewport-button.jpg" class="ms-docbutton"/>. После нажатия кнопка-переключатель становится зеленой, и список записей в *Таблице атрибутов* фильтруется, показывая только записи, соответствующие объектам слоя, присутствующим в текущем видимом экстенте карты.
 
-<video class="ms-docimage" style="max-width:500px;" controls><source src="../img/filtering-layers/filter_viewport.mp4"/></video>
+<video class="ms-docimage" style="max-width:500px;" controls><source src="img/filtering-layers/filter_viewport.mp4"/></video>
 
-Список записей в *Таблице атрибутов* автоматически обновляется, когда пользователь перемещает/масштабирует вид карты. Можно деактивировать **Фильтр по экстенту** <img src="../img/button/filter-by-viewport-enable.jpg" class="ms-docbutton"/>, снова нажав ту же кнопку-переключатель.
+Список записей в *Таблице атрибутов* автоматически обновляется, когда пользователь перемещает/масштабирует вид карты. Можно деактивировать **Фильтр по экстенту** <img src="img/button/filter-by-viewport-enable.jpg" class="ms-docbutton"/>, снова нажав ту же кнопку-переключатель.
 
 !!! info "Внимание"
     *Быстрый фильтр* остается активным, пока открыта [Таблица атрибутов](attributes-table.md), но, в отличие от *Расширенного поиска*, после закрытия [Таблицы атрибутов](attributes-table.md) он больше не появится, если [Таблица атрибутов](attributes-table.md) будет открыта повторно.
@@ -133,7 +133,7 @@
 
 * **Фильтр по слою**
 
-<img src="../img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/query-panel.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ### Фильтр по атрибутам
 
@@ -146,7 +146,7 @@
 
 * **Ни одному** из условий
 
-После этого пользователь может вставить одно или несколько условий, которые также могут быть сгруппированы в одну или несколько групп условий (используйте кнопку <img src="../img/button/condition_group.jpg" class="ms-docbutton"/> для создания группы).
+После этого пользователь может вставить одно или несколько условий, которые также могут быть сгруппированы в одну или несколько групп условий (используйте кнопку <img src="img/button/condition_group.jpg" class="ms-docbutton"/> для создания группы).
 Условие можно установить, выбрав значение для каждого из трех полей ввода:
 
 * Первое поле ввода позволяет выбрать поле слоя
@@ -160,7 +160,7 @@
 
 Простой *Фильтр по атрибутам*, примененный для числового поля, может быть, например, таким:
 
-<video class="ms-docimage" style="max-width:600px;" controls><source src="../img/filtering-layers/att_filter.mp4"/></video>
+<video class="ms-docimage" style="max-width:600px;" controls><source src="img/filtering-layers/att_filter.mp4"/></video>
 
 ### Область интереса
 
@@ -172,11 +172,11 @@
 
 Применяя, например, фильтр *Прямоугольник* с операцией *Пересекает*, процесс может выглядеть следующим образом:
 
-<video class="ms-docimage" style="max-width:600px;" controls><source src="../img/filtering-layers/geom_filter.mp4"/></video>
+<video class="ms-docimage" style="max-width:600px;" controls><source src="img/filtering-layers/geom_filter.mp4"/></video>
 
-После установки этого фильтра всегда можно отредактировать координаты и размеры нарисованной геометрии фильтра, нажав на кнопку **Детали** <img src="../img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Редактируя, например, круг, можно изменить координаты центра (*x*, *y*) и размер радиуса (*м*):
+После установки этого фильтра всегда можно отредактировать координаты и размеры нарисованной геометрии фильтра, нажав на кнопку **Детали** <img src="img/button/edit-icon-1.jpg" class="ms-docbutton"/>. Редактируя, например, круг, можно изменить координаты центра (*x*, *y*) и размер радиуса (*м*):
 
-<img src="../img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/edit_geom.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 ### Фильтр по слою
 
@@ -195,8 +195,8 @@
 
 Чтобы лучше понять этот тип фильтра, приведем пример. Предположим, пользователь хочет отфильтровать регионы Италии по объектам ЮНЕСКО:
 
-<img src="../img/filtering-layers/layer-filter-1.jpg" class="ms-docimage" style="max-width:500px;"/>
+<img src="img/filtering-layers/layer-filter-1.jpg" class="ms-docimage" style="max-width:500px;"/>
 
 В частности, если наша цель — посмотреть на регионы Италии, которые содержат объекты ЮНЕСКО с *серийным кодом = 1*, операции могут быть следующими:
 
-<video class="ms-docimage" controls><source src="../img/filtering-layers/layer_filter.mp4"/></video>
+<video class="ms-docimage" controls><source src="img/filtering-layers/layer_filter.mp4"/></video>
